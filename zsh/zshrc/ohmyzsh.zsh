@@ -43,3 +43,5 @@ COMPLETION_WAITING_DOTS="true"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
+
+export ZSH=$HOME/.oh-my-zsh
