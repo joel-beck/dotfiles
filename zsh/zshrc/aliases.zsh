@@ -1,6 +1,9 @@
 # NOTE: overwrite commands with modern version only if syntax remained the same (e.g.
 # grep / rg), otherwise print message to use the newer command (e.g. find / fd)
 
+# remove all default or plugin aliases
+unalias -a
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."

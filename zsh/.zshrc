@@ -1,28 +1,33 @@
-source "./zshrc/config.zsh"
+export DOTFILES="$HOME/dotfiles"
+export ZSH="$DOTFILES/zsh"
+export ZSHRC="$ZSH/zshrc"
 
-source "./zshrc/aliases.zsh"
+source "$ZSHRC/config.zsh"
 
-source "./zshrc/ohmyzsh.zsh"
+source "$ZSHRC/ohmyzsh.zsh"
 
-source "./zshrc/plugins.zsh"
+source "$ZSHRC/plugins.zsh"
 
-source "./zshrc/starship.zsh"
+source "$ZSHRC/starship.zsh"
 
-# NOTE: iTerm2 Configuration breaks Warp's custom prompt
-# NOTE: Powerlevel 10k is NOT supported for Warp, only for iTerm2!
+# iTerm2 Configuration breaks Warp's custom prompt
+# Powerlevel 10k is NOT supported for Warp, only for iTerm2!
 if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-    source "./zshrc/iterm.zsh"
-    source "./zshrc/powerlevel10k.zsh"
+    source "$ZSHRC/iterm.zsh"
+    source "$ZSHRC/powerlevel10k.zsh"
 fi
 
-source "./zshrc/pnpm.zsh"
+source "$ZSHRC/pnpm.zsh"
 
-source "./zshrc/bun.zsh"
+source "$ZSHRC/bun.zsh"
 
-source "./zshrc/pyenv.zsh"
+source "$ZSHRC/pyenv.zsh"
 
-source "./zshrc/conda.zsh"
+source "$ZSHRC/conda.zsh"
 
-source "./zshrc/tex.zsh"
+source "$ZSHRC/tex.zsh"
 
-source "./zshrc/perl.zsh"
+source "$ZSHRC/perl.zsh"
+
+# run last to remove aliases from all plugins
+source "$ZSHRC/aliases.zsh"
