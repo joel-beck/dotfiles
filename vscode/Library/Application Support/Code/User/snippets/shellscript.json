@@ -1,0 +1,49 @@
+{
+	"For Loop (C-Style)": {
+		"prefix": "for",
+		"body": [
+			"for ((i = $1; i <= $2; i++)); do",
+			"\t$0",
+			"done",
+		],
+	},
+	"printf": {
+		"prefix": "printf",
+		"body": [
+			// NOTE: Escape $ in snippets with double backslash
+			"printf \"%s\\n\" \"\\$$1\"",
+			"$0"
+		],
+	},
+	"If Condition": {
+		"prefix": "if",
+		"body": [
+			"if $1; then",
+			"\t$0",
+			"fi"
+		],
+	},
+	"Elif Condition": {
+		"prefix": "elif",
+		"body": [
+			"elif $1; then",
+			"\t$0",
+		],
+	},
+	"Else Condition": {
+		"prefix": "else",
+		"body": [
+			"else",
+			"\t$0",
+		],
+	},
+	"Function": {
+		"prefix": "fun",
+		"body": [
+			"$1() {",
+			"\tlocal input=\"\\$1\"",
+			"\t$0",
+			"}"
+		],
+	},
+}

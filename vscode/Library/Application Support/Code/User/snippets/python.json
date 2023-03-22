@@ -1,0 +1,320 @@
+{
+  // SECTION: Python Snippets
+  "Add f-String": {
+    "prefix": [
+      "f-String",
+      "printf"
+    ],
+    "body": [
+      "print(f\"$0\")"
+    ]
+  },
+  "Add Simple Docstring": {
+    "prefix": [
+      "docstring",
+      // "\"\"\"\"",
+    ],
+    "body": [
+      "\"\"\"",
+      "$0",
+      "\"\"\"",
+    ]
+  },
+  "Insert for-loop": {
+    "prefix": "for",
+    "body": [
+      "for ${1:i} in ${2:range($3)}:",
+      "    $0"
+    ]
+  },
+  "Insert Try-Except Block": {
+    "prefix": "try except",
+    "body": [
+      "try:",
+      "    $1",
+      "except $2:",
+      "    $0"
+    ]
+  },
+  "Initialize Function": {
+    "prefix": "def",
+    "body": [
+      "def ${1:function}(${2:args}) -> $3:",
+      "    $0",
+      "    pass",
+    ]
+  },
+  "Initialize Class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:ClassName}(${2:ParentClass}):",
+      "    def __init__(self):",
+      "        ${3:super().__init__()}",
+      "        $0"
+    ]
+  },
+  "Initialize Dataclass": {
+    "prefix": [
+      "dataclass",
+      "@"
+    ],
+    "body": [
+      "@dataclass",
+      "class ${1:ClassName}:",
+      "    $0",
+    ]
+  },
+  "Main Function": {
+    "prefix": "main",
+    "body": [
+      "def main() -> None:",
+      "    pass",
+      "",
+      "if __name__ == '__main__':",
+      "    main()"
+    ]
+  },
+  // SECTION: Interactive Mode Snippets
+  "Insert code cell": {
+    "prefix": "cell code",
+    "body": [
+      "",
+      "#%%",
+      "$0"
+    ]
+  },
+  "Insert code cell without newline": {
+    "prefix": "cell code same line",
+    "body": [
+      "",
+      "#%%"
+    ]
+  },
+  "Insert markdown cell": {
+    "prefix": "cell markdown",
+    "body": [
+      "",
+      "#%% [markdown]",
+      "# $0"
+    ]
+  },
+  // SECTION: Import Snippets
+  "Import Dataclasses": {
+    "prefix": "dataclasses import",
+    "body": [
+      "from dataclasses import dataclass",
+      "$0"
+    ]
+  },
+  "Import Pathlib": {
+    "prefix": "pathlib import",
+    "body": [
+      "from pathlib import Path",
+      "$0"
+    ]
+  },
+  "Import datetime": {
+    "prefix": "datetime import",
+    "body": [
+      "from datetime import datetime",
+      "$0"
+    ]
+  },
+  "Import Pandas": {
+    "prefix": "pandas import",
+    "body": [
+      "import pandas as pd",
+      "$0"
+    ]
+  },
+  "Pandas Show all Columns": {
+    "prefix": "pandas all columns",
+    "body": [
+      "pd.set_option(\"display.max_columns\", None)",
+      "$0"
+    ]
+  },
+  "Import NumPy": {
+    "prefix": "numpy import",
+    "body": [
+      "import numpy as np",
+      "$0"
+    ]
+  },
+  "Import Seaborn": {
+    "prefix": "seaborn import",
+    "body": [
+      "import seaborn as sns",
+      "$0"
+    ]
+  },
+  "Set Seaborn Theme": {
+    "prefix": "theme seaborn",
+    "body": [
+      "sns.set_theme(style=\"${1|whitegrid,darkgrid|}\")",
+      "$0"
+    ]
+  },
+  "Import Matplotlib": {
+    "prefix": "matplotlib import",
+    "body": [
+      "import matplotlib.pyplot as plt",
+      "$0"
+    ]
+  },
+  "Import PyTorch": {
+    "prefix": "torch import",
+    "body": [
+      "import torch",
+      "$0"
+    ]
+  },
+  "Import nn Module": {
+    "prefix": "nn import",
+    "body": [
+      "import torch.nn as nn",
+      "$0"
+    ]
+  },
+  "Import optim Module": {
+    "prefix": "optim import",
+    "body": [
+      "import torch.optim as optim",
+      "$0"
+    ]
+  },
+  "Import DataLoader": {
+    "prefix": "DataLoader import",
+    "body": [
+      "from torch.utils.data import DataLoader",
+      "$0"
+    ]
+  },
+  "Import Dataset": {
+    "prefix": "Dataset import",
+    "body": [
+      "from torch.utils.data import Dataset",
+      "$0"
+    ]
+  },
+  "Import Torchvision": {
+    "prefix": "torchvision import",
+    "body": [
+      "import torchvision",
+      "$0"
+    ]
+  },
+  "Import Transforms and Datasets from Torchvision": {
+    "prefix": [
+      "import transforms",
+      "import datasets"
+    ],
+    "body": [
+      "from torchvision import transforms, datasets",
+      "$0"
+    ]
+  },
+  "Import Random Split": {
+    "prefix": "random split import",
+    "body": [
+      "from torch.utils.data import random_split",
+      "$0"
+    ]
+  },
+  // SECTION: Snippets by Package
+  // SUBSECTION: Scikit-Learn Snippets
+  "Train Test Split": {
+    "prefix": "train test split",
+    "body": [
+      "X_train, X_test, y_train, y_test = train_test_split(X, y)",
+      "$0"
+    ]
+  },
+  // SUBSECTION: PyTorch Snippets
+  // "PyTorch Imports Collection": {
+  //   "prefix": "pytorch imports",
+  //   "body": [
+  //     "import matplotlib.pyplot as plt",
+  //     "import numpy as np",
+  //     "import pandas as pd",
+  //     "import seaborn as sns",
+  //     "import time",
+  //     "import torch",
+  //     "import torch.nn as nn",
+  //     "import torch.optim as optim",
+  //     "from torch.utils.data import DataLoader, Subset, random_split",
+  //     "from torchvision import datasets, transforms",
+  //     "$0"
+  //   ]
+  // },
+  // "PyTorch get Device": {
+  //   "prefix": "device",
+  //   "body": [
+  //     "device = torch.device(device=\"cuda\" if torch.cuda.is_available() else \"cpu\")",
+  //     "$0"
+  //   ]
+  // },
+  // "PyTorch plot Images": {
+  //   "prefix": "plot images",
+  //   "body": [
+  //     "fig, axes = plt.subplots(nrows=${1:nrows}, ncols=${2:ncols}, figsize=(${3:height}, ${4:width}))",
+  //     "for ax, image, label in zip(axes.flat, ${5:images}, ${6:labels}):",
+  //     "    ax.set_title(label)",
+  //     "    ax.axis(\"off\")",
+  //     "    ax.imshow(image, cmap=\"gray\")",
+  //     "plt.show()",
+  //     "$0"
+  //   ]
+  // },
+  // "PyTorch Random Split": {
+  //   "prefix": "random split",
+  //   "body": [
+  //     "val_frac = ${1:0.1}",
+  //     "val_size = int(val_frac * len(${2:trainset}))",
+  //     "train_size = len($2) - val_size",
+  //     "",
+  //     "${3:trainset_name}, ${4:valset_name} = random_split(",
+  //     "    dataset=$2,",
+  //     "    lengths=[train_size, val_size],",
+  //     "    generator=torch.Generator().manual_seed(${5:123}),",
+  //     ")",
+  //     "$0"
+  //   ]
+  // },
+  // "PyTorch Subset": {
+  //   "prefix": "subset",
+  //   "body": [
+  //     "subset_size = ${1:100}",
+  //     "",
+  //     "train_indices = torch.randint(0, len(${2:trainset}) + 1, size=(subset_size,))",
+  //     "$2 = Subset(dataset=$2, indices=train_indices)",
+  //     "",
+  //     "val_indices = torch.randint(0, len(${3:valset}) + 1, size=(subset_size,))",
+  //     "$3 = Subset(dataset=$3, indices=val_indices)",
+  //     "$0"
+  //   ]
+  // },
+  // "PyTorch Instantiate Model": {
+  //   "prefix": [
+  //     "NeuralNetwork",
+  //     "Model"
+  //   ],
+  //   "body": [
+  //     "class ${1:NeuralNetwork}(nn.Module):",
+  //     "    def __init__(self, ${2:params}):",
+  //     "        super($1, self).__init__()",
+  //     "        $0",
+  //     "",
+  //     "    def forward(self, x):",
+  //     "",
+  //     "        return x",
+  //     "",
+  //     "${3:model} = $1($2).to(device=device)",
+  //     "$3",
+  //     "",
+  //     "print_param_shapes($3)",
+  //     "",
+  //     "print_data_shapes($3, input_shape=(1, ${4:in_channels}, ${5:img_size}, $5))"
+  //   ]
+  // }
+}

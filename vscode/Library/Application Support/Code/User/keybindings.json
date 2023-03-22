@@ -1,0 +1,1664 @@
+// Place your key bindings in this file to override the defaults
+[
+  // SECTION: Code Navigation
+  // SUBSECTION: Cursor
+  // Move to previous Cursor Position
+  {
+    "command": "workbench.action.navigateBack",
+    "key": "ctrl+left"
+  },
+  // Move to next Cursor Position
+  {
+    "command": "workbench.action.navigateForward",
+    "key": "ctrl+right"
+  },
+  // Move Cursor to Previous Code Cell
+  {
+    "command": "jupyter.gotoPrevCellInFile",
+    "key": "ctrl+up",
+    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
+  },
+  // Move Cursor to Next Code Cell
+  {
+    "command": "jupyter.gotoNextCellInFile",
+    "key": "ctrl+down",
+    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
+  },
+  // Move to Previous Markdown Header
+  {
+    "key": "ctrl+alt+up",
+    "when": "editorTextFocus",
+    "command": "moveby.regex",
+    "args": {
+      "regex": "#+",
+      "properties": ["prev", "start", "wrap"]
+    }
+  },
+  // Move to Next Markdown Header
+  {
+    "key": "ctrl+alt+down",
+    "when": "editorTextFocus",
+    "command": "moveby.regex",
+    "args": {
+      "regex": "#+",
+      "properties": ["next", "start", "wrap"]
+    }
+  },
+  // // Move Current Cell Down
+  // {
+  //   "command": "jupyter.moveCellsDown",
+  //   "key": "ctrl+alt+down",
+  //   "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  // },
+  // // Move Current Cell Up
+  // {
+  //   "command": "jupyter.moveCellsUp",
+  //   "key": "ctrl+alt+up",
+  //   "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  // },
+  // Move to previous Match of Search
+  {
+    "command": "editor.action.previousMatchFindAction",
+    "key": "pageup",
+    "when": "editorFocus && findWidgetVisible"
+  },
+  // Move to next Match of Search
+  {
+    "command": "editor.action.nextMatchFindAction",
+    "key": "pagedown",
+    "when": "editorFocus && findWidgetVisible"
+  },
+  // SUBSECTION: Selection
+  // Expand Selection to Previous Match (Multi-Selection) or Select Current Word
+  {
+    "command": "editor.action.addSelectionToPreviousFindMatch",
+    "key": "ctrl+shift+left"
+  },
+  // Expand Selection to Next Match (Multi-Selection) or Select Current Word
+  {
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "key": "ctrl+shift+right",
+    "when": "editorFocus"
+  },
+  // Jump from Current Match to Next Match to add/skip occurrences with Multi-Cursor Selection
+  {
+    "command": "editor.action.moveSelectionToNextFindMatch",
+    "key": "ctrl+shift+down",
+    "when": "editorFocus"
+  },
+  // Jump from Current Match to Previous Match to add/skip occurrences with Multi-Cursor Selection
+  {
+    "command": "editor.action.moveSelectionToPreviousFindMatch",
+    "key": "ctrl+shift+up"
+  },
+  // Shrink Current Selection
+  {
+    "command": "editor.action.smartSelect.shrink",
+    "key": "shift+home",
+    "when": "textInputFocus"
+  },
+  // Expand Current Selection
+  {
+    "command": "editor.action.smartSelect.expand",
+    "key": "shift+end",
+    "when": "textInputFocus"
+  },
+  // Select current code cell and stepwise add previous cells to selection
+  {
+    "command": "jupyter.extendSelectionByCellAbove",
+    "key": "shift+pageup",
+    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
+  },
+  // Select current code cell and stepwise add next cells to selection
+  {
+    "command": "jupyter.extendSelectionByCellBelow",
+    "key": "shift+pagedown",
+    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
+  },
+  // SUBSECTION: Focus
+  // Focus Active Editor Group
+  {
+    "command": "workbench.action.focusActiveEditorGroup",
+    "key": "ctrl+q"
+  },
+  // Toggle Side Bar (left)
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+home"
+  },
+  // Focus Previous Item in Side Bar
+  {
+    "command": "workbench.action.previousSideBarView",
+    "key": "ctrl+pageup"
+  },
+  // Focus Next Item in Side Bar
+  {
+    "command": "workbench.action.nextSideBarView",
+    "key": "ctrl+pagedown"
+  },
+  // Toggle Side Panel (right)
+  {
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "key": "ctrl+end"
+  },
+  // Toggle Bottom Panel
+  {
+    "command": "workbench.action.togglePanel",
+    "key": "ctrl+down"
+  },
+  // Toggle Bottom Panel
+  {
+    "command": "workbench.action.togglePanel",
+    "key": "cmd+pagedown"
+  },
+  // Focus Previous Item in Bottom Panel
+  {
+    "command": "workbench.action.previousPanelView",
+    "key": "ctrl+alt+left"
+  },
+  // Focus Next Item in Bottom Panel
+  {
+    "command": "workbench.action.nextPanelView",
+    "key": "ctrl+alt+right"
+  },
+  // SUBSECTION: Suggestions and Hints
+  // Peek Definition
+  {
+    "command": "editor.action.peekDefinition",
+    "key": "alt+d",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  // Focus Editor from Peek Definition Window
+  {
+    "command": "workbench.action.focusActiveEditorGroup",
+    "key": "alt+d",
+    "when": "inReferenceSearchEditor"
+  },
+  // Close Peek Definition Window when Focus on Editor
+  {
+    "command": "closeReferenceSearch",
+    "key": "alt+d",
+    "when": "editorTextFocus && referenceSearchVisible && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  // Trigger Widget with Parameter Hints in Function
+  {
+    "command": "editor.action.triggerParameterHints",
+    "key": "ctrl+space",
+    "when": "!hasNextTabstop"
+  },
+  // Trigger Suggestions in Snippets
+  {
+    "command": "editor.action.triggerSuggest",
+    "key": "ctrl+space"
+  },
+  // Trigger Inline Suggestions
+  {
+    "command": "workbench.action.showCommands",
+    "key": "shift+space"
+  },
+  // Accept Next Word of Inline Suggestions
+  {
+    "key": "alt+right",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  // Undo Last Word of Inline Suggestion
+  {
+    "key": "alt+left",
+    "command": "editor.action.inlineSuggest.undo",
+    "when": "canUndoInlineSuggestion && !editorReadonly"
+  },
+  // SUBSECTION: Utils - Editor Commands
+  // Open Settings JSON
+  {
+    "command": "workbench.action.openSettingsJson",
+    "key": "shift+cmd+[Comma]"
+  },
+  // Open Keyboard Shortcuts UI
+  {
+    "command": "workbench.action.openGlobalKeybindings",
+    "key": "cmd+[Period]"
+  },
+  // Open Keyboard Shortcuts JSON
+  {
+    "command": "workbench.action.openGlobalKeybindingsFile",
+    "key": "shift+cmd+[Period]"
+  },
+  // Open User Snippets
+  {
+    "command": "workbench.action.openSnippets",
+    "key": "cmd+shift+-"
+  },
+  // Open Tasks Palette
+  {
+    "command": "workbench.action.tasks.runTask",
+    "key": "ctrl+t"
+  },
+  // Open Multicommand Palette
+  {
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+shift+alt+cmd+space"
+  },
+  // Reload Window
+  {
+    "command": "workbench.action.reloadWindow",
+    "key": "cmd+r"
+  },
+  // Increase Editor Font Size
+  {
+    "command": "editor.action.fontZoomIn",
+    "key": "alt+[BracketRight]"
+  },
+  // Decrease Editor Font Size
+  {
+    "command": "editor.action.fontZoomOut",
+    "key": "alt+-"
+  },
+  // SUBSECTION: Utils - File Commands
+  // Save all Files
+  {
+    "command": "workbench.action.files.saveFiles",
+    "key": "cmd+shift+s"
+  },
+  // Open New File
+  {
+    "command": "extension.advancedNewFile",
+    "key": "cmd+n",
+    "when": "!terminalFocus"
+  },
+  // Rename Current File
+  {
+    "command": "fileutils.renameFile",
+    "key": "shift+alt+r"
+  },
+  // Delete Current File
+  {
+    "command": "fileutils.removeFile",
+    "key": "shift+alt+d"
+  },
+  // Find and Replace in Current File
+  {
+    "command": "editor.action.startFindReplaceAction",
+    "key": "cmd+h",
+    "when": "editorFocus || editorIsOpen"
+  },
+  // SUBSECTION: Utils - Line Commands
+  // Comment out Selected Lines
+  {
+    "command": "editor.action.commentLine",
+    "key": "shift+cmd+c"
+  },
+  // Copy Current Line when Editor has no selection
+  {
+    "args": {
+      "command": "multiCommand.CopyLineNoSelection"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+c",
+    "when": "!editorHasSelection"
+  },
+  // Cut (and delete) Current Line when Editor has no selection
+  {
+    "args": {
+      "command": "multiCommand.CutDeleteLineNoSelection"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+x",
+    "when": "!editorHasSelection"
+  },
+  // Cut (and keep) Current Line but keep line when Editor has no selection
+  {
+    "args": {
+      "command": "multiCommand.CutKeepLineNoSelection"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+x",
+    "when": "!editorHasSelection"
+  },
+  // Delete Current Line
+  {
+    "command": "editor.action.deleteLines",
+    "key": "cmd+d"
+  },
+  // Insert Empty Line Above
+  {
+    "command": "editor.action.insertLineBefore",
+    "key": "alt+v"
+  },
+  // Indent Line of current Cursor Position
+  {
+    "command": "editor.action.indentLines",
+    "key": "shift+tab",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Outdent Line of current Cursor Position
+  {
+    "command": "editor.action.outdentLines",
+    "key": "alt+tab",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Rename Symbol at current Cursor Position
+  {
+    "command": "editor.action.rename",
+    "key": "alt+r",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  // Quick Fix when Cursor is on underlined word
+  {
+    "command": "editor.action.quickFix",
+    "key": "f1",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  // Quick Fix when Cursor is on underlined word
+  {
+    "command": "editor.action.quickFix",
+    "key": "alt+q",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  // SECTION: Text Highlighting in Markdown, Latex and Python Documentation
+  // Markdown Bold Text when Editor has Selection
+  {
+    "args": {
+      "snippet": "**${TM_SELECTED_TEXT}**"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+b",
+    "when": "editorHasSelection && editorLangId != 'latex'"
+  },
+  // Markdown Bold Text when Editor has no Selection
+  {
+    "args": {
+      "snippet": "**$1** $0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+b",
+    "when": "!editorHasSelection && editorLangId != 'latex'"
+  },
+  // See https://stackoverflow.com/questions/71311855/vs-code-shortcut-to-remove-markup-from-selected-text-in-markdown-and-latex/71312114#71312114
+  // Revert Markdown Bold Text
+  {
+    "args": {
+      "command": "multiCommand.RevertMarkdownBold"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+b",
+    "when": "editorLangId != 'latex'"
+  },
+  // Latex Bold Text when Editor has Selection
+  {
+    "args": {
+      "snippet": "\\textbf{${TM_SELECTED_TEXT}}"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+b",
+    "when": "editorHasSelection && editorLangId == 'latex'"
+  },
+  // Latex Bold Text when Editor has no Selection
+  {
+    "args": {
+      "snippet": "\\textbf{$1} $0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+b",
+    "when": "!editorHasSelection && editorLangId == 'latex'"
+  },
+  // Revert Latex Bold Text
+  {
+    "args": {
+      "command": "multiCommand.RevertLatexBold"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+b",
+    "when": "editorLangId == 'latex'"
+  },
+  // Markdown Italic Text when Editor has Selection
+  {
+    "args": {
+      "snippet": "*${TM_SELECTED_TEXT}*"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+i",
+    "when": "editorHasSelection && editorLangId != 'latex'"
+  },
+  // Markdown Italic Text when Editor has no Selection
+  {
+    "args": {
+      "snippet": "*$1* $0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+i",
+    "when": "!editorHasSelection && editorLangId != 'latex'"
+  },
+  // Revert Markdown Italic Text
+  {
+    "args": {
+      "command": "multiCommand.RevertMarkdownItalic"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+i",
+    "when": "editorLangId != 'latex'"
+  },
+  // Latex Italic Text when Editor has Selection
+  {
+    "args": {
+      "snippet": "\\emph{${TM_SELECTED_TEXT}}"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+i",
+    "when": "editorHasSelection && editorLangId == 'latex'"
+  },
+  // Latex Italic Text when Editor has no Selection
+  {
+    "args": {
+      "snippet": "\\emph{$1} $0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+i",
+    "when": "!editorHasSelection && editorLangId == 'latex'"
+  },
+  // Revert Latex Italic Text
+  {
+    "args": {
+      "command": "multiCommand.RevertLatexItalic"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+i",
+    "when": "editorLangId == 'latex'"
+  },
+  // Markdown Monospace Text when Editor has Selection
+  {
+    "args": {
+      "snippet": "`${TM_SELECTED_TEXT}`"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+e",
+    "when": "editorHasSelection && editorLangId != 'latex'"
+  },
+  // Markdown Monospace Text when Editor has no Selection
+  {
+    "args": {
+      "snippet": "`$1` $0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+e",
+    "when": "!editorHasSelection && editorLangId != 'latex'"
+  },
+  // Revert Markdown Monospace Text
+  {
+    "args": {
+      "command": "multiCommand.RevertMarkdownMonospace"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+e",
+    "when": "editorLangId != 'latex'"
+  },
+  // Latex Monospace Text when Editor has Selection
+  {
+    "args": {
+      "snippet": "\\texttt{${TM_SELECTED_TEXT}}"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+e",
+    "when": "editorHasSelection && editorLangId == 'latex'"
+  },
+  // Latex Monospace Text when Editor has no Selection
+  {
+    "args": {
+      "snippet": "\\texttt{$1} $0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+e",
+    "when": "!editorHasSelection && editorLangId == 'latex'"
+  },
+  // Revert Latex Monospace Text
+  {
+    "args": {
+      "command": "multiCommand.RevertLatexMonospace"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+e",
+    "when": "editorLangId == 'latex'"
+  },
+  // Markdown and Latex Inline Math when Editor has Selection
+  {
+    "args": {
+      "snippet": "$${TM_SELECTED_TEXT}$"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+l",
+    "when": "editorHasSelection"
+  },
+  // Markdown and Latex Inline Math when Editor has no Selection
+  {
+    "args": {
+      "snippet": "$$1$ $0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+l",
+    "when": "!editorHasSelection"
+  },
+  // Revert Markdown and Latex Inline Math
+  {
+    "args": {
+      "command": "multiCommand.RevertInlineMath"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+shift+l"
+  },
+  // SECTION: Python: Interactive Mode
+  // Run selected code in Interactive Window
+  {
+    "command": "jupyter.execSelectionInteractive",
+    "key": "cmd+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run selected code in Interactive Window
+  {
+    "command": "jupyter.execSelectionInteractive",
+    "key": "alt+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run selected code in Interactive Window
+  {
+    "command": "jupyter.execSelectionInteractive",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current line in Interactive Window and move Cursor to next line
+  {
+    "args": {
+      "command": "multiCommand.RunCursorDown"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current line in Interactive Window and move Cursor to next line
+  {
+    "args": {
+      "command": "multiCommand.RunCursorDown"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current line in interactive Window and stay in current line
+  {
+    "command": "jupyter.execSelectionInteractive",
+    "key": "alt+enter",
+    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !editorHasSelection && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run Code Block until next empty line in Interactive Window
+  {
+    "args": {
+      "command": "multiCommand.RunUntilEmpty"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "cmd+alt+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current code cell in interactive Window and stay in current cell
+  {
+    "command": "jupyter.runcurrentcell",
+    "key": "shift+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current code cell in interactive Window and move Cursor to next cell
+  {
+    "command": "jupyter.runcurrentcelladvance",
+    "key": "ctrl+shift+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run all cells in interactive Window
+  {
+    "command": "jupyter.runallcells",
+    "key": "shift+alt+enter",
+    "when": "editorTextFocus && jupyter.ownsSelection && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run all cells from Beginning to current cell (exclusive) in interactive Window
+  {
+    "command": "jupyter.runallcellsabove.palette",
+    "key": "ctrl+shift+a",
+    "when": "editorTextFocus && jupyter.ownsSelection && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run all cells from current cell (inclusive) to end in interactive Window
+  {
+    "command": "jupyter.runcurrentcellandallbelow.palette",
+    "key": "ctrl+shift+b",
+    "when": "editorTextFocus && jupyter.ownsSelection && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Change Code Cell to Markdown Cell
+  {
+    "command": "jupyter.changeCellToMarkdown",
+    "key": "ctrl+m",
+    "when": "editorTextFocus && jupyter.ownsSelection &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Change Markdown Cell to Code Cell
+  {
+    "command": "jupyter.changeCellToCode",
+    "key": "ctrl+y",
+    "when": "editorTextFocus && jupyter.ownsSelection &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Insert new Code Cell above current Cell
+  {
+    "args": {
+      "command": "multiCommand.InsertCellAbove"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+a",
+    "when": "editorTextFocus && jupyter.ownsSelection &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Insert new Code Cell below current Cell
+  {
+    "args": {
+      "command": "multiCommand.InsertCellBelow"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+b",
+    "when": "editorTextFocus && jupyter.ownsSelection &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Split Code Cells in Interactive Mode on empty Line and move Cursor to End of Cell
+  {
+    "args": {
+      "command": "multiCommand.SplitCells"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+-",
+    "when": "editorTextFocus && editorLangId == 'python'"
+  },
+  // Delete current Cell
+  {
+    "command": "jupyter.deleteCells",
+    "key": "ctrl+d"
+  },
+  // Clear Output of Interactive Window (only in Python Files)
+  {
+    "command": "jupyter.interactive.clearAllCells",
+    "key": "ctrl+l",
+    "when": "!terminalFocus && resourceScheme != 'vscode-interactive' && editorLangId == 'python'"
+  },
+  // Restart Kernel of Interactive Window
+  {
+    "command": "jupyter.restartkernel",
+    "key": "shift+cmd+[BracketLeft]"
+  },
+  // SUBSECTION: Interactive Console
+  // Execute Code from Interactive Console
+  {
+    "command": "interactive.execute",
+    "key": "cmd+enter",
+    "when": "resourceScheme == 'vscode-interactive'"
+  },
+  // Execute Code from Interactive Console
+  {
+    "command": "interactive.execute",
+    "key": "shift+enter",
+    "when": "resourceScheme == 'vscode-interactive'"
+  },
+  // Execute Code from Interactive Console
+  {
+    "command": "interactive.execute",
+    "key": "cmd+shift+enter",
+    "when": "resourceScheme == 'vscode-interactive'"
+  },
+  // Clear Outputs of Interactive Window from Interactive Console
+  {
+    "command": "interactive.input.clear",
+    "key": "ctrl+l",
+    "when": "!LinkedEditingInputVisible && !accessibilityHelpWidgetVisible && !breakpointWidgetVisible && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible && !exceptionWidgetVisible && !findWidgetVisible && !inSnippetMode && !isComposing && !markersNavigationVisible && !notificationToastsVisible && !parameterHintsVisible && !renameInputVisible && !selectionAnchorSet && !suggestWidgetVisible && resourceScheme == 'vscode-interactive'"
+  },
+  // SECTION: Python: Jupyter Notebooks
+  // Run Current Cell and Stay at Current Cell
+  {
+    "command": "notebook.cell.executeAndFocusContainer",
+    "key": "ctrl+enter",
+    "when": "notebookCellListFocused || editorTextFocus && inputFocus && notebookEditorFocused"
+  },
+  // Run Current Cell and Stay at Current Cell
+  {
+    "command": "notebook.cell.executeAndFocusContainer",
+    "key": "cmd+enter",
+    "when": "notebookCellListFocused || editorTextFocus && inputFocus && notebookEditorFocused"
+  },
+  // Run Current Cell and Move to next Cell
+  {
+    "command": "notebook.cell.executeAndSelectBelow",
+    "key": "shift+enter",
+    "when": "notebookCellListFocused"
+  },
+  // Run Current Cell and Focus Input of next Cell
+  {
+    "args": {
+      "command": "multiCommand.NotebookRunFocusNext"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+shift+enter",
+    "when": "notebookCellListFocused"
+  },
+  // Run all Cells in Juypter Notebook
+  {
+    "command": "notebook.execute",
+    "key": "shift+alt+enter",
+    "when": "notebookEditorFocused"
+  },
+  // Run all Cells above current Cell
+  {
+    "command": "notebook.cell.executeCellsAbove",
+    "key": "ctrl+shift+a",
+    "when": "notebookEditorFocused"
+  },
+  // Run all Cells below current Cell
+  {
+    "command": "notebook.cell.executeCellAndBelow",
+    "key": "ctrl+shift+b",
+    "when": "notebookEditorFocused"
+  },
+  // Change Focus from Cell to Container
+  {
+    "command": "notebook.cell.quitEdit",
+    "key": "alt+enter",
+    "when": "inputFocus && notebookEditorFocused "
+  },
+  // Delete Current Cell
+  {
+    "command": "notebook.cell.delete",
+    "key": "ctrl+d",
+    "when": "notebookEditorFocused && inputFocus"
+  },
+  // Add new Cell above Current Cell
+  {
+    "command": "notebook.cell.insertCodeCellAbove",
+    "key": "ctrl+a",
+    "when": "notebookEditorFocused && inputFocus"
+  },
+  // Add new Cell below Current Cell
+  {
+    "command": "notebook.cell.insertCodeCellBelow",
+    "key": "ctrl+b",
+    "when": "notebookEditorFocused && inputFocus"
+  },
+  // Move Cell Up
+  {
+    "command": "notebook.cell.moveUp",
+    "key": "ctrl+alt+up",
+    "when": "inputFocus && notebookEditorFocused"
+  },
+  // Move Cell Down
+  {
+    "command": "notebook.cell.moveDown",
+    "key": "ctrl+alt+down",
+    "when": "inputFocus && notebookEditorFocused"
+  },
+  // Split Cells
+  {
+    "command": "notebook.cell.split",
+    "key": "ctrl+-",
+    "when": "editorTextFocus && inputFocus && notebookEditorFocused"
+  },
+  // Focus first Cell in Notebook
+  {
+    "command": "notebook.focusBottom",
+    "key": "cmd+down",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  // Focus last Cell in Notebook
+  {
+    "command": "notebook.focusTop",
+    "key": "cmd+up",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  // Change Code Cell to Markdown Cell
+  {
+    "command": "notebook.cell.changeToMarkdown",
+    "key": "ctrl+m",
+    "when": "notebookEditorFocused && inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
+  },
+  // Change Markdown Cell to Code Cell
+  {
+    "command": "notebook.cell.changeToCode",
+    "key": "ctrl+y",
+    "when": "notebookEditorFocused && inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markup'"
+  },
+  // Collapse current Cell Input
+  // {
+  //     "command": "notebook.cell.collapseCellInput",
+  //     "key": "ctrl+k",
+  //     "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
+  // },
+  // Expand current Cell Input
+  // {
+  //     "command": "notebook.cell.expandCellInput",
+  //     "key": "ctrl+k",
+  //     "when": "notebookCellListFocused && !inputFocus && notebookCellInputIsCollapsed"
+  // },
+  // Collapse current Cell Output
+  // {
+  //     "command": "notebook.cell.collapseCellOutput",
+  //     "key": "ctrl+l",
+  //     "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed !terminalFocus"
+  // },
+  // Expand current Cell Output
+  // {
+  //     "command": "notebook.cell.expandCellOutput",
+  //     "key": "ctrl+l",
+  //     "when": "notebookCellHasOutputs && notebookCellListFocused && notebookCellOutputIsCollapsed && !inputFocus !terminalFocus"
+  // },
+  // Restart Juypter Kernel
+  {
+    "command": "jupyter.notebookeditor.restartkernel",
+    "key": "shift+ctrl+[BracketLeft]",
+    "when": "notebookEditorFocused"
+  },
+  // SECTION: R in VSCode
+  // New R Terminal with Radian
+  {
+    "args": {
+      "command": "multiCommand.OpenRTerminalRight"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "shift+cmd+[Semicolon]"
+  },
+  // Open R Help Panel
+  // {
+  //   "command": "r.helpPanel.openForSelection",
+  //   "key": "cmd+[Minus]",
+  //   "when": "editorTextFocus && editorLangId == 'r' || editorTextFocus && editorLangId == 'rmd' || editorTextFocus && editorLangId == 'quarto'"
+  // },
+  // Open R Help as Markdown with `rmddocs` Addin
+  {
+    "args": "rmdocs::rs_rmd_help()",
+    "command": "r.runCommandWithSelectionOrWord",
+    "key": "cmd+[Minus]",
+    "when": "editorTextFocus && editorLangId == 'r' || editorTextFocus && editorLangId == 'rmd' || editorTextFocus && editorLangId == 'quarto'"
+  },
+  // SUBSECTION: R Files
+  // Run Line and move cursor down
+  {
+    "command": "r.runSelection",
+    "key": "cmd+enter",
+    "when": "editorTextFocus && editorLangId == 'r' || editorTextFocus && editorLangId == 'rmd' || editorTextFocus && editorLangId == 'quarto'"
+  },
+  // Run Line without moving Cursor
+  {
+    "command": "r.runSelectionRetainCursor",
+    "key": "alt+enter",
+    "when": "editorTextFocus && editorLangId == 'r' || editorTextFocus && editorLangId == 'rmd' || editorTextFocus && editorLangId == 'quarto'"
+  },
+  // Run Entire R Script in Terminal
+  {
+    "command": "r.runSourcewithEcho",
+    "key": "shift+alt+enter",
+    "when": "editorTextFocus && editorLangId == 'r'"
+  },
+  // Install Custom R Package
+  {
+    "command": "r.install",
+    "key": "ctrl+shift+i",
+    "when": "resourceLangId == 'r'"
+  },
+  // Devtools::Check
+  {
+    "command": "r.check",
+    "key": "ctrl+shift+c"
+  },
+  // Devtools::Test
+  {
+    "command": "r.test",
+    "key": "ctrl+shift+t",
+    "when": "resourceLangId == 'r'"
+  },
+  // Devtools::Document
+  {
+    "command": "r.document",
+    "key": "ctrl+shift+d",
+    "when": "resourceLangId == 'r'"
+  },
+  // Devtools::Load All
+  {
+    "command": "r.loadAll",
+    "key": "ctrl+shift+l",
+    "when": "resourceLangId == 'r'"
+  },
+  // SUBSECTION: R Markdown Files
+  // Run Current Chunk in R Markdown
+  {
+    "command": "r.runCurrentChunk",
+    "key": "shift+enter",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  // Run Current Chunk in R Markdown and Advance to Next Chunk
+  {
+    "args": {
+      "command": "multiCommand.RunRmdChunkAdvance"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && editorLangId == 'rmd' || editorTextFocus && editorLangId == 'quarto'"
+  },
+  // Run All Chunks in R Markdown
+  {
+    "command": "r.runAllChunks",
+    "key": "shift+alt+enter",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  // Move Cursor to Previous Chunk in R Markdown
+  {
+    "command": "r.goToPreviousChunk",
+    "key": "ctrl+up",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  // Move Cursor to Next Chunk in R Markdown
+  {
+    "command": "r.goToNextChunk",
+    "key": "ctrl+down",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  // Run all previous Chunks (excluding current Chunk) in R Markdown
+  {
+    "command": "r.runAboveChunks",
+    "key": "ctrl+shift+a",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  // Run all remaining Chunks (including current Chunk) in R Markdown
+  {
+    "command": "r.runCurrentAndBelowChunks",
+    "key": "ctrl+shift+b",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  // SUBSECTION: Quarto Files
+  // Run Current Code Cell in Quarto
+  {
+    "command": "quarto.runCurrentCell",
+    "key": "shift+enter",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  // Run Current Code Cell in Quarto and Advance to Next Code Cell
+  {
+    "args": {
+      "command": "multiCommand.RunQuartoChunkAdvance"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && editorLangId == 'quarto'"
+  },
+  // Run All Code Cells in Quarto
+  {
+    "command": "quarto.runAllCells",
+    "key": "shift+alt+enter",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  // Run all previous Code Cells (excluding current Chunk) in Quarto
+  {
+    "command": "quarto.runCellsAbove",
+    "key": "ctrl+shift+a",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  // Run all remaining Code Cells (including current Chunk) in Quarto
+  {
+    "command": "quarto.runCellsBelow",
+    "key": "ctrl+shift+b",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  // Move to Previous Code Cell in Quarto
+  {
+    "command": "quarto.goToPreviousCell",
+    "key": "ctrl+up",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  // Move to Next Code Cell in Quarto
+  {
+    "command": "quarto.goToNextCell",
+    "key": "ctrl+down",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  // Render Quarto Document
+  {
+    "command": "quarto.renderShortcut",
+    "key": "shift+cmd+k",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  // SECTION: Extensions
+  // Open Project in New Window
+  {
+    "command": "projectManager.listProjects",
+    "key": "cmd+shift+n",
+    "when": "!terminalfocus"
+  },
+  // Insert Strong Code Separator
+  {
+    "command": "comment-divider.makeMainHeader",
+    "key": "ctrl+shift+1",
+    "when": "editorTextFocus"
+  },
+  // Insert Medium Code Separator
+  {
+    "command": "comment-divider.makeSubHeader",
+    "key": "ctrl+shift+2",
+    "when": "editorTextFocus"
+  },
+  // Insert Weak Code Separator
+  {
+    "command": "comment-divider.insertSolidLine",
+    "key": "ctrl+shift+3",
+    "when": "editorTextFocus"
+  },
+  // Rewrap Long Comment
+  {
+    "command": "rewrap.rewrapComment",
+    "key": "cmd+shift+7",
+    "when": "editorTextFocus"
+  },
+  // Run Active Code File with Code Runner Extension
+  {
+    "command": "code-runner.run",
+    "key": "shift+cmd+enter",
+    "when": "!notebookEditorFocused && !terminalFocus"
+  },
+  // Quote selected comma-separated elements individually
+  {
+    "command": "extension.quoteList",
+    "key": "ctrl+2",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Toggle Settings
+  {
+    "key": "ctrl+s",
+    "command": "settingsOnFire.toggleSettings"
+  },
+  // Add Word to Custom Dictionary in Current Worksapce
+  {
+    "command": "cSpell.addWordToWorkspaceDictionary",
+    "key": "alt+a"
+  },
+  // Insert Empty Line instead of new List Item in Markdown Lists
+  {
+    "command": "markdown.extension.onShiftEnterKey",
+    "key": "cmd+enter",
+    "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown' && vim.mode != 'CommandlineInProgress' && vim.mode != 'EasyMotionInputMode' && vim.mode != 'EasyMotionMode' && vim.mode != 'Normal' && vim.mode != 'Replace' && vim.mode != 'SearchInProgressMode' && vim.mode != 'SurroundInputMode' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  // SECTION: Terminal
+  // Toggle Terminal Window
+  {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "cmd+[Semicolon]",
+    "when": "terminal.active"
+  },
+  // Launch New Terminal
+  {
+    "command": "workbench.action.terminal.new",
+    "key": "cmd+n",
+    "when": "terminalfocus"
+  },
+  // Clear Terminal from any Cursor Location except for Python Files (there ctrl+l
+  // clears Interactive Window)
+  {
+    "command": "workbench.action.terminal.clear",
+    "key": "ctrl+l",
+    "when": "terminalFocus || editorLangId != 'python'"
+  },
+  // Kill active Terminal in Terminal Panel (not Editor Area)
+  {
+    "command": "workbench.action.terminal.kill",
+    "key": "cmd+w",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus "
+  },
+  // Run active File in Terminal
+  {
+    "command": "workbench.action.terminal.runActiveFile",
+    "key": "shift+cmd+enter",
+    "when": "terminalFocus"
+  },
+  // Quick Fix in Terminal
+  {
+    "command": "workbench.action.terminal.quickFix",
+    "key": "f1",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  // SUBSECTION: Python Snippets
+  // Format Jupyter Notebook Cell with black from any Cursor Position
+  {
+    "args": {
+      "command": "multiCommand.FormatNotebook"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "",
+    "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Execute First Cell / Imports in Interactive Python File
+  {
+    "args": {
+      "command": "multiCommand.UpdateImports"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+i",
+    "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Put print() Statement around code in current line
+  {
+    "args": {
+      "command": "multiCommand.PythonPrintLine"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "alt+p",
+    "when": "editorTextFocus && !editorHasSelection && editorLangId == 'python'"
+  },
+  // Put print() Statement around selected code
+  {
+    "args": {
+      "command": "multiCommand.PythonPrintSelection"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "alt+p",
+    "when": "editorTextFocus && editorHasSelection && editorLangId == 'python'"
+  },
+  // Change First Quotes in Selected Text to f-String
+  {
+    "args": {
+      "snippet": " \\\\\\\n$0"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+enter",
+    "when": "editorLangId == 'latex'"
+  },
+  // SUBSECTION: R Snippets
+  // Insert Assignment Operator in R
+  {
+    "args": {
+      "text": " <- "
+    },
+    "command": "type",
+    "key": "ctrl+0",
+    "when": "editorLangId == 'r' && editorTextFocus || editorLangId == 'rmd' && editorTextFocus || editorLangId == 'quarto' && editorTextFocus || terminalfocus"
+  },
+  // Insert Pipe in R
+  {
+    "args": {
+      "text": " |> "
+    },
+    "command": "type",
+    "key": "cmd+shift+m",
+    "when": "editorLangId == 'r' && editorTextFocus || editorLangId == 'rmd' && editorTextFocus || editorLangId == 'quarto' && editorTextFocus || terminalfocus"
+  },
+  // Insert R Code Chunk in R Markdown
+  {
+    "args": {
+      "snippet": "```{r}\n$0\n```"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "ctrl+r",
+    "when": "editorLangId == 'rmd' || editorLangId == 'quarto'"
+  },
+  // Split R Code Chunks in R Markdown
+  {
+    "args": {
+      "snippet": "```\n$0\n```{r}"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "ctrl+-",
+    "when": "editorLangId == 'rmd' || editorLangId == 'quarto'"
+  },
+  // Insert Python Code Chunk in R Markdown
+  {
+    "args": {
+      "snippet": "```{python}\n$0\n```"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "ctrl+p",
+    "when": "editorLangId == 'rmd' || editorLangId == 'quarto'"
+  },
+  // Insert Bash Code Chunk in R Markdown
+  {
+    "args": {
+      "snippet": "```{bash}\n$0\n```"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "ctrl+b",
+    "when": "editorLangId == 'rmd' || editorLangId == 'quarto'"
+  },
+  // Insert Markdown Code Chunk in R Markdown
+  {
+    "args": {
+      "snippet": "```\n$0\n```"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "ctrl+m",
+    "when": "editorLangId == 'rmd' || editorLangId == 'quarto'"
+  },
+  // SUBSECTION: Typescript Snippets
+  // Put print() Statement around code in current line
+  {
+    "args": {
+      "command": "multiCommand.TypescriptConsoleLogLine"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "alt+p",
+    "when": "editorTextFocus && !editorHasSelection && editorLangId == 'typescript' || editorTextFocus && !editorHasSelection && editorLangId == 'javascript'"
+  },
+  // Put print() Statement around selected code
+  {
+    "args": {
+      "command": "multiCommand.TypescriptConsoleLogSelection"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "alt+p",
+    "when": "editorTextFocus && editorHasSelection && editorLangId == 'typescript' || editorTextFocus && editorHasSelection && editorLangId == 'javascript'"
+  },
+  // Insert Arrow in Typescript and Javascript
+  {
+    "args": {
+      "snippet": "=> {\n\t$0\n}"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+shift+m",
+    "when": "editorLangId == 'typescript' && editorTextFocus || editorLangId == 'javascript' && editorTextFocus || terminalfocus"
+  },
+  // SUBSECTION: Markdown Snippets
+  // Insert new List Item separated by empty line in Markdown
+  {
+    "args": {
+      "snippet": "```${1:python}\n$0\n```"
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "cmd+alt+i",
+    "when": "editorLangId == 'markdown'"
+  },
+  // SECTION: Removed Keybindings
+  {
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "key": "ctrl+shift+[Equal]",
+    "when": "terminal.active"
+  },
+  {
+    "command": "-slides.previous",
+    "key": "cmd+left"
+  },
+  {
+    "command": "-slides.next",
+    "key": "cmd+right"
+  },
+  {
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "key": "cmd+d",
+    "when": "editorFocus"
+  },
+  {
+    "command": "-jupyter.runAndDebugCell",
+    "key": "ctrl+shift+enter"
+  },
+  {
+    "command": "-editor.action.deleteLines",
+    "key": "shift+cmd+k",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "command": "-deleteRight",
+    "key": "ctrl+d",
+    "when": "textInputFocus"
+  },
+  {
+    "command": "-deleteLeft",
+    "key": "shift+backspace",
+    "when": "textInputFocus"
+  },
+  {
+    "command": "-workbench.action.togglePanel",
+    "key": "cmd+j"
+  },
+  {
+    "command": "-ShortcutMenuBar.userButton07",
+    "key": "shift+cmd+7"
+  },
+  {
+    "command": "-editor.action.commentLine",
+    "key": "shift+cmd+7",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.toggleTabFocusMode",
+    "key": "ctrl+shift+m"
+  },
+  {
+    "command": "-workbench.action.openEditorAtIndex2",
+    "key": "ctrl+2"
+  },
+  {
+    "command": "-workbench.action.files.newUntitledFile",
+    "key": "cmd+n"
+  },
+  {
+    "command": "-editor.action.triggerParameterHints",
+    "key": "shift+cmd+space",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "command": "-expandLineSelection",
+    "key": "cmd+l",
+    "when": "textInputFocus"
+  },
+  {
+    "command": "-workbench.view.explorer",
+    "key": "shift+cmd+e",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "command": "-workbench.action.tasks.build",
+    "key": "shift+cmd+b"
+  },
+  {
+    "command": "-telesoho.MarkdownRuby",
+    "key": "alt+cmd+t",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "-workbench.action.closeOtherEditors",
+    "key": "alt+cmd+t"
+  },
+  {
+    "command": "-jupyter.moveCellsDown",
+    "key": "ctrl+shift+[Comma] d",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "command": "-jupyter.moveCellsUp",
+    "key": "ctrl+shift+[Comma] u",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "command": "-editor.action.quickFix",
+    "key": "cmd+[Period]",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-workbench.action.openGlobalKeybindings",
+    "key": "cmd+k cmd+s"
+  },
+  {
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "key": "shift+cmd+c",
+    "when": "!terminalFocus"
+  },
+  {
+    "command": "-editor.action.blockComment",
+    "key": "shift+alt+a",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.triggerSuggest",
+    "key": "cmd+i",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.triggerSuggest",
+    "key": "alt+escape",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.startFindReplaceAction",
+    "key": "alt+cmd+f",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "command": "-cursorHomeSelect",
+    "key": "shift+home",
+    "when": "textInputFocus"
+  },
+  {
+    "command": "-cursorEndSelect",
+    "key": "shift+end",
+    "when": "textInputFocus"
+  },
+  {
+    "command": "-github.copilot.generate",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+  {
+    "command": "-markdown.showPreview",
+    "key": "shift+cmd+v",
+    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+  },
+  {
+    "command": "-html.showPreview",
+    "key": "shift+cmd+v",
+    "when": "editorLangId == 'html'"
+  },
+  {
+    "command": "-editor.action.insertLineBefore",
+    "key": "shift+cmd+enter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-notebook.cell.insertCodeCellAbove",
+    "key": "shift+cmd+enter",
+    "when": "notebookCellListFocused && !inputFocus"
+  },
+  {
+    "command": "-code-runner.run",
+    "key": "ctrl+alt+n"
+  },
+  {
+    "command": "-md-shortcut.toggleLink",
+    "key": "ctrl+l",
+    "when": "editorTextFocus && markdownShortcuts:enabled"
+  },
+  {
+    "command": "-notebook.centerActiveCell",
+    "key": "ctrl+l",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "command": "-git.viewFileHistory",
+    "key": "alt+h"
+  },
+  {
+    "command": "-testing.toggleTestingPeekHistory",
+    "key": "alt+h",
+    "when": "testing.isPeekVisible"
+  },
+  {
+    "command": "-markdown.extension.onTabKey",
+    "key": "tab",
+    "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !editorTabMovesFocus && !hasOtherSuggestions && !hasSnippetCompletions && !inSnippetMode && !inlineSuggestionVisible && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "command": "-editor.action.triggerSuggest",
+    "key": "ctrl+space",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "command": "-workbench.actions.view.problems",
+    "key": "cmd+shift+m"
+  },
+  {
+    "command": "-workbench.action.lastEditorInGroup",
+    "key": "ctrl+0"
+  },
+  {
+    "command": "-r.runSourcewithEcho",
+    "key": "shift+cmd+enter",
+    "when": "editorTextFocus && editorLangId == 'r'"
+  },
+  {
+    "command": "-workbench.action.showCommands",
+    "key": "f1"
+  },
+  {
+    "command": "-r.runCurrentChunk",
+    "key": "shift+cmd+enter",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  {
+    "command": "-r.runAboveChunks",
+    "key": "alt+cmd+p",
+    "when": "editorTextFocus && editorLangId == 'rmd'"
+  },
+  {
+    "command": "-markdown.extension.onShiftEnterKey",
+    "key": "shift+enter",
+    "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "command": "-rmarkdown.rmarkdown-core.Knit",
+    "key": "shift+cmd+k",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "-quarto.runAllCells",
+    "key": "alt+cmd+r",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "command": "-quarto.runCellsAbove",
+    "key": "shift+alt+cmd+p",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "command": "-quarto.runCellsBelow",
+    "key": "shift+alt+cmd+n",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "command": "-quarto.runCurrentCell",
+    "key": "shift+cmd+enter",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "command": "-quarto.runNextCell",
+    "key": "alt+cmd+n",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "command": "-quarto.runPreviousCell",
+    "key": "alt+cmd+p",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "command": "-quarto.renderShortcut",
+    "key": "shift+cmd+k"
+  },
+  {
+    "command": "-quarto.insertCodeCell",
+    "key": "shift+cmd+i"
+  },
+  {
+    "command": "-extension.advancedNewFile",
+    "key": "alt+cmd+n"
+  },
+  {
+    "command": "-workbench.action.terminal.focusNextPane",
+    "key": "alt+cmd+right",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "key": "alt+cmd+left",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "command": "-workbench.action.terminal.clear",
+    "key": "cmd+k",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "command": "-editor.action.moveSelectionToNextFindMatch",
+    "key": "cmd+k cmd+d",
+    "when": "editorFocus"
+  },
+  {
+    "command": "-editor.action.insertLineAfter",
+    "key": "cmd+enter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-markdown.extension.onCtrlEnterKey",
+    "key": "cmd+enter",
+    "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "command": "-workbench.debug.action.toggleRepl",
+    "key": "shift+cmd+y",
+    "when": "workbench.panel.repl.view.active"
+  },
+  {
+    "command": "-editor.detectLanguage",
+    "key": "shift+alt+d",
+    "when": "editorTextFocus && !notebookEditable"
+  },
+  {
+    "command": "-notebook.cell.detectLanguage",
+    "key": "shift+alt+d",
+    "when": "notebookCellEditable && notebookEditable"
+  },
+  {
+    "command": "-editor.action.toggleTabFocusMode",
+    "key": "cmd+l cmd+m",
+    "when": "textInputFocus && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "command": "-workbench.action.terminal.sendSequence",
+    "key": "ctrl+space",
+    "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+  },
+  {
+    "command": "-rewrap.rewrapComment",
+    "key": "alt+q",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "-workbench.action.terminal.quickFix",
+    "key": "cmd+[Period]",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "command": "-workbench.action.reloadWindow",
+    "key": "cmd+r",
+    "when": "isDevelopment"
+  },
+  {
+    "command": "-workbench.action.showCommands",
+    "key": "shift+cmd+p"
+  },
+  {
+    "command": "-extension.clipToHtml",
+    "key": "ctrl+k [Period]",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "-extension.insertToc",
+    "key": "ctrl+k t",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "-extension.saveToHtml",
+    "key": "ctrl+k [Comma]",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "-code-runner.runCustomCommand",
+    "key": "ctrl+alt+k"
+  },
+  {
+    "key": "cmd+right",
+    "command": "-editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
+    "key": "cmd+left",
+    "command": "-editor.action.inlineSuggest.undo",
+    "when": "canUndoInlineSuggestion && !editorReadonly"
+  },
+  {
+    "key": "cmd+[BracketRight]",
+    "command": "-wallaby.showCommandPalette",
+    "when": "!wallaby.paused"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-editor.action.transposeLetters",
+    "when": "textInputFocus && !editorReadonly"
+  }
+]

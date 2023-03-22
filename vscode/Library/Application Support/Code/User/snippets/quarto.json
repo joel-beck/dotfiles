@@ -1,0 +1,44 @@
+{
+	// Has to be triggered explicitly right now with `Insert Snippet` => Click on Status
+	// Bar at the bottom
+	"YAML Header for Blog Posts": {
+		"prefix": "yaml blog post",
+		"body": [
+			"---",
+			"title: \"$1\"",
+			"author: \"Joel Beck\"",
+			"date: \"$2\"",
+			"categories: [\"$3\"]",
+			"image: \"$4\"",
+			"draft: ${5|true,false|}",
+			"---"
+		],
+	},
+	"Footer for Blog Posts": {
+		"prefix": "footer",
+		"body": [
+			"```{r}",
+			"#| child: /Users/joel/Documents/Studium/PublicProjects/blog/posts/_posts-footer.qmd",
+			"```"
+		],
+	},
+	"References for Blog Posts": {
+		"prefix": "references",
+		"body": [
+			"### References",
+			"",
+			"::: {#refs}",
+			":::"
+		],
+	},
+	"Callout Blocks": {
+		"prefix": "callout",
+		"body": [
+			":::{.callout-${1|note,tip,important,warning,caution|} collapse=\"${2|false,true|}\" appearance=\"${3|default,simple,minimal|}\"}",
+			"",
+			"$0",
+			"",
+			":::"
+		],
+	}
+}

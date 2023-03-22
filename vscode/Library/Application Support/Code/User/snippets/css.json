@@ -1,0 +1,91 @@
+{
+	// Place your snippets for css here. Each snippet is defined under a snippet name
+	"CSS Selector": {
+		"prefix": ["css", "selector css",],
+		"body": [
+			"${1|:root,section,p,h1,h2,header,footer,code,table,th,tr,li,ul,ol,a:link,a:hover|} {",
+			"\t${2:property}$0",
+			"}",
+		],
+	},
+	"CSS Property": {
+		"prefix": ["property css",],
+		"body": [
+			"${1|color,background-color,font-font-weight,font-family,text-align,vertical-align,display,margin-left,margin-right,text-decoration|}: $0;",
+		],
+	},
+
+
+	/* -------------------------------------------------------------------------- */
+	/*                               CSS Properties                               */
+	/* -------------------------------------------------------------------------- */
+
+	"Color": {
+		"prefix": ["color css",],
+		"body": [
+			"color: $1;$0",
+		],
+	},
+	"Background Color": {
+		"prefix": ["background color css",],
+		"body": [
+			"background color: $1;$0",
+		],
+	},
+	"Font Size": {
+		"prefix": ["font-size css",],
+		"body": [
+			"font-size: $1;$0",
+		],
+	},
+	"Font Weight": {
+		"prefix": ["font-weight css",],
+		"body": [
+			"font-weight: $1;$0",
+		],
+	},
+	"Font Family": {
+		"prefix": ["font-family css",],
+		"body": [
+			"font-family: $1;$0",
+		],
+	},
+	"Text Align": {
+		"prefix": ["text-align css",],
+		"body": [
+			"text-align: $1;$0",
+		],
+	},
+	"Vertical Align": {
+		"prefix": ["vertical-align css",],
+		"body": [
+			"vertical-align: $1;$0",
+		],
+	},
+	"Display": {
+		"prefix": ["display css",],
+		"body": [
+			"display: ${1:table-cell};$0",
+		],
+	},
+	"Margin Left": {
+		"prefix": ["margin-left css",],
+		"body": [
+			"margin-left: $1;$0",
+		],
+	},
+	"Margin Right": {
+		"prefix": ["margin-right css",],
+		"body": [
+			"margin-right: $1;$0",
+		],
+	},
+	"Text Decoration": {
+		"prefix": ["text-decoration css",],
+		"body": [
+			"text-decoration: $1;$0",
+		],
+	},
+}
+
+

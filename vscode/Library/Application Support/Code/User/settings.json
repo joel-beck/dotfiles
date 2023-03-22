@@ -1,0 +1,1581 @@
+{
+  // SUBSECTION: Menu Bar
+  "ShortcutMenuBar.beautify": false,
+  "ShortcutMenuBar.findReplace": false,
+  "ShortcutMenuBar.goToDefinition": true,
+  "ShortcutMenuBar.navigateBack": false,
+  "ShortcutMenuBar.navigateForward": false,
+  "ShortcutMenuBar.openFilesList": false,
+  "ShortcutMenuBar.toggleTerminal": false,
+  // SECTION: Language Specific Settings
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[latex]": {
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+      "comments": true,
+      "other": true,
+      "strings": true
+      // "comments": false,
+      // "other": false,
+      // "strings": false
+    },
+    "editor.quickSuggestionsDelay": 1000
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.quickSuggestions": {
+      "comments": true,
+      "other": true,
+      "strings": true
+      // "comments": false,
+      // "other": false,
+      // "strings": false
+    },
+    "editor.quickSuggestionsDelay": 1000
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": true,
+      "source.organizeImports.ruff": true
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "on",
+      "strings": "on"
+    }
+  },
+  "[r]": {
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
+  },
+  "[rmd]": {
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "[toml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "bodil.prettier-toml",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      // do not remove unused imports on save
+      "source.organizeImports": false,
+      "source.sortImports": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "on",
+      "strings": "on"
+    }
+  },
+  "autoDocstring.docstringFormat": "numpy-notypes",
+  "autoDocstring.startOnNewLine": true,
+  "breadcrumbs.enabled": false,
+  // SUBSECTION: Spell Checker
+  "cSpell.customDictionaries": {
+    "custom-dictionary-user": {
+      "addWords": true,
+      "name": "custom-dictionary-user",
+      // "path": "~/.cspell/machine_learning_spelling.txt",
+      "scope": "user"
+    }
+  },
+  "cSpell.enabled": false,
+  "cSpell.language": "en,de-de",
+  "cSpell.showStatus": false,
+  // SUBSECTION: Code Runner
+  "code-runner.clearPreviousOutput": true,
+  // code runner works with numpy in liesel virtual environment, where numpy is installed with pip,
+  // does not work in virtual environments, where numpy is installed with conda :(
+  // conda activate code-runner => works when python installed with conda and numpy, pandas, etc. installed with pip
+  "code-runner.executorMap": {
+    "python": "\"$pythonPath\" $fullFileName"
+  },
+  "code-runner.executorMapByFileExtension": {
+    ".ahk": "autohotkey",
+    ".au3": "autoit3",
+    ".cr": "crystal",
+    ".csproj": "dotnet run --project",
+    ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    ".dart": "dart",
+    ".exs": "elixir",
+    ".fsproj": "dotnet run --project",
+    ".hs": "runhaskell",
+    ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    ".jl": "julia",
+    ".js": "/usr/bin/env osascript -l JavaScript",
+    ".kit": "kitc --run",
+    ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+    ".kts": "kotlinc -script",
+    ".lisp": "sbcl --script",
+    ".ml": "ocaml",
+    ".nim": "nim compile --verbosity:0 --hints:off --run",
+    ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".ring": "ring",
+    ".rkt": "racket",
+    ".sass": "sass --style expanded",
+    ".scala": "scala",
+    ".scm": "csi -script",
+    ".sml": "cd $dir && sml $fileName",
+    ".v": "v run",
+    ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+    ".vbs": "cscript //Nologo",
+    ".vsh": "v run"
+  },
+  "code-runner.fileDirectoryAsCwd": true,
+  "code-runner.runInTerminal": false,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.showRunIconInEditorTitleMenu": false,
+  "code-runner.showStopIconInEditorTitleMenu": false,
+  // SECTION: Status Bar Commands
+  // global status bar items -> priority 2 (keep on the left side)
+  // file specific status bar items -> priority 1
+  // if items should stick to the right side -> priority 0
+  "commands.commands": [
+    // SUBSECTION: Global Status Bar Items
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "editor.action.insertSnippet",
+      "priority": 2,
+      "text": "Snippets",
+      "tooltip": "Insert Snippet from Command Palette"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "editor.action.inspectTMScopes",
+      "priority": 2,
+      "text": "Dev Mode",
+      "tooltip": "Inspect Elements in Developer Mode"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "workbench.action.showRuntimeExtensions",
+      "priority": 2,
+      "text": "Startup",
+      "tooltip": "Show Startup Time of Enabled Extensions"
+    },
+    // {
+    //   "alignment": "left",
+    //   "color": "#dddcd7ce",
+    //   "command": "deleteFile",
+    //   "priority": 2,
+    //   "text": "Delete",
+    //   "tooltip": "Delete File"
+    // },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "revealFileInOS",
+      "priority": 2,
+      "text": "Finder",
+      "tooltip": "Open Current File in Finder"
+    },
+    // Keep Toggle Settings on the right side, i.e. as last item -> set priority low
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "settingsOnFire.toggleSettings",
+      "priority": 0,
+      "text": "Toggle Settings",
+      "tooltip": "Toggle Settings with 'Settings on Fire' Extension"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "cSpell.toggleEnableSpellChecker",
+      "priority": 2,
+      "text": "Spell Checker",
+      "tooltip": "Toggle Spell Checker"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "editor.action.revealDefinitionAside",
+      "priority": 2,
+      "text": "Definition ->",
+      "tooltip": "Open Definition to the Side"
+    },
+    // SUBSECTION: File Specific Status Bar Items
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "notebook.formatCell",
+      "filterFileRegex": ".*\\.ipynb",
+      "priority": 1,
+      "text": "Format Cell",
+      "tooltip": "Format Cell of Jupyter Notebook"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "notebook.format",
+      "filterFileRegex": ".*\\.ipynb",
+      "priority": 1,
+      "text": "Format Notebook",
+      "tooltip": "Format Jupyter Notebook"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "python.sortImports",
+      "filterFileRegex": ".*\\.ipynb",
+      "priority": 1,
+      "text": "Sort Imports",
+      "tooltip": "Sort Python Imports"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "extension.insertToc",
+      "filterFileRegex": ".*\\.md",
+      "priority": 1,
+      "text": "TOC",
+      "tooltip": "Add Table of Contents"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "extension.markdown-pdf.html",
+      "filterFileRegex": ".*\\.md",
+      "priority": 1,
+      "text": "HTML",
+      "tooltip": "Convert Markdown Document to HTML"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "extension.markdown-pdf.pdf",
+      "filterFileRegex": ".*\\.md",
+      "priority": 1,
+      "text": "PDF",
+      "tooltip": "Convert Markdown Document to PDF"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "html.showPreviewToSide",
+      "filterFileRegex": ".*\\.html",
+      "priority": 1,
+      "text": "HTML Preview",
+      "tooltip": "Open HTML Preview to the Side"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "sortLines.sortLinesCaseInsensitive",
+      "filterFileRegex": "\\.gitignore",
+      "priority": 1,
+      "text": "Sort",
+      "tooltip": "Sort all Lines in File in Ascending Order"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "sortJSON.sortJSONType",
+      "filterFileRegex": ".*\\.(json|draftsTheme)",
+      "priority": 1,
+      "text": "JSON Type",
+      "tooltip": "Sort JSON File by Type (Top Level Keys)"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "sortJSON.sortJSON",
+      "filterFileRegex": ".*\\.(json|draftsTheme)",
+      "priority": 1,
+      "text": "JSON Keys",
+      "tooltip": "Sort JSON File by Keys (Nested Keys)"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "sortJSON.sortJSONValuesReverse",
+      "filterFileRegex": ".*\\.(json|draftsTheme)",
+      "priority": 1,
+      "text": "JSON Values",
+      "tooltip": "Sort JSON File by Values"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "multiCommand.OpenRTerminalRight",
+      "filterFileRegex": ".*\\.(r|rmd|qmd)",
+      "priority": 1,
+      "text": "R Terminal",
+      "tooltip": "Open new R Terminal in Right Editor"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "r.launchAddinPicker",
+      "filterFileRegex": ".*\\.(r|rmd|qmd)",
+      "priority": 1,
+      "text": "R Addins",
+      "tooltip": "Open RStudio Addins Pallette"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "r.helpPanel.updateInstalledPackages",
+      "filterFileRegex": ".*\\.(r|rmd|qmd)",
+      "priority": 1,
+      "text": "R Packages",
+      "tooltip": "Update all installed R Packages"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "r.knitRmdToAll",
+      "filterFileRegex": ".*\\.rmd",
+      "priority": 1,
+      "text": "Knit All",
+      "tooltip": "Knit to All Formats"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "r.knitRmdToPdf",
+      "filterFileRegex": ".*\\.rmd",
+      "priority": 1,
+      "text": "Knit PDF",
+      "tooltip": "Knit to PDF"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "r.knitRmdToHtml",
+      "filterFileRegex": ".*\\.rmd",
+      "priority": 1,
+      "text": "Knit HTML",
+      "tooltip": "Knit to HTML"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "quarto.renderPDF",
+      "filterFileRegex": ".*\\.qmd",
+      "priority": 1,
+      "text": "Render PDF",
+      "tooltip": "Render to PDF"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "quarto.renderHTML",
+      "filterFileRegex": ".*\\.qmd",
+      "priority": 1,
+      "text": "Render HTML",
+      "tooltip": "Render to HTML"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "quokka.makeQuokkaFromExistingFile",
+      "filterFileRegex": ".*\\.(t|j)s",
+      "priority": 1,
+      "text": "Quokka",
+      "tooltip": "Start Quokka.js on File"
+    }
+  ],
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.console.acceptSuggestionOnEnter": "on",
+  "debug.console.closeOnEnd": true,
+  "debug.console.fontFamily": "'CaskaydiaCove NF'",
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "debug.terminal.clearBeforeReusing": true,
+  "docsView.documentationView.updateMode": "sticky",
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "phase",
+  "editor.fontFamily": "'CaskaydiaCove NF', 'Jetbrains Mono NF', 'MesloLGS NF', 'Jetbrains Mono',  'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.matchBrackets": "always",
+  "editor.maxTokenizationLineLength": 2000,
+  "editor.minimap.maxColumn": 100,
+  "editor.minimap.showSlider": "always",
+  "editor.parameterHints.cycle": true,
+  "editor.peekWidgetDefaultFocus": "editor",
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "other": "on",
+    "strings": "on"
+  },
+  "editor.quickSuggestionsDelay": 0,
+  "editor.rulers": [90, 100],
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.semanticTokenColorCustomizations": {
+    "[Cobalt2]": {
+      "rules": {
+        // change color of module names
+        "module": "#FF9D00",
+        // change color of properties
+        // "property": "#2adfffef"
+        "property": "#59e03a"
+      }
+    },
+    "enabled": true
+  },
+  "editor.showFoldingControls": "always",
+  "editor.stickyScroll.enabled": true,
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.preview": true,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showDeprecated": false,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.showWords": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+  // SECTION: Syntax Highlighting
+  "editor.tokenColorCustomizations": {
+    "[Cobalt2]": {
+      "textMateRules": [
+        {
+          "scope": [
+            // Python
+            "meta.function-call",
+            // R
+            "support.function.r",
+            "variable.function.r",
+            // Markdown
+            "entity.name.math.tex",
+            "markup.inline.raw.string.markdown",
+            "punctuation.definition.raw.markdown",
+            "punctuation.definition.string.begin.markdown",
+            "punctuation.definition.string.end.markdown",
+            "string.other.link.title.markdown",
+            // Quarto
+            "markup.inline.raw.string.quarto",
+            // Latex
+            "constant.character.math.tex",
+            "constant.other.general.math.tex",
+            "support.function.be.latex",
+            "support.function.emph.latex",
+            "support.function.general.latex",
+            "support.function.general.tex",
+            "support.function.section.latex",
+            "support.function.textbf.latex",
+            "support.function.textit.latex",
+            "support.function.texttt.latex"
+          ],
+          "settings": {
+            "foreground": "#FFC600"
+          }
+        },
+        {
+          // change color of property names in json files
+          "scope": [
+            // JSON
+            "support.type.property-name"
+          ],
+          "settings": {
+            "foreground": "#EECD3A"
+          }
+        },
+        {
+          // change color of headers in markdown
+          "scope": [
+            // Markdown
+            "entity.name.section.markdown",
+            "punctuation.definition.heading.markdown",
+            // Latex
+            "entity.name.section.latex",
+            // Quarto
+            "entity.name.section.quarto",
+            "punctuation.definition.heading.quarto"
+          ],
+          "settings": {
+            "foreground": "#FF9D00"
+          }
+        },
+        {
+          // change color of attributes in python, language identifier and backticks in
+          // markdown code blocks and values in YAML header
+          "scope": [
+            // Python
+            "meta.attribute.python",
+            // R
+            "entity.namespace.r",
+            // Markdown
+            "markup.bold.markdown",
+            "punctuation.definition.markdown",
+            "string.unquoted.plain.out.yaml",
+            // Quarto
+            "markup.bold.quarto",
+            // Latex
+            "markup.bold.textbf.latex",
+            "support.class.latex"
+          ],
+          "settings": {
+            "foreground": "#00BD00"
+          }
+        },
+        {
+          // change color of links to chapters in Table of Contents in Markdown
+          "scope": [
+            // Markdown
+            "markup.italic.markdown",
+            // Quarto
+            "markup.italic.quarto",
+            // Latex
+            "markup.italic.emph.latex",
+            "markup.italic.textit.latex"
+          ],
+          "settings": {
+            "foreground": "#00ED2A"
+          }
+        },
+        {
+          // change color of keywords, bold text and inline latex in markdown
+          "scope": [
+            // Python
+            "keyword.control",
+            // Markdown
+            "inline-dollars",
+            "punctuation.definition.math.begin.markdown",
+            "punctuation.definition.math.end.markdown",
+            // Latex
+            "punctuation.definition.string.begin.tex",
+            "punctuation.definition.string.end.tex",
+            // does not work right now
+            "punctuation.math.bracket.pair.big.tex"
+          ],
+          "settings": {
+            "foreground": "#FB94FF"
+          }
+        },
+        {
+          // keys in YAML header, chunk options in Rmd and Quarto
+          "scope": [
+            // YAML
+            "entity.name.tag.yaml",
+            // R Markdown & Quarto
+            "meta.embedded.block.r",
+            "fenced_code.block.language.markdown"
+          ],
+          "settings": {
+            "foreground": "#55a5fb"
+          }
+        },
+        {
+          "scope": [
+            // Latex
+            "constant.other.reference.label.latex",
+            "keyword.control.equation.align.latex",
+            "keyword.control.equation.newline.latex",
+            "variable.parameter.definition.label.latex"
+          ],
+          "settings": {
+            "foreground": "#43cdf7"
+          }
+        },
+        {
+          "scope": [
+            // Latex
+            "markup.raw.texttt.latex",
+            "meta.text.normal.tex"
+          ],
+          "settings": {
+            "foreground": "#00ffff"
+          }
+        },
+        {
+          "scope": [
+            // Markdown
+            "markup.inline.raw"
+          ],
+          "settings": {
+            "foreground": "#9effff"
+          }
+        },
+        {
+          // change color of variables in embedded python code blocks
+          "scope": [
+            // Python
+            "meta.embedded.block.python",
+            "meta.indexed-name.python",
+            "meta.item-access.arguments.python",
+            // Markdown
+            "constant.numeric.math.tex",
+            "meta.embedded.math.markdown",
+            "meta.function.math.tex",
+            // Quarto
+            "meta.paragraph.quarto",
+            // Latex
+            "meta.function.environment.general.latex",
+            "meta.function.environment.list.latex",
+            "support.class.math.block.tex",
+            "support.class.math.block.environment.latex"
+          ],
+          "settings": {
+            "foreground": "#ffffff"
+          }
+        }
+      ]
+    },
+    // global settings for all themes
+    // change comment color
+    "comments": "#be8b3d",
+    "textMateRules": [
+      {
+        // remove all italic font elements
+        "scope": [
+          "comment.block.documentation",
+          "comment.block",
+          "comment.line",
+          "comment",
+          "constant.character.escape",
+          "constant.character",
+          "constant.numeric.float",
+          "constant.numeric.hex",
+          "constant.numeric.integer",
+          "constant.numeric.octal",
+          "constant.numeric",
+          "constant.other",
+          "constant.regexp",
+          "constant.rgb-value",
+          "constant",
+          "emphasis",
+          "entity.name.class",
+          "entity.name.function",
+          "entity.name.method",
+          "entity.name.section",
+          "entity.name.selector",
+          "entity.name.tag",
+          "entity.name.type",
+          "entity.name",
+          "entity.other.attribute-name",
+          "entity.other.inherited-class",
+          "entity.other",
+          "entity",
+          "invalid.deprecated",
+          "invalid.illegal",
+          "invalid",
+          "keyword.control",
+          "keyword.operator.arithmetic",
+          "keyword.operator.assignment",
+          "keyword.operator.logical",
+          "keyword.operator.new",
+          "keyword.operator",
+          "keyword.other",
+          "keyword",
+          "markup.bold",
+          "markup.changed",
+          "markup.deleted",
+          "markup.heading",
+          "markup.inline.raw",
+          "markup.inserted",
+          "markup.italic",
+          "markup.list.numbered",
+          "markup.list.unnumbered",
+          "markup.list",
+          "markup.other",
+          "markup.quote",
+          "markup.raw",
+          "markup.underline.link",
+          "markup.underline",
+          "markup",
+          "meta.block",
+          "meta.cast",
+          "meta.class",
+          "meta.function-call",
+          "meta.function",
+          "meta.preprocessor",
+          "meta.return-type",
+          "meta.selector",
+          "meta.tag",
+          "meta.type.annotation",
+          "meta.type",
+          "meta",
+          "punctuation.definition.string.begin",
+          "punctuation.definition.string.end",
+          "punctuation.separator.continuation",
+          "punctuation.separator",
+          "punctuation.terminator",
+          "storage.modifier",
+          "storage.type",
+          "storage",
+          "string.interpolated",
+          "string.other",
+          "string.quoted.double",
+          "string.quoted.other",
+          "string.quoted.single",
+          "string.quoted.triple",
+          "string.quoted",
+          "string.regexp",
+          "string.unquoted",
+          "string",
+          "strong",
+          "support.class",
+          "support.constant",
+          "support.function",
+          "support.other",
+          "support.type.property-name",
+          "support.type",
+          "support.variable",
+          "support",
+          "variable.language",
+          "variable.name",
+          "variable.other.readwrite",
+          "variable.other",
+          "variable.parameter",
+          "variable"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.wordBasedSuggestions": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 88,
+  "emojisense.languages": {
+    "git-commit": true,
+    "markdown": true,
+    "plaintext": {
+      "emojiDecoratorsEnabled": false,
+      "markupCompletionsEnabled": false
+    },
+    "scminput": true
+  },
+  // makes code folding for notebook cells in python files possible
+  // found in github comment: https://github.com/microsoft/vscode-jupyter/issues/1527#issuecomment-1016056069
+  "explicitFolding.rules": {
+    "python": [
+      {
+        "foldEOF": true,
+        "separatorRegex": "^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])"
+      },
+      {
+        "indentation": true,
+        "offSide": true
+      }
+    ]
+  },
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.Rmd": "rmd",
+    "*.cfg": "cfg",
+    "*.draftsTheme": "jsonc",
+    "*.qmd": "quarto",
+    "*.rmd": "rmd",
+    "*.txt": "plaintext"
+  },
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "files.trimTrailingWhitespace": true,
+  "git.allowNoVerifyCommit": true,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "git.autoStash": true,
+  "git.autofetch": "all",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.mergeEditor": true,
+  "git.openRepositoryInParentFolders": "always",
+  "git.timeline.showUncommitted": true,
+  "git.useCommitInputAsStashMessage": true,
+  "gitHistory.includeRemoteBranches": true,
+  "github.copilot.enable": {
+    "*": true,
+    "javascript": true,
+    "jsonc": true,
+    "latex": false,
+    "markdown": true,
+    "plaintext": true,
+    "python": true,
+    "quarto": false,
+    "r": false,
+    "rmd": false,
+    "shellscript": true,
+    "typescript": true,
+    "yaml": true
+  },
+  "github.copilot.inlineSuggest.enable": true,
+  "gitlens.codeLens.scopes": ["document"],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.enabled": false,
+  // SUBSECTION: Grammarly
+  "grammarly.config.documentDialect": "american",
+  "grammarly.files.include": [
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt",
+    "**/*.md",
+    "**/*.tex"
+  ],
+  "html.format.wrapLineLength": 88,
+  "interactiveWindow.alwaysScrollOnNewCell": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.maxItemsComputed": 20000,
+  // SUBSECTION: Jupyter
+  "jupyter.askForKernelRestart": false,
+  "jupyter.exportWithOutputEnabled": true,
+  "jupyter.interactiveWindow.cellMarker.codeRegex": "^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
+  "jupyter.interactiveWindow.cellMarker.default": "#%%",
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
+  "jupyter.jupyterInterruptTimeout": 100,
+  "jupyter.pythonExportMethod": "commentMagics",
+  "jupyter.runStartupCommands": ["%load_ext autoreload", "%autoreload 2"],
+  "jupyter.stopOnError": false,
+  // SUBSECTION: LaTeX
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.aux",
+    "*.bbl",
+    "*.bcf",
+    "*.blg",
+    "*.fdb_latexmk",
+    "*.fls",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.log",
+    "*.lot",
+    "*.nav",
+    "*.out",
+    "*.run.xml",
+    "*.snm",
+    "*.synctex.gz",
+    "*.synctex.gz(busy)",
+    "*.synctex(busy)",
+    "*.toc",
+    "*.vrb"
+  ],
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  "latex-workshop.view.pdf.invertMode.brightness": 0.5,
+  "latex-workshop.view.pdf.viewer": "tab",
+  // SUBSECTION: Markdown Extensions
+  "markdown-pdf.headerTemplate": "<span class='title' style='display: none;'></span>",
+  "markdown-pdf.highlightStyle": "shades-of-purple.css",
+  "markdown-pdf.margin.left": "2cm",
+  "markdown-pdf.margin.right": "2cm",
+  "markdown-pdf.omitBackground": true,
+  "markdown-preview-github-styles.colorTheme": "system",
+  "markdown.experimental.editor.pasteLinks.enabled": true,
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdown.extension.orderedList.marker": "one",
+  "markdown.extension.print.theme": "dark",
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "markdown.extension.toc.levels": "1..4",
+  "markdown.preview.fontSize": 12,
+  "markdown.preview.typographer": true,
+  "markdownShiki.theme": "monokai",
+  "markdownShortcuts.icons.bold": false,
+  "markdownShortcuts.icons.bullets": false,
+  "markdownShortcuts.icons.italic": false,
+  "markdownShortcuts.icons.strikethrough": false,
+  "markdownShortcuts.italics.marker": "*",
+  "mdmath.outerspace": true,
+  "merge-conflict.diffViewPosition": "Below",
+  // SECTION: MultiCommand Keybindings
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.RenameFile",
+      "label": "⇧F2 Rename Current File",
+      "sequence": ["renameFile"]
+    },
+    {
+      "command": "multiCommand.DeleteFile",
+      "label": "Delete Current File",
+      "sequence": ["deleteFile"]
+    },
+    {
+      "command": "multiCommand.RevertMarkdownBold",
+      "label": "⌘⇧B Revert Markdown Bold",
+      "sequence": [
+        {
+          "args": {
+            "surround": "\\*\\*.*?\\*\\*"
+          },
+          "command": "selectby.regex"
+        },
+        {
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT/\\*\\*(.*?)\\*\\*/$1/}"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.RevertLatexBold",
+      "label": "⌘⇧B Revert Latex Bold",
+      "sequence": [
+        {
+          "args": {
+            "surround": "\\\\textbf{.*?}"
+          },
+          "command": "selectby.regex"
+        },
+        {
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT/\\\\textbf{(.*?)}/$1/}"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.RevertMarkdownItalic",
+      "label": "⌘⇧I Revert Markdown Italic",
+      "sequence": [
+        {
+          "args": {
+            "surround": "\\*.*?\\*"
+          },
+          "command": "selectby.regex"
+        },
+        {
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT/\\*(.*?)\\*/$1/}"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.RevertLatexItalic",
+      "label": "⌘⇧I Revert Latex Italic",
+      "sequence": [
+        {
+          "args": {
+            "surround": "\\\\emph{.*?}"
+          },
+          "command": "selectby.regex"
+        },
+        {
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT/\\\\emph{(.*?)}/$1/}"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.RevertMarkdownMonospace",
+      "label": "⌘⇧E Revert Markdown Monospace",
+      "sequence": [
+        {
+          "args": {
+            "surround": "`.*?`"
+          },
+          "command": "selectby.regex"
+        },
+        {
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT/`(.*?)`/$1/}"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.RevertLatexMonospace",
+      "label": "⌘⇧E Revert Latex Monospace",
+      "sequence": [
+        {
+          "args": {
+            "surround": "\\\\texttt{.*?}"
+          },
+          "command": "selectby.regex"
+        },
+        {
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT/\\\\texttt{(.*?)}/$1/}"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.RevertInlineMath",
+      "label": "⌘⇧L Revert Markdown and Latex Inline Math",
+      "sequence": [
+        {
+          "args": {
+            "surround": "\\$.*?\\$"
+          },
+          "command": "selectby.regex"
+        },
+        {
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT/\\$(.*?)\\$/$1/}"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.UpdateImports",
+      "label": "⌃I Update Imports",
+      "sequence": [
+        "cursorTop",
+        "jupyter.runcurrentcell",
+        "workbench.action.navigateBack"
+      ]
+    },
+    {
+      "command": "multiCommand.FormatCell",
+      "label": "Format Cell of Notebook",
+      "sequence": ["notebook.formatCell"]
+    },
+    {
+      "command": "multiCommand.FormatNotebook",
+      "label": "Format Notebook",
+      "sequence": ["notebook.format"]
+    },
+    {
+      "command": "multiCommand.RunCursorDown",
+      "label": "⌘↵ / ⌃↵ Run current line in Interactive Window and move Cursor to next line",
+      "sequence": ["jupyter.execSelectionInteractive", "cursorDown"]
+    },
+    {
+      "command": "multiCommand.RunUntilEmpty",
+      "label": "⌘⌥↵ Run Code Block until next empty line in Interactive Window",
+      "sequence": [
+        {
+          "args": {
+            "select": true,
+            "to": "nextBlankLine"
+          },
+          "command": "cursorMove"
+        },
+        "jupyter.execSelectionInteractive",
+        "cursorDown"
+      ]
+    },
+    {
+      "command": "multiCommand.InsertCellAbove",
+      "label": "⌃A Insert new Code Cell above current Cell",
+      "sequence": [
+        "jupyter.insertCellAbove",
+        {
+          "args": {
+            "snippet": "$0\n"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.InsertCellBelow",
+      "label": "⌃B Insert new Code Cell below current Cell",
+      "sequence": [
+        "jupyter.insertCellBelow",
+        {
+          "args": {
+            "snippet": "$0\n"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.SplitCells",
+      "label": "⌘⌃- / ⌘⌥I Split Code Cells in Interactive Mode on empty Line and move Cursor to End of Cell",
+      "sequence": [
+        {
+          "args": {
+            "snippet": "\n#%%"
+          },
+          "command": "editor.action.insertSnippet"
+        },
+        "jupyter.gotoNextCellInFile",
+        "cursorUp"
+      ]
+    },
+    {
+      "command": "multiCommand.NotebookRunFocusNext",
+      "label": "⌃⇧↵ Split Code Cells in Interactive Mode on empty Line and move Cursor to End of Cell",
+      "sequence": ["notebook.cell.executeAndSelectBelow", "notebook.cell.edit"]
+    },
+    {
+      "command": "multiCommand.CopyLineNoSelection",
+      "label": "⌘C Copy Current Line when Editor has no selection",
+      "sequence": [
+        "cursorHome",
+        "cursorEndSelect",
+        "editor.action.clipboardCopyAction",
+        "cursorRight"
+      ]
+    },
+    {
+      "command": "multiCommand.CutDeleteLineNoSelection",
+      "label": "⌘X Cut (and delete) Current Line when Editor has no selection",
+      "sequence": [
+        "cursorHome",
+        "cursorEndSelect",
+        "editor.action.clipboardCutAction",
+        "editor.action.deleteLines"
+      ]
+    },
+    {
+      "command": "multiCommand.CutKeepLineNoSelection",
+      "label": "⌘⇧X Cut (and keep) Current Line when Editor has no selection",
+      "sequence": [
+        "cursorHome",
+        "cursorEndSelect",
+        "editor.action.clipboardCutAction"
+      ]
+    },
+    {
+      "command": "multiCommand.PythonPrintLine",
+      "label": "⌥P Put print() Statement around code in current line",
+      "sequence": [
+        "cursorHome",
+        {
+          "args": {
+            "snippet": "print("
+          },
+          "command": "editor.action.insertSnippet"
+        },
+        "cursorEnd",
+        {
+          "args": {
+            "snippet": ")"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.PythonPrintSelection",
+      "label": "⌥P Put print() Statement around selected code",
+      "sequence": [
+        {
+          "args": {
+            "snippet": "print(${TM_SELECTED_TEXT})"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.TypescriptConsoleLogLine",
+      "label": "⌥P Put console.log() Statement around code in current line",
+      "sequence": [
+        "cursorHome",
+        {
+          "args": {
+            "snippet": "console.log("
+          },
+          "command": "editor.action.insertSnippet"
+        },
+        "cursorEnd",
+        {
+          "args": {
+            "snippet": ")"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.TypescriptConsoleLogSelection",
+      "label": "⌥P Put console.log() Statement around selected code",
+      "sequence": [
+        {
+          "args": {
+            "snippet": "console.log(${TM_SELECTED_TEXT})"
+          },
+          "command": "editor.action.insertSnippet"
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.QuoteList",
+      "label": "Quote each Line in Selected List separately",
+      "sequence": ["extension.quoteList"]
+    },
+    {
+      "command": "multiCommand.SortLines",
+      "label": "Sort Selected Lines in Ascending Order",
+      "sequence": ["editor.action.sortLinesAscending"]
+    },
+    {
+      "command": "multiCommand.SpellCheckerToggle",
+      "label": "Toggle Spell Checker",
+      "sequence": ["cSpell.toggleEnableSpellChecker"]
+    },
+    {
+      "command": "multiCommand.SpellCheckerAdd",
+      "label": "⌥A Add Word to Spell Checker",
+      "sequence": ["cSpell.addWordToUserDictionary"]
+    },
+    {
+      "command": "multiCommand.RunRmdChunkAdvance",
+      "label": "⌃↵ Run Current R Markdown Chunk and Move Cursor to Next Chunk",
+      "sequence": ["r.runCurrentChunk", "r.goToNextChunk"]
+    },
+    {
+      "command": "multiCommand.RunQuartoChunkAdvance",
+      "label": "⌃↵ Run Current Quarto Code Cell and Move Cursor to Next Code Cell",
+      "sequence": ["quarto.runCurrentCell", "quarto.goToNextCell"]
+    },
+    {
+      "command": "multiCommand.OpenRTerminalRight",
+      "interval": 300,
+      "label": "⌘⇧Ö Open New R Terminal in Right Editor Group",
+      "sequence": [
+        "r.createRTerm",
+        "workbench.action.terminal.moveToEditor",
+        "workbench.action.moveEditorToRightGroup",
+        "workbench.action.terminal.toggleTerminal",
+        "workbench.action.terminal.toggleTerminal"
+      ]
+    }
+  ],
+  // SUBSECTION: General Notebooks
+  "notebook.cellFocusIndicator": "border",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "notebook.consolidatedRunButton": true,
+  "notebook.editorOptionsCustomizations": null,
+  "notebook.outline.showCodeCells": false,
+  "notebook.output.textLineLimit": 1000,
+  "notebook.showFoldingControls": "always",
+  // SUBSECTION: Outline
+  "outline.icons": false,
+  "outline.showBooleans": false,
+  "outline.showConstants": false,
+  "outline.showVariables": false,
+  "path-intellisense.showHiddenFiles": true,
+  "postcssSorting.config": {
+    "properties-order": "alphabetical"
+  },
+  "projectManager.sortList": "Name",
+  // SUBSECTION: Python
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/mambaforge/base/envs/py11-ds/bin/python",
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.linting.flake8Enabled": false,
+  // "python.linting.flake8Args": [
+  //   "--disable=wildcard-import",
+  //   "--disable=missing-docstring"
+  // ],
+  "python.linting.mypyCategorySeverity.error": "Information",
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintArgs": [
+    "--disable=wildcard-import",
+    "--disable=missing-docstring"
+  ],
+  "python.linting.pylintEnabled": false,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.activateEnvironment": true,
+  "python.testing.promptToConfigure": false,
+  "python.testing.pytestEnabled": true,
+  "quarto.cells.background.dark": "#80808015",
+  "quarto.mathjax.theme": "dark",
+  "quokka.automaticRestart": true,
+  "quokka.showValueOnMultilineSelection": true,
+  // SUBSECTION: R
+  "r.alwaysUseActiveTerminal": true,
+  "r.bracketedPaste": true,
+  "r.lsp.diagnostics": false,
+  "r.plot.useHttpgd": true,
+  "r.rmarkdown.knit.focusOutputChannel": false,
+  "r.rpath.mac": "/usr/local/bin/R",
+  "r.rterm.mac": "/opt/homebrew/Caskroom/miniforge/base/bin/radian",
+  "r.session.levelOfObjectDetail": "Normal",
+  "r.workspaceViewer.showObjectSize": true,
+  "rainbow_csv.autodetect_separators": ["\t", ",", "|"],
+  "rewrap.wrappingColumn": 88,
+  "ruff.args": ["--ignore ANN101, N803, N806"],
+  "ruff.organizeImports": true,
+  "search.mode": "reuseEditor",
+  "security.workspace.trust.enabled": false,
+  // SUBSECTION: Toggle Settings
+  "settingsOnFire.toggle": {
+    "GitHub Copilot": {
+      "off": {
+        "_label": "On -> Off",
+        "github.copilot.inlineSuggest.enable": false
+      },
+      "on": {
+        "_label": "Off -> On",
+        "github.copilot.inlineSuggest.enable": true
+      }
+    },
+    "MyPy Linting": {
+      "off": {
+        "_label": "On -> Off",
+        "python.linting.mypyEnabled": false
+      },
+      "on": {
+        "_label": "Off -> On",
+        "python.linting.mypyEnabled": true
+      }
+    },
+    "Python Inline Type Hints": {
+      "off": {
+        "_label": "On -> Off",
+        "python.analysis.inlayHints.variableTypes": false
+      },
+      "on": {
+        "_label": "Off -> On",
+        "python.analysis.inlayHints.variableTypes": true
+      }
+    }
+  },
+  "sortLines.sortEntireFile": true,
+  "sourcery.token": "user_dKXek2qszr41_hqMntSwm64juLF9btvkxoDXbihDcm9npywM3CMDCSxhtVU",
+  "subtleBrackets.disableNative": false,
+  // SUBSECTION: Terminal
+  "terminal.explorerKind": "integrated",
+  "terminal.external.osxExec": "warp.app",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.rightClickBehavior": "paste",
+  "terminal.integrated.tabs.enabled": true,
+  // SUBSECTION: Test Explorer
+  "testExplorer.errorDecoration": true,
+  "testExplorer.errorDecorationHover": true,
+  "testExplorer.gutterDecoration": true,
+  "testExplorer.hideEmptyLog": true,
+  "testExplorer.showCollapseButton": true,
+  "testExplorer.showOnRun": false,
+  "testExplorer.useNativeTesting": false,
+  // SUBSECTION: Todo Tree
+  "todo-tree.filtering.includeHiddenFiles": true,
+  "todo-tree.general.revealBehaviour": "end of todo",
+  "todo-tree.general.schemes": [
+    "file",
+    "ssh",
+    "untitled",
+    "vscode-notebook-cell",
+    "vscode-userdata",
+    "output"
+  ],
+  "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+  "todo-tree.general.tags": [
+    "SECTION",
+    "SUBSECTION",
+    "BOOKMARK",
+    "NOTE",
+    "IMPORTANT",
+    "FIXME",
+    "TODO",
+    "COMMENT"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    // foreground: font color
+    // background: highlighting color
+    // icons: https://primer.style/octicons/
+    // options for type: ["tag", "tag-and-comment", "text", "line"]
+    "SECTION": {
+      "background": "#ff9d00",
+      "borderRadius": "4px",
+      "foreground": "#000000",
+      "icon": "paper-airplane",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "SUBSECTION": {
+      "background": "#ffc600",
+      "borderRadius": "4px",
+      "foreground": "#000000",
+      "icon": "diff-renamed",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "BOOKMARK": {
+      "background": "#fb94ff",
+      "borderRadius": "4px",
+      "foreground": "#000000",
+      "icon": "bookmark",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "NOTE": {
+      "background": "#59e03a",
+      "foreground": "#000000",
+      "icon": "file",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "IMPORTANT": {
+      "background": "#c26147",
+      "foreground": "#000000",
+      "icon": "alert",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "FIXME": {
+      "background": "#c26147",
+      "foreground": "#000000",
+      "icon": "alert",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "TODO": {
+      "background": "#2adfffef",
+      "borderRadius": "4px",
+      "foreground": "#000000",
+      "icon": "check-circle",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "COMMENT": {
+      "background": "#59e03a",
+      "foreground": "#000000",
+      "icon": "pencil",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    }
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.highlightDelay": 0,
+  // regex from https://github.com/Gruntfuggly/todo-tree/issues/129#issuecomment-606179578
+  // highlighting after '(', '//', '#', '%', '<-!--', '/*' or at beginning of line '^'
+  // plus zero or more spaces OR anywhere after at least one space
+  // NOTE: Tags not at beginning of line might lead to error-prone tree view, e.g.
+  // partial tags might be shown despite the setting "gutterIcon": false
+  "todo-tree.regex.regex": "(\\(|//|#|%|<!--|/\\*|^)\\s*($TAGS)|\\s+($TAGS)",
+  "todo-tree.tree.autoRefresh": false,
+  "todo-tree.tree.buttons.groupBySubTag": true,
+  "todo-tree.tree.buttons.viewStyle": false,
+  "todo-tree.tree.expanded": true,
+  "todo-tree.tree.scanMode": "workspace",
+  "todo-tree.tree.showCountsInTree": false,
+  "todo-tree.tree.trackFile": false,
+  "totalTypeScript.hiddenTips": ["function-return-type"],
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "typeChallenges.workspaceFolder": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-challenges",
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vitest.enable": true,
+  "vitest.showFailMessages": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsintellicode.features.python.deepLearning": "enabled",
+  "warmUp.changeCount": "30",
+  "warmUp.changeTypingMode": "words (against the clock)",
+  "warmUp.switchProgrammingLanguage": "python",
+  "window.newWindowDimensions": "inherit",
+  "window.openFoldersInNewWindow": "on",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootPath}",
+  // SUBSECTION: Editor Colors
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBorder": "#969a9e70",
+    "editorInlayHint.background": "#193549",
+    "editorInlayHint.foreground": "#a09999",
+    "list.focusBackground": "#6b6868",
+    "list.hoverBackground": "#6b6868",
+    "notebook.focusedCellBorder": "#999896",
+    "sash.hoverBorder": "#FFC600",
+    "scrollbarSlider.activeBackground": "#6b6868",
+    "scrollbarSlider.background": "#b7b6b9",
+    "scrollbarSlider.hoverBackground": "#6b6868",
+    "terminal.ansiBlack": "#0C0D0E",
+    "terminal.ansiBlue": "#3182BD",
+    "terminal.ansiBrightBlack": "#737475",
+    "terminal.ansiBrightBlue": "#3182BD",
+    "terminal.ansiBrightCyan": "#80B1D3",
+    "terminal.ansiBrightGreen": "#31A354",
+    "terminal.ansiBrightMagenta": "#756BB1",
+    "terminal.ansiBrightRed": "#E31A1C",
+    "terminal.ansiBrightWhite": "#FCFDFE",
+    "terminal.ansiBrightYellow": "#DCA060",
+    "terminal.ansiCyan": "#80B1D3",
+    "terminal.ansiGreen": "#31A354",
+    "terminal.ansiMagenta": "#756BB1",
+    "terminal.ansiRed": "#E31A1C",
+    "terminal.ansiWhite": "#B7B8B9",
+    "terminal.ansiYellow": "#DCA060",
+    "terminal.background": "#0C0D0E",
+    "terminal.foreground": "#B7B8B9",
+    "terminalCursor.background": "#B7B8B9",
+    "terminalCursor.foreground": "#B7B8B9",
+    "tree.indentGuidesStroke": "#ffffff"
+  },
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.titleScrollbarSizing": "large",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "workbench.hover.delay": 0,
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.layoutControl.type": "menu",
+  "workbench.list.smoothScrolling": true,
+  "workbench.settings.openDefaultSettings": false,
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always"
+}

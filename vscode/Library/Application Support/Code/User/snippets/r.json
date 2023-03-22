@@ -1,0 +1,66 @@
+{
+	// NOTE: Snippets in this File are also available within R Chunks of R Markdown (.rmd)
+	// Documents
+	"Imports": {
+		"prefix": "pacman",
+		"body": [
+			"pacman::p_load($1)",
+		]
+	},
+	"Function": {
+		"prefix": "function",
+		"body": [
+			"function($1) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"If-Condition": {
+		"prefix": "if",
+		"body": [
+			"if ($1) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"is.null": {
+		"prefix": "isnull",
+		"body": [
+			"if (is.null($1)) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"!is.null": {
+		"prefix": "notnull",
+		"body": [
+			"if (!is.null($1)) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"For-Loop": {
+		"prefix": "for",
+		"body": [
+			"for ($1 in $2) {",
+			"\t$0",
+			"}"
+		]
+	},
+	// SUBSECTION: Helper Functions, could at some point be moved to private package
+	"Function to Print Data on Checkpoint in Pipe": {
+		"prefix": "print checkpoint fun",
+		"body": [
+			"print_checkpoint <- function(tbl) {",
+			"\tprint(tbl)",
+			"\ttbl",
+			"  }"
+		]
+	},
+	"Line to Print Data on Checkpoint in Pipe": {
+		"prefix": "print checkpoint line",
+		"body": [
+			" print_checkpoint() |>",
+		]
+	},
+}

@@ -1,0 +1,34 @@
+{
+  "Insert SECTION Comment": {
+    "prefix": "SECTION",
+    "body": ["${LINE_COMMENT} SECTION: "]
+  },
+  "Insert SUBSECTION Comment": {
+    "prefix": "SUBSECTION",
+    "body": ["${LINE_COMMENT} SUBSECTION: "]
+  },
+  "Insert BOOKMARK Comment": {
+    "prefix": "BOOKMARK",
+    "body": ["${LINE_COMMENT} BOOKMARK: "]
+  },
+  "Insert NOTE Comment": {
+    "prefix": "NOTE",
+    "body": ["${LINE_COMMENT} NOTE: "]
+  },
+  "Insert IMPORTANT Comment": {
+    "prefix": "IMPORTANT",
+    "body": ["${LINE_COMMENT} IMPORTANT: "]
+  },
+  "Insert FIXME Comment": {
+    "prefix": "FIXME",
+    "body": ["${LINE_COMMENT} FIXME: "]
+  },
+  "Insert TODO Comment": {
+    "prefix": "TODO",
+    "body": ["${LINE_COMMENT} TODO: "]
+  },
+  "Insert COMMENT Comment": {
+    "prefix": "COMMENT",
+    "body": ["${LINE_COMMENT} COMMENT: "]
+  }
+}

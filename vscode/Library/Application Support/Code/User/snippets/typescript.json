@@ -1,0 +1,119 @@
+{
+  // SECTION: Imports
+  "Import Requests": {
+    "prefix": ["express import"],
+    "body": [
+      "import express, { Express, NextFunction, Request, Response } from \"express\";"
+    ]
+  },
+  "Import mongoose": {
+    "prefix": ["mongoose import"],
+    "body": ["import mongoose from \"mongoose\";"]
+  },
+  "Import Pino": {
+    "prefix": ["pino import"],
+    "body": ["import pino, { Logger } from \"pino\";"]
+  },
+  "Import Zod": {
+    "prefix": ["zod import"],
+    "body": ["import { z } from \"zod\";"]
+  },
+  // SECTION: Functions
+  "Function": {
+    "prefix": ["fun"],
+    "body": ["const $1 = function ($2): $3 {", "\t$0", "}"]
+  },
+  "Arrow Function": {
+    "prefix": ["arrow"],
+    "body": ["const $1 = ($2): $3 => {", "\t$0", "}"]
+  },
+  "Arrow": {
+    "prefix": ["=> "],
+    "body": ["=> {", "\t$0", "}"]
+  },
+  // SECTION: Conditionals
+  "If Condition": {
+    "prefix": ["if"],
+    "body": ["if (${1:cond}) {", "\t$0", "}"]
+  },
+  "If-Else Condition": {
+    "prefix": ["ifelse"],
+    "body": ["if (${1:cond}) {", "\t$0", "} else {", "\t", "}"]
+  },
+  "Else-If Clause": {
+    "prefix": ["elseif"],
+    "body": ["else if {", "\t$0", "}"]
+  },
+  "Else Clause": {
+    "prefix": ["else"],
+    "body": ["else {", "\t$0", "}"]
+  },
+  "Ternary Operator": {
+    "prefix": ["ternary"],
+    "body": ["${1:cond} ? ${2:yes} : ${3:no}", "\t$0"]
+  },
+  "Switch Case": {
+    "prefix": ["switch"],
+    "body": [
+      "switch (${1:cond}) {",
+      "\tcase $2:",
+      "\t\t$0",
+      "\t\tbreak;",
+      "\tcase :",
+      "\t\t",
+      "\t\tbreak;",
+      "\tcase :",
+      "\t\t",
+      "\t\tbreak;",
+      "\tdefault:",
+      "\t\t",
+      "}"
+    ]
+  },
+  // SECTION: Loops
+  "For In Loop": {
+    "prefix": ["forin"],
+    "body": ["for (const ${1:i} in ${2:arr}) {", "\t$0", "}"]
+  },
+  "For Of Loop": {
+    "prefix": ["forof"],
+    "body": ["for (const ${1:val} of ${2:arr}) {", "\t$0", "}"]
+  },
+  // SECTION: Utils
+  "Console Log": {
+    "prefix": ["console", "log"],
+    "body": ["console.log($0)"]
+  },
+  "Template Strings": {
+    "prefix": ["$"],
+    "body": ["${$0}"]
+  },
+  "Async-Await": {
+    "prefix": ["async"],
+    "body": [
+      "async () => {",
+      "  try {",
+      "    await $0",
+      "  } catch (error) {",
+      "    ",
+      "  }",
+      "};"
+    ]
+  },
+  "Try-Catch": {
+    "prefix": ["try"],
+    "body": ["try {", "  $0", "} catch (error) {", "  ", "}"]
+  },
+  "Generics": {
+    "prefix": ["<<"],
+    "body": ["<$1>$0"]
+  },
+  "Imports": {
+    "prefix": ["import"],
+    "body": ["import $2 from \"$1\"", "$0"]
+  },
+  "Request, Response, Next": {
+    "prefix": ["req"],
+    "body": ["req: Request, res: Response, next: NextFunction"]
+  }
+}

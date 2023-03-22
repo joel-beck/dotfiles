@@ -1,0 +1,43 @@
+{
+	// NOTE: These Snippets are available outside of Code Chunks in R Markdown (.rmd)
+	// Files
+	"R Markdown Setup": {
+		"prefix": "rmd setup",
+		"body": [
+			"---",
+			"title: \"$1\"",
+			"author: \"Joel Beck\"",
+			"output:",
+			"  bookdown::pdf_document2:",
+			"    highlight: tango",
+			"    toc: FALSE",
+			"    number_sections: FALSE",
+			"    df_print: tibble",
+			"    latex_engine: pdflatex",
+			"    keep_tex: FALSE",
+			"  bookdown::html_document2:",
+			"    theme: flatly",
+			"    highlight: pygments",
+			"    toc: TRUE",
+			"    toc_float: TRUE",
+			"    number_sections: FALSE",
+			"    df_print: tibble",
+			"  github_document: default",
+			"urlcolor: blue",
+			"---",
+			"",
+			"```{r setup, include=FALSE}",
+			"knitr::opts_chunk\\$set(",
+			"  echo = TRUE, warning = FALSE, message = FALSE, fig.align = \"center\",",
+			"  out.width = \"100%\", dpi = 300, fig.asp = 0.618, collapse = TRUE",
+			")",
+			"```",
+			"",
+			"$0"
+		]
+	},
+	"HTML Links (raw)": {
+		"prefix": "link (raw)",
+		"body": "<$1> $0"
+	}
+}
