@@ -1,0 +1,10 @@
+---
+name: Change user mail of git
+command: "git config --global user.email '{{mail}}'"
+tags:
+  - git
+description: Sets the user mail for git
+arguments:
+  - name: mail
+    description: The new user mail git should use
+    default_value: ~
