@@ -1,5 +1,4 @@
 # NOTE: The order of sourcing the files is important!
-
 export DOTFILES_DIRPATH="$HOME/dotfiles"
 # do not overwrite ZSH environment variable, used for oh my zsh!
 export ZSH_DIRPATH="$DOTFILES_DIRPATH/zsh"
