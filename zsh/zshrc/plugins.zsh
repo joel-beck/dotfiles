@@ -1,39 +1,17 @@
-plugins=(macos pdm poetry thefuck zsh-autosuggestions zsh-syntax-highlighting zsh-z)
+# SECTION: General Command Line Plugins
+# broot - Prettier Trees
+source /Users/joel/.config/broot/launcher/bash/br
 
-# BOOKMARK: zsh-autosuggestions
-# Type 'cat' in Terminal and press Shortcut to see correct symbols for 'bindkey' command
-# Accept Next Word: Option + Rightarrow or Cmd + Rightarrow
-# Accept whole Line: Rightarrow
-bindkey '^E' forward-word
+# fzf - Fuzzy Finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# BOOKMARK: thefuck
 # corrects typos
 eval $(thefuck --alias fuck)
 
-# BOOKMARK: zsh-completions
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
-# BOOKMARK: zsh-autopair
 # auto-closing quotes and parentheses
 source ~/.zsh-autopair/autopair.zsh
 autopair-init
 
-# BOOKMARK: fzf - Fuzzy Finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# BOOKMARK: broot - Prettier Trees
-source /Users/joel/.config/broot/launcher/bash/br
-
-# BOOKMARK: Source Oh my ZSH
-# NOTE: Has to be placed AFTER sourcing plugins
-source "$ZSH/oh-my-zsh.sh"
-
-# BOOKMARK: McFly
-# NOTE: Has to be placed AFTER sourcing oh-my-zsh.sh
-# NOTE: Does not work in RStudio => temporarily disabled
-# eval "$(mcfly init zsh)"
-
-# BOOKMARK: Exa Color Scheme
 export EXA_COLORS="\
 da=38;5;245:\
 di=38;5;14:\
@@ -57,3 +35,21 @@ tx=37:\
 su=37:\
 sf=37:\
 xa=37"
+
+# SECTION: Oh My Zsh Plugins
+plugins=(
+    fzf-zsh-plugin macos pdm poetry thefuck zsh-autosuggestions zsh-syntax-highlighting zsh-z
+)
+
+# NOTE for zsh-autosuggestions
+# Type 'cat' in Terminal and press Shortcut to see correct symbols for 'bindkey' command
+# Accept Next Word: Option + Rightarrow or Cmd + Rightarrow
+# Accept whole Line: Rightarrow
+bindkey '^E' forward-word
+
+# NOTE: Has to be placed AFTER sourcing plugins
+source "$ZSH/oh-my-zsh.sh"
+
+# NOTE: Has to be placed AFTER sourcing oh-my-zsh.sh
+# NOTE: Does not work in RStudio
+eval "$(mcfly init zsh)"
