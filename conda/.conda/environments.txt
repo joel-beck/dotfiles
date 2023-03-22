@@ -1,0 +1,4 @@
+
+/opt/homebrew/Caskroom/mambaforge/base/envs/py11-ds
+/opt/homebrew/Caskroom/mambaforge/base/envs/ds-py310
+/opt/homebrew/Caskroom/mambaforge/base
