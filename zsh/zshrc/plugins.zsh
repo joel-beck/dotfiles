@@ -1,4 +1,4 @@
-plugins=(git k macos pdm poetry thefuck zsh-autosuggestions zsh-syntax-highlighting zsh-z)
+plugins=(macos pdm poetry thefuck zsh-autosuggestions zsh-syntax-highlighting zsh-z)
 
 # BOOKMARK: zsh-autosuggestions
 # Type 'cat' in Terminal and press Shortcut to see correct symbols for 'bindkey' command
@@ -25,7 +25,8 @@ autopair-init
 source /Users/joel/.config/broot/launcher/bash/br
 
 # BOOKMARK: Source Oh my ZSH
-source $ZSH/oh-my-zsh.sh
+# NOTE: Has to be placed AFTER sourcing plugins
+source "$ZSH/oh-my-zsh.sh"
 
 # BOOKMARK: McFly
 # NOTE: Has to be placed AFTER sourcing oh-my-zsh.sh

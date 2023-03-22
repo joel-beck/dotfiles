@@ -1,8 +1,9 @@
 # NOTE: overwrite commands with modern version only if syntax remained the same (e.g.
 # grep / rg), otherwise print message to use the newer command (e.g. find / fd)
 
+# NOTE: Do not remove ALL aliases since this also removes e.g. `z`. Thus, disable aliases individually.
 # remove all default or plugin aliases
-unalias -a
+# unalias -a
 
 alias ..="cd .."
 alias ...="cd ../.."
