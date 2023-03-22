@@ -1,0 +1,241 @@
+# NOTE: Configuration docs: https://starship.rs/config/#prompt
+# IMPORTANT: Single and Double Quotes are NOT identical in TOML: see https://starship.rs/config/#strings.
+# Use double quotes for multiline format string and single quotes for everything else for less escaping!
+# NOTE: In Warp the prompt character and the actual text input cannot be on the same line!
+# This has nothing to do with starship. Thus, remove character from format string for now!
+# NOTE: Icons can be copied here: https://www.nerdfonts.com/cheat-sheet
+# SECTION: Global Settings
+# `fill` separates left and right aligned sections
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$python\
+$nodejs\
+$cmd_duration $time\
+"""
+# Don't print a new line at the start of the prompt
+add_newline = false
+# Timeout for commands executed by starship (in milliseconds) - default is 500
+# prevents warning on shell initialization
+command_timeout = 1000
+# A continuation prompt that displays two filled in arrows
+continuation_prompt = '▶▶ '
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+style = 'blue'
+home_symbol = ' ~'
+read_only = ' '
+read_only_style = 'red'
+truncate_to_repo = false
+# number of directories shown on path before truncating
+truncation_length = 3
+truncation_symbol = '…/'
+
+# SECTION: Git
+# see docs: https://starship.rs/config/#git-branch
+[git_branch]
+format = 'on [$symbol$branch]($style) '
+symbol = ' '
+style = 'bold green'
+
+# see docs: https://starship.rs/config/#git-commit
+[git_commit]
+commit_hash_length = 4
+tag_symbol = '🔖 '
+
+[git_metrics]
+format = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
+added_style = 'bold green'
+deleted_style = 'bold red'
+disabled = false
+
+[git_state]
+format = '[$state( $progress_current/$progress_total)]($style) '
+style = 'bold yellow'
+disabled = false
+
+# see docs: https://starship.rs/config/#git-status
+# to modify color put main command in square brackets and color in parentheses
+# if color is not modified, do NOT use square brackets, documented here: https://starship.rs/config/#text-group
+[git_status]
+format = '[$all_status$ahead_behind]($style) '
+style = 'bold yellow'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+# conflicted = '[!!\($count\)](red)'
+conflicted = '!!\($count\)'
+# deleted = '[--\($count\)](red)'
+deleted = '--\($count\)'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+# modified = '[**\($count\)](yellow)'
+modified = '**\($count\)'
+# staged = '[++\($count\)](green)'
+staged = '++\($count\)'
+# stashed = '[\$\(count\)](green)'
+stashed = '\$\(count\)'
+# untracked = '[??\($count\)](red)'
+untracked = '??\($count\)'
+# up_to_date = '[✓](bold green)'
+up_to_date = '✓'
+
+# SECTION: Modules - format | symbol | style | disabled
+[aws]
+symbol = '  '
+
+[buf]
+symbol = ' '
+
+[c]
+symbol = ' '
+
+[cmd_duration]
+format = '[$duration]($style)'
+style = 'bold yellow'
+# Shortest duration to show time for (in milliseconds)
+min_time = 1_000
+disabled = false
+
+[conda]
+symbol = ' '
+
+[dart]
+symbol = ' '
+
+[docker_context]
+symbol = ' '
+
+[elixir]
+symbol = ' '
+
+[elm]
+symbol = ' '
+
+[fill]
+symbol = ' '
+
+[fossil_branch]
+symbol = ' '
+
+[golang]
+symbol = ' '
+
+[guix_shell]
+symbol = ' '
+
+[haskell]
+symbol = ' '
+
+[haxe]
+symbol = '⌘ '
+
+[hg_branch]
+symbol = ' '
+
+[java]
+symbol = ' '
+
+[julia]
+symbol = ' '
+
+[lua]
+symbol = ' '
+
+[memory_usage]
+symbol = ' '
+
+[meson]
+symbol = '喝 '
+
+[nim]
+symbol = ' '
+
+[nix_shell]
+symbol = ' '
+
+[nodejs]
+format = '[$symbol($version )]($style)'
+symbol = ' '
+
+[os.symbols]
+Alpine = ' '
+Amazon = ' '
+Android = ' '
+Arch = ' '
+CentOS = ' '
+Debian = ' '
+DragonFly = ' '
+Emscripten = ' '
+EndeavourOS = ' '
+Fedora = ' '
+FreeBSD = ' '
+Garuda = '﯑ '
+Gentoo = ' '
+HardenedBSD = 'ﲊ '
+Illumos = ' '
+Linux = ' '
+Macos = ' '
+Manjaro = ' '
+Mariner = ' '
+MidnightBSD = ' '
+Mint = ' '
+NetBSD = ' '
+NixOS = ' '
+OpenBSD = ' '
+openSUSE = ' '
+OracleLinux = ' '
+Pop = ' '
+Raspbian = ' '
+Redhat = ' '
+RedHatEnterprise = ' '
+Redox = ' '
+Solus = 'ﴱ '
+SUSE = ' '
+Ubuntu = ' '
+Unknown = ' '
+Windows = ' '
+
+[package]
+symbol = ' '
+
+[pijul_channel]
+symbol = '🪺 '
+
+[python]
+format = '[${symbol}(${version} )(\[${virtualenv}\] )]($style)'
+symbol = ' '
+style = 'bold yellow'
+version_format = 'v${major}.${minor}'
+pyenv_version_name = false
+pyenv_prefix = 'pyenv '
+
+[rlang]
+symbol = 'ﳒ '
+
+[ruby]
+symbol = ' '
+
+[rust]
+symbol = ' '
+
+[scala]
+symbol = ' '
+
+[spack]
+symbol = '🅢 '
+
+[time]
+format = '[$time]($style)'
+style = 'bold white'
+disabled = false
