@@ -1,0 +1,936 @@
+#  _____________________________________________________________________________
+#  Edit Snippets with
+#  usethis::edit_rstudio_snippets(type = "markdown")
+
+
+#   ____________________________________________________________________________
+#   Markdown Syntax                                                         ####
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Add Links                                                               ####
+
+snippet link
+	[${1:text}](${2:url})
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Add Images                                                              ####
+
+snippet im
+	![${1:text}](${2:url})
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Add References                                                          ####
+
+# include preamble.tex in YAML header
+# output:
+#  bookdown::pdf_document2:
+#    includes:
+#      in_header: preamble.tex
+
+# preamble.tex: \usepackage[noabbrev]{cleveref}
+
+snippet ref
+	\Cref{${1:section-name}}
+snippet reffig
+	\Cref{fig:${1:figure-name}}
+snippet reftab
+	\Cref{tab:${1:table-name}}
+snippet refeq
+	\Cref{eq:${1:equation-name}}
+snippet refth
+	\Cref{thm:${1:theorem-name}}
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Markdown Comment														####
+
+snippet com
+	<!-- ${1} -->
+	$0
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### LaTeX Whitespace                                                        ####
+
+snippet wh
+
+	$~$
+
+	$0
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### HTML Whitespace                                                         ####
+
+snippet br
+	<br>
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Bold Text                                                               ####
+
+snippet bo
+	**${1}**$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Italic Text                                                             ####
+
+snippet it
+	*${1}*$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Inline Code Font                                                        ####
+
+snippet in
+	`${1}`$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Inline Latex Math                                                       ####
+
+snippet la
+	$${1}$$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Inline R Code                                                           ####
+
+snippet inl
+	`r `r \`${1}`$0
+# ---------------------------------------------
+
+
+
+#   ____________________________________________________________________________
+#   LaTeX Commands                                                          ####
+
+
+##%######################################################%##
+#                                                          #
+####                     Formatting                     ####
+#                                                          #
+##%######################################################%##
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Inline LaTeX        #### Keyboard Shortcut: Ctrl + Shift + L            ####
+
+snippet la
+	$`r \`$0$
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Equations						                    											        	####
+
+# unlabeled (default)
+snippet eq
+	<!--  -->
+	\$\$
+	\begin{aligned}
+	$0
+	\end{aligned}
+	\$\$
+	<!-- -->
+# labeled
+snippet eql
+	<!-- \$\$ -->
+	\begin{align}
+	$0
+	(\\#eq:)
+	\end{align}
+	<!-- \$\$ -->
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Centered/Split Equations                                                ####
+
+snippet cen
+	${1:left} \qquad \text{${2:and}} \qquad ${3:right}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Stacked Equations                                                       ####
+
+snippet stack
+	\stackrel{ ${1:above}}{ ${2:\longrightarrow}}$0
+snippet under
+	\underbrace{ ${1:above}}_{ ${2:below}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Align Symbol                                                            ####
+
+snippet al
+	&=$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### New Linw                                                                ####
+
+snippet nl
+	\\\\
+	$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### New Line + Align                                                        ####
+
+snippet nal
+	\\\\
+	&=$0
+# ------------------------------------------------
+
+snippet alpha
+	\alpha$0
+snippet beta
+	\beta$0
+snippet gamma
+	\gamma$0
+# ------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+##%######################################################%##
+#                                                          #
+####                    General Math                    ####
+#                                                          #
+##%######################################################%##
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Cases                                                                   ####
+
+snippet case2
+	\begin{cases} ${1:value1} & \textrm{${2:if}} \quad ${3:condition1} \\\ ${4:value2} &  \textrm{${5:if}} \quad ${6:condition2} \end{cases}$0
+snippet case3
+	\begin{cases} ${1:value1} & \textrm{${2:if}} \quad ${3:condition1} \\\ ${4:value2} &  \textrm{${5:if}} \quad ${6:condition2} \\\ ${7:value3} &  \textrm{${8:if}} \quad ${9:condition3} \end{cases}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Fractions                                                               ####
+
+snippet frac
+	\frac{ ${1:1}}{ ${2:n}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Collection of Variables                                                 ####
+
+snippet enum
+	${1:x}_{1}, \ldots, ${1}_{${2:n}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Sums                                                                    ####
+
+snippet sum
+	\sum_{${1:i}=${2:1}}^{${3:n}}$0
+snippet sumt
+	\sum_{t=${1:1}}^{${2:T}}$0
+snippet ser
+	\sum_{${1:i}=${2:0}}^{\infty}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Product                                                                 ####
+
+snippet prod
+	\prod_{${1:i=1}}^{${2:n}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Bold Math Symbols (\usepackage{bm})                                     ####
+
+snippet bf
+	\mathbf{ ${1:A}}$0
+snippet bs
+	\boldsymbol{ ${1:\varepsilon}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Text in Equation                                                        ####
+
+snippet te
+	\text{${1:text}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Binomial Coefficient                                                    ####
+
+snippet binom
+	\binom{${1:n}}{${2:k}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Indices                                                                 ####
+
+snippet sub
+	${1:symbol}_{${2:bottom}}$0
+snippet _
+	_{${1:}}$0
+snippet sup
+	${1:symbol}^{${2:top}}_{${3:bottom}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Parentheses & Absolute Value                                            ####
+
+snippet par
+	\left( ${1:} \right)$0
+snippet bra
+	\left[ ${1:} \right]$0
+snippet set
+	\left\{ ${1:} \right\}$0
+snippet abs
+	\left| ${1:} \right|$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Functions                                                               ####
+
+snippet sqrt
+	\sqrt{ ${1:x}}$0
+snippet ex
+	\exp \left( ${1:x} \right)$0
+snippet log
+	\log \left( ${1:x} \right)$0
+snippet ln
+	\ln \left( ${1:x} \right)$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Set Operators                                                           ####
+
+snippet \r
+	\mathbb{R}$0
+snippet \n
+	\mathbb{N}$0
+snippet \z
+	\mathbb{Z}$0
+snippet \q
+	\mathbb{Q}$0
+snippet \c
+	\mathbb{C}$0
+snippet inter
+	\cap$0
+snippet union
+	\cup$0
+snippet interb
+	\bigcap_{${1:i = 1}}^{${2:n}}$0
+snippet unionb
+	\bigcup_{${1:i = 1}}^{${2:n}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Max and Min                                                             ####
+
+snippet max
+	\operatorname*{max}_{ ${1:\theta \in \Theta}}$0
+snippet min
+	\operatorname*{min}_{ ${1:\theta \in \Theta}}$0
+snippet argmax
+	\operatorname*{arg\,max}_{ ${1:\theta \in \Theta}}$0
+snippet argmin
+	\operatorname*{arg\,min}_{ ${1:\theta \in \Theta}}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Arrows                                                                  ####
+
+snippet lr
+	\Leftrightarrow$0
+snippet Right
+	\Rightarrow$0
+snippet right
+	\rightarrow$0
+snippet longright
+	\longrightarrow$0
+snippet up
+	\uparrow$0
+snippet down
+	\downarrow$0
+# -----------------------------------------------------
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Commands without \                                                      ####
+
+snippet neq
+	\neq$0
+snippet leq
+	\leq$0
+snippet geq
+	\geq$0
+snippet mapsto
+	\mapsto$0
+snippet gr
+	>$0
+snippet le
+	<$0
+snippet cd
+	\cdot$0
+snippet cdots
+	\cdots$0
+snippet ld
+	\ldots,$0
+snippet mid
+	\mid$0
+snippet sim
+	\sim$0
+snippet times
+	\, \times \,$0
+snippet forall
+	\quad \forall \;$0
+snippet exists
+	\exists \;$0
+snippet prop
+	\propto$0
+snippet inf
+	\infty$0
+snippet qu
+	\quad$0
+snippet qq
+	\qquad$0
+# ------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##%######################################################%##
+#                                                          #
+####                     Statistics                     ####
+#                                                          #
+##%######################################################%##
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Functions                                                               ####
+
+snippet mean
+	\frac{1}{${1:n}}\sum_{${2:i} = 1}^{${1}}$0
+snippet prob
+	P \left( ${1} \right)$0
+snippet exp
+	\mathbb{E} \left[ ${1:X} \right]$0
+snippet var
+	\mathrm{Var} \left( ${1:X} \right)$0
+snippet cov
+	\mathrm{Cov} \left( ${1} \right)$0
+snippet cor
+	\mathrm{Cor} \left( ${1} \right)$0
+snippet bias
+	\mathrm{Bias} \left( ${1} \right)$0
+snippet mse
+	\mathrm{MSE} \left( ${1} \right)$0
+snippet norm
+	\mathcal{N}_{${1:n}} \left( ${2:0}, ${3:1} \right)$0
+snippet bar
+	\bar{ ${1:X}}$0
+snippet over
+	\overline{ ${1}}$0
+snippet til
+	\tilde{ ${1:X}}$0
+snippet widetilde
+	\widetilde{ ${1:X}}$0
+snippet hat
+	\hat{ ${1:\sigma}}$0
+snippet widehat
+	\widehat{ ${1:\theta}}$0
+# -----------------------------------------------------------
+
+
+
+
+
+
+##%######################################################%##
+#                                                          #
+####               Statistical Inference                ####
+#                                                          #
+##%######################################################%##
+
+snippet hatbf
+	\mathbf{\hat{ ${1:b}}}$0
+snippet hatbs
+	\boldsymbol{\hat{ ${1:\beta}}}$0
+snippet mle
+	\hat{ ${1:\theta}}_{\mathrm{ML}}$0
+snippet dens
+	f_{ ${1:\theta}}\left( ${2:x}\right)$0
+snippet joint
+	f_{${1:\theta}}\left( ${2:x_1}, \ldots, ${3:x_n}\right)$0
+snippet likelihood
+	\prod_{i=1}^{n} f_{${1:\theta}}(${2:x_i})$0
+# ----------------------------------------------------------
+
+
+
+
+
+##%######################################################%##
+#                                                          #
+####                   Linear Models                    ####
+#                                                          #
+##%######################################################%##
+
+snippet 0
+	\mathbf{0}_{${1:T}}$0
+snippet 1
+	\mathbf{1}_{${1:n}}$0
+snippet I
+	\mathbf{I}_{${1:n}}$0
+snippet a
+	\mathbf{A}$0
+snippet at
+	\mathbf{A}^T$0
+snippet h
+	\mathbf{H}$0
+snippet i-h
+	\mathbf{I}_n - \mathbf{H}$0
+snippet i-p
+	\mathbf{I}_n - \mathbf{P}_V$0
+snippet m
+	\mathbf{M}$0
+snippet l
+	\mathbf{L}$0
+snippet j
+	\mathbf{J}_{${1:n}}$0
+snippet p
+	\mathbf{P}$0
+snippet z
+	\mathbf{Z}$0
+snippet r
+	\mathbf{R}$0
+snippet c
+	\mathbf{C}$0
+snippet v
+	\mathbf{v}$0
+snippet V
+	\mathbf{V}$0
+snippet lambda
+	\lambda$0
+snippet Lambda
+	\mathbf{\Lambda}$0
+snippet sig
+	\sigma^2$0
+snippet Sig
+	\mathbf{\Sigma}$0
+snippet sigmai
+	\mathbf{\Sigma}^{-1}$0
+snippet X
+	\mathbf{X}$0
+snippet Xtilde
+	\tilde{\mathbf{X}}$0
+snippet Xstar
+	\mathbf{X}^*$0
+snippet x
+	\mathbf{x}$0
+snippet xtilde
+	\tilde{x}_{${1:t2}}$0
+snippet xtildebold
+	\tilde{\mathbf{x}}_{${1:2}}$0
+snippet xstar
+	\mathbf{x}^*$0
+snippet xt
+	\mathbf{x}^T$0
+snippet Xt
+	\mathbf{X}^T$0
+snippet x0
+	\mathbf{x}_0$0
+snippet y
+	\mathbf{y}$0
+snippet y_
+	y_{${1:t}}$0
+snippet ytilde
+	\tilde{y}_{${1:t}}$0
+snippet ytildebold
+	\tilde{\mathbf{y}}$0
+snippet ystar
+	\mathbf{y}^*$0
+snippet Y
+	\mathbf{Y}$0
+snippet b
+	\mathbf{b}$0
+snippet beta
+	\boldsymbol{\beta}$0
+snippet beta1
+	\beta_1$0
+snippet beta2
+	\beta_2$0
+snippet beta3
+	\beta_3$0
+snippet beta4
+	\beta_4$0
+snippet beta5
+	\beta_5$0
+snippet betai
+	\beta_i$0
+snippet betaj
+	\beta_j$0
+snippet betak
+	\beta_k$0
+snippet betahat
+	\hat{\boldsymbol{\beta}}$0
+snippet gamma
+	\boldsymbol{\gamma}$0
+snippet theta
+	\boldsymbol{\theta}$0
+snippet theta_
+	\theta_{${1:i}}$0
+snippet mu
+	\boldsymbol{\mu}$0
+snippet eps
+	\varepsilon$0
+snippet e
+	\mathbf{e}$0
+snippet et
+	\mathbf{e}^T$0
+snippet ehat
+	\hat{\mathbf{e}}$0
+snippet estar
+	\mathbf{e}^*$0
+snippet etilde
+	\tilde{e}_{${1:t}}$0
+snippet etildebold
+	\tilde{\mathbf{e}}$0
+snippet inv
+	^{-1}$0
+snippet xtx
+	\mathbf{X}^T \mathbf{X}$0
+snippet xtxi
+	\left( \mathbf{X}^T \mathbf{X} \right)^{-1}$0
+snippet xty
+	\mathbf{X}^T \mathbf{y}$0
+snippet xte
+	\mathbf{X}^T \mathbf{e}$0
+snippet ols
+	\left( \mathbf{X}^T \mathbf{X} \right)^{-1} \mathbf{X}^T \mathbf{y}$0
+snippet olstilde
+	\left( \tilde{\mathbf{X}}^T \tilde{\mathbf{X}} \right)^{-1} \tilde{\mathbf{X}} \tilde{\mathbf{y}}$0
+snippet gls
+	\left( \mathbf{X}^T \boldsymbol{\Psi}^{-1} \mathbf{X} \right)^{-1} \mathbf{X}^T \boldsymbol{\Psi}^{-1} \mathbf{y}$0
+snippet hatmat
+	\mathbf{X} \left( \mathbf{X}^T \mathbf{X} \right)^{-1} \mathbf{X}^T$0
+snippet yt
+	\mathbf{Y}^T$0
+snippet phi
+	\phi_{${1:i}}$0
+snippet Phi
+	\boldsymbol{\Phi}$0
+snippet psi
+	\psi_{${1:i}}$0
+snippet Psi
+	\boldsymbol{\Psi}$0
+snippet pi
+	\pi_{${1:i}}$0
+snippet rho
+	\rho_{${1:h}}$0
+snippet u
+	u_{${1:t}}$0
+# ----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##%######################################################%##
+#                                                          #
+####                   Linear Algebra                   ####
+#                                                          #
+##%######################################################%##
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Vectors and Matrices                                                    ####
+
+# Column Vectors
+snippet coltwo
+	\begin{pmatrix} ${1:1} \\\ ${2:1} \end{pmatrix}$0
+snippet colthree
+	\begin{pmatrix} ${1:1} \\\ ${2:1} \\\ ${3:1} \end{pmatrix}$0
+snippet colfour
+	\begin{pmatrix} ${1:1} \\\ ${2:1} \\\ ${3:1} \\\ ${4:1} \end{pmatrix}$0
+snippet colfive
+	\begin{pmatrix} ${1:1} \\\ ${2:1} \\\ ${3:1} \\\ ${4:1} \\\ ${5:1} \end{pmatrix}$0
+snippet coln
+	\begin{pmatrix} ${1:1} \\\ \vdots \\\ ${2:1} \end{pmatrix}$0
+# ------------------------------------------------------------------------------
+
+# Row Vectors
+snippet rowtwo
+	\begin{pmatrix} ${1:1} & ${2:1} \end{pmatrix}$0
+snippet rowthree
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} \end{pmatrix}$0
+snippet rowfour
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \end{pmatrix}$0
+snippet rowfive
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \end{pmatrix}$0
+snippet rown
+	\begin{pmatrix} ${1:1} & \cdots & ${2:1} \end{pmatrix}$0
+# ------------------------------------------------------------------------------
+
+# Matrices
+# --- Square Matrices
+
+snippet mattwo
+	\begin{pmatrix} ${1:1} & ${2:1} \\\ ${3:1} & ${4:1} \end{pmatrix}$0
+snippet matthree
+	\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} \\\ ${4:0} & ${5:1} & ${6:0} \\\ ${7:0} & ${8:0} & ${9:1} \end{pmatrix}$0
+snippet matfour
+	\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} & ${4:0} \\\ ${5:0} & ${6:1} & ${7:0} & ${8:0} \\\ ${9:0} & ${10:0} & ${11:1} & ${12:0} \\\ ${13:0} & ${14:0} & ${15:0} & ${16:1} \end{pmatrix}$0
+snippet matfive
+	\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} & ${4:0} & ${5:0} \\\ ${6:0} & ${7:1} & ${8:0} & ${9:0} & ${10:0}\\\ ${11:0} & ${12:0} & ${13:1} & ${14:0} & ${15:0} \\\ ${16:0} & ${17:0} & ${18:0} & ${19:1} & ${20:0} \\\ ${21:0} & ${22:0} & ${23:0} & ${24:0} & ${25:1} \end{pmatrix}$0
+snippet matn
+	\begin{pmatrix} ${1:1} & \cdots & ${2:0} \\\ \vdots & \ddots & \vdots \\\ ${3:0} & \cdots & ${4:1} \end{pmatrix}$0
+# --- Diagonal Matrices
+
+snippet diagtwo
+	\begin{pmatrix} ${1:1} & 0 \\\ o & ${2:1} \end{pmatrix}$0
+snippet diagthree
+	\begin{pmatrix} ${1:1} & 0 & 0 \\\ 0 & ${2:1} & 0 \\\ 0 & 0 & ${3:1} \end{pmatrix}$0
+snippet diagfour
+	\begin{pmatrix} ${1:1} & 0 & 0 & 0 \\\ 0 & ${2:1} & 0 & 0\\\ 0 & 0 & ${3:1} & 0 \\\ 0 & 0 & 0 & ${4:1} \end{pmatrix}$0
+snippet diagfive
+	\begin{pmatrix} ${1:1} & 0 & 0 & 0 & 0 \\\ 0 & ${2:1} & 0 & 0 & 0 \\\ 0 & 0 & ${3:1} & 0 & 0 \\\ 0 & 0 & 0 & ${4:1} & 0 \\\ 0 & 0 & 0 & 0 & ${5:1}  \end{pmatrix}$0
+snippet diagn
+	\begin{pmatrix} ${1:1} &  & 0 \\\  & \ddots &  \\\ 0 &  & ${2:1} \end{pmatrix}$0
+# --- Matrices of General Dimensions
+
+snippet matntwo
+	\begin{pmatrix} ${1:1} & ${2:1} \\\ \vdots & \vdots \\\ ${3:n} & ${4:n} \end{pmatrix}$0
+snippet matnthree
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} \\\ \vdots & \vdots & \vdots \\\ ${4:n} & ${5:n} & ${6:n} \end{pmatrix}$0
+snippet matnfour
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\\ \vdots & \vdots & \vdots & \vdots \\\ ${5:n} & ${6:n} & ${7:n} & ${8:n} \end{pmatrix}$0
+snippet matnfive
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\\ \vdots & \vdots & \vdots & \vdots & \vdots \\\ ${6:n} & ${7:n} & ${8:n} & ${9:n} & ${10:n} \end{pmatrix}$0
+# --- Rectangular Matrices
+
+snippet matfourtwo
+	\begin{pmatrix} ${1:1} & ${2:1} \\\ ${3:1} & ${4:1} \\\ ${5:1} & ${6:1} \\\ ${7:1} & ${8:1} \end{pmatrix}$0
+snippet matfivetwo
+	\begin{pmatrix} ${1:1} & ${2:1} \\\ ${3:1} & ${4:1} \\\ ${5:1} & ${6:1} \\\ ${7:1} & ${8:1} \\\ ${9:1} & ${10:1} \end{pmatrix}$0
+snippet mattwofour
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\\ ${5:1} & ${6:1} & ${7:1} & ${8:1} \end{pmatrix}$0
+snippet mattwofive
+	\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\\ ${6:1} & ${7:1} & ${8:1} & ${9:1} & ${10:1} \end{pmatrix}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Operators                                                               ####
+
+snippet det
+	\det \left( ${1:X} \right)$0
+snippet tr
+	\mathrm{tr} \left( ${1:X} \right)$0
+snippet rank
+	\mathrm{rank} \left( ${1:X} \right)$0
+snippet ker
+	\mathrm{ker} \left( ${1:X} \right)$0
+snippet adj
+	\mathrm{adj} \left( ${1:X} \right)$0
+snippet vecnorm
+	\left \Vert ${1:x} \right \Vert$0
+snippet span
+	\mathrm{span} \left( ${1:X} \right)$0
+snippet diag
+	\mathrm{diag} \left( ${1:1} \right)$0
+# ---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+##%######################################################%##
+#                                                          #
+####                      Analysis                      ####
+#                                                          #
+##%######################################################%##
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Derivatives                                                             ####
+
+snippet der
+	\frac{\mathrm{d} ${1:f}}{\mathrm{d}${2:x}}$0
+snippet dersec
+	\frac{\mathrm{d}^2 ${1:f}}{\mathrm{d}${2:x}^2}$0
+snippet del
+	\partial$0
+snippet partial
+	\frac{\partial ${1:f}}{\partial ${2:x}}$0
+snippet partialsec
+	\frac{\partial^2 ${1:f}}{\partial ${2:x}^2}$0
+snippet grad
+	\begin{pmatrix} \frac{ \partial ${1:f}}{ \partial ${2:x}_${3:1}} \\\ \vdots \\\ \frac{ \partial ${1}}{ \partial ${2}_${4:n}} \end{pmatrix}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Integrals                                                               ####
+
+snippet int
+	\int \; ${1:f} \left( ${2:\theta} \right) \, d${3:\theta}$0
+snippet intab
+	\int_{ ${1:a}}^{ ${2:b}} ${3:f}\left( ${4:x} \right) \,d${4}$0
+snippet intzi
+	\int_{0}^{\infty} ${1:f}\left( ${2:x} \right) \, d${2}$0
+snippet intzo
+	\int_{0}^{1} ${1:f}\left( ${2:x} \right) \, d${2}$0
+snippet intr
+	\int_{\mathbb{R}} ${1:f}\left( ${2:x} \right) \, d${2}$0
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Limits                                                                  ####
+
+snippet lim
+	\lim_{${1:n} \to ${2:\infty}}$0
+snippet plim
+	\mathrm{plim} \left( ${1:X} \right)$0
+# ----------------------------------------------------
+
+
+
+
+
+
+
+
+#   ____________________________________________________________________________
+#   R Markdown Themes                                                       ####
+
+snippet rmd
+	---
+	title: "${1:title}"
+	author: "Joel Beck"
+	output:
+	  bookdown::pdf_document2:
+	    highlight: tango  # pygments
+	    toc: FALSE
+	    number_sections: FALSE
+	    df_print: tibble
+	    latex_engine: pdflatex
+	    keep_tex: FALSE
+	  bookdown::html_document2:
+	    theme: flatly
+	    highlight: pygments  # kate
+	    toc: TRUE
+	    toc_float: TRUE
+	    number_sections: FALSE
+	    df_print: tibble
+	urlcolor: blue
+	---
+
+	```{r setup, include=FALSE}
+	knitr::opts_chunk\$set(
+	  echo = TRUE, warning = FALSE, message = FALSE, fig.align = "center",
+	  out.width = "100%", dpi = 300, fig.asp = 0.618, collapse = TRUE
+	)
+	```
+
+	```{r libraries}
+	$0
+	```
+# ----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   ____________________________________________________________________________
+#   xaringan Presentations                                                  ####
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Workflow                                                                ####
+
+snippet sl
+
+	---
+
+	$0
+snippet style
+	<style>
+
+	$0
+
+	</style>
+# ------------------------------------------------------------------------------
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Positioning                                                             ####
+
+snippet .le
+	.left[ ${1:}]
+snippet .c
+	.center[ ${1:}]
+snippet .r
+	.right[ ${1:}]
+# ------------------------------------------------------------------------------
+snippet .pl
+	.pull-left[
+	${1:}
+	]
+snippet .pr
+	.pull-right[
+	${1:}
+	]
+# ------------------------------------------------------------------------------
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Images                                                                  ####
+
+snippet .im
+	<img src="${1:link}" style="width: ${2:90%}" />$0
+snippet .bi
+	background-image: url(${1:link/filepath})$0
+snippet .bs
+	background-size: ${1:cover | contain | 80%}$0
+snippet .bp
+	background-position: ${1:95% 10%}$0
+# ------------------------------------------------------------------------------
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Blockquotes                                                             ####
+
+snippet .block
+	<blockquote> ${1:<pre> code </pre>} ${2:text} </blockquote>
+snippet .pre
+	<pre> {1:} </pre>
+snippet br
+	<br>
+# ------------------------------------------------------------------------------
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Footnotes                                                               ####
+
+snippet foot
+	.footnote[ ${1:}]
+snippet sup
+	<sup>${1:}</sup>
+snippet sub
+	<sub>${1:}</sub>
+# ------------------------------------------------------------------------------
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Custom CSS Classes                                                      ####
+
+snippet .t
+	.tiny[ $1]$0
+snippet .s
+	.small[ $1]$0
+snippet .m
+	.medium[ $1]$0
+snippet .la
+	.large[ $1]$0
+snippet .h
+	.huge[ $1]$0
+# ------------------------------------------------------------------------------
+
+##%######################################################%##
+#                                                          #
+####               xaringanExtra Package                ####
+#                                                          #
+##%######################################################%##
+
+snippet .panelset
+	.panelset[
+		.panel[
+			.panel-name[${1:name}] ${2:text}
+		] <!--end of panel-->
+	] <!--end of panelset-->
+# ------------------------------------------------------------------------------

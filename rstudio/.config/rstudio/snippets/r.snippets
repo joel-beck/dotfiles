@@ -1,0 +1,249 @@
+# Custom Snippets
+
+snippet pac
+	install.packages("${1:package}")
+# -----------------------------------------------------
+
+snippet fun
+	function(${1:var}) {
+		${2}
+	}
+# -----------------------------------------------------
+
+snippet isnull
+	if (is.null($1)) {
+		$0
+	}
+# -----------------------------------------------------
+
+snippet notnull
+	if (!is.null($1)) {
+		$0
+	}
+# -----------------------------------------------------
+
+snippet if
+	if (${1:condition}) {
+		${0}
+	}
+snippet elif
+	else if (${1:condition}) {
+		${0}
+	}
+snippet el
+	else {
+		${0}
+	}
+# -----------------------------------------------------
+
+
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### Pipes and Operators                                                     ####
+snippet pdol
+	%$% $0
+snippet pmult
+	%*% $0
+snippet pin
+	%in% $0
+snippet defor
+	`%||%` <- function(x, y) if (is.null(x)) y else x
+snippet por
+	%||% $0
+snippet mat
+	matrix(data = ${1:data}, nrow = ${2:3}, byrow = ${3:TRUE})
+# -----------------------------------------------------
+
+### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
+### ggplot                                                                  ####
+snippet theme
+	theme_minimal()
+snippet gg
+	ggplot(mapping = aes(x = ${1:x}, y = ${2:y})) +
+	${3} +
+# -----------------------------------------------------
+
+snippet kable_extra
+	kableExtra::kbl(
+	digits = 2, align = "c", escape = FALSE, booktabs = TRUE,
+	caption = ""
+	) %>%
+	kableExtra::kable_styling(
+	bootstrap_options = "striped", latex_options = "HOLD_position",
+	full_width = FALSE, position = "center"
+	) %>%
+	kableExtra::row_spec(row = 0, bold = TRUE) %>%
+	kableExtra::column_spec(column = 1, bold = TRUE)
+# -----------------------------------------------------
+
+snippet shapes
+	library(ggplot2)
+	library(dplyr)
+
+	tibble(x = 1:25, y = 1:25) %>%
+	ggplot(mapping = aes(x = x, y = y, shape = factor(x))) +
+	geom_point(size = 5, fill = "blue", color = "grey50") +
+	scale_shape_manual(values = 1:25) +
+	labs(shape = NULL, x = NULL, y = NULL) +
+	theme_minimal() +
+	theme(legend.position = "top",
+	      legend.direction = "horizontal")
+# -----------------------------------------------------
+snippet col_get
+	paletteer::paletteer_d(palette = "${1:package::palette}", n = ${2:n})
+# -----------------------------------------------------
+
+snippet col_fav
+	library(tidyverse)
+
+	c("#FAD510FF", "#F9B90AFF", "#FF7F0EFF", "#F98400FF",
+	"#D55E00", "#CB2314FF", "#00ba38", "#2CA02CFF",
+	"#34A74BFF", "#3D79F3FF", "#0172B1", "#0072B2",
+	"#004586FF", "#4B1F6FFF") %>%
+	scales::show_col(colours = ., labels = TRUE)
+
+	tibble(x = factor(1:13), y = rep(20, times = 13)) %>%
+	ggplot(mapping = aes(x = x, y = y, fill = x)) +
+	geom_col(show.legend = FALSE) +
+	scale_fill_manual(
+	values = c("#FAD510FF", "#F9B90AFF", "#FF7F0EFF", "#F98400FF",
+	"#D55E00", "#CB2314FF", "#00ba38", "#2CA02CFF",
+	"#34A74BFF", "#3D79F3FF", "#0172B1", "#0072B2",
+	"#004586FF", "#4B1F6FFF")
+	)
+# -----------------------------------------------------
+
+snippet distributions
+	pacman::p_load(
+	tidyverse,
+	tidytext,
+	ggtext,
+	patchwork
+	)
+
+	data <- ${1:data} %>%
+	drop_na() %>%
+	mutate(across(.cols = where(is.character), .fns = factor)) %>%
+	pivot_longer(cols = where(is.numeric),
+	names_to = "numeric",
+	values_to = "numeric_vals") %>%
+	pivot_longer(cols = where(is.factor),
+	names_to = "factor",
+	values_to = "factor_vals",
+	names_ptypes = list(factor = factor()))
+
+	p1 <- data %>%
+	ggplot(mapping = aes(x = numeric_vals)) +
+	geom_histogram(color = "white", bins = 20) +
+	scale_y_continuous(breaks = scales::breaks_extended(),
+	labels = scales::label_number_si()) +
+	scale_x_continuous(breaks = scales::breaks_extended()) +
+	facet_wrap(facets = vars(numeric), scales = "free") +
+	labs(title = "Distributions of numeric variables", x = NULL, y = NULL) +
+	theme_minimal() +
+	theme(strip.background = element_blank(),
+	strip.text = element_textbox(
+	size = 10, color = "white", fill = "#5D729D", box.color = "#4A618C",
+	halign = 0.5, linetype = 1, r = unit(5, units = "pt"),
+	width = unit(1.0, units = "npc"),
+	padding = margin(t = 5, r = 0, b = 3, l = 0),
+	margin = margin(t = 5, r = 5, b = 5, l = 5)
+	))
+
+	p2 <- data %>%
+	group_by(factor) %>%
+	count(factor, factor_vals) %>%
+	ggplot(mapping = aes(x = reorder_within(factor_vals, by = n, within = factor), y = n)) +
+	geom_col() +
+	facet_wrap(facets = vars(factor), scales = "free") +
+	coord_flip() +
+	scale_x_reordered() +
+	scale_y_continuous(breaks = scales::breaks_extended(),
+	labels = scales::label_number_si()) +
+	labs(title = "Distributions of discrete variables", x = NULL, y = NULL) +
+	theme_minimal() +
+	theme(strip.background = element_blank(),
+		  strip.text = element_textbox(
+		  size = 10, color = "white", fill = "#5D729D", box.color = "#4A618C",
+		  halign = 0.5, linetype = 1, r = unit(5, units = "pt"),
+		  width = unit(1, units = "npc"),
+		  padding = margin(t = 5, r = 0, b = 3, l = 0),
+		  margin = margin(t = 5, r = 5, b = 5, l = 5)
+	))
+
+	p1 + p2
+# --------------------------------------------------------
+
+
+# Built-In Snippets
+
+# snippet lib
+#	library(${1:package})
+snippet req
+	require(${1:package})
+snippet src
+	source("${1:file.R}")
+snippet ret
+	return(${1:code})
+snippet sg
+	setGeneric("${1:generic}", function(${2:x, ...}) {
+		standardGeneric("${1:generic}")
+	})
+snippet sm
+	setMethod("${1:generic}", ${2:class}, function(${2:x, ...}) {
+		${0}
+	})
+snippet sc
+	setClass("${1:Class}", slots = c(${2:name = "type"}))
+snippet for
+	for (${1:variable} in ${2:vector}) {
+		${0}
+	}
+snippet while
+	while (${1:condition}) {
+		${0}
+	}
+snippet switch
+	switch (${1:object},
+		${2:case} = ${3:action}
+	)
+snippet apply
+	apply(${1:array}, ${2:margin}, ${3:...})
+snippet lapply
+	lapply(${1:list}, ${2:function})
+snippet sapply
+	sapply(${1:list}, ${2:function})
+snippet mapply
+	mapply(${1:function}, ${2:...})
+# snippet tapply
+#	  tapply(${1:vector}, ${2:index}, ${3:function})
+snippet vapply
+	vapply(${1:list}, ${2:function}, FUN.VALUE = ${3:type}, ${4:...})
+snippet rapply
+	rapply(${1:list}, ${2:function})
+# snippet ts
+	`r paste("#", date(), "------------------------------\n")`
+snippet shinyapp
+	library(shiny)
+
+	ui <- fluidPage(
+	  ${0}
+	)
+
+	server <- function(input, output, session) {
+
+	}
+
+	shinyApp(ui, server)
+snippet shinymod
+	${1:name}_UI <- function(id) {
+	  ns <- NS(id)
+	  tagList(
+		${0}
+	  )
+	}
+
+	${1:name} <- function(input, output, session) {
+
+	}
+

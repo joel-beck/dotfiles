@@ -1,0 +1,19 @@
+/* use with .size50[text] */
+.size50 {
+  font-size: 50%;
+}
+.size80 {
+  font-size: 80%;
+}
+.size120 {
+  font-size: 120%;
+}
+.size150 {
+  font-size: 150%;
+}
+.size200 {
+  font-size: 200%;
+}
+.h2 {
+    color: red;
+}
