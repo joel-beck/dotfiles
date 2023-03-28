@@ -1393,7 +1393,8 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1",
+    "path": "/Users/joel/.console-ninja/.bin:${env:PATH}"
   },
   "terminal.integrated.rightClickBehavior": "paste",
   "terminal.integrated.tabs.enabled": true,
@@ -1428,6 +1429,42 @@
     "COMMENT"
   ],
   "todo-tree.highlights.customHighlight": {
+    "BOOKMARK": {
+      "background": "#fb94ff",
+      "borderRadius": "4px",
+      "foreground": "#000000",
+      "icon": "bookmark",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "COMMENT": {
+      "background": "#59e03a",
+      "foreground": "#000000",
+      "icon": "pencil",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "FIXME": {
+      "background": "#c26147",
+      "foreground": "#000000",
+      "icon": "alert",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "IMPORTANT": {
+      "background": "#c26147",
+      "foreground": "#000000",
+      "icon": "alert",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
+    "NOTE": {
+      "background": "#59e03a",
+      "foreground": "#000000",
+      "icon": "file",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
     // foreground: font color
     // background: highlighting color
     // icons: https://primer.style/octicons/
@@ -1448,47 +1485,11 @@
       "iconColour": "#b7b6b9",
       "type": "line"
     },
-    "BOOKMARK": {
-      "background": "#fb94ff",
-      "borderRadius": "4px",
-      "foreground": "#000000",
-      "icon": "bookmark",
-      "iconColour": "#b7b6b9",
-      "type": "line"
-    },
-    "NOTE": {
-      "background": "#59e03a",
-      "foreground": "#000000",
-      "icon": "file",
-      "iconColour": "#b7b6b9",
-      "type": "line"
-    },
-    "IMPORTANT": {
-      "background": "#c26147",
-      "foreground": "#000000",
-      "icon": "alert",
-      "iconColour": "#b7b6b9",
-      "type": "line"
-    },
-    "FIXME": {
-      "background": "#c26147",
-      "foreground": "#000000",
-      "icon": "alert",
-      "iconColour": "#b7b6b9",
-      "type": "line"
-    },
     "TODO": {
       "background": "#2adfffef",
       "borderRadius": "4px",
       "foreground": "#000000",
       "icon": "check-circle",
-      "iconColour": "#b7b6b9",
-      "type": "line"
-    },
-    "COMMENT": {
-      "background": "#59e03a",
-      "foreground": "#000000",
-      "icon": "pencil",
       "iconColour": "#b7b6b9",
       "type": "line"
     }
