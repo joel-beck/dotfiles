@@ -1393,8 +1393,7 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1",
-    "path": "/Users/joel/.console-ninja/.bin:${env:PATH}"
+    "FIG_NEW_SESSION": "1"
   },
   "terminal.integrated.rightClickBehavior": "paste",
   "terminal.integrated.tabs.enabled": true,

@@ -1017,6 +1017,12 @@
     "key": "shift+cmd+k",
     "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
   },
+  // SUBSECTION: Markdown Files
+  {
+    "key": "cmd+k",
+    "command": "md-shortcut.toggleLink",
+    "when": "editorTextFocus && markdownShortcuts:enabled && editorLangId == 'markdown'"
+  },
   // SECTION: Extensions
   // Open Project in New Window
   {
@@ -1437,11 +1443,6 @@
     "key": "ctrl+alt+n"
   },
   {
-    "command": "-md-shortcut.toggleLink",
-    "key": "ctrl+l",
-    "when": "editorTextFocus && markdownShortcuts:enabled"
-  },
-  {
     "command": "-notebook.centerActiveCell",
     "key": "ctrl+l",
     "when": "notebookEditorFocused"
@@ -1660,5 +1661,10 @@
     "key": "ctrl+t",
     "command": "-editor.action.transposeLetters",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-md-shortcut.toggleLink",
+    "when": "editorTextFocus && markdownShortcuts:enabled"
   }
 ]
