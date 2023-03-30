@@ -26,31 +26,31 @@
   },
   // Move to Previous Markdown Header
   {
-    "key": "ctrl+alt+up",
-    "when": "editorTextFocus",
-    "command": "moveby.regex",
     "args": {
-      "regex": "#+",
-      "properties": ["prev", "start", "wrap"]
-    }
+      "properties": ["prev", "start", "wrap"],
+      "regex": "#+"
+    },
+    "command": "moveby.regex",
+    "key": "ctrl+alt+up",
+    "when": "editorTextFocus"
   },
   // Move to Next Markdown Header
   {
-    "key": "ctrl+alt+down",
-    "when": "editorTextFocus",
-    "command": "moveby.regex",
     "args": {
-      "regex": "#+",
-      "properties": ["next", "start", "wrap"]
-    }
+      "properties": ["next", "start", "wrap"],
+      "regex": "#+"
+    },
+    "command": "moveby.regex",
+    "key": "ctrl+alt+down",
+    "when": "editorTextFocus"
   },
-  // // Move Current Cell Down
+  // Move Current Cell Down
   // {
   //   "command": "jupyter.moveCellsDown",
   //   "key": "ctrl+alt+down",
   //   "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
   // },
-  // // Move Current Cell Up
+  // Move Current Cell Up
   // {
   //   "command": "jupyter.moveCellsUp",
   //   "key": "ctrl+alt+up",
@@ -198,14 +198,14 @@
   },
   // Accept Next Word of Inline Suggestions
   {
-    "key": "alt+right",
     "command": "editor.action.inlineSuggest.acceptNextWord",
+    "key": "alt+right",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   // Undo Last Word of Inline Suggestion
   {
-    "key": "alt+left",
     "command": "editor.action.inlineSuggest.undo",
+    "key": "alt+left",
     "when": "canUndoInlineSuggestion && !editorReadonly"
   },
   // SUBSECTION: Utils - Editor Commands
@@ -1018,9 +1018,10 @@
     "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
   },
   // SUBSECTION: Markdown Files
+  // Create Markdown Link from Selection
   {
-    "key": "cmd+k",
     "command": "md-shortcut.toggleLink",
+    "key": "cmd+k",
     "when": "editorTextFocus && markdownShortcuts:enabled && editorLangId == 'markdown'"
   },
   // SECTION: Extensions
@@ -1068,8 +1069,8 @@
   },
   // Toggle Settings
   {
-    "key": "ctrl+s",
-    "command": "settingsOnFire.toggleSettings"
+    "command": "settingsOnFire.toggleSettings",
+    "key": "ctrl+s"
   },
   // Add Word to Custom Dictionary in Current Worksapce
   {
@@ -1639,32 +1640,32 @@
     "key": "ctrl+alt+k"
   },
   {
-    "key": "cmd+right",
     "command": "-editor.action.inlineSuggest.acceptNextWord",
+    "key": "cmd+right",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "cmd+left",
     "command": "-editor.action.inlineSuggest.undo",
+    "key": "cmd+left",
     "when": "canUndoInlineSuggestion && !editorReadonly"
   },
   {
-    "key": "cmd+[BracketRight]",
     "command": "-wallaby.showCommandPalette",
+    "key": "cmd+[BracketRight]",
     "when": "!wallaby.paused"
   },
   {
-    "key": "ctrl+r",
-    "command": "-workbench.action.openRecent"
+    "command": "-workbench.action.openRecent",
+    "key": "ctrl+r"
   },
   {
-    "key": "ctrl+t",
     "command": "-editor.action.transposeLetters",
+    "key": "ctrl+t",
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+l",
     "command": "-md-shortcut.toggleLink",
+    "key": "ctrl+l",
     "when": "editorTextFocus && markdownShortcuts:enabled"
   }
 ]
