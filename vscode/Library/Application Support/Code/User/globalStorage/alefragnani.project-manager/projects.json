@@ -166,5 +166,12 @@
     "paths": [],
     "rootPath": "/Users/joel/dotfiles",
     "tags": ["config"]
+  },
+  {
+    "enabled": true,
+    "name": "python-notes",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonNotes",
+    "tags": ["python"]
   }
 ]

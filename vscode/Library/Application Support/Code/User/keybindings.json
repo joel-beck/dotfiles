@@ -1,4 +1,5 @@
-// Place your key bindings in this file to override the defaults
+// NOTE: Add one line with a shortcut description above each shortcut for the backup script
+// NOTE: Add `Section`, `Subsection` or `Note` keyword for any other comment that is not a description -> these are skipped by the script
 [
   // SECTION: Code Navigation
   // SUBSECTION: Cursor
@@ -374,7 +375,7 @@
     "key": "cmd+b",
     "when": "!editorHasSelection && editorLangId != 'latex'"
   },
-  // See https://stackoverflow.com/questions/71311855/vs-code-shortcut-to-remove-markup-from-selected-text-in-markdown-and-latex/71312114#71312114
+  // NOTE: See https://stackoverflow.com/questions/71311855/vs-code-shortcut-to-remove-markup-from-selected-text-in-markdown-and-latex/71312114#71312114
   // Revert Markdown Bold Text
   {
     "args": {
@@ -1122,24 +1123,6 @@
     "when": "terminalFocus && terminalProcessSupported"
   },
   // SUBSECTION: Python Snippets
-  // Format Jupyter Notebook Cell with black from any Cursor Position
-  {
-    "args": {
-      "command": "multiCommand.FormatNotebook"
-    },
-    "command": "extension.multiCommand.execute",
-    "key": "",
-    "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
-  },
-  // Execute First Cell / Imports in Interactive Python File
-  {
-    "args": {
-      "command": "multiCommand.UpdateImports"
-    },
-    "command": "extension.multiCommand.execute",
-    "key": "ctrl+i",
-    "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
-  },
   // Put print() Statement around code in current line
   {
     "args": {
@@ -1166,6 +1149,24 @@
     "command": "editor.action.insertSnippet",
     "key": "cmd+enter",
     "when": "editorLangId == 'latex'"
+  },
+  // Format Jupyter Notebook Cell with black from any Cursor Position
+  // {
+  //   "args": {
+  //     "command": "multiCommand.FormatNotebook"
+  //   },
+  //   "command": "extension.multiCommand.execute",
+  //   "key": "",
+  //   "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  // },
+  // Execute First Cell / Imports in Interactive Python File
+  {
+    "args": {
+      "command": "multiCommand.UpdateImports"
+    },
+    "command": "extension.multiCommand.execute",
+    "key": "ctrl+i",
+    "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
   },
   // SUBSECTION: R Snippets
   // Insert Assignment Operator in R

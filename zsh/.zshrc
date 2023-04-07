@@ -18,6 +18,8 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
     source "$ZSHRC_DIRPATH/powerlevel10k.zsh"
 fi
 
+source "$ZSHRC_DIRPATH/ruff.zsh"
+
 source "$ZSHRC_DIRPATH/pnpm.zsh"
 
 source "$ZSHRC_DIRPATH/bun.zsh"
