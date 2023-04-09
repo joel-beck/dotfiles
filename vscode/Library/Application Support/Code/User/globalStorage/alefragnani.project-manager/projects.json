@@ -1,59 +1,10 @@
 [
   {
     "enabled": true,
-    "name": "coding-challenges",
+    "name": "keyboard-maestro-plists",
     "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonNotes/CodingChallenges",
-    "tags": ["python"]
-  },
-  {
-    "enabled": true,
-    "name": "eval-sklearn",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPublic/eval-sklearn",
-    "tags": ["python"]
-  },
-  {
-    "enabled": true,
-    "name": "r-vs-python",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPublic/r-vs-python",
-    "tags": ["r"]
-  },
-  {
-    "enabled": true,
-    "name": "resume",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/Studium/Masterstudium/Lebenslauf/resume",
-    "tags": ["r"]
-  },
-  {
-    "enabled": true,
-    "name": "notion-to-obsidian",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/NotionToObsidian",
-    "tags": ["obsidian"]
-  },
-  {
-    "enabled": true,
-    "name": "pystringr",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPublic/pystringr",
-    "tags": ["python"]
-  },
-  {
-    "enabled": true,
-    "name": "blog",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPublic/blog",
-    "tags": ["r"]
-  },
-  {
-    "enabled": true,
-    "name": "quick-notes",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/QuickNotes",
-    "tags": []
+    "rootPath": "/Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder",
+    "tags": ["keyboard-maestro", "backups"]
   },
   {
     "enabled": true,
@@ -64,114 +15,149 @@
   },
   {
     "enabled": true,
-    "name": "alfred-backup-workflow",
+    "name": "alfred-scripts",
     "paths": [],
-    "rootPath": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.0D987BB0-9A2B-4060-9A68-A9905DFEF52F",
-    "tags": ["alfred"]
-  },
-  {
-    "enabled": true,
-    "name": "keyboard-maestro-scripts",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",
-    "tags": ["keyboard-maestro"]
-  },
-  {
-    "enabled": true,
-    "name": "config-comparison",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/config-comparison",
-    "tags": ["python"]
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/AlfredScripts",
+    "tags": ["alfred", "projects-private"]
   },
   {
     "enabled": true,
     "name": "cookiecutter-python-projects",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/Cookiecutter/cookiecutter-python-projects",
-    "tags": ["python"]
+    "tags": ["python", "projects-private"]
   },
   {
     "enabled": true,
-    "name": "model-config",
+    "name": "keyboard-maestro-scripts",
     "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/model-config",
-    "tags": ["python"]
-  },
-  {
-    "enabled": true,
-    "name": "drafts-scripts",
-    "paths": [],
-    "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts",
-    "tags": ["drafts"]
-  },
-  {
-    "enabled": true,
-    "name": "vite-quickstart",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/vite-quickstart",
-    "tags": ["typescript"]
-  },
-  {
-    "enabled": true,
-    "name": "alfred-text-transform-python",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.803D5CEF-179D-4EC7-A523-34E8CA1B3341",
-    "tags": ["alfred"]
-  },
-  {
-    "enabled": true,
-    "name": "alfred-drafts-search",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.36E0A528-B2F9-4F72-A0E9-B855E6A1F851",
-    "tags": ["alfred"]
-  },
-  {
-    "enabled": true,
-    "name": "alfred-text-transform-typescript",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.1F35350B-786E-43DE-BE00-FA39DBB0567A",
-    "tags": ["alfred"]
-  },
-  {
-    "enabled": true,
-    "name": "typescript-exploration",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-exploration",
-    "tags": ["typescript"]
-  },
-  {
-    "enabled": true,
-    "name": "keyboard-maestro-plists",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/Studium/Masterstudium/Backups&Settings/KeyboardMaestro/LibraryFolder",
-    "tags": ["keyboard-maestro"]
-  },
-  {
-    "enabled": true,
-    "name": "pdm-dplyr",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/pdm-dplyr",
-    "tags": ["python"]
-  },
-  {
-    "enabled": true,
-    "name": "drafts-themes",
-    "paths": [],
-    "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes",
-    "tags": ["drafts"]
-  },
-  {
-    "enabled": true,
-    "name": "dotfiles",
-    "paths": [],
-    "rootPath": "/Users/joel/dotfiles",
-    "tags": ["config"]
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",
+    "tags": ["keyboard-maestro", "projects-private"]
   },
   {
     "enabled": true,
     "name": "python-notes",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonNotes",
-    "tags": ["python"]
+    "tags": ["python", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "coding-challenges",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonNotes/CodingChallenges",
+    "tags": ["python", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "sql-practice",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonNotes/sql-practice",
+    "tags": ["python", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "quick-notes",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/QuickNotes",
+    "tags": ["projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "typescript-exploration",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-exploration",
+    "tags": ["typescript", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "vite-quickstart",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/vite-quickstart",
+    "tags": ["typescript", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "config-comparison",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/config-comparison",
+    "tags": ["python", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "model-config",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/model-config",
+    "tags": ["python", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "pdm-config",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/pdm-config",
+    "tags": ["python", "projects-private"]
+  },
+  {
+    "enabled": true,
+    "name": "blog",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/blog",
+    "tags": ["r", "projects-public"]
+  },
+  {
+    "enabled": true,
+    "name": "eval-sklearn",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/eval-sklearn",
+    "tags": ["python", "projects-public"]
+  },
+  {
+    "enabled": true,
+    "name": "pystringr",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/pystringr",
+    "tags": ["python", "projects-public"]
+  },
+  {
+    "enabled": true,
+    "name": "r-vs-python",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/r-vs-python",
+    "tags": ["r", "projects-public"]
+  },
+  {
+    "enabled": true,
+    "name": "readnext",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/readnext",
+    "tags": ["python", "projects-public"]
+  },
+  {
+    "enabled": true,
+    "name": "resume",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume",
+    "tags": ["r", "studium"]
+  },
+  {
+    "enabled": true,
+    "name": "drafts-scripts",
+    "paths": [],
+    "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts",
+    "tags": ["drafts", "icloud"]
+  },
+  {
+    "enabled": true,
+    "name": "drafts-themes",
+    "paths": [],
+    "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes",
+    "tags": ["drafts", "icloud"]
+  },
+  {
+    "enabled": true,
+    "name": "dotfiles",
+    "paths": [],
+    "rootPath": "/Users/joel/dotfiles",
+    "tags": ["config", "root"]
   }
 ]
