@@ -1307,17 +1307,21 @@
   // SUBSECTION: Python
   "python.analysis.completeFunctionParens": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": false,
   "python.analysis.typeCheckingMode": "basic",
   "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/mambaforge/base/envs/py11-ds/bin/python",
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": false,
+  "python.linting.mypyArgs": [
+    "--config-file=${workspaceFolder}/pyproject.toml"
+  ],
   // "python.linting.flake8Args": [
   //   "--disable=wildcard-import",
   //   "--disable=missing-docstring"
   // ],
-  "python.linting.mypyCategorySeverity.error": "Information",
+  "python.linting.mypyCategorySeverity.error": "Warning",
   "python.linting.mypyEnabled": true,
   "python.linting.pylintArgs": [
     "--disable=wildcard-import",

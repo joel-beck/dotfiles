@@ -296,7 +296,7 @@
     },
     "command": "extension.multiCommand.execute",
     "key": "cmd+c",
-    "when": "!editorHasSelection"
+    "when": "editorFocus && !editorHasSelection"
   },
   // Cut (and delete) Current Line when Editor has no selection
   {
@@ -305,7 +305,7 @@
     },
     "command": "extension.multiCommand.execute",
     "key": "cmd+x",
-    "when": "!editorHasSelection"
+    "when": "editorFocus && !editorHasSelection"
   },
   // Cut (and keep) Current Line but keep line when Editor has no selection
   {
@@ -314,7 +314,7 @@
     },
     "command": "extension.multiCommand.execute",
     "key": "cmd+shift+x",
-    "when": "!editorHasSelection"
+    "when": "editorFocus && !editorHasSelection"
   },
   // Delete Current Line
   {
