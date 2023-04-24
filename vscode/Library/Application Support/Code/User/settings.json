@@ -224,6 +224,14 @@
     {
       "alignment": "left",
       "color": "#dddcd7ce",
+      "command": "pr.create",
+      "priority": 2,
+      "text": "Pull Request",
+      "tooltip": "Create new Pull Request"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
       "command": "editor.action.revealDefinitionAside",
       "priority": 2,
       "text": "Definition ->",
@@ -803,7 +811,8 @@
     "*.draftsTheme": "jsonc",
     "*.qmd": "quarto",
     "*.rmd": "rmd",
-    "*.txt": "plaintext"
+    "*.txt": "plaintext",
+    ".env_template": "dotenv"
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.trimTrailingWhitespace": true,
@@ -820,6 +829,7 @@
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
   "github.copilot.enable": {
+    "quarto": false,
     "*": true,
     "javascript": true,
     "jsonc": true,
@@ -827,9 +837,8 @@
     "markdown": true,
     "plaintext": true,
     "python": true,
-    "quarto": false,
     "r": false,
-    "rmd": false,
+    "rmd": true,
     "shellscript": true,
     "typescript": true,
     "yaml": true
@@ -1581,5 +1590,12 @@
   "workbench.list.smoothScrolling": true,
   "workbench.settings.openDefaultSettings": false,
   "workbench.tree.indent": 20,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "python.linting.ignorePatterns": [
+    "**/site-packages/**/*.py",
+    ".vscode/*.py",
+    "tests/**/*.py"
+  ],
+  "errorLens.excludeBySource": ["sourcery(refactoring:for-append-to-extend)"],
+  "githubPullRequests.pushBranch": "always"
 }

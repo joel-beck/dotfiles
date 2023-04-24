@@ -72,13 +72,13 @@
     "prefix": "datetime import",
     "body": ["from datetime import datetime", "$0"]
   },
+  "Import Pytest": {
+    "prefix": "pytest import",
+    "body": ["import pytest", "$0"]
+  },
   "Import Pandas": {
     "prefix": "pandas import",
     "body": ["import pandas as pd", "$0"]
-  },
-  "Pandas Show all Columns": {
-    "prefix": "pandas all columns",
-    "body": ["pd.set_option(\"display.max_columns\", None)", "$0"]
   },
   "Import NumPy": {
     "prefix": "numpy import",
@@ -88,10 +88,6 @@
     "prefix": "seaborn import",
     "body": ["import seaborn as sns", "$0"]
   },
-  "Set Seaborn Theme": {
-    "prefix": "theme seaborn",
-    "body": ["sns.set_theme(style=\"${1|whitegrid,darkgrid|}\")", "$0"]
-  },
   "Import Matplotlib": {
     "prefix": "matplotlib import",
     "body": ["import matplotlib.pyplot as plt", "$0"]
@@ -100,39 +96,26 @@
     "prefix": "torch import",
     "body": ["import torch", "$0"]
   },
-  "Import nn Module": {
-    "prefix": "nn import",
-    "body": ["import torch.nn as nn", "$0"]
-  },
-  "Import optim Module": {
-    "prefix": "optim import",
-    "body": ["import torch.optim as optim", "$0"]
-  },
-  "Import DataLoader": {
-    "prefix": "DataLoader import",
-    "body": ["from torch.utils.data import DataLoader", "$0"]
-  },
-  "Import Dataset": {
-    "prefix": "Dataset import",
-    "body": ["from torch.utils.data import Dataset", "$0"]
-  },
-  "Import Torchvision": {
-    "prefix": "torchvision import",
-    "body": ["import torchvision", "$0"]
-  },
-  "Import Transforms and Datasets from Torchvision": {
-    "prefix": ["import transforms", "import datasets"],
-    "body": ["from torchvision import transforms, datasets", "$0"]
-  },
-  "Import Random Split": {
-    "prefix": "random split import",
-    "body": ["from torch.utils.data import random_split", "$0"]
-  },
   // SECTION: Snippets by Package
+  // SUBSECTION: Pandas Snippets
+  "Pandas Show all Columns": {
+    "prefix": "pandas all columns",
+    "body": ["pd.set_option(\"display.max_columns\", None)", "$0"]
+  },
+  // SUBSECTION: Seaborn Snippets
+  "Set Seaborn Theme": {
+    "prefix": "theme seaborn",
+    "body": ["sns.set_theme(style=\"${1|whitegrid,darkgrid|}\")", "$0"]
+  },
   // SUBSECTION: Scikit-Learn Snippets
   "Train Test Split": {
     "prefix": "train test split",
     "body": ["X_train, X_test, y_train, y_test = train_test_split(X, y)", "$0"]
+  },
+  // SUBSECTION: PyTorch Snippets
+  "Import PyTorch Random Split": {
+    "prefix": "random split import",
+    "body": ["from torch.utils.data import random_split", "$0"]
   }
   // SUBSECTION: PyTorch Snippets
   // "PyTorch Imports Collection": {
