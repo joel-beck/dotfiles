@@ -1668,5 +1668,13 @@
     "command": "-md-shortcut.toggleLink",
     "key": "ctrl+l",
     "when": "editorTextFocus && markdownShortcuts:enabled"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "cmd+k cmd+w",
+    "command": "-workbench.action.closeAllEditors"
   }
 ]

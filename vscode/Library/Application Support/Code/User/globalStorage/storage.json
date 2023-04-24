@@ -38,21 +38,10 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -63,6 +52,16 @@
                                     },
                                     "enabled": true,
                                     "label": "~/dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/ProjectsPublic/readnext"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -284,11 +283,13 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save"
+                        "label": "&&Save",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As..."
+                        "label": "Save &&As...",
+                        "enabled": false
                     },
                     {
                         "id": "saveAll",
@@ -348,11 +349,13 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File"
+                        "label": "Re&&vert File",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor"
+                        "label": "&&Close Editor",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeFolder",
@@ -410,11 +413,13 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find"
+                        "label": "&&Find",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace"
+                        "label": "&&Replace",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1401,8 +1406,8 @@
                 "userSettingsLabel": "cmd+k f"
             },
             "workbench.action.closeWindow": {
-                "label": "Shift+Cmd+W",
-                "userSettingsLabel": "shift+cmd+w"
+                "label": "Cmd+W",
+                "userSettingsLabel": "cmd+w"
             },
             "undo": {
                 "label": "Cmd+Z",
@@ -1795,15 +1800,15 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 28,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 353,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
-            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
+            "folder": "file:///Users/joel/dotfiles",
+            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1814,8 +1819,7 @@
         },
         "openedWindows": [
             {
-                "folder": "file:///Users/joel/dotfiles",
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/1682378168799",
                 "uiState": {
                     "mode": 1,
                     "x": 0,
@@ -1825,8 +1829,8 @@
                 }
             },
             {
-                "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
+                "folder": "file:///Users/joel/dotfiles",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
                 "uiState": {
                     "mode": 1,
                     "x": 0,
@@ -1879,6 +1883,9 @@
             },
             {
                 "backupFolder": "1682334015895"
+            },
+            {
+                "backupFolder": "1682378168799"
             }
         ]
     },
@@ -1939,8 +1946,8 @@
             "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts": "__default__profile__",
             "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts": "__default__profile__",
             "file:///Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume": "__default__profile__",
-            "file:///Users/joel/dotfiles": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__"
+            "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__",
+            "file:///Users/joel/dotfiles": "__default__profile__"
         },
         "emptyWindows": {
             "1682107587124": "__default__profile__",
@@ -1948,7 +1955,8 @@
             "1682229803608": "__default__profile__",
             "1682232945368": "__default__profile__",
             "1682256322520": "__default__profile__",
-            "1682334015895": "__default__profile__"
+            "1682334015895": "__default__profile__",
+            "1682378168799": "__default__profile__"
         }
     }
 }
