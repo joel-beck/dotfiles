@@ -240,6 +240,11 @@
     "command": "extension.multiCommand.execute",
     "key": "ctrl+shift+alt+cmd+space"
   },
+  // Close All Tabs
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.closeAllEditors"
+  },
   // Reload Window
   {
     "command": "workbench.action.reloadWindow",
@@ -1668,10 +1673,6 @@
     "command": "-md-shortcut.toggleLink",
     "key": "ctrl+l",
     "when": "editorTextFocus && markdownShortcuts:enabled"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "workbench.action.closeAllEditors"
   },
   {
     "key": "cmd+k cmd+w",
