@@ -374,7 +374,7 @@
   // Markdown Bold Text when Editor has no Selection
   {
     "args": {
-      "snippet": "**$1** $0"
+      "snippet": "**$1**$0"
     },
     "command": "editor.action.insertSnippet",
     "key": "cmd+b",
@@ -402,7 +402,7 @@
   // Latex Bold Text when Editor has no Selection
   {
     "args": {
-      "snippet": "\\textbf{$1} $0"
+      "snippet": "\\textbf{$1}$0"
     },
     "command": "editor.action.insertSnippet",
     "key": "cmd+b",
@@ -429,7 +429,7 @@
   // Markdown Italic Text when Editor has no Selection
   {
     "args": {
-      "snippet": "*$1* $0"
+      "snippet": "*$1*$0"
     },
     "command": "editor.action.insertSnippet",
     "key": "cmd+i",
@@ -456,7 +456,7 @@
   // Latex Italic Text when Editor has no Selection
   {
     "args": {
-      "snippet": "\\emph{$1} $0"
+      "snippet": "\\emph{$1}$0"
     },
     "command": "editor.action.insertSnippet",
     "key": "cmd+i",
@@ -483,7 +483,7 @@
   // Markdown Monospace Text when Editor has no Selection
   {
     "args": {
-      "snippet": "`$1` $0"
+      "snippet": "`$1`$0"
     },
     "command": "editor.action.insertSnippet",
     "key": "cmd+e",
@@ -510,7 +510,7 @@
   // Latex Monospace Text when Editor has no Selection
   {
     "args": {
-      "snippet": "\\texttt{$1} $0"
+      "snippet": "\\texttt{$1}$0"
     },
     "command": "editor.action.insertSnippet",
     "key": "cmd+e",
@@ -537,7 +537,7 @@
   // Markdown and Latex Inline Math when Editor has no Selection
   {
     "args": {
-      "snippet": "$$1$ $0"
+      "snippet": "$$1$$0"
     },
     "command": "editor.action.insertSnippet",
     "key": "cmd+l",
