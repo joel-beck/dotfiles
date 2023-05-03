@@ -137,6 +137,39 @@
     "command": "workbench.action.nextSideBarView",
     "key": "ctrl+pagedown"
   },
+  // Focus File Explorer in Side Bar
+  {
+    "key": "ctrl+f",
+    "command": "workbench.view.explorer"
+  },
+  // Focus Project Manager in Side Bar
+  {
+    "key": "ctrl+p",
+    "command": "workbench.view.extension.project-manager"
+  },
+  // Focus Git in Side Bar
+  {
+    "key": "ctrl+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  // Focus Testing in Side Bar
+  {
+    "key": "ctrl+t",
+    "command": "workbench.view.extension.test"
+  },
+  // Focus Debugging in Side Bar
+  {
+    "key": "ctrl+d",
+    "command": "workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  // Focus Extensions in Side Bar
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled"
+  },
   // Toggle Side Panel (right)
   {
     "command": "workbench.action.toggleAuxiliaryBar",
@@ -231,11 +264,6 @@
     "key": "cmd+shift+-"
   },
   // Open Tasks Palette
-  {
-    "command": "workbench.action.tasks.runTask",
-    "key": "ctrl+t"
-  },
-  // Open Multicommand Palette
   {
     "command": "extension.multiCommand.execute",
     "key": "ctrl+shift+alt+cmd+space"
@@ -675,7 +703,8 @@
   // Delete current Cell
   {
     "command": "jupyter.deleteCells",
-    "key": "ctrl+d"
+    "key": "ctrl+d",
+    "when": "inputFocus && notebookEditorFocused"
   },
   // Clear Output of Interactive Window (only in Python Files)
   {
@@ -1677,5 +1706,25 @@
   {
     "key": "cmd+k cmd+w",
     "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "shift+cmd+x",
+    "command": "-workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "-workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "shift+cmd+f",
+    "command": "-workbench.view.search",
+    "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
   }
 ]

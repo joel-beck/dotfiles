@@ -7,6 +7,7 @@
   "ShortcutMenuBar.navigateForward": false,
   "ShortcutMenuBar.openFilesList": false,
   "ShortcutMenuBar.toggleTerminal": false,
+  "VSCodeCounter.languages": {},
   // SECTION: Language Specific Settings
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -788,6 +789,7 @@
     },
     "scminput": true
   },
+  "errorLens.excludeBySource": ["sourcery(refactoring:for-append-to-extend)"],
   // makes code folding for notebook cells in python files possible
   // found in github comment: https://github.com/microsoft/vscode-jupyter/issues/1527#issuecomment-1016056069
   "explicitFolding.rules": {
@@ -829,7 +831,6 @@
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
   "github.copilot.enable": {
-    "quarto": false,
     "*": true,
     "javascript": true,
     "jsonc": true,
@@ -837,6 +838,7 @@
     "markdown": true,
     "plaintext": true,
     "python": true,
+    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
@@ -844,6 +846,7 @@
     "yaml": true
   },
   "github.copilot.inlineSuggest.enable": true,
+  "githubPullRequests.pushBranch": "always",
   "gitlens.codeLens.scopes": ["document"],
   "gitlens.currentLine.enabled": false,
   "gitlens.defaultDateFormat": null,
@@ -858,6 +861,8 @@
     "**/*.md",
     "**/*.tex"
   ],
+  "hediet.vscode-drawio.resizeImages": null,
+  "hediet.vscode-drawio.theme": "atlas",
   "html.format.wrapLineLength": 88,
   "interactiveWindow.alwaysScrollOnNewCell": true,
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -1323,6 +1328,11 @@
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": false,
+  "python.linting.ignorePatterns": [
+    "**/site-packages/**/*.py",
+    ".vscode/*.py",
+    "tests/**/*.py"
+  ],
   "python.linting.mypyArgs": [
     "--config-file=${workspaceFolder}/pyproject.toml"
   ],
@@ -1590,13 +1600,5 @@
   "workbench.list.smoothScrolling": true,
   "workbench.settings.openDefaultSettings": false,
   "workbench.tree.indent": 20,
-  "workbench.tree.renderIndentGuides": "always",
-  "python.linting.ignorePatterns": [
-    "**/site-packages/**/*.py",
-    ".vscode/*.py",
-    "tests/**/*.py"
-  ],
-  "errorLens.excludeBySource": ["sourcery(refactoring:for-append-to-extend)"],
-  "githubPullRequests.pushBranch": "always",
-  "VSCodeCounter.languages": {}
+  "workbench.tree.renderIndentGuides": "always"
 }
