@@ -1600,5 +1600,6 @@
   "workbench.list.smoothScrolling": true,
   "workbench.settings.openDefaultSettings": false,
   "workbench.tree.indent": 20,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "githubPullRequests.pullBranch": "never"
 }
