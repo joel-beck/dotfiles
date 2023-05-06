@@ -18,11 +18,11 @@
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
     "migrated": true,
     "recentlyUsedIcons": [
+      "SiYoutubemusic",
+      "RiPlayLine",
+      "FasAlignLeft",
       "IbWebsiteWithText",
-      "IbTextAlignLeft",
-      "RiShoppingCart2Fill",
-      "FasUserGraduate",
-      "FasDollarSign"
+      "IbTextAlignLeft"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -36,7 +36,7 @@
   "05 Zotero": "FasBook",
   "06 Readwise": "FasRss",
   "07 Docs": "IbDocumentCode",
-  "08 Playlists": "RiPlayList2Line",
+  "08 Playlists": "SiYoutubemusic",
   "09 Videos": "FasVideo",
   "10 Apps": "FasAppleWhole",
   "11 Blogs": "FasBlog",
@@ -59,7 +59,7 @@
   "30 Subscriptions": "FasDollarSign",
   "35 Shopping": "RiShoppingCart2Fill",
   "40 Travel": "FasRoad",
-  "50 Text Snippets": "IbTextAlignLeft",
+  "50 Text Snippets": "FasAlignLeft",
   "60 Data": "FasFileCode",
   "70 Attachments": "FasImage",
   "75 Zotero Images": "FasImage",
