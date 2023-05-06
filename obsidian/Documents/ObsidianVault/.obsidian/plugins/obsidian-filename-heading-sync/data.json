@@ -1,0 +1,7 @@
+{
+  "userIllegalSymbols": [],
+  "ignoredFiles": {},
+  "ignoreRegex": "(00 Templates)|(06 Readwise)",
+  "useFileOpenHook": false,
+  "useFileSaveHook": true
+}

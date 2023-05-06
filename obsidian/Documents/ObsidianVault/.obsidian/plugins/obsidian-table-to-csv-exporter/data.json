@@ -1,0 +1,9 @@
+{
+  "exportPath": "./",
+  "baseFilename": "obsidian-data-export",
+  "fileNumber": "002",
+  "sepChar": "sepChar-semicolon",
+  "quoteDataChar": "quoteChar-noQuote",
+  "saveToClipboardToo": false,
+  "removeCRLF": "removeCRLF-space"
+}

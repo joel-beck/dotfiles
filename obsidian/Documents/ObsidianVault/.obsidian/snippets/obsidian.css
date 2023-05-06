@@ -1,0 +1,215 @@
+/* SECTION: Global Variables */
+:root {
+     /* SUBSECTION: Colors */
+    /* NOTE: `--color-blue is predefined and cannot be overwritten!` */
+    --custom-blue: #55A5FB;
+    --custom-green: #00BD00;
+    --custom-yellow: #FFC600;
+    --horizontal-line-color: #6c7070;
+    --side-bar-background: #9d650c;
+    --text-color-active: #f2ecec;
+    --text-color-inactive: #c2bcbc;
+
+     /* SUBSECTION: Sizes */
+    --file-name-rotated-size: 1.5em;
+    --pane-width-large: 2000px;
+    --pane-width-normal: 1200px;
+    --side-bar-font-size: 14px;
+    --status-bar-font-size: 14px;
+    --status-bar-icons-margin: 4px;
+
+     /* SUBSECTION: Styles */
+    --horizontal-line-style: dashed;
+}
+
+
+
+/* SECTION: Title Bar (top), Status Bar (bottom), Side Bar (left) */
+/* sizing of status bar */
+.minimal-status-off .status-bar {
+    padding: 5px 20px 5px;
+}
+
+/* status bar */
+.status-bar {
+    border-top: 10px;
+    color: var(--text-color-active) !important;
+    font-size: var(--status-bar-font-size);
+    line-height: 40px;
+    max-height: 40px;
+}
+
+/* color of icons in status bar */
+.clickable-icon {
+    color: var(--text-color-active) !important;
+}
+/* spacing between status bar icons */
+.cmdr.status-bar-item {
+    margin: var(--status-bar-icons-margin);
+}
+
+/* foreground and background color of left side bar when active */
+.nav-file-title.is-active, .nav-folder-title.is-active, .nav-file-title.is-being-dragged, body:not(.is-grabbing) .nav-folder-title.is-active:hover, body:not(.is-grabbing) .nav-folder-title:hover, body:not(.is-grabbing) .nav-file-title.is-active:hover {
+    background-color: var(--side-bar-background) !important;
+    color: var(--text-color-active) !important;
+}
+
+/* font size and color of left side bar when not active*/
+nav-file-title, .tree-item-self, .nav-folder-title, .is-collapsed .search-result-file-title, .tag-pane-tag {
+    font-size: var(--side-bar-font-size);
+    color: var(--text-color-active) !important;
+}
+
+
+
+/* SECTION: YAML Header */
+/* YAML Dashes, overwrite default with !important */
+.theme-dark .cm-s-obsidian .cm-hmd-frontmatter.cm-def, .theme-dark .cm-s-obsidian .cm-math.cm-def, .theme-dark .cm-s-obsidian pre.HyperMD-codeblock .cm-def {
+    color: var(--custom-yellow) !important;
+}
+
+/* YAML Keys */
+.theme-dark .cm-s-obsidian .cm-hmd-frontmatter.cm-atom, .theme-dark .cm-s-obsidian .cm-math.cm-atom, .theme-dark .cm-s-obsidian pre.HyperMD-codeblock .cm-atom {
+    color: var(--custom-blue) !important;
+}
+
+/* YAML values */
+.theme-dark .cm-s-obsidian .cm-hmd-frontmatter, .theme-dark .cm-s-obsidian pre.HyperMD-codeblock {
+    color: var(--custom-green) !important;
+}
+
+
+
+/* SECTION: Editor */
+ /* SUBSECTION: Pane Width */
+/* control width of text column when setting 'readable line length' is off */
+.markdown-source-view, .markdown-preview-view {
+    max-width: var(--pane-width-normal);
+    margin: auto;
+}
+
+/* NOTE: Set `cssclass: fullwidth` in YAML to stretch pane over full page */
+/* Note that adding the class `.fullwidth` to *both* `.markdown-source-view` and
+.markdown-preview-view is necessary */
+.markdown-source-view.fullwidth, .markdown-preview-view.fullwidth {
+    max-width: var(--pane-width-large);
+    margin: auto;
+}
+
+/* size and color of rotated file name to the left of each pane */
+.view-header-title, .file-embed-title, .markdown-embed-title {
+    font-size: var(--file-name-rotated-size);
+    --title-color-inactive: var(--text-color-inactive);
+}
+
+/* Horizontal Lines (triple dashes) */
+.markdown-preview-view hr, hr {
+	border-color: var(--horizontal-line-color);
+    border-style: var(--horizontal-line-style);;
+}
+
+/* bigger link popup preview */
+.popover.hover-popover {
+    transform: scale(0.8); /* makes the text smaller or larger */
+    max-height: 800px;    /* default 300 */
+    min-height: 100px;
+    height: 400px;
+    width: 600px;     /* default 400 */
+}
+
+/* Spacing after headers in Reading Mode, have not figured out the same for Live-Preview Mode yet*/
+.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+    margin: 10px 0;
+}
+
+/* NOTE: Set `cssclass: numbered-table` in YAML to Add Line Numbers to Tables */
+.numbered-table table {
+    counter-reset: rowNumber;
+  }
+
+.numbered-table table tr::before {
+    display: table-cell;
+    counter-increment: rowNumber;
+    content: counter(rowNumber);
+    padding-right: 0.3em;
+    padding-top: 0.3em;
+    text-align: right;
+  }
+
+
+
+/* SECTION: Images */
+img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > * {
+    margin: auto auto !important;
+}
+
+
+
+
+/* SECTION: Callout Blocks */
+/* icons from https://lucide.dev/ */
+.callout[data-callout="metadata"] {
+    --callout-color: 89, 224, 85;
+    --callout-icon: database;
+}
+.callout[data-callout="dataview"] {
+    --callout-color: 85, 165, 251;
+    --callout-icon: database;
+}
+
+.callout[data-callout="important"] {
+    --callout-color: 255, 157, 0;
+    --callout-icon: alert-circle;
+}
+
+.callout[data-callout="todo"] {
+    --callout-color: 251, 148, 255;
+    --callout-icon: clipboard-list;
+}
+
+.callout[data-callout="keep-in-mind"] {
+    --callout-color: 127, 80, 222;
+    --callout-icon: lightbulb;
+}
+
+.callout[data-callout="links"] {
+    --callout-color: 173, 199, 58;
+    --callout-icon: link;
+}
+
+.callout[data-callout="pdf"] {
+    --callout-color: 199, 86, 58;
+    --callout-icon: file-text;
+}
+
+/* `sticky-note` icon unfortunately does not work */
+.callout[data-callout="comment"] {
+    --callout-color: 89, 224, 58;
+    --callout-icon: message-circle;
+}
+
+.callout[data-callout="pros"] {
+    --callout-color: 0, 148, 68;
+    --callout-icon: plus-circle;
+}
+
+.callout[data-callout="cons"] {
+    --callout-color: 236, 29, 35;
+    --callout-icon: minus-circle;
+}
+
+.callout[data-callout="message-me"] {
+    --callout-color: 0, 184, 36;
+    --callout-icon: message-circle;
+}
+
+.callout[data-callout="message-other"] {
+    --callout-color: 0, 168, 184;
+    --callout-icon: message-circle;
+}

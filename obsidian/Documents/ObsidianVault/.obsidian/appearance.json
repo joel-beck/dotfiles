@@ -1,0 +1,23 @@
+{
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "textFontFamily": "",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "callouts",
+    "status_bar",
+    "pane_width",
+    "panes",
+    "status_title_side_bars",
+    "yaml",
+    "supercharged-links-gen",
+    "clean-embeds",
+    "clean-embeds-all",
+    "obsidian",
+    "MCL Wide Views"
+  ],
+  "accentColor": "#9880a8",
+  "showViewHeader": true,
+  "nativeMenus": true
+}

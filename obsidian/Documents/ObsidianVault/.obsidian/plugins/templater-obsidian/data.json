@@ -1,0 +1,110 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "00 Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "80 Scripts",
+  "enable_folder_templates": false,
+  "folder_templates": [
+    {
+      "folder": "07 Docs",
+      "template": "00 Templates/Documentation.md"
+    },
+    {
+      "folder": "08 Playlists",
+      "template": "00 Templates/Playlist.md"
+    },
+    {
+      "folder": "09 Videos",
+      "template": "00 Templates/Video.md"
+    },
+    {
+      "folder": "10Apps",
+      "template": "00 Templates/App.md"
+    },
+    {
+      "folder": "11 Blogs",
+      "template": "00 Templates/Blog.md"
+    },
+    {
+      "folder": "13 Products",
+      "template": "00 Templates/Product.md"
+    },
+    {
+      "folder": "14 Weblinks",
+      "template": "00 Templates/Weblink.md"
+    },
+    {
+      "folder": "15 Study Websites",
+      "template": "00 Templates/Study Website.md"
+    },
+    {
+      "folder": "16 Study Resources",
+      "template": "00 Templates/Study Resource.md"
+    },
+    {
+      "folder": "17 Package Documentations",
+      "template": "00 Templates/Package Documentation.md"
+    },
+    {
+      "folder": "18 Exercises",
+      "template": "00 Templates/Exercise.md"
+    },
+    {
+      "folder": "19 Examples",
+      "template": "00 Templates/Example.md"
+    },
+    {
+      "folder": "20 File Templates",
+      "template": "00 Templates/File Template.md"
+    },
+    {
+      "folder": "21 Messages",
+      "template": "00 Templates/Message.md"
+    },
+    {
+      "folder": "22 Uni Courses",
+      "template": "00 Templates/Course.md"
+    },
+    {
+      "folder": "23 TV Series",
+      "template": "00 Templates/TV Series.md"
+    },
+    {
+      "folder": "24 Movies",
+      "template": "00 Templates/Movie.md"
+    },
+    {
+      "folder": "26 Places",
+      "template": "00 Templates/Place.md"
+    },
+    {
+      "folder": "30 Subscriptions",
+      "template": "00 Templates/Subscription.md"
+    },
+    {
+      "folder": "50 Text Snippets",
+      "template": "00 Templates/Text Snippet.md"
+    },
+    {
+      "folder": "99 Inbox",
+      "template": "00 Templates/Default.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "enable_ribbon_icon": true
+}

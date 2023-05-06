@@ -38,10 +38,31 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/ObsidianVault",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/ObsidianVault"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -124,27 +145,17 @@
                                     "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/AppBackups/KeyboardMaestro/LibraryFolder"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/dotfiles",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dotfiles"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/__init__.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/__init__.py"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -237,16 +248,6 @@
                                     "label": "~/Documents/AppBackups/VSCodeMac/globalStorage/alefragnani.project-manager/projects.json"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/zshrc/starship.zsh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/zshrc/starship.zsh"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -312,10 +313,6 @@
                                 {
                                     "id": "issue.copyGithubPermalink",
                                     "label": "Copy GitHub Permalink"
-                                },
-                                {
-                                    "id": "pr.copyVscodeDevPrLink",
-                                    "label": "Copy vscode.dev Pull Request Link"
                                 },
                                 {
                                     "id": "issue.copyMarkdownGithubPermalink",
@@ -798,7 +795,7 @@
                     {
                         "id": "editor.action.toggleWordWrap",
                         "label": "&&Word Wrap",
-                        "checked": true
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -820,7 +817,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1039,7 +1037,8 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations"
+                        "label": "Open &&Configurations",
+                        "enabled": false
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1803,8 +1802,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
-            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
+            "folder": "file:///Users/joel/dotfiles",
+            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1814,6 +1813,16 @@
             }
         },
         "openedWindows": [
+            {
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/1683383757477",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 38,
+                    "width": 1512,
+                    "height": 944
+                }
+            },
             {
                 "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
                 "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
@@ -1826,8 +1835,8 @@
                 }
             },
             {
-                "folder": "file:///Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume",
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/2325c8e7693889859b5b5952133ecb16",
+                "folder": "file:///Users/joel/dotfiles",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
                 "uiState": {
                     "mode": 1,
                     "x": 0,
@@ -1851,9 +1860,31 @@
             },
             {
                 "folderUri": "file:///Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/ObsidianVault"
+            },
+            {
+                "folderUri": "file:///Users/joel/dotfiles"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1683323768413"
+            },
+            {
+                "backupFolder": "1683324923745"
+            },
+            {
+                "backupFolder": "1683358666458"
+            },
+            {
+                "backupFolder": "1683379067117"
+            },
+            {
+                "backupFolder": "1683383757477"
+            }
+        ]
     },
     "userDataProfilesMigration": true,
     "profileAssociationsMigration": true,
@@ -1905,8 +1936,6 @@
             "file:///Users/joel/Documents/ProjectsPrivate/model-config": "__default__profile__",
             "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPublic/github-profile": "__default__profile__",
-            "file:///Users/joel/Documents/ObsidianVault": "__default__profile__",
-            "file:///Users/joel/dotfiles": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences": "__default__profile__",
@@ -1914,9 +1943,17 @@
             "file:///Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts": "__default__profile__",
             "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts": "__default__profile__",
+            "file:///Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__",
-            "file:///Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume": "__default__profile__"
+            "file:///Users/joel/Documents/ObsidianVault": "__default__profile__",
+            "file:///Users/joel/dotfiles": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1683323768413": "__default__profile__",
+            "1683324923745": "__default__profile__",
+            "1683358666458": "__default__profile__",
+            "1683379067117": "__default__profile__",
+            "1683383757477": "__default__profile__"
+        }
     }
 }

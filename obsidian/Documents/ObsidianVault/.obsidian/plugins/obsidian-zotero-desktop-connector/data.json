@@ -1,0 +1,32 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "05 Zotero",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "Format #2",
+      "format": "formatted-citation",
+      "cslStyle": "chicago-author-date"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Zotero Import",
+      "outputPathTemplate": "05 Zotero/{% if creators.length > 2 %}{{creators[0].lastName}} et al{% elif creators.length == 2 %}{%- for creator in creators %}{{creator.firstName}} {{creator.lastName}}{% if not loop.last %}, {% endif %}{%- endfor %}{% else %}{{authors}}{% endif %} - {{title | replace(\":\", \"\") | replace(\"?\", \"\") | replace(\"\\\"\", \"'\") | replace(\"/\", \"_\") | replace(\"\\\\\", \"_\") | replace(\"|\", \"_\")}} {% if date %}({{date | format(\"YYYY\")}}){% endif %}.md",
+      "imageOutputPathTemplate": "75 Zotero Images/{{citekey}}/",
+      "imageBaseNameTemplate": "",
+      "templatePath": "00 Templates/Zotero Integration.md",
+      "cslStyle": "natbib-plainnat-author-date"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "all-imported-notes",
+  "exeVersion": "1.0.15",
+  "shouldShowCiteSuggest": true,
+  "shouldConcat": true,
+  "pdfExportImageOCR": false,
+  "pdfExportImageTesseractPath": "/opt/homebrew/bin/tesseract"
+}
