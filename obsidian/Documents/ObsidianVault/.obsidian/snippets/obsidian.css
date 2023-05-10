@@ -213,3 +213,8 @@ img {
     --callout-color: 0, 168, 184;
     --callout-icon: message-circle;
 }
+
+.callout[data-callout="chatgpt"] {
+    --callout-color: 243, 137, 59;
+    --callout-icon: chevron-right-square;
+}

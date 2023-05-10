@@ -52,7 +52,14 @@
       "key": "H"
     }
   ],
-  "editor:toggle-blockquote": [],
+  "editor:toggle-blockquote": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "B"
+    }
+  ],
   "editor:toggle-code": [
     {
       "modifiers": [
@@ -185,14 +192,7 @@
       "key": "A"
     }
   ],
-  "obsidian-editor-shortcuts:insertLineBelow": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "B"
-    }
-  ],
+  "obsidian-editor-shortcuts:insertLineBelow": [],
   "obsidian-editor-shortcuts:joinLines": [],
   "obsidian-editor-shortcuts:selectLine": [],
   "obsidian-editor-shortcuts:selectWordOrNextOccurrence": [
@@ -466,6 +466,14 @@
         "Ctrl"
       ],
       "key": "C"
+    }
+  ],
+  "obsidian-editor-shortcuts:indent-using-tabs": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "Tab"
     }
   ]
 }

@@ -846,12 +846,8 @@
     "yaml": true
   },
   "github.copilot.inlineSuggest.enable": true,
+  "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
   "githubPullRequests.pushBranch": "always",
-  "gitlens.codeLens.scopes": ["document"],
-  "gitlens.currentLine.enabled": false,
-  "gitlens.defaultDateFormat": null,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.statusBar.enabled": false,
   // SUBSECTION: Grammarly
   "grammarly.config.documentDialect": "american",
   "grammarly.files.include": [
@@ -1352,7 +1348,6 @@
   "python.testing.promptToConfigure": false,
   "python.testing.pytestEnabled": true,
   "quarto.cells.background.dark": "#80808015",
-  "quarto.mathjax.theme": "dark",
   "quokka.automaticRestart": true,
   "quokka.showValueOnMultilineSelection": true,
   // SUBSECTION: R
@@ -1552,7 +1547,11 @@
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootPath}",
   // SUBSECTION: Editor Colors
   "workbench.colorCustomizations": {
+    "editor.findMatchBackground": "#617541",
+    "editor.findMatchHighlightBackground": "#617541",
     "editor.lineHighlightBorder": "#969a9e70",
+    "editor.selectionBackground": "#617541",
+    "editor.selectionHighlightBackground": "#617541",
     "editorInlayHint.background": "#193549",
     "editorInlayHint.foreground": "#a09999",
     "list.focusBackground": "#6b6868",
@@ -1584,22 +1583,21 @@
     "terminalCursor.foreground": "#B7B8B9",
     "tree.indentGuidesStroke": "#ffffff"
   },
-  "workbench.colorTheme": "Cobalt2",
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.titleScrollbarSizing": "large",
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.editor.wrapTabs": true,
+  "workbench.colorTheme": "Cobalt2", // Color theme
+  "workbench.editor.closeOnFileDelete": true, // Close editor on file delete
+  "workbench.editor.enablePreview": false, // Disable file preview
+  "workbench.editor.titleScrollbarSizing": "large", // Large title scrollbar
+  "workbench.editor.untitled.hint": "hidden", // Hide untitled file hints
+  "workbench.editor.wrapTabs": true, // Enable tab wrapping in the editor
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook",
-    "*.pdf": "latex-workshop-pdf-hook"
+    "*.ipynb": "jupyter-notebook", // Associate ipynb files with Jupyter Notebook
+    "*.pdf": "latex-workshop-pdf-hook" // Associate PDF files with LaTeX Workshop PDF viewer
   },
-  "workbench.hover.delay": 0,
-  "workbench.iconTheme": "vscode-great-icons",
-  "workbench.layoutControl.type": "menu",
-  "workbench.list.smoothScrolling": true,
-  "workbench.settings.openDefaultSettings": false,
-  "workbench.tree.indent": 20,
-  "workbench.tree.renderIndentGuides": "always",
-  "githubPullRequests.pullBranch": "never"
+  "workbench.hover.delay": 0, // No delay for hover actions
+  "workbench.iconTheme": "vscode-great-icons", // Set icon theme
+  "workbench.layoutControl.type": "menu", // Set layout control type
+  "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
+  "workbench.settings.openDefaultSettings": false, // Don't open default settings
+  "workbench.tree.indent": 20, // Set tree item indent size
+  "workbench.tree.renderIndentGuides": "always" // Always render tree indent guides
 }

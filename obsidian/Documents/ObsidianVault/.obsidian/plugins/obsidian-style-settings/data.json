@@ -24,7 +24,7 @@
   "minimal-style@@title-color-inactive@@dark": "#B8B4B4",
   "minimal-style@@icon-color@@dark": "#FFFFFF",
   "minimal-style@@link-weight": 500,
-  "minimal-style@@hl1@@dark": "#0E5CC7",
+  "minimal-style@@hl1@@dark": "#617541",
   "minimal-style@@tx1@@dark": "#FFFFFF",
   "minimal-style@@tx2@@dark": "#CDBEBE",
   "minimal-style@@tx3@@dark": "#CDBEBE",
@@ -55,5 +55,8 @@
   "minimal-style@@h5-size": "1em",
   "minimal-style@@h6-size": "0.9em",
   "minimal-style@@italic-color@@dark": "#00ED2A",
-  "minimal-style@@bold-color@@dark": "#00BD00"
+  "minimal-style@@bold-color@@dark": "#00BD00",
+  "minimal-style@@hl2@@dark": "#617541",
+  "minimal-style@@hl1@@light": "#617541",
+  "minimal-style@@hl2@@light": "#617541"
 }
