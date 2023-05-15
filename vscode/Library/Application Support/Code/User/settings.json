@@ -543,7 +543,8 @@
           // markdown code blocks and values in YAML header
           "scope": [
             // Python
-            "meta.attribute.python",
+            "meta.attribute.python", // attributes
+            "punctuation.definition.decorator.python", // decorators
             // R
             "entity.namespace.r",
             // Markdown

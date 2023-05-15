@@ -38,31 +38,10 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/dotfiles",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dotfiles"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -78,21 +57,11 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ObsidianVault",
+                                        "path": "/Users/joel/Documents/ProjectsPrivate/python-packages-api",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ObsidianVault"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Studium/StudiumSonstiges/Lebenslauf/resume"
+                                    "label": "~/Documents/ProjectsPrivate/python-packages-api"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -108,41 +77,71 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts",
+                                        "path": "/Users/joel/Documents/ProjectsPrivate/python-github-api",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts"
+                                    "label": "~/Documents/ProjectsPrivate/python-github-api"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",
+                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.F516887E-448F-454F-ADDC-42FB6C2021B3",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPrivate/KeyboardMaestroScripts"
+                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.F516887E-448F-454F-ADDC-42FB6C2021B3"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPrivate/QuickNotes",
+                                        "path": "/Users/joel/Documents/ProjectsPrivate/PythonNotes/fastapi-practice",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPrivate/QuickNotes"
+                                    "label": "~/Documents/ProjectsPrivate/PythonNotes/fastapi-practice"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences",
+                                        "path": "/Users/joel/Documents/ProjectsPrivate/PythonNotes/sql-practice",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences"
+                                    "label": "~/Documents/ProjectsPrivate/PythonNotes/sql-practice"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.36E0A528-B2F9-4F72-A0E9-B855E6A1F851",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.36E0A528-B2F9-4F72-A0E9-B855E6A1F851"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.7E4B9C7C-B8E3-4AC5-B7EC-1C578CDCCEFB",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.7E4B9C7C-B8E3-4AC5-B7EC-1C578CDCCEFB"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.9BFF1EF9-D1CB-4DB0-95FF-68FC7ED0B880",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.9BFF1EF9-D1CB-4DB0-95FF-68FC7ED0B880"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -151,101 +150,101 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/dotfiles/obsidian/Documents/ObsidianVault/.obsidian/snippets/obsidian.css",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/run_ablation_tokenizer.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dotfiles/obsidian/Documents/ObsidianVault/.obsidian/snippets/obsidian.css"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/run_ablation_tokenizer.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/tests/test_data/test_results_tokenized_abstracts.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/run_bibliographic_coupling.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/tests/test_data/test_results_tokenized_abstracts.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/run_bibliographic_coupling.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Downloads/glove-wiki-gigaword-300.txt",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/s1_run_tokenizer.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Downloads/glove-wiki-gigaword-300.txt"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/s1_run_tokenizer.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/tests/test_models/test_document_info.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/run_co_citation_analysis.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/tests/test_models/test_document_info.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/scripts/modeling/run_co_citation_analysis.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/tests/conftest.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/utils/io.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/tests/conftest.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/utils/io.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/tokenizer.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/inference_new_paper_language.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/tokenizer.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/inference_new_paper_language.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/tests/test_tokenizers/test_spacy_tokenizer.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/inference_new_paper.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/tests/test_tokenizers/test_spacy_tokenizer.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/inference_new_paper.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/__init__.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/inference_data_constructor.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/__init__.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/inference_data_constructor.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/tests/test_metrics/test_average_precision.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/embedder.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/tests/test_metrics/test_average_precision.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/embedder.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/tests/test_metrics/test_count_unique_labels.py",
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/modeling/model_data.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/tests/test_metrics/test_count_unique_labels.py"
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/modeling/model_data.py"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -292,8 +291,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -313,6 +311,10 @@
                                 {
                                     "id": "issue.copyGithubPermalink",
                                     "label": "Copy GitHub Permalink"
+                                },
+                                {
+                                    "id": "pr.copyVscodeDevPrLink",
+                                    "label": "Copy vscode.dev Pull Request Link"
                                 },
                                 {
                                     "id": "issue.copyMarkdownGithubPermalink",
@@ -695,6 +697,13 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "Split in &&Group"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.editorLayoutSingle",
                                     "label": "&&Single"
                                 },
@@ -788,7 +797,7 @@
                     {
                         "id": "editor.action.toggleWordWrap",
                         "label": "&&Word Wrap",
-                        "enabled": false
+                        "checked": true
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -801,8 +810,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -811,8 +819,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1031,8 +1038,7 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations",
-                        "enabled": false
+                        "label": "Open &&Configurations"
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1128,8 +1134,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1534,6 +1539,11 @@
                 "isNative": false,
                 "userSettingsLabel": "cmd+k ctrl+shift+alt+cmd+7"
             },
+            "workbench.action.splitEditorInGroup": {
+                "label": "⌘K ⌃⌥⌘7",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k ctrl+alt+cmd+7"
+            },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Alt+Cmd+0",
                 "userSettingsLabel": "alt+cmd+0"
@@ -1647,8 +1657,8 @@
                 "userSettingsLabel": "cmd+p"
             },
             "workbench.action.showAllSymbols": {
-                "label": "Cmd+T",
-                "userSettingsLabel": "cmd+t"
+                "label": "Alt+S",
+                "userSettingsLabel": "alt+s"
             },
             "workbench.action.gotoSymbol": {
                 "label": "Shift+Cmd+O",
@@ -1784,15 +1794,15 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 28,
             "activityBarWidth": 48,
-            "sideBarWidth": 403,
+            "sideBarWidth": 362,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/joel/dotfiles",
-            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
+            "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
+            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1803,29 +1813,29 @@
         },
         "openedWindows": [
             {
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/1684085887950",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 38,
+                    "width": 1512,
+                    "height": 944
+                }
+            },
+            {
+                "folder": "file:///Users/joel/Documents/ProjectsPrivate/python-packages-api",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/fad299918337d79ed5967131195d3f4e",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 38,
+                    "width": 1512,
+                    "height": 944
+                }
+            },
+            {
                 "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
                 "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 38,
-                    "width": 1512,
-                    "height": 944
-                }
-            },
-            {
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/1683450579457",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 38,
-                    "width": 1512,
-                    "height": 944
-                }
-            },
-            {
-                "folder": "file:///Users/joel/dotfiles",
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
                 "uiState": {
                     "mode": 1,
                     "x": 0,
@@ -1845,15 +1855,45 @@
                 "folderUri": "file:///Users/joel/Documents/ProjectsPublic/readnext"
             },
             {
-                "folderUri": "file:///Users/joel/dotfiles"
+                "folderUri": "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.3664B7A3-7A8B-47E6-AC8E-D44ADB029AAF"
             },
             {
-                "folderUri": "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes"
+                "folderUri": "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.E2BAB62B-D44C-4B7B-833E-29E66F092D8F"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.9BFF1EF9-D1CB-4DB0-95FF-68FC7ED0B880"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.F516887E-448F-454F-ADDC-42FB6C2021B3"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.7E4B9C7C-B8E3-4AC5-B7EC-1C578CDCCEFB"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.36E0A528-B2F9-4F72-A0E9-B855E6A1F851"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/ProjectsPrivate/PythonNotes/sql-practice"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/ProjectsPrivate/PythonNotes/fastapi-practice"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/ProjectsPrivate/python-github-api"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/ProjectsPrivate/python-packages-api"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1683450579457"
+                "backupFolder": "1684085887950"
             }
         ]
     },
@@ -1892,7 +1932,6 @@
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.0D987BB0-9A2B-4060-9A68-A9905DFEF52F": "__default__profile__",
             "vscode-vfs://github/tiangolo/full-stack-fastapi-postgresql": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-exploration": "__default__profile__",
-            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.36E0A528-B2F9-4F72-A0E9-B855E6A1F851": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.959F8C74-57B9-4878-B140-04522DE1EC2D": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.08120434-E315-4FC9-89D5-11C688EDE9FF": "__default__profile__",
             "file:///Users/joel/Documents/Studium/Masterstudium/6_SemesterSS2023/thesis_test_repo": "__default__profile__",
@@ -1902,25 +1941,35 @@
             "file:///Users/joel/Documents/ProjectsPrivate/PythonNotes": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.803D5CEF-179D-4EC7-A523-34E8CA1B3341": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.DC757F5A-D77C-46DD-8266-2A05C8091710": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPrivate/PythonNotes/sql-practice": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/pdm-config": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/model-config": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPublic/github-profile": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPrivate/QuickNotes": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts": "__default__profile__",
             "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts": "__default__profile__",
             "file:///Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume": "__default__profile__",
             "file:///Users/joel/Documents/ObsidianVault": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__",
             "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes": "__default__profile__",
-            "file:///Users/joel/dotfiles": "__default__profile__"
+            "file:///Users/joel/dotfiles": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/QuickNotes": "__default__profile__",
+            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.CDB00E50-17A5-46C4-8F25-AC4E56FE80C6": "__default__profile__",
+            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.3664B7A3-7A8B-47E6-AC8E-D44ADB029AAF": "__default__profile__",
+            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.E2BAB62B-D44C-4B7B-833E-29E66F092D8F": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts": "__default__profile__",
+            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.9BFF1EF9-D1CB-4DB0-95FF-68FC7ED0B880": "__default__profile__",
+            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.7E4B9C7C-B8E3-4AC5-B7EC-1C578CDCCEFB": "__default__profile__",
+            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.36E0A528-B2F9-4F72-A0E9-B855E6A1F851": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/PythonNotes/sql-practice": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/PythonNotes/fastapi-practice": "__default__profile__",
+            "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.F516887E-448F-454F-ADDC-42FB6C2021B3": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/python-github-api": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/python-packages-api": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__"
         },
         "emptyWindows": {
-            "1683450579457": "__default__profile__"
+            "1684085887950": "__default__profile__"
         }
     }
 }

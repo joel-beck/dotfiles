@@ -99,6 +99,13 @@
   },
   {
     "enabled": true,
+    "name": "python-packages-api",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/python-packages-api",
+    "tags": ["python", "projects-private"]
+  },
+  {
+    "enabled": true,
     "name": "blog",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/blog",

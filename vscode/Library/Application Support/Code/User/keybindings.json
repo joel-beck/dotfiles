@@ -263,6 +263,11 @@
     "command": "workbench.action.openSnippets",
     "key": "cmd+shift+-"
   },
+  // Search Symbol (e.g. function, class, ...) in Workspace
+  {
+    "key": "alt+s",
+    "command": "workbench.action.showAllSymbols"
+  },
   // Open Tasks Palette
   {
     "command": "extension.multiCommand.execute",
@@ -1726,5 +1731,9 @@
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+t",
+    "command": "-workbench.action.showAllSymbols"
   }
 ]
