@@ -385,12 +385,6 @@
   // Quick Fix when Cursor is on underlined word
   {
     "command": "editor.action.quickFix",
-    "key": "f1",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  // Quick Fix when Cursor is on underlined word
-  {
-    "command": "editor.action.quickFix",
     "key": "alt+q",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
@@ -1157,8 +1151,8 @@
   },
   // Quick Fix in Terminal
   {
-    "command": "workbench.action.terminal.quickFix",
-    "key": "f1",
+    "command": "workbench.action.terminal.showQuickFixes",
+    "key": "alt+q",
     "when": "terminalFocus && terminalProcessSupported"
   },
   // SUBSECTION: Python Snippets
@@ -1735,5 +1729,15 @@
   {
     "key": "cmd+t",
     "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "-workbench.action.terminal.showQuickFixes",
+    "when": "terminalFocus"
   }
 ]

@@ -47,11 +47,31 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "path": "/Users/joel/dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "path": "/Users/joel/Documents/ProjectsPublic/readnext",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/ProjectsPublic/readnext"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/AppBackups/KeyboardMaestro/LibraryFolder"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -124,27 +144,47 @@
                                     "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.36E0A528-B2F9-4F72-A0E9-B855E6A1F851"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.7E4B9C7C-B8E3-4AC5-B7EC-1C578CDCCEFB",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.7E4B9C7C-B8E3-4AC5-B7EC-1C578CDCCEFB"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.9BFF1EF9-D1CB-4DB0-95FF-68FC7ED0B880",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.9BFF1EF9-D1CB-4DB0-95FF-68FC7ED0B880"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/__init__.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/__init__.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/attribute_getter/attribute_getter_unseen_base.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/attribute_getter/attribute_getter_unseen_base.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/inference_data_constructor.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/inference_data_constructor.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.C53CE410-1FF5-4D0F-8428-197B7960EC34/prefs.plist",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.C53CE410-1FF5-4D0F-8428-197B7960EC34/prefs.plist"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -207,46 +247,6 @@
                                     "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/inference_new_paper_language.py"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/inference_new_paper.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/inference_new_paper.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/inference/inference_data_constructor.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/inference/inference_data_constructor.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/embedder.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/modeling/language_models/embedder.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPublic/readnext/readnext/modeling/model_data.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ProjectsPublic/readnext/readnext/modeling/model_data.py"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -291,7 +291,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -311,10 +312,6 @@
                                 {
                                     "id": "issue.copyGithubPermalink",
                                     "label": "Copy GitHub Permalink"
-                                },
-                                {
-                                    "id": "pr.copyVscodeDevPrLink",
-                                    "label": "Copy vscode.dev Pull Request Link"
                                 },
                                 {
                                     "id": "issue.copyMarkdownGithubPermalink",
@@ -1038,7 +1035,8 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations"
+                        "label": "Open &&Configurations",
+                        "enabled": false
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1134,7 +1132,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1794,15 +1793,15 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 28,
             "activityBarWidth": 48,
-            "sideBarWidth": 362,
+            "sideBarWidth": 342,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
-            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
+            "folder": "file:///Users/joel/dotfiles",
+            "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1813,7 +1812,7 @@
         },
         "openedWindows": [
             {
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/1684085887950",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/1684267505383",
                 "uiState": {
                     "mode": 1,
                     "x": 0,
@@ -1823,19 +1822,8 @@
                 }
             },
             {
-                "folder": "file:///Users/joel/Documents/ProjectsPrivate/python-packages-api",
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/fad299918337d79ed5967131195d3f4e",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 38,
-                    "width": 1512,
-                    "height": 944
-                }
-            },
-            {
-                "folder": "file:///Users/joel/Documents/ProjectsPublic/readnext",
-                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d6afb409168056129972abd9a97aa7d",
+                "folder": "file:///Users/joel/dotfiles",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
                 "uiState": {
                     "mode": 1,
                     "x": 0,
@@ -1889,11 +1877,44 @@
             },
             {
                 "folderUri": "file:///Users/joel/Documents/ProjectsPrivate/python-packages-api"
+            },
+            {
+                "folderUri": "file:///Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder"
+            },
+            {
+                "folderUri": "file:///Users/joel/dotfiles"
             }
         ],
         "emptyWindows": [
             {
                 "backupFolder": "1684085887950"
+            },
+            {
+                "backupFolder": "1684185735294"
+            },
+            {
+                "backupFolder": "1684222601842"
+            },
+            {
+                "backupFolder": "1684222673841"
+            },
+            {
+                "backupFolder": "1684228342211"
+            },
+            {
+                "backupFolder": "1684228352547"
+            },
+            {
+                "backupFolder": "1684228360057"
+            },
+            {
+                "backupFolder": "1684228386349"
+            },
+            {
+                "backupFolder": "1684251437514"
+            },
+            {
+                "backupFolder": "1684267505383"
             }
         ]
     },
@@ -1944,14 +1965,12 @@
             "file:///Users/joel/Documents/ProjectsPrivate/pdm-config": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/model-config": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPublic/github-profile": "__default__profile__",
-            "file:///Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences": "__default__profile__",
             "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts": "__default__profile__",
             "file:///Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume": "__default__profile__",
             "file:///Users/joel/Documents/ObsidianVault": "__default__profile__",
             "file:///Users/joel/Library/Mobile%20Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes": "__default__profile__",
-            "file:///Users/joel/dotfiles": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/QuickNotes": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.CDB00E50-17A5-46C4-8F25-AC4E56FE80C6": "__default__profile__",
             "file:///Users/joel/Documents/AppBackups/AlfredPreferences/Alfred.alfredpreferences/workflows/user.workflow.3664B7A3-7A8B-47E6-AC8E-D44ADB029AAF": "__default__profile__",
@@ -1966,10 +1985,21 @@
             "file:///Users/joel/Documents/ProjectsPrivate/python-github-api": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/python-packages-api": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__"
+            "file:///Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__",
+            "file:///Users/joel/dotfiles": "__default__profile__"
         },
         "emptyWindows": {
-            "1684085887950": "__default__profile__"
+            "1684085887950": "__default__profile__",
+            "1684185735294": "__default__profile__",
+            "1684222601842": "__default__profile__",
+            "1684222673841": "__default__profile__",
+            "1684228342211": "__default__profile__",
+            "1684228352547": "__default__profile__",
+            "1684228360057": "__default__profile__",
+            "1684228386349": "__default__profile__",
+            "1684251437514": "__default__profile__",
+            "1684267505383": "__default__profile__"
         }
     }
 }

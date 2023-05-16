@@ -1321,7 +1321,7 @@
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": false,
   "python.analysis.typeCheckingMode": "basic",
-  "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/mambaforge/base/envs/py11-ds/bin/python",
+  "python.defaultInterpreterPath": "/Users/joel/.pyenv/versions/3.11.2/bin/python",
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": false,
@@ -1600,5 +1600,5 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always" // Always render tree indent guides
+  "workbench.tree.renderIndentGuides": "always"
 }
