@@ -170,6 +170,16 @@
     "command": "workbench.view.extensions",
     "when": "viewContainer.workbench.view.extensions.enabled"
   },
+  // Move Active Editor to Previous Group (Left)
+  {
+    "key": "ctrl+shift+alt+left",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  // Move Active Editor to Next Group (Right)
+  {
+    "key": "ctrl+shift+alt+right",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
   // Toggle Side Panel (right)
   {
     "command": "workbench.action.toggleAuxiliaryBar",
@@ -1739,5 +1749,13 @@
     "key": "cmd+[Period]",
     "command": "-workbench.action.terminal.showQuickFixes",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+cmd+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
   }
 ]
