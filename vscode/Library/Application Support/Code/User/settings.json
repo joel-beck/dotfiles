@@ -815,7 +815,8 @@
     "*.qmd": "quarto",
     "*.rmd": "rmd",
     "*.txt": "plaintext",
-    ".env_template": "dotenv"
+    ".env_template": "dotenv",
+    ".coveragerc": "ini"
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.trimTrailingWhitespace": true,
@@ -1405,10 +1406,9 @@
   "subtleBrackets.disableNative": false,
   // SUBSECTION: Terminal
   "terminal.explorerKind": "integrated",
-  "terminal.external.osxExec": "warp.app",
+  "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.env.osx": {

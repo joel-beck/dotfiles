@@ -60,6 +60,10 @@
     "body": ["", "#%% [markdown]", "# $0"]
   },
   // SECTION: Import Snippets
+  "Import Typing": {
+    "prefix": "typing import",
+    "body": ["from typing import $0"]
+  },
   "Import Dataclasses": {
     "prefix": "dataclasses import",
     "body": ["from dataclasses import dataclass", "$0"]
