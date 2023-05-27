@@ -1,60 +1,57 @@
 # Dotfiles
 
-TODO: Add description
+TODO: Add description of this directory and the purpose of dotfiles.
 
-## Setup new Machine
+## Setup a new MacBook
 
-TODO: Set up file system from hard drive backup.
+1.  Copy important files from hard drive backup to new machine.
+    The files should be in the same location in the file system.
 
-TODO: Clone the dotfiles repository from GitHub to the home directory.
-
-1.  Use stow to symlink the dotfiles to the home directory.
-
-TODO: Instructions for stow. Add file which runs the necessary code.
-
-2.  Run `homebrew/01_install-homebrew.zsh` to install homebrew:
+2.  Clone the dotfiles repository from GitHub to the home directory:
 
     ```bash
-    cd ~/dotfiles/homebrew
-    zsh 01_install-homebrew.zsh
+    git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
+    ```
+3.  Run `01_stow.zsh` to symlink the dotfiles to the home directory:
+
+    ```bash
+    cd ~/dotfiles/install
+    zsh 01_stow.zsh
     ```
 
-3.  Run `homebrew/02_install-homebrew-packages.zsh` to install homebrew packages:
+4.  Run `02_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
 
     ```bash
-    cd ~/dotfiles/homebrew
-    zsh 02_install-homebrew-packages.zsh
+    cd ~/dotfiles/install
+    zsh 02_homebrew.zsh
     ```
 
-4.  Run `homebrew/03_install-oh-my-zsh.zsh` to install OH MY ZSH:
+5.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:
 
     ```bash
-    cd ~/dotfiles/homebrew
-    zsh 03_install-oh-my-zsh.zsh
+    cd ~/dotfiles/install
+    zsh 03_oh-my-zsh.zsh
     ```
 
-5.  Restart the shell (such that OH MY ZSH can set required environment variables).
-    Then run `homebrew/04_install-oh-my-zsh-plugins.zsh` to install OH MY ZSH plugins:
+6.  **Restart the shell** (such that OH MY ZSH can set required environment variables).
+    Then run `04_install-oh-my-zsh-plugins.zsh` to install OH MY ZSH plugins:
 
     ```bash
-    cd ~/dotfiles/homebrew
+    cd ~/dotfiles/install
     zsh 04_install-oh-my-zsh-plugins.zsh
     ```
 
-6. Install MacOS Preferences
+7.  Run `05_macos.zsh` to set MacOS System Preferences:
 
     ```bash
-    cd ~/dotfiles/macos
-    zsh install.zsh
+    cd ~/dotfiles/install
+    zsh 05_macos.zsh
     ```
 
-TODO: Install Fonts with Homebrew: Cascaydia Code NF, Fira Code NF, JetBrains Mono NF
+7.  Install the remaining MacOS Apps that are not available via Homebrew manually.
 
-7. Install MacOS Apps with Homebrew if possible
+TODO: Add list of remaining MacOS Apps in this README file
 
-Install remaining MacOS Apps manually
-
-8. Restart the MacBook
-
+8.  Restart the MacBook.
 
 Done 🎉
