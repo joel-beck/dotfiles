@@ -269,12 +269,9 @@
   "templater-obsidian:insert-templater": [
     {
       "modifiers": [
-        "Alt",
-        "Ctrl",
-        "Mod",
-        "Shift"
+        "Ctrl"
       ],
-      "key": " "
+      "key": "T"
     }
   ],
   "obsidian-table-to-csv-exporter:obsidian-table-to-csv-exporter": [

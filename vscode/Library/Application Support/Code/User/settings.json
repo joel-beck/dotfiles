@@ -477,26 +477,56 @@
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   // SECTION: Syntax Highlighting
+
   "editor.tokenColorCustomizations": {
     "[Cobalt2]": {
       "textMateRules": [
         {
           "scope": [
-            // Python
-            "meta.function-call",
-            // R
-            "support.function.r",
-            "variable.function.r",
-            // Markdown
-            "entity.name.math.tex",
+            // Python function calls
+            "meta.function-call"
+          ],
+          "settings": {
+            "foreground": "#FFC600"
+          }
+        },
+        {
+          // R function and variable names
+          "scope": ["support.function.r", "variable.function.r"],
+          "settings": {
+            "foreground": "#FFC600"
+          }
+        },
+        {
+          // Math entities in Markdown
+          "scope": ["entity.name.math.tex"],
+          "settings": {
+            "foreground": "#FFC600"
+          }
+        },
+        {
+          // Raw strings and punctuation in Markdown
+          "scope": [
             "markup.inline.raw.string.markdown",
             "punctuation.definition.raw.markdown",
             "punctuation.definition.string.begin.markdown",
             "punctuation.definition.string.end.markdown",
-            "string.other.link.title.markdown",
-            // Quarto
-            "markup.inline.raw.string.quarto",
-            // Latex
+            "string.other.link.title.markdown"
+          ],
+          "settings": {
+            "foreground": "#FFC600"
+          }
+        },
+        {
+          // Raw strings in Quarto
+          "scope": ["markup.inline.raw.string.quarto"],
+          "settings": {
+            "foreground": "#FFC600"
+          }
+        },
+        {
+          // Math characters and functions in LaTeX
+          "scope": [
             "constant.character.math.tex",
             "constant.other.general.math.tex",
             "support.function.be.latex",
@@ -513,24 +543,18 @@
           }
         },
         {
-          // change color of property names in json files
-          "scope": [
-            // JSON
-            "support.type.property-name"
-          ],
+          // JSON property names
+          "scope": ["support.type.property-name"],
           "settings": {
             "foreground": "#EECD3A"
           }
         },
         {
-          // change color of headers in markdown
+          // Headers in Markdown, LaTeX, and Quarto
           "scope": [
-            // Markdown
             "entity.name.section.markdown",
             "punctuation.definition.heading.markdown",
-            // Latex
             "entity.name.section.latex",
-            // Quarto
             "entity.name.section.quarto",
             "punctuation.definition.heading.quarto"
           ],
@@ -539,21 +563,15 @@
           }
         },
         {
-          // change color of attributes in python, language identifier and backticks in
-          // markdown code blocks and values in YAML header
+          // Attributes in Python, R namespace, Markdown formatting, and YAML values
           "scope": [
-            // Python
-            "meta.attribute.python", // attributes
-            "punctuation.definition.decorator.python", // decorators
-            // R
+            "meta.attribute.python",
+            "punctuation.definition.decorator.python",
             "entity.namespace.r",
-            // Markdown
             "markup.bold.markdown",
             "punctuation.definition.markdown",
             "string.unquoted.plain.out.yaml",
-            // Quarto
             "markup.bold.quarto",
-            // Latex
             "markup.bold.textbf.latex",
             "support.class.latex"
           ],
@@ -562,13 +580,10 @@
           }
         },
         {
-          // change color of links to chapters in Table of Contents in Markdown
+          // Links in Markdown, Quarto, and LaTeX
           "scope": [
-            // Markdown
             "markup.italic.markdown",
-            // Quarto
             "markup.italic.quarto",
-            // Latex
             "markup.italic.emph.latex",
             "markup.italic.textit.latex"
           ],
@@ -577,18 +592,15 @@
           }
         },
         {
-          // change color of keywords, bold text and inline latex in markdown
+          // Keywords, special function parameters, and inline LaTeX in Markdown
           "scope": [
-            // Python
             "keyword.control",
-            // Markdown
+            "variable.parameter.function.language.special.self.python",
             "inline-dollars",
             "punctuation.definition.math.begin.markdown",
             "punctuation.definition.math.end.markdown",
-            // Latex
             "punctuation.definition.string.begin.tex",
             "punctuation.definition.string.end.tex",
-            // does not work right now
             "punctuation.math.bracket.pair.big.tex"
           ],
           "settings": {
@@ -596,11 +608,9 @@
           }
         },
         {
-          // keys in YAML header, chunk options in Rmd and Quarto
+          // YAML keys, Rmd and Quarto chunk options
           "scope": [
-            // YAML
             "entity.name.tag.yaml",
-            // R Markdown & Quarto
             "meta.embedded.block.r",
             "fenced_code.block.language.markdown"
           ],
@@ -609,8 +619,8 @@
           }
         },
         {
+          // LaTeX references, equation control keywords, and parameter definitions
           "scope": [
-            // Latex
             "constant.other.reference.label.latex",
             "keyword.control.equation.align.latex",
             "keyword.control.equation.newline.latex",
@@ -621,38 +631,29 @@
           }
         },
         {
-          "scope": [
-            // Latex
-            "markup.raw.texttt.latex",
-            "meta.text.normal.tex"
-          ],
+          // Raw LaTeX text and normal text
+          "scope": ["markup.raw.texttt.latex", "meta.text.normal.tex"],
           "settings": {
             "foreground": "#00ffff"
           }
         },
         {
-          "scope": [
-            // Markdown
-            "markup.inline.raw"
-          ],
+          // Raw inline content in Markdown
+          "scope": ["markup.inline.raw"],
           "settings": {
             "foreground": "#9effff"
           }
         },
         {
-          // change color of variables in embedded python code blocks
+          // Variables in embedded code blocks
           "scope": [
-            // Python
             "meta.embedded.block.python",
             "meta.indexed-name.python",
             "meta.item-access.arguments.python",
-            // Markdown
             "constant.numeric.math.tex",
             "meta.embedded.math.markdown",
             "meta.function.math.tex",
-            // Quarto
             "meta.paragraph.quarto",
-            // Latex
             "meta.function.environment.general.latex",
             "meta.function.environment.list.latex",
             "support.class.math.block.tex",
@@ -665,11 +666,11 @@
       ]
     },
     // global settings for all themes
-    // change comment color
+    // Comment color
     "comments": "#be8b3d",
     "textMateRules": [
       {
-        // remove all italic font elements
+        // Remove all italic font elements
         "scope": [
           "comment.block.documentation",
           "comment.block",
@@ -815,8 +816,8 @@
     "*.qmd": "quarto",
     "*.rmd": "rmd",
     "*.txt": "plaintext",
-    ".env_template": "dotenv",
-    ".coveragerc": "ini"
+    ".coveragerc": "ini",
+    ".env_template": "dotenv"
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.trimTrailingWhitespace": true,
