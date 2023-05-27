@@ -4,7 +4,7 @@ TODO: Add description of this directory and the purpose of dotfiles.
 
 ## Setup a new MacBook
 
-1.  Copy important files from hard drive backup to new machine.
+1.  Copy important files from hard drive backup to the new machine.
     The files should be in the same location in the file system.
 
 2.  Clone the dotfiles repository from GitHub to the home directory:
