@@ -1,12 +1,14 @@
 #!/usr/bin/env zsh
 
+# Install Homebrew Packages
+
 export DOTFILES_DIRPATH="$HOME/dotfiles"
 export HOMEBREW_DIRPATH="$DOTFILES_DIRPATH/homebrew"
 
-# Make sure we’re using the latest Homebrew.
+# Make sure we’re using the latest Homebrew
 brew update
 
-# Upgrade any already-installed formulae.
+# Upgrade any already-installed formulae
 brew upgrade
 
 # Upgrade all installed casks
@@ -122,13 +124,6 @@ brew install unzip
 
 # A youtube-dl fork with additional features and fixes
 brew install yt-dlp
-
-# Install OH MY ZSH
-source "$HOMEBREW_DIRPATH/install-oh-my-zsh.zsh"
-
-# TODO: This script is not executed after installing Oh my ZSH!
-# Install OH MY ZSH Plugins
-source "$HOMEBREW_DIRPATH/install-oh-my-zsh-plugins.zsh"
 
 # Remove outdated versions of installed formulae
 brew cleanup

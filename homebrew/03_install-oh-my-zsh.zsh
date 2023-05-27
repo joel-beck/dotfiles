@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Install Oh My Zsh: https://ohmyz.sh/#install
 
 # flag `--keep-zshrc` prevents overriding the original `.zshrc` file, see comment here:
