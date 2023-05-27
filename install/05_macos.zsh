@@ -13,7 +13,8 @@
 # - sort settings alphabetically by their key
 
 export DOTFILES_DIRPATH="$HOME/dotfiles"
-export MACOS_DIRPATH="$DOTFILES_DIRPATH/macos"
+export INSTALL_DIRPATH="$DOTFILES_DIRPATH/install"
+export MACOS_DIRPATH="$INSTALL_DIRPATH/macos"
 export DOMAINS_DIRPATH="$MACOS_DIRPATH/domains"
 
 # must come first

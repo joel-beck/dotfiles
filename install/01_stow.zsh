@@ -2,8 +2,10 @@
 
 # Use stow to symlink dotfiles to the home directory
 
+export DOTFILES_DIRPATH="$HOME/dotfiles"
+
 # Navigate to the dotfiles directory
-cd "$HOME/dotfiles"
+cd "$DOTFILES_DIRPATH" || exit
 
 # Keep the packages in alphabetical orders
 # The `--adopt` flag overwrites existing config files with symlinks

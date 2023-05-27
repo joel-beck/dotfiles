@@ -21,6 +21,12 @@ brew install cookiecutter
 # Get, unpack, build, and install modules from CPAN
 brew install cpanminus
 
+# Pack, ship and run any application as a lightweight container
+brew install docker
+
+# Isolated development environments using Docker
+brew install docker-compose
+
 # More intuitive version of du in rust
 brew install dust
 
@@ -48,8 +54,11 @@ brew install imagemagick
 # Lightweight and flexible command-line JSON processor
 brew install jq
 
-# McFly
+# Fly through your shell history
 brew install mcfly
+
+# Platform built on V8 to build network applications
+brew install node
 
 # Swiss-army knife of markup format conversion
 brew install pandoc
@@ -78,8 +87,8 @@ brew install pre-commit
 # Seamless operability between C++11 and Python
 brew install pybind11
 
-# Python version management
-brew install pyenv
+# Python version management & Install latest Python version
+brew install pyenv && pyenv install $(pyenv install --list | grep -v - | grep -v b | tail -1)
 
 # Powerful, clean, object-oriented scripting language
 brew install ruby
@@ -104,6 +113,9 @@ brew install trash
 
 # Display directories as trees (with optional color/HTML output)
 brew install tree
+
+# Language for application scale JavaScript development
+brew install typescript
 
 # Extraction utility for .zip compressed archives
 brew install unzip
