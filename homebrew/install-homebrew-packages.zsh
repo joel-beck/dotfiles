@@ -1,3 +1,5 @@
+# Install Homebrew Packages, keep the list in alphabetical order
+
 # Bourne-Again SHell, a UNIX command interpreter
 brew install bash
 
