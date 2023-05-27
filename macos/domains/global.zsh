@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # Set action on double click to Maximize
 defaults write NSGlobalDomain "AppleActionOnDoubleClick" -string "Maximize"
 

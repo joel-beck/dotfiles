@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # Remove Dock show/hide delay
 defaults write com.apple.dock "autohide-delay" -float 0
 

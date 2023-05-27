@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # Enable force click on trackpad
 defaults write com.apple.trackpad.forceClick -bool true
 

@@ -47,21 +47,21 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/Users/joel/Documents/ProjectsPrivate/AlfredScripts",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ProjectsPrivate/AlfredScripts"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "path": "/Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/ProjectsPrivate/KeyboardMaestroScripts"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/joel/Documents/ProjectsPrivate/AlfredScripts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/ProjectsPrivate/AlfredScripts"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -881,54 +881,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1802,7 +1793,30 @@
                 "height": 944
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///Users/joel/dotfiles",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/3d20c8f028938700145acaffd19d3036",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 38,
+                    "width": 1512,
+                    "height": 944
+                }
+            },
+            {
+                "folder": "file:///Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",
+                "backupPath": "/Users/joel/Library/Application Support/Code/Backups/b6e9e973e5b2dc3aecb9e072c0f144cf",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 38,
+                    "width": 1512,
+                    "height": 944
+                }
+            }
+        ]
     },
     "pickerWorkingDir": "/Users/joel/Documents/Studium/Masterstudium/4_SemesterSS2022",
     "windowControlHeight": 28,
@@ -1895,9 +1909,9 @@
             "file:///Users/joel/Documents/ObsidianVault": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPrivate/QuickNotes": "__default__profile__",
             "file:///Users/joel/Documents/ProjectsPublic/readnext": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts": "__default__profile__",
             "file:///Users/joel/dotfiles": "__default__profile__",
-            "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts": "__default__profile__"
+            "file:///Users/joel/Documents/ProjectsPrivate/AlfredScripts": "__default__profile__",
+            "file:///Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts": "__default__profile__"
         },
         "emptyWindows": {
             "1685084141405": "__default__profile__"

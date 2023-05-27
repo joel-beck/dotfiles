@@ -38,7 +38,7 @@ xa=37"
 
 # SECTION: Oh My Zsh Plugins
 plugins=(
-    fzf-zsh-plugin macos pdm poetry thefuck zsh-autosuggestions zsh-syntax-highlighting zsh-z
+    fzf-zsh-plugin macos pdm thefuck zsh-autosuggestions zsh-syntax-highlighting zsh-z
 )
 
 # NOTE for zsh-autosuggestions

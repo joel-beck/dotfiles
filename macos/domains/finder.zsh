@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # Enable animation for information panes
 defaults write com.apple.finder AnimateInfoPanes -bool false
 

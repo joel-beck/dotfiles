@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # Do not play a sound when connecting to the charger
 defaults write com.apple.PowerChime ChimeOnNoHardware -bool true
 
