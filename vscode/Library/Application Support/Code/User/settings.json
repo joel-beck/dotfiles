@@ -483,55 +483,55 @@
       "textMateRules": [
         {
           "scope": [
-            "meta.function-call" // function calls
+            "meta.function-call" // Specifies the color of function calls
           ],
           "settings": {
             "foreground": "#FFC600"
           }
         },
         {
-          "scope": ["support.function.r", "variable.function.r"], // R functions
+          "scope": ["support.function.r", "variable.function.r"], // Specifies the color of R language function calls and variable functions
           "settings": {
             "foreground": "#FFC600"
           }
         },
         {
-          "scope": ["entity.name.math.tex"], // LaTeX math entities
+          "scope": ["entity.name.math.tex"], // Specifies the color of LaTeX math entities
           "settings": {
             "foreground": "#FFC600"
           }
         },
         {
           "scope": [
-            "markup.inline.raw.string.markdown", // Raw strings in Markdown
-            "punctuation.definition.raw.markdown", // Raw strings in Markdown
-            "punctuation.definition.string.begin.markdown", // Raw strings in Markdown
-            "punctuation.definition.string.end.markdown", // Raw strings in Markdown
-            "string.other.link.title.markdown" // Links in Markdown
+            "markup.inline.raw.string.markdown", // Raw inline strings in Markdown
+            "punctuation.definition.raw.markdown", // Punctuation for raw inline strings in Markdown
+            "punctuation.definition.string.begin.markdown", // Start punctuation for strings in Markdown
+            "punctuation.definition.string.end.markdown", // End punctuation for strings in Markdown
+            "string.other.link.title.markdown" // Title of links in Markdown
           ],
           "settings": {
             "foreground": "#FFC600"
           }
         },
         {
-          // Raw strings in Quarto
-          "scope": ["markup.inline.raw.string.quarto"], // Raw strings in Quarto
+          // Specifies the color of raw inline strings in Quarto
+          "scope": ["markup.inline.raw.string.quarto"],
           "settings": {
             "foreground": "#FFC600"
           }
         },
         {
           "scope": [
-            "constant.character.math.tex", // TeX math constants
-            "constant.other.general.math.tex", // TeX math constants
-            "support.function.be.latex", // LaTeX math functions
-            "support.function.emph.latex", // LaTeX italic
-            "support.function.general.latex", // LaTeX math functions
-            "support.function.general.tex", // Tex math functions
-            "support.function.section.latex", // LaTeX sections
-            "support.function.textbf.latex", // LaTeX bold
-            "support.function.textit.latex", // LaTeX italic
-            "support.function.texttt.latex" // LaTeX monospace
+            "constant.character.math.tex", // Constant characters in TeX math expressions
+            "constant.other.general.math.tex", // General constants in TeX math expressions
+            "support.function.be.latex", // Basic functions in LaTeX
+            "support.function.emph.latex", // Italic emphasis function in LaTeX
+            "support.function.general.latex", // General support functions in LaTeX
+            "support.function.general.tex", // General support functions in TeX
+            "support.function.section.latex", // Sectioning commands in LaTeX
+            "support.function.textbf.latex", // Bold text function in LaTeX
+            "support.function.textit.latex", // Italic text function in LaTeX
+            "support.function.texttt.latex" // Monospace text function in LaTeX
           ],
           "settings": {
             "foreground": "#FFC600"
@@ -545,11 +545,11 @@
         },
         {
           "scope": [
-            "entity.name.section.markdown", // Markdown headers
-            "punctuation.definition.heading.markdown", // Markdown headers
-            "entity.name.section.latex", // LaTeX headers
-            "entity.name.section.quarto", // Quarto headers
-            "punctuation.definition.heading.quarto" // Quarto headers
+            "entity.name.section.markdown", // Section headers in Markdown
+            "punctuation.definition.heading.markdown", // Punctuation for section headers in Markdown
+            "entity.name.section.latex", // Section headers in LaTeX
+            "entity.name.section.quarto", // Section headers in Quarto
+            "punctuation.definition.heading.quarto" // Punctuation for section headers in Quarto
           ],
           "settings": {
             "foreground": "#FF9D00"
@@ -557,27 +557,27 @@
         },
         {
           "scope": [
-            "meta.attribute.python", // Python attributes
-            "punctuation.definition.decorator.python", // Python decorators
-            "entity.namespace.r", // R namespace
-            "markup.bold.markdown", // Markdown bold
-            "punctuation.definition.markdown", // Markdown formatting
-            "string.unquoted.plain.out.yaml", // YAML values
-            "markup.bold.quarto", // Quarto bold
-            "markup.bold.textbf.latex", // LaTeX bold
-            "support.class.latex" // LaTeX class
+            "meta.attribute.python", // Attributes in Python
+            "punctuation.definition.decorator.python", // Decorators in Python
+            "entity.namespace.r", // Namespaces in R
+            "markup.bold.markdown", // Bold text in Markdown
+            "punctuation.definition.markdown", // General punctuation in Markdown
+            "string.unquoted.plain.out.yaml", // Unquoted plain strings in YAML
+            "markup.bold.quarto", // Bold text in Quarto
+            "markup.bold.textbf.latex", // Bold text in LaTeX
+            "support.class.latex" // Class support in LaTeX
           ],
           "settings": {
             "foreground": "#00BD00"
           }
         },
         {
-          // Links in Markdown, Quarto, and LaTeX
+          // Italic text in Markdown, Quarto, and LaTeX
           "scope": [
-            "markup.italic.markdown", // Markdown italic
-            "markup.italic.quarto", // Quarto italic
-            "markup.italic.emph.latex", // LaTeX italic
-            "markup.italic.textit.latex" // LaTeX italic
+            "markup.italic.markdown", // Italic text in Markdown
+            "markup.italic.quarto", // Italic text in Quarto
+            "markup.italic.emph.latex", // Italic text emphasis in LaTeX
+            "markup.italic.textit.latex" // Italic text in LaTeX
           ],
           "settings": {
             "foreground": "#00ED2A"
@@ -586,13 +586,13 @@
         {
           "scope": [
             "keyword.control", // Control keywords
-            "variable.parameter.function.language.special.self.python", // Python self
-            "inline-dollars", // R inline code
-            "punctuation.definition.math.begin.markdown", // Markdown math
-            "punctuation.definition.math.end.markdown", // Markdown math
-            "punctuation.definition.string.begin.tex", // LaTeX strings
-            "punctuation.definition.string.end.tex", // LaTeX strings
-            "punctuation.math.bracket.pair.big.tex" // LaTeX math brackets
+            "variable.parameter.function.language.special.self.python", // 'self' parameter in Python
+            "inline-dollars", // R inline code wrapped with dollars
+            "punctuation.definition.math.begin.markdown", // Start punctuation for math expressions in Markdown
+            "punctuation.definition.math.end.markdown", // End punctuation for math expressions in Markdown
+            "punctuation.definition.string.begin.tex", // Start punctuation for strings in TeX
+            "punctuation.definition.string.end.tex", // End punctuation for strings in TeX
+            "punctuation.math.bracket.pair.big.tex" // Big bracket pairs in TeX math
           ],
           "settings": {
             "foreground": "#FB94FF"
@@ -601,8 +601,8 @@
         {
           "scope": [
             "entity.name.tag.yaml", // YAML tags
-            "meta.embedded.block.r", // R code blocks
-            "fenced_code.block.language.markdown" // Markdown code blocks
+            "meta.embedded.block.r", // Embedded R code blocks
+            "fenced_code.block.language.markdown" // Fenced code blocks in Markdown
           ],
           "settings": {
             "foreground": "#55a5fb"
@@ -610,41 +610,41 @@
         },
         {
           "scope": [
-            "constant.other.reference.label.latex", // LaTeX labels
-            "keyword.control.equation.align.latex", // LaTeX align
-            "keyword.control.equation.newline.latex", // LaTeX align
-            "variable.parameter.definition.label.latex" // LaTeX labels
+            "constant.other.reference.label.latex", // Label references in LaTeX
+            "keyword.control.equation.align.latex", // Equation alignment control keyword in LaTeX
+            "keyword.control.equation.newline.latex", // Equation newline control keyword in LaTeX
+            "variable.parameter.definition.label.latex" // Label definitions in LaTeX
           ],
           "settings": {
             "foreground": "#43cdf7"
           }
         },
         {
-          "scope": ["markup.raw.texttt.latex", "meta.text.normal.tex"], // LaTeX code
+          "scope": ["markup.raw.texttt.latex", "meta.text.normal.tex"], // Raw monospace text and normal text in LaTeX
           "settings": {
             "foreground": "#00ffff"
           }
         },
         {
-          "scope": ["markup.inline.raw"], // Raw strings in Markdown
+          "scope": ["markup.inline.raw"], // Raw inline strings in any markup language
           "settings": {
             "foreground": "#9effff"
           }
         },
         {
           "scope": [
-            "meta.embedded.block.python", // Python code blocks
-            "meta.indexed-name.python", // Python function arguments
-            "meta.item-access.arguments.python", // Python function arguments
-            "string.unquoted.argument.shell", // Shell arguments
-            "constant.numeric.math.tex", // TeX math constants
-            "meta.embedded.math.markdown", // Markdown math
-            "meta.function.math.tex", // TeX math functions
-            "meta.paragraph.quarto", // Quarto paragraphs
-            "meta.function.environment.general.latex", // LaTeX environments
-            "meta.function.environment.list.latex", // LaTeX environments
-            "support.class.math.block.tex", // TeX math environments
-            "support.class.math.block.environment.latex" // LaTeX math environments
+            "meta.embedded.block.python", // Embedded Python code blocks
+            "meta.indexed-name.python", // Indexed names in Python
+            "meta.item-access.arguments.python", // Argument item access in Python
+            "string.unquoted.argument.shell", // Unquoted arguments in shell scripts
+            "constant.numeric.math.tex", // Numeric constants in TeX math
+            "meta.embedded.math.markdown", // Embedded math in Markdown
+            "meta.function.math.tex", // Functions in TeX math
+            "meta.paragraph.quarto", // Paragraphs in Quarto
+            "meta.function.environment.general.latex", // General environments in LaTeX
+            "meta.function.environment.list.latex", // List environments in LaTeX
+            "support.class.math.block.tex", // Math block class support in TeX
+            "support.class.math.block.environment.latex" // Math block environment class support in LaTeX
           ],
           "settings": {
             "foreground": "#ffffff"
