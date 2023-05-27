@@ -9,9 +9,7 @@ cd "$HOME/dotfiles"
 # The `--adopt` flag overwrites existing config files with symlinks
 stow --adopt conda
 stow --adopt git
-stow --adopt homebrew
 stow --adopt karabiner
-stow --adopt macos
 stow --adopt obsidian
 stow --adopt rstudio
 stow --adopt starship
