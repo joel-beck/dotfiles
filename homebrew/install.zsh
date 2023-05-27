@@ -123,8 +123,12 @@ brew install unzip
 # A youtube-dl fork with additional features and fixes
 brew install yt-dlp
 
-# Install OH MY ZSH and its Plugins
+# Install OH MY ZSH
 source "$HOMEBREW_DIRPATH/install-oh-my-zsh.zsh"
+
+# TODO: This script is not executed after installing Oh my ZSH!
+# Install OH MY ZSH Plugins
+source "$HOMEBREW_DIRPATH/install-oh-my-zsh-plugins.zsh"
 
 # Remove outdated versions of installed formulae
 brew cleanup

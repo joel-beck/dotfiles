@@ -1,6 +1,6 @@
 # SECTION: General Command Line Plugins
 # broot - Prettier Trees
-source ~/.config/broot/launcher/bash/br
+source ~/Library/Application\ Support/org.dystroy.broot/launcher/bash/br
 
 # fzf - Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -9,7 +9,7 @@ source ~/.config/broot/launcher/bash/br
 eval $(thefuck --alias fuck)
 
 # auto-closing quotes and parentheses
-source ~/.zsh-autopair/autopair.zsh
+source /opt/homebrew/share/zsh-autopair/autopair.zsh
 autopair-init
 
 export EXA_COLORS="\
@@ -38,7 +38,7 @@ xa=37"
 
 # SECTION: Oh My Zsh Plugins
 plugins=(
-    fzf-zsh-plugin macos pdm thefuck zsh-autosuggestions zsh-syntax-highlighting zsh-z
+    fzf-zsh-plugin macos pdm thefuck z zsh-autosuggestions zsh-syntax-highlighting
 )
 
 # NOTE for zsh-autosuggestions
