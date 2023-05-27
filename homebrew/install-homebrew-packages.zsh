@@ -1,19 +1,3 @@
-#!/usr/bin/env zsh
-
-# Install Homebrew Packages
-
-export DOTFILES_DIRPATH="$HOME/dotfiles"
-export HOMEBREW_DIRPATH="$DOTFILES_DIRPATH/homebrew"
-
-# Make sure we’re using the latest Homebrew
-brew update
-
-# Upgrade any already-installed formulae
-brew upgrade
-
-# Upgrade all installed casks
-brew upgrade --cask
-
 # Bourne-Again SHell, a UNIX command interpreter
 brew install bash
 
@@ -124,6 +108,3 @@ brew install unzip
 
 # A youtube-dl fork with additional features and fixes
 brew install yt-dlp
-
-# Remove outdated versions of installed formulae
-brew cleanup
