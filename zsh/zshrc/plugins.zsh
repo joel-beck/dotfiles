@@ -1,6 +1,6 @@
 # SECTION: General Command Line Plugins
 # broot - Prettier Trees
-source /Users/joel/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br
 
 # fzf - Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

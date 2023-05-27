@@ -17,6 +17,10 @@ pdm completion zsh >$ZSH_CUSTOM/plugins/pdm/_pdm
 # thefuck: https://github.com/nvbn/thefuck#installation
 brew install thefuck
 
+# zsh-autopair: https://github.com/hlissner/zsh-autopair#install
+# can be installed with homebrew (undocumented!): https://formulae.brew.sh/formula/zsh-autopair
+brew install zsh-autopair
+
 # zsh-autosuggestions: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
