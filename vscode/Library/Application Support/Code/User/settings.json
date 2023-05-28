@@ -477,7 +477,6 @@
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   // SECTION: Syntax Highlighting
-
   "editor.tokenColorCustomizations": {
     "[Cobalt2]": {
       "textMateRules": [
