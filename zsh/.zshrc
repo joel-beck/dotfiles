@@ -18,19 +18,19 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
     source "$ZSHRC_DIRPATH/powerlevel10k.zsh"
 fi
 
-source "$ZSHRC_DIRPATH/ruff.zsh"
-
-source "$ZSHRC_DIRPATH/pnpm.zsh"
-
 source "$ZSHRC_DIRPATH/bun.zsh"
-
-source "$ZSHRC_DIRPATH/pyenv.zsh"
 
 source "$ZSHRC_DIRPATH/conda.zsh"
 
-source "$ZSHRC_DIRPATH/tex.zsh"
-
 source "$ZSHRC_DIRPATH/perl.zsh"
+
+source "$ZSHRC_DIRPATH/pnpm.zsh"
+
+source "$ZSHRC_DIRPATH/pyenv.zsh"
+
+source "$ZSHRC_DIRPATH/ruff.zsh"
+
+source "$ZSHRC_DIRPATH/tex.zsh"
 
 # run second to last to make initilization work correctly and display time on end of
 # same line

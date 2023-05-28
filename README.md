@@ -12,18 +12,20 @@ TODO: Add description of this directory and the purpose of dotfiles.
     ```bash
     git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
     ```
-3.  Run `01_stow.zsh` to symlink the dotfiles to the home directory:
+
+3.  Run `01_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
 
     ```bash
     cd ~/dotfiles/install
-    zsh 01_stow.zsh
+    zsh 01_homebrew.zsh
     ```
 
-4.  Run `02_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
+4.  Run `02_stow.zsh` to symlink the dotfiles to the home directory.
+    Note that this step has to follow step 1 since it requires the `stow` package to be installed via Homebrew:
 
     ```bash
     cd ~/dotfiles/install
-    zsh 02_homebrew.zsh
+    zsh 02_stow.zsh
     ```
 
 5.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:

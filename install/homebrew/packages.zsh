@@ -27,8 +27,10 @@ brew install cpanminus
 # Pack, ship and run any application as a lightweight container
 brew install docker
 
-# Compose and run multi-container Docker applications
-brew install docker-compose
+# Compose and run multi-container Docker applications & Install as a Docker Plugin
+brew install docker-compose &&
+    mkdir -p ~/.docker/cli-plugins &&                                                                # Create directory for docker plugins
+    ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose # Symlink docker-compose to the plugins directory
 
 # More intuitive version of 'du' in rust
 brew install dust

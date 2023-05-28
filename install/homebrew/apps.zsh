@@ -48,6 +48,9 @@ brew install --cask deepl
 # Discord
 brew install --cask discord
 
+# Docker Desktop
+brew install --cask docker
+
 # Dropbox
 brew install --cask dropbox
 
