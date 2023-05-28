@@ -180,6 +180,9 @@ brew install --cask warp
 # WhatsApp
 brew install --cask whatsapp
 
+# wkhtmltopdf
+brew install --cask wkhtmltopdf
+
 # Zoom
 brew install --cask zoom
 
