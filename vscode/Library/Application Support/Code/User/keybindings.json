@@ -73,7 +73,8 @@
   // Expand Selection to Previous Match (Multi-Selection) or Select Current Word
   {
     "command": "editor.action.addSelectionToPreviousFindMatch",
-    "key": "ctrl+shift+left"
+    "key": "ctrl+shift+left",
+    "when": "editorFocus"
   },
   // Expand Selection to Next Match (Multi-Selection) or Select Current Word
   {
@@ -90,7 +91,8 @@
   // Jump from Current Match to Previous Match to add/skip occurrences with Multi-Cursor Selection
   {
     "command": "editor.action.moveSelectionToPreviousFindMatch",
-    "key": "ctrl+shift+up"
+    "key": "ctrl+shift+up",
+    "when": "editorFocus"
   },
   // Shrink Current Selection
   {
@@ -170,12 +172,12 @@
     "command": "workbench.view.extensions",
     "when": "viewContainer.workbench.view.extensions.enabled"
   },
-  // Move Active Editor to Previous Group (Left)
+  // Move Active Editor to Previous Group (Left) - 3 Finger Swipe Left with BetterTouchTool
   {
     "key": "ctrl+shift+alt+left",
     "command": "workbench.action.moveEditorToPreviousGroup"
   },
-  // Move Active Editor to Next Group (Right)
+  // Move Active Editor to Next Group (Right) - 3 Finger Swipe Right with BetterTouchTool
   {
     "key": "ctrl+shift+alt+right",
     "command": "workbench.action.moveEditorToNextGroup"
@@ -235,11 +237,6 @@
     "command": "editor.action.triggerSuggest",
     "key": "ctrl+space"
   },
-  // Trigger Inline Suggestions
-  {
-    "command": "workbench.action.showCommands",
-    "key": "shift+space"
-  },
   // Accept Next Word of Inline Suggestions
   {
     "command": "editor.action.inlineSuggest.acceptNextWord",
@@ -253,6 +250,12 @@
     "when": "canUndoInlineSuggestion && !editorReadonly"
   },
   // SUBSECTION: Utils - Editor Commands
+  // Open Command Palette
+
+  {
+    "command": "workbench.action.showCommands",
+    "key": "shift+space"
+  },
   // Open Settings JSON
   {
     "command": "workbench.action.openSettingsJson",
@@ -347,14 +350,14 @@
     "when": "editorFocus && !editorHasSelection"
   },
   // Cut (and delete) Current Line when Editor has no selection
-  {
-    "args": {
-      "command": "multiCommand.CutDeleteLineNoSelection"
-    },
-    "command": "extension.multiCommand.execute",
-    "key": "cmd+x",
-    "when": "editorFocus && !editorHasSelection"
-  },
+  // {
+  //   "args": {
+  //     "command": "multiCommand.CutDeleteLineNoSelection"
+  //   },
+  //   "command": "extension.multiCommand.execute",
+  //   "key": "cmd+x",
+  //   "when": "editorFocus && !editorHasSelection"
+  // },
   // Cut (and keep) Current Line but keep line when Editor has no selection
   {
     "args": {
