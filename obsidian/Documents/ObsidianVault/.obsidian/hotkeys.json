@@ -472,5 +472,13 @@
       ],
       "key": "Tab"
     }
+  ],
+  "outline:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "O"
+    }
   ]
 }

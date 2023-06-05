@@ -251,7 +251,6 @@
   },
   // SUBSECTION: Utils - Editor Commands
   // Open Command Palette
-
   {
     "command": "workbench.action.showCommands",
     "key": "shift+space"
@@ -286,12 +285,17 @@
     "command": "extension.multiCommand.execute",
     "key": "ctrl+shift+alt+cmd+space"
   },
-  // Close All Tabs
+  // Close all Editors across all Groups
   {
-    "key": "ctrl+c",
+    "key": "alt+c",
     "command": "workbench.action.closeAllEditors"
   },
-  // Reload Window
+  // Close all other Editors within the same Group
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  // Reload VSCode
   {
     "command": "workbench.action.reloadWindow",
     "key": "cmd+r"

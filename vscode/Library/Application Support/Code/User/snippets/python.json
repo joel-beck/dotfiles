@@ -5,10 +5,9 @@
     "body": ["print(f\"$0\")"]
   },
   "Add Simple Docstring": {
-    "prefix": [
-      "docstring"
-      // "\"\"\"\"",
-    ],
+    // a triple quote as trigger does not work since it triggers the snippet pop-up
+    // window already after the first quote which gets in the way
+    "prefix": "doc",
     "body": ["\"\"\"", "$0", "\"\"\""]
   },
   "Insert for-loop": {
@@ -83,6 +82,10 @@
   "Import Pandas": {
     "prefix": "pandas import",
     "body": ["import pandas as pd", "$0"]
+  },
+  "Import Polars": {
+    "prefix": "polars import",
+    "body": ["import polars as pl", "$0"]
   },
   "Import NumPy": {
     "prefix": "numpy import",

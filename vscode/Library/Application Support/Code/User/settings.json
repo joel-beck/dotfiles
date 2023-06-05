@@ -586,6 +586,7 @@
           "scope": [
             "keyword.control", // Control keywords
             "variable.parameter.function.language.special.self.python", // 'self' parameter in Python
+            "variable.parameter.function.language.special.cls.python", // 'cls' parameter in Python
             "inline-dollars", // R inline code wrapped with dollars
             "punctuation.definition.math.begin.markdown", // Start punctuation for math expressions in Markdown
             "punctuation.definition.math.end.markdown", // End punctuation for math expressions in Markdown
