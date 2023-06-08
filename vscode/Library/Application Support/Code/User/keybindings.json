@@ -11,7 +11,8 @@
   // Move to next Cursor Position
   {
     "command": "workbench.action.navigateForward",
-    "key": "ctrl+right"
+    "key": "ctrl+right",
+    "when": "!inlineSuggestionVisible"
   },
   // Move Cursor to Previous Code Cell
   {
@@ -149,6 +150,16 @@
     "key": "ctrl+p",
     "command": "workbench.view.extension.project-manager"
   },
+  // Focus Copilot Chat in Side Bar
+  {
+    "key": "ctrl+c",
+    "command": "workbench.panel.chatSidebar.copilot"
+  },
+  // Focus Outline in Side Bar
+  {
+    "key": "ctrl+o",
+    "command": "outline.focus"
+  },
   // Focus Git in Side Bar
   {
     "key": "ctrl+g",
@@ -208,6 +219,24 @@
     "key": "ctrl+alt+right"
   },
   // SUBSECTION: Suggestions and Hints
+  // Accept Next Word of Inline Suggestions
+  {
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "key": "alt+right",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  // Undo Last Word of Inline Suggestion
+  {
+    "command": "editor.action.inlineSuggest.undo",
+    "key": "alt+left",
+    "when": "canUndoInlineSuggestion && !editorReadonly"
+  },
+  // Show alternative Copilot Suggestions in Panel
+  {
+    "key": "ctrl+enter",
+    "command": "github.copilot.generate",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
   // Peek Definition
   {
     "command": "editor.action.peekDefinition",
@@ -236,18 +265,6 @@
   {
     "command": "editor.action.triggerSuggest",
     "key": "ctrl+space"
-  },
-  // Accept Next Word of Inline Suggestions
-  {
-    "command": "editor.action.inlineSuggest.acceptNextWord",
-    "key": "alt+right",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  // Undo Last Word of Inline Suggestion
-  {
-    "command": "editor.action.inlineSuggest.undo",
-    "key": "alt+left",
-    "when": "canUndoInlineSuggestion && !editorReadonly"
   },
   // SUBSECTION: Utils - Editor Commands
   // Open Command Palette
@@ -287,12 +304,12 @@
   },
   // Close all Editors across all Groups
   {
-    "key": "alt+c",
+    "key": "alt+a",
     "command": "workbench.action.closeAllEditors"
   },
   // Close all other Editors within the same Group
   {
-    "key": "ctrl+c",
+    "key": "alt+c",
     "command": "workbench.action.closeOtherEditors"
   },
   // Reload VSCode
@@ -1123,11 +1140,6 @@
     "command": "settingsOnFire.toggleSettings",
     "key": "ctrl+s"
   },
-  // Add Word to Custom Dictionary in Current Worksapce
-  {
-    "command": "cSpell.addWordToWorkspaceDictionary",
-    "key": "alt+a"
-  },
   // Insert Empty Line instead of new List Item in Markdown Lists
   {
     "command": "markdown.extension.onShiftEnterKey",
@@ -1764,5 +1776,14 @@
   {
     "key": "ctrl+cmd+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "-workbench.panel.chatSidebar.copilot"
   }
 ]
