@@ -1347,7 +1347,7 @@
   "r.plot.useHttpgd": true,
   "r.rmarkdown.knit.focusOutputChannel": false,
   "r.rpath.mac": "/usr/local/bin/R",
-  "r.rterm.mac": "/opt/homebrew/Caskroom/miniforge/base/bin/radian",
+  "r.rterm.mac": "/usr/local/bin/R",
   "r.session.levelOfObjectDetail": "Normal",
   "r.workspaceViewer.showObjectSize": true,
   "rainbow_csv.autodetect_separators": ["\t", ",", "|"],

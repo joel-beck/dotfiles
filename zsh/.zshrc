@@ -1,14 +1,21 @@
-# NOTE: The order of sourcing the files is important!
+# IMPORTANT: Always append to the PATH variable, do not prepend!
+# The order of sourcing the files is important for the following reasons:
+# 1. Some scripts might depend on the environment variables set in other scripts
+# 2. Several scripts add to the PATH variable, scripts that are run first take priority
+#    in the PATH variable
+
 export DOTFILES_DIRPATH="$HOME/dotfiles"
 # do not overwrite ZSH environment variable, used for oh my zsh!
 export ZSH_DIRPATH="$DOTFILES_DIRPATH/zsh"
 export ZSHRC_DIRPATH="$ZSH_DIRPATH/zshrc"
 
+# Adds file system locations with highest priority to PATH
 source "$ZSHRC_DIRPATH/config.zsh"
 
-# must be sourced before plugins
+# Must be sourced before plugins
 source "$ZSHRC_DIRPATH/ohmyzsh.zsh"
 
+# Must be sourced after oh my zsh
 source "$ZSHRC_DIRPATH/plugins.zsh"
 
 # iTerm2 Configuration breaks Warp's custom prompt
@@ -20,8 +27,6 @@ fi
 
 source "$ZSHRC_DIRPATH/bun.zsh"
 
-source "$ZSHRC_DIRPATH/conda.zsh"
-
 source "$ZSHRC_DIRPATH/perl.zsh"
 
 source "$ZSHRC_DIRPATH/pnpm.zsh"
@@ -32,9 +37,12 @@ source "$ZSHRC_DIRPATH/ruff.zsh"
 
 source "$ZSHRC_DIRPATH/tex.zsh"
 
-# run second to last to make initilization work correctly and display time on end of
+# Add conda environments to the PATH at the end to take least priority
+source "$ZSHRC_DIRPATH/conda.zsh"
+
+# Must be second to last to make initilization work correctly and display time on end of
 # same line
 source "$ZSHRC_DIRPATH/starship.zsh"
 
-# run last to remove aliases from all plugins
+# Must be last to remove aliases from all plugins
 source "$ZSHRC_DIRPATH/aliases.zsh"

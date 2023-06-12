@@ -13,6 +13,9 @@
 "pane_group:navigate_next": none
 "pane_group:navigate_right": none
 "terminal:ask_ai_assistant": none
+"terminal:copy": alt-shift-cmd-C
+"terminal:copy_commands": cmd-c
+"terminal:copy_outputs": shift-cmd-C
 "workspace:activate_next_tab": alt-cmd-right
 "workspace:activate_prev_tab": alt-cmd-left
 "workspace:close_active_tab": cmd-w

@@ -7,11 +7,8 @@ else
     if [ -f "/opt/homebrew/Caskroom/mambaforge/base/etc/profile.d/conda.sh" ]; then
         . "/opt/homebrew/Caskroom/mambaforge/base/etc/profile.d/conda.sh"
     else
-        export PATH="/opt/homebrew/Caskroom/mambaforge/base/bin:$PATH"
+        export PATH="$PATH:/opt/homebrew/Caskroom/mambaforge/base/bin"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-# activate default environment to not accidentally install packages in base environment
-conda activate py11-ds
