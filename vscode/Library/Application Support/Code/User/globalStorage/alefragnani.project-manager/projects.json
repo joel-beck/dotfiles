@@ -1,13 +1,6 @@
 [
   {
     "enabled": true,
-    "name": "keyboard-maestro-plists",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/AppBackups/KeyboardMaestro/LibraryFolder",
-    "tags": ["keyboard-maestro", "backups"]
-  },
-  {
-    "enabled": true,
     "name": "obsidian-vault",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ObsidianVault",
@@ -141,13 +134,6 @@
   },
   {
     "enabled": true,
-    "name": "resume",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/Studium/StudiumSonstiges/Lebenslauf/resume",
-    "tags": ["r", "studium"]
-  },
-  {
-    "enabled": true,
     "name": "drafts-scripts",
     "paths": [],
     "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts",
@@ -166,5 +152,19 @@
     "paths": [],
     "rootPath": "/Users/joel/dotfiles",
     "tags": ["config", "root"]
+  },
+  {
+    "enabled": true,
+    "name": "keyboard-maestro-plists",
+    "paths": [],
+    "rootPath": "/Users/joel/iCloud/AppBackups/KeyboardMaestro/LibraryFolder",
+    "tags": ["keyboard-maestro", "backups"]
+  },
+  {
+    "enabled": true,
+    "name": "resume",
+    "paths": [],
+    "rootPath": "/Users/joel/iCloud/StudiumSonstiges/Lebenslauf/resume",
+    "tags": ["r", "studium"]
   }
 ]

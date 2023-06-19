@@ -9,7 +9,6 @@ cd "$DOTFILES_DIRPATH" || exit
 
 # Keep the packages in alphabetical orders
 # The `--adopt` flag overwrites existing config files with symlinks
-stow --adopt conda
 stow --adopt git
 stow --adopt karabiner
 stow --adopt obsidian
