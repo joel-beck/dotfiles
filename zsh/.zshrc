@@ -37,9 +37,6 @@ source "$ZSHRC_DIRPATH/ruff.zsh"
 
 source "$ZSHRC_DIRPATH/tex.zsh"
 
-# Add conda environments to the PATH at the end to take least priority
-source "$ZSHRC_DIRPATH/conda.zsh"
-
 # Must be second to last to make initilization work correctly and display time on end of
 # same line
 source "$ZSHRC_DIRPATH/starship.zsh"

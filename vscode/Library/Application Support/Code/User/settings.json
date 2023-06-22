@@ -836,6 +836,7 @@
     "yaml": true
   },
   "github.copilot.inlineSuggest.enable": true,
+  "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
   "githubPullRequests.pushBranch": "always",
   // SUBSECTION: Grammarly

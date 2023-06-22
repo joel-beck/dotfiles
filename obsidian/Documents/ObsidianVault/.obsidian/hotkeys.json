@@ -480,5 +480,15 @@
       ],
       "key": "O"
     }
+  ],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "ArrowRight"
+    }
   ]
 }
