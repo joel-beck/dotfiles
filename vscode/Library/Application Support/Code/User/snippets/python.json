@@ -60,47 +60,51 @@
   },
   // SECTION: Import Snippets
   "Import Typing": {
-    "prefix": "typing import",
+    "prefix": "typing",
     "body": ["from typing import $0"]
   },
   "Import Dataclasses": {
-    "prefix": "dataclasses import",
+    "prefix": "dataclasses",
     "body": ["from dataclasses import dataclass", "$0"]
   },
   "Import Pathlib": {
-    "prefix": "pathlib import",
+    "prefix": "pathlib",
     "body": ["from pathlib import Path", "$0"]
   },
   "Import datetime": {
-    "prefix": "datetime import",
+    "prefix": "datetime",
     "body": ["from datetime import datetime", "$0"]
   },
   "Import Pytest": {
-    "prefix": "pytest import",
+    "prefix": "pytest",
     "body": ["import pytest", "$0"]
   },
+  "Import Pytest LazyFixtures": {
+    "prefix": "lazy",
+    "body": ["from pytest_lazyfixture import lazy_fixture", "$0"]
+  },
   "Import Pandas": {
-    "prefix": "pandas import",
+    "prefix": "pandas",
     "body": ["import pandas as pd", "$0"]
   },
   "Import Polars": {
-    "prefix": "polars import",
+    "prefix": "polars",
     "body": ["import polars as pl", "$0"]
   },
   "Import NumPy": {
-    "prefix": "numpy import",
+    "prefix": "numpy",
     "body": ["import numpy as np", "$0"]
   },
   "Import Seaborn": {
-    "prefix": "seaborn import",
+    "prefix": "seaborn",
     "body": ["import seaborn as sns", "$0"]
   },
   "Import Matplotlib": {
-    "prefix": "matplotlib import",
+    "prefix": "matplotlib",
     "body": ["import matplotlib.pyplot as plt", "$0"]
   },
   "Import PyTorch": {
-    "prefix": "torch import",
+    "prefix": "torch",
     "body": ["import torch", "$0"]
   },
   // SECTION: Snippets by Package

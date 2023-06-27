@@ -80,6 +80,9 @@ brew install perl
 # General-purpose scripting language
 brew install php
 
+# Execute binaries from Python packages in isolated environments
+brew install pipx
+
 # Fast, disk space efficient package manager
 brew install pnpm
 
