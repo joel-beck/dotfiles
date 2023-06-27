@@ -172,7 +172,7 @@ brew install --cask topnotch
 brew install --cask visual-studio-code
 
 # Vivid
-brew install vivid
+brew install --cask vivid
 
 # Warp
 brew install --cask warp

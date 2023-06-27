@@ -50,10 +50,78 @@ TODO: Add description of this directory and the purpose of dotfiles.
     zsh 05_macos.zsh
     ```
 
-7.  Install the remaining MacOS Apps that are not available via Homebrew manually.
+8.  Run `06_directory_structure.zsh` to create the [desired file system directory structure](#file-system-structure):
 
-TODO: Add list of remaining MacOS Apps in this README file
+    ```bash
+    cd ~/dotfiles/install
+    zsh 06_directory_structure.zsh
+    ```
 
-8.  Restart the MacBook.
+9.  Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
+
+
+10.  Restart the MacBook.
 
 Done 🎉
+
+
+### File System Structure
+
+```bash
+/Users/joel/
+    │
+    ├── dotfiles
+    ├── Documents
+    │   ├── AppBackups
+    │   ├── LargeFiles
+    │   ├── ObsidianVault
+    │   ├── Playlists
+    │   ├── ProjectsPrivate
+    │   └── ProjectsPublic
+    ├── iCloud
+    │   ├── Bachelorstudium
+    │   ├── Masterstudium
+    │   ├── Sonstiges
+    │   └── StudiumSonstiges
+    ├── Backup
+    │
+    ├── Pictures (generated automatically)
+    ├── zshrc (symlinked from dotfiles)
+    └── Zotero (generated automatically)
+```
+
+
+
+### Apps to install manually
+
+- Actions
+- AdBlock Pro
+- Aiko
+- Amphetamine
+- Bartender 4
+- Command X
+- Data Jar
+- Display Menu
+- Drafts
+- Gestimer
+- GIPHY CAPTURE
+- GoodNotes
+- Google Docs
+- Google Sheets
+- Google Slides
+- Kit
+- Noir
+- One Switch
+- Peek
+- Readwise
+- xSearch
+- SmartConverter
+- Snippety
+- TempBox
+- Twitter
+- Velja
+- Yoink
+
+
+
+
