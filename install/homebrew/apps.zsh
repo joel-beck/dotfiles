@@ -135,6 +135,9 @@ brew install --cask obsidian
 # OneDrive
 brew install --cask onedrive
 
+# OwnCloud
+brew install --cask owncloud
+
 # Postman
 brew install --cask postman
 

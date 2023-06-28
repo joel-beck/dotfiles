@@ -4,10 +4,9 @@ TODO: Add description of this directory and the purpose of dotfiles.
 
 ## Setup a new MacBook
 
-1.  Copy important files from hard drive backup to the new machine.
-    The files should be in the same location in the file system.
+1.  Open Safari, navigate to [GitHub](https://github.com) and authenticate.
 
-2.  Clone the dotfiles repository from GitHub to the home directory:
+2.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
 
     ```bash
     git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
@@ -59,8 +58,12 @@ TODO: Add description of this directory and the purpose of dotfiles.
 
 9.  Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
 
+10. Copy important files from hard drive backup to the new machine.
+    The files should be in the same location in the file system.
 
-10.  Restart the MacBook.
+11. Log into iCloud and all apps to sync data. Trigger manual syncs for apps that do not sync automatically.
+
+12. Restart the MacBook.
 
 Done 🎉
 
@@ -83,7 +86,8 @@ Done 🎉
     │   ├── Masterstudium
     │   ├── Sonstiges
     │   └── StudiumSonstiges
-    ├── Backup
+    ├── iCloudBackup
+    ├── ownCloudBackup
     │
     ├── Pictures (generated automatically)
     ├── zshrc (symlinked from dotfiles)
