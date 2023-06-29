@@ -126,6 +126,9 @@ brew install --cask microsoft-teams
 # Microsoft Word
 brew install --cask microsoft-word
 
+# MonitorControl
+brew install --cask monitorcontrol
+
 # OBS
 brew install --cask obs
 

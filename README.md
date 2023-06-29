@@ -105,14 +105,13 @@ Done 🎉
 - Bartender 4
 - Command X
 - Data Jar
-- Display Menu
 - Drafts
-- Gestimer
 - GIPHY CAPTURE
 - GoodNotes
 - Google Docs
 - Google Sheets
 - Google Slides
+- Hand Mirror
 - Kit
 - Noir
 - One Switch
