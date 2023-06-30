@@ -3,7 +3,7 @@
   "theme": "obsidian",
   "textFontFamily": "",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "enabledCssSnippets": [
     "callouts",
     "status_bar",

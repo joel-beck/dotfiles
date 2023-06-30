@@ -116,6 +116,7 @@ Done 🎉
 - Noir
 - One Switch
 - Peek
+- PDFgear
 - Readwise
 - xSearch
 - SmartConverter

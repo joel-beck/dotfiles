@@ -39,6 +39,9 @@ brew install --cask cleanshot
 # Contexts
 brew install --cask contexts
 
+# DaisyDisk
+brew install --cask daisydisk
+
 # Dash
 brew install --cask dash
 
@@ -104,6 +107,9 @@ brew install --cask mactex
 
 # Mactracker
 brew install --cask mactracker
+
+# Mail Assistant
+brew install --cask mail-assistant
 
 # Mathpix Snipping Tool
 brew install --cask mathpix-snipping-tool
