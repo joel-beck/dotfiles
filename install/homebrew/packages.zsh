@@ -147,7 +147,10 @@ brew install yt-dlp
 brew install zsh
 
 # Python version management & Install latest Python version
-brew install pyenv && pyenv install $(pyenv install --list | grep -v - | grep -v b | tail -1)
+brew install pyenv
+LATEST_PYTHON_VERSION="$(pyenv install --list | grep -v - | grep -v b | tail -1)"
+pyenv install "$LATEST_PYTHON_VERSION"
+pyenv global "$LATEST_PYTHON_VERSION"
 
 # Seamless operability between C++11 and Python
 brew install pybind11
