@@ -15,6 +15,12 @@ brew install --cask alfred
 # AirBuddy
 brew install --cask airbuddy
 
+# Backblaze
+brew install --cask backblaze
+
+# Backblaze Downloader
+brew install --cask backblaze-downloader
+
 # Bartender
 brew install --cask bartender
 
@@ -158,6 +164,9 @@ brew install --cask r
 
 # Raindrop
 brew install --cask raindropio
+
+# Resilio Sync
+brew install --cask resilio-sync
 
 # RStudio
 brew install --cask rstudio
