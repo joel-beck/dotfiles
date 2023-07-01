@@ -50,6 +50,9 @@ brew install ffmpeg
 # Command-line fuzzy finder written in Go
 brew install fzf
 
+# GitHub CLI
+brew install gh
+
 # Distributed revision control system
 brew install git
 

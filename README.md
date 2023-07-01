@@ -12,6 +12,8 @@ TODO: Add description of this directory and the purpose of dotfiles.
     git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
     ```
 
+    When requested, accept to install the Xcode Developer Tools.
+
 3.  Run `01_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
 
     ```bash
