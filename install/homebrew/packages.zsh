@@ -1,5 +1,8 @@
 # Install Homebrew Packages, keep the list in alphabetical order
 
+# Clone of cat(1) with syntax highlighting and Git integration
+brew install bat
+
 # Bash scripts that integrate bat with various command-line tools
 brew install bat-extras
 
