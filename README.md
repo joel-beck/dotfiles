@@ -9,11 +9,11 @@ TODO: Add description of this directory and the purpose of dotfiles.
 
     If the name is set incorrectly, it can be changed by [creating a new administrator account](https://support.apple.com/en-us/HT201548) on this device, renaming the main account from the new admin account and finally deleting the new admin account again.
 
-1.  Open Safari, navigate to [GitHub](https://github.com) and authenticate.
+2.  Open Safari, navigate to [GitHub](https://github.com) and login to the GitHub account via Apple Keychain.
 
-2. [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
+3. [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
 
-2.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
+4.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
 
     ```bash
     git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
@@ -23,58 +23,67 @@ TODO: Add description of this directory and the purpose of dotfiles.
     - Enter the GitHub username and the new Personal Access Token from the previous step.
 
 
-3.  Run `01_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
+5.  Run `01_macos.zsh` to set MacOS System Preferences:
 
     ```bash
     cd ~/dotfiles/install
-    zsh 01_homebrew.zsh
+    zsh 01_macos.zsh
     ```
 
-4.  Run `02_stow.zsh` to symlink the dotfiles to the home directory.
+6.  Run `02_symlinks.zsh` to create symlinks within the file system:
+
+    ```bash
+    cd ~/dotfiles/install
+    zsh 02_symlinks.zsh
+    ```
+
+7.  Run `03_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
+
+    ```bash
+    cd ~/dotfiles/install
+    zsh 03_homebrew.zsh
+    ```
+
+    Enter the password for the user account when requested.
+
+
+8.  While Apps are installing:
+    - Check frequently for prompts in the terminal to enter the password for the user account.
+    - Log into accounts of already installed apps.
+    - Setup the [desired file system directory structure](#file-system-structure) and copy important files from an external SSD backup.
+
+
+9.  Run `04_stow.zsh` to symlink the dotfiles to the home directory.
     Note that this step has to follow step 1 since it requires the `stow` package to be installed via Homebrew:
 
     ```bash
     cd ~/dotfiles/install
-    zsh 02_stow.zsh
+    zsh 04_stow.zsh
     ```
 
-5.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:
+10. Run `05_oh-my-zsh.zsh` to install OH MY ZSH:
 
     ```bash
     cd ~/dotfiles/install
-    zsh 03_oh-my-zsh.zsh
+    zsh 05_oh-my-zsh.zsh
     ```
 
-6.  **Restart the shell** (such that OH MY ZSH can set required environment variables).
-    Then run `04_install-oh-my-zsh-plugins.zsh` to install OH MY ZSH plugins:
+11. **Restart the shell** (such that OH MY ZSH can set required environment variables).
+    Then run `06_install-oh-my-zsh-plugins.zsh` to install OH MY ZSH plugins:
 
     ```bash
     cd ~/dotfiles/install
-    zsh 04_install-oh-my-zsh-plugins.zsh
+    zsh 06_install-oh-my-zsh-plugins.zsh
     ```
 
-7.  Run `05_macos.zsh` to set MacOS System Preferences:
+12. Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
 
-    ```bash
-    cd ~/dotfiles/install
-    zsh 05_macos.zsh
-    ```
-
-8.  Run `06_directory_structure.zsh` to create the [desired file system directory structure](#file-system-structure):
-
-    ```bash
-    cd ~/dotfiles/install
-    zsh 06_directory_structure.zsh
-    ```
-
-9.  Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
-
-10. Copy important files from hard drive backup to the new machine.
+13. Copy important files from hard drive backup to the new machine.
     The files should be in the same location in the file system.
 
-11. Log into iCloud and all apps to sync data. Trigger manual syncs for apps that do not sync automatically.
+14. Log into all apps to sync data. Trigger manual syncs for apps that do not sync automatically.
 
-12. Restart the MacBook.
+15. Restart the MacBook.
 
 Done 🎉
 
