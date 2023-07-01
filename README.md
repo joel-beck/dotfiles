@@ -122,7 +122,6 @@ Done 🎉
 - AdBlock Pro
 - Aiko
 - Amphetamine
-- Bartender 4
 - Command X
 - Data Jar
 - Drafts
@@ -134,7 +133,6 @@ Done 🎉
 - Hand Mirror
 - Kit
 - Noir
-- One Switch
 - Peek
 - PDFgear
 - Readwise
@@ -142,7 +140,6 @@ Done 🎉
 - SmartConverter
 - Snippety
 - TempBox
-- Twitter
 - Velja
 - Yoink
 

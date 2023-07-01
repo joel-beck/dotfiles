@@ -15,6 +15,9 @@ brew install --cask alfred
 # AirBuddy
 brew install --cask airbuddy
 
+# AppCleaner
+brew install --cask appcleaner
+
 # Backblaze
 brew install --cask backblaze
 
@@ -35,9 +38,6 @@ brew install --cask carbon-copy-cloner
 
 # Cardhop
 brew install --cask cardhop
-
-# CleanMyMac X
-brew install --cask cleanmymac
 
 # CleanShot X
 brew install --cask cleanshot
