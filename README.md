@@ -4,7 +4,14 @@ TODO: Add description of this directory and the purpose of dotfiles.
 
 ## Setup a new MacBook
 
+1.  Be **very** careful to set the User Name for the Device Account and the Home directory correctly!
+    The default name is `firstnamelastname` (e.g. `joelbeck`) instead of only the firstname (e.g. `joel`) which is often preferred.
+
+    If the name is set incorrectly, it can be changed by [creating a new administrator account](https://support.apple.com/en-us/HT201548) on this device, renaming the main account from the new admin account and finally deleting the new admin account again.
+
 1.  Open Safari, navigate to [GitHub](https://github.com) and authenticate.
+
+2. [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
 
 2.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
 
@@ -12,7 +19,9 @@ TODO: Add description of this directory and the purpose of dotfiles.
     git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
     ```
 
-    When requested, accept to install the Xcode Developer Tools.
+    - When requested, accept to install the Xcode Developer Tools first.
+    - Enter the GitHub username and the new Personal Access Token from the previous step.
+
 
 3.  Run `01_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
 
