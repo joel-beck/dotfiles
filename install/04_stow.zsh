@@ -9,11 +9,15 @@ cd "$DOTFILES_DIRPATH" || exit
 
 # Keep the packages in alphabetical orders
 # The `--adopt` flag overwrites existing config files with symlinks
-stow --adopt git
-stow --adopt karabiner
-stow --adopt obsidian
+# The `--target` flag specified the location of the target directory in the file system
+# By default, the target directory is the parent directory of the current working
+# directory (here the home directory)
+
+stow --adopt git # equivalent to `stow --adopt git --target="$HOME"`
+stow --adopt karabiner --target="$HOME/.config/karabiner"
+stow --adopt obsidian --target="$HOME/Documents/ObsidianVault/.obsidian"
 stow --adopt rstudio
-stow --adopt starship
-stow --adopt vscode
-stow --adopt warp
+stow --adopt starship --target="$HOME/.config"
+stow --adopt vscode --target="$HOME/Library/Application Support/Code/User"
+stow --adopt warp --target="$HOME/.warp"
 stow --adopt zsh

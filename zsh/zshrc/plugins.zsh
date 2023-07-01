@@ -1,9 +1,11 @@
 # SECTION: General Command Line Plugins
 # broot - Prettier Trees
-source ~/Library/Application\ Support/org.dystroy.broot/launcher/bash/br
+# TODO: Fix Path
+# source ~/Library/Application\ Support/org.dystroy.broot/launcher/bash/br
 
 # fzf - Fuzzy Finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# TODO: Fix Path
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # corrects typos
 eval $(thefuck --alias fuck)
