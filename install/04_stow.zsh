@@ -19,5 +19,7 @@ stow --adopt obsidian --target="$HOME/Documents/ObsidianVault/.obsidian"
 stow --adopt rstudio
 stow --adopt starship --target="$HOME/.config"
 stow --adopt vscode --target="$HOME/Library/Application Support/Code/User"
+# check box in settings to `honor user's custom prompt` to enable starship support and
+# configure Warp's remaining settings
 stow --adopt warp --target="$HOME/.warp"
 stow --adopt zsh
