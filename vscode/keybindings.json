@@ -1090,7 +1090,7 @@
   {
     "command": "md-shortcut.toggleLink",
     "key": "cmd+k",
-    "when": "editorTextFocus && markdownShortcuts:enabled && editorLangId == 'markdown'"
+    "when": "editorTextFocus && markdownShortcuts:enabled && editorLangId == 'markdown' || editorTextFocus && markdownShortcuts:enabled && editorLangId == 'rmd'"
   },
   // SECTION: Extensions
   // Open Project in New Window
@@ -1795,5 +1795,22 @@
     "key": "ctrl+tab",
     "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "cmd+k cmd+c",
+    "command": "-editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l c",
+    "command": "-extension.copyGitHubLinkToClipboard"
+  },
+  {
+    "key": "ctrl+l g",
+    "command": "-extension.openInGitHub"
+  },
+  {
+    "key": "ctrl+l p",
+    "command": "-extension.openPrGitProvider"
   }
 ]

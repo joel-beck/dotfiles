@@ -1,125 +1,257 @@
 {
-  "command-palette:open": [],
+  "advanced-cursors:add-cursor-above": [],
+  "advanced-cursors:add-cursor-below": [],
+  "advanced-cursors:add-prev-match-to-selections": [
+    {
+      "key": "ArrowLeft",
+      "modifiers": ["Ctrl", "Shift"]
+    }
+  ],
   "app:delete-file": [
     {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "D"
+      "key": "D",
+      "modifiers": ["Alt", "Shift"]
+    }
+  ],
+  "app:go-back": [
+    {
+      "key": "ArrowLeft",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "app:go-forward": [
+    {
+      "key": "ArrowRight",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "app:reload": [
+    {
+      "key": "R",
+      "modifiers": ["Mod"]
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "key": "Home",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "key": "End",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "command-palette:open": [],
+  "copy-note:copy-note": [
+    {
+      "key": "D",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "darlal-switcher-plus:switcher-plus:open": [
+    {
+      "key": "P",
+      "modifiers": ["Mod"]
     }
   ],
   "editor:delete-paragraph": [],
   "editor:focus-left": [],
   "editor:focus-right": [],
-  "editor:swap-line-down": [
+  "editor:follow-link": [
     {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
-  "editor:swap-line-up": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "ArrowUp"
-    }
-  ],
-  "app:go-back": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "ArrowLeft"
-    }
-  ],
-  "app:go-forward": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "ArrowRight"
+      "key": "Enter",
+      "modifiers": ["Mod"]
     }
   ],
   "editor:open-search-replace": [
     {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "H"
+      "key": "H",
+      "modifiers": ["Mod"]
+    }
+  ],
+  "editor:save-file": [],
+  "editor:swap-line-down": [
+    {
+      "key": "ArrowDown",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "key": "ArrowUp",
+      "modifiers": ["Alt"]
     }
   ],
   "editor:toggle-blockquote": [
     {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "B"
+      "key": "B",
+      "modifiers": ["Ctrl"]
     }
   ],
+  "editor:toggle-checklist-status": [],
   "editor:toggle-code": [
     {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "E"
+      "key": "E",
+      "modifiers": ["Mod"]
     }
   ],
   "editor:toggle-comments": [
     {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "C"
-    }
-  ],
-  "markdown:toggle-preview": [
-    {
-      "modifiers": [
-        "Alt",
-        "Ctrl"
-      ],
-      "key": " "
+      "key": "C",
+      "modifiers": ["Mod", "Shift"]
     }
   ],
   "editor:toggle-source": [
     {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": " "
+      "key": " ",
+      "modifiers": ["Ctrl"]
     }
   ],
-  "editor:follow-link": [
+  "file-explorer:move-file": [
     {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Enter"
+      "key": "M",
+      "modifiers": ["Ctrl"]
     }
   ],
-  "editor:toggle-checklist-status": [],
   "file-explorer:new-file": [],
   "file-explorer:new-file-in-new-pane": [],
-  "workspace:open-in-new-window": [
+  "heycalmdown-navigate-cursor-history:cursor-position-backward": [],
+  "heycalmdown-navigate-cursor-history:cursor-position-forward": [],
+  "markdown:toggle-preview": [
     {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "N"
+      "key": " ",
+      "modifiers": ["Alt", "Ctrl"]
     }
   ],
-  "templater-obsidian:jump-to-next-cursor-location": [
+  "note-refactor-obsidian:app:extract-selection-content-only": [],
+  "note-refactor-obsidian:app:extract-selection-first-line": [
     {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "Tab"
+      "key": "-",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "obsidian-advanced-new-file:advanced-new-file-new-pane": [],
+  "obsidian-better-command-palette:open-better-commmand-palette": [
+    {
+      "key": " ",
+      "modifiers": ["Shift"]
+    }
+  ],
+  "obsidian-editor-shortcuts:addCursorsToSelectionEnds": [],
+  "obsidian-editor-shortcuts:deleteLine": [
+    {
+      "key": "D",
+      "modifiers": ["Mod"]
+    }
+  ],
+  "obsidian-editor-shortcuts:deleteToStartOfLine": [
+    {
+      "key": "Backspace",
+      "modifiers": ["Mod"]
+    }
+  ],
+  "obsidian-editor-shortcuts:duplicateLine": [],
+  "obsidian-editor-shortcuts:goToLineEnd": [
+    {
+      "key": "ArrowRight",
+      "modifiers": ["Mod"]
+    }
+  ],
+  "obsidian-editor-shortcuts:goToLineStart": [
+    {
+      "key": "ArrowLeft",
+      "modifiers": ["Mod"]
+    }
+  ],
+  "obsidian-editor-shortcuts:goToNextHeading": [
+    {
+      "key": "ArrowDown",
+      "modifiers": ["Alt", "Ctrl"]
+    }
+  ],
+  "obsidian-editor-shortcuts:goToPrevHeading": [
+    {
+      "key": "ArrowUp",
+      "modifiers": ["Alt", "Ctrl"]
+    }
+  ],
+  "obsidian-editor-shortcuts:indent-using-tabs": [
+    {
+      "key": "Tab",
+      "modifiers": ["Shift"]
+    }
+  ],
+  "obsidian-editor-shortcuts:insertCursorAbove": [
+    {
+      "key": "ArrowUp",
+      "modifiers": ["Alt", "Mod"]
+    }
+  ],
+  "obsidian-editor-shortcuts:insertCursorBelow": [
+    {
+      "key": "ArrowDown",
+      "modifiers": ["Alt", "Mod"]
+    }
+  ],
+  "obsidian-editor-shortcuts:insertLineAbove": [
+    {
+      "key": "A",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "obsidian-editor-shortcuts:insertLineBelow": [],
+  "obsidian-editor-shortcuts:joinLines": [],
+  "obsidian-editor-shortcuts:selectLine": [],
+  "obsidian-editor-shortcuts:selectWordOrNextOccurrence": [
+    {
+      "key": "ArrowRight",
+      "modifiers": ["Ctrl", "Shift"]
+    }
+  ],
+  "obsidian-git:commit-specified-message": [
+    {
+      "key": "C",
+      "modifiers": ["Alt"]
+    },
+    {
+      "key": "G",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "obsidian-git:push2": [
+    {
+      "key": "P",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "obsidian-outliner:fold": [],
+  "obsidian-outliner:move-list-item-down": [],
+  "obsidian-outliner:move-list-item-up": [],
+  "obsidian-outliner:unfold": [],
+  "obsidian-table-to-csv-exporter:obsidian-table-to-csv-exporter": [
+    {
+      "key": "X",
+      "modifiers": ["Alt", "Shift"]
+    }
+  ],
+  "obsidian-zotero-desktop-connector:show-zotero-debug-view": [
+    {
+      "key": "Z",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "obsidian-zotero-desktop-connector:zdc-exp-Zotero Import": [
+    {
+      "key": "Z",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "outline:open": [
+    {
+      "key": "O",
+      "modifiers": ["Alt"]
     }
   ],
   "pane-relief:go-1st": [],
@@ -131,15 +263,9 @@
   "pane-relief:go-7th": [],
   "pane-relief:go-8th": [],
   "pane-relief:go-last": [],
-  "pane-relief:go-prev": [],
   "pane-relief:go-next": [],
-  "obsidian-outliner:unfold": [],
-  "obsidian-outliner:move-list-item-up": [],
-  "obsidian-outliner:move-list-item-down": [],
-  "obsidian-outliner:fold": [],
-  "switcher:open": [],
-  "pane-relief:swap-next": [],
-  "pane-relief:swap-prev": [],
+  "pane-relief:go-prev": [],
+  "pane-relief:ordered-close": [],
   "pane-relief:put-1st": [],
   "pane-relief:put-2nd": [],
   "pane-relief:put-3rd": [],
@@ -149,346 +275,98 @@
   "pane-relief:put-7th": [],
   "pane-relief:put-8th": [],
   "pane-relief:put-last": [],
-  "table-editor-obsidian:table-control-bar": [],
-  "obsidian-editor-shortcuts:deleteLine": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "D"
-    }
-  ],
-  "obsidian-editor-shortcuts:addCursorsToSelectionEnds": [],
-  "obsidian-editor-shortcuts:duplicateLine": [],
-  "obsidian-editor-shortcuts:deleteToStartOfLine": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Backspace"
-    }
-  ],
-  "obsidian-editor-shortcuts:goToLineEnd": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "ArrowRight"
-    }
-  ],
-  "obsidian-editor-shortcuts:goToLineStart": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "ArrowLeft"
-    }
-  ],
-  "obsidian-editor-shortcuts:insertLineAbove": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "A"
-    }
-  ],
-  "obsidian-editor-shortcuts:insertLineBelow": [],
-  "obsidian-editor-shortcuts:joinLines": [],
-  "obsidian-editor-shortcuts:selectLine": [],
-  "obsidian-editor-shortcuts:selectWordOrNextOccurrence": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "ArrowRight"
-    }
-  ],
-  "pane-relief:ordered-close": [],
-  "app:toggle-left-sidebar": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "Home"
-    }
-  ],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "End"
-    }
-  ],
-  "note-refactor-obsidian:app:extract-selection-content-only": [],
-  "note-refactor-obsidian:app:extract-selection-first-line": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "-"
-    }
-  ],
-  "darlal-switcher-plus:switcher-plus:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "P"
-    }
-  ],
-  "advanced-cursors:add-cursor-above": [],
-  "advanced-cursors:add-cursor-below": [],
-  "advanced-cursors:add-prev-match-to-selections": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "ArrowLeft"
-    }
-  ],
-  "obsidian-better-command-palette:open-better-commmand-palette": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": " "
-    }
-  ],
-  "obsidian-advanced-new-file:advanced-new-file-new-pane": [],
-  "templater-obsidian:create-new-note-from-template": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "N"
-    }
-  ],
-  "templater-obsidian:insert-templater": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "T"
-    }
-  ],
-  "obsidian-table-to-csv-exporter:obsidian-table-to-csv-exporter": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "X"
-    }
-  ],
-  "obsidian-git:commit-specified-message": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "C"
-    },
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "G"
-    }
-  ],
-  "obsidian-git:push2": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "P"
-    }
-  ],
-  "file-explorer:move-file": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "M"
-    }
-  ],
+  "pane-relief:swap-next": [],
+  "pane-relief:swap-prev": [],
   "periodic-notes:open-daily-note": [
     {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "D"
-    }
-  ],
-  "periodic-notes:open-weekly-note": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "W"
-    }
-  ],
-  "periodic-notes:open-yearly-note": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "Y"
-    }
-  ],
-  "periodic-notes:open-quarterly-note": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "Q"
+      "key": "D",
+      "modifiers": ["Ctrl"]
     }
   ],
   "periodic-notes:open-monthly-note": [
     {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "M"
+      "key": "M",
+      "modifiers": ["Alt"]
     }
   ],
-  "workspace:toggle-pin": [
+  "periodic-notes:open-quarterly-note": [
     {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "P"
+      "key": "Q",
+      "modifiers": ["Alt"]
     }
   ],
-  "obsidian-zotero-desktop-connector:zdc-exp-Zotero Import": [
+  "periodic-notes:open-weekly-note": [
     {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "Z"
+      "key": "W",
+      "modifiers": ["Alt"]
     }
   ],
-  "obsidian-zotero-desktop-connector:show-zotero-debug-view": [
+  "periodic-notes:open-yearly-note": [
     {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "Z"
+      "key": "Y",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "switcher:open": [],
+  "table-editor-obsidian:table-control-bar": [],
+  "templater-obsidian:create-new-note-from-template": [
+    {
+      "key": "N",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "templater-obsidian:insert-templater": [
+    {
+      "key": "T",
+      "modifiers": ["Ctrl"]
+    }
+  ],
+  "templater-obsidian:jump-to-next-cursor-location": [
+    {
+      "key": "Tab",
+      "modifiers": ["Shift"]
     }
   ],
   "url-into-selection:paste-url-into-selection": [
     {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "V"
+      "key": "V",
+      "modifiers": ["Alt"]
+    }
+  ],
+  "workspace:close-others": [
+    {
+      "key": "C",
+      "modifiers": ["Ctrl"]
     }
   ],
   "workspace:next-tab": [
     {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "ArrowRight"
+      "key": "ArrowRight",
+      "modifiers": ["Alt", "Mod"]
+    }
+  ],
+  "workspace:open-in-new-window": [
+    {
+      "key": "N",
+      "modifiers": ["Mod", "Shift"]
     }
   ],
   "workspace:previous-tab": [
     {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "ArrowLeft"
-    }
-  ],
-  "app:reload": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "R"
-    }
-  ],
-  "copy-note:copy-note": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "D"
-    }
-  ],
-  "obsidian-editor-shortcuts:goToNextHeading": [
-    {
-      "modifiers": [
-        "Alt",
-        "Ctrl"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
-  "obsidian-editor-shortcuts:goToPrevHeading": [
-    {
-      "modifiers": [
-        "Alt",
-        "Ctrl"
-      ],
-      "key": "ArrowUp"
-    }
-  ],
-  "obsidian-editor-shortcuts:insertCursorAbove": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "ArrowUp"
-    }
-  ],
-  "obsidian-editor-shortcuts:insertCursorBelow": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
-  "heycalmdown-navigate-cursor-history:cursor-position-backward": [],
-  "heycalmdown-navigate-cursor-history:cursor-position-forward": [],
-  "workspace:close-others": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "C"
-    }
-  ],
-  "obsidian-editor-shortcuts:indent-using-tabs": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "Tab"
-    }
-  ],
-  "outline:open": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "O"
+      "key": "ArrowLeft",
+      "modifiers": ["Alt", "Mod"]
     }
   ],
   "workspace:split-vertical": [
     {
-      "modifiers": [
-        "Alt",
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "ArrowRight"
+      "key": "ArrowRight",
+      "modifiers": ["Alt", "Ctrl", "Shift"]
+    }
+  ],
+  "workspace:toggle-pin": [
+    {
+      "key": "P",
+      "modifiers": ["Ctrl"]
     }
   ]
 }
