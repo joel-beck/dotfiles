@@ -171,6 +171,9 @@ brew install --cask resilio-sync
 # RStudio
 brew install --cask rstudio
 
+# Shortcat
+brew install --cask shortcat
+
 # Signal
 brew install --cask signal
 
@@ -203,6 +206,9 @@ brew install --cask whatsapp
 
 # wkhtmltopdf
 brew install --cask wkhtmltopdf
+
+# Zappy
+brew install --cask zappy
 
 # Zoom
 brew install --cask zoom

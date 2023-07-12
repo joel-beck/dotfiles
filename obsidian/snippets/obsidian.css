@@ -154,10 +154,16 @@ img {
 
 /* SECTION: Callout Blocks */
 /* icons from https://lucide.dev/ */
+.callout[data-callout="info"] {
+    --callout-color: 0, 255, 47;
+    --callout-icon: info;
+}
+
 .callout[data-callout="metadata"] {
     --callout-color: 89, 224, 85;
     --callout-icon: database;
 }
+
 .callout[data-callout="dataview"] {
     --callout-color: 85, 165, 251;
     --callout-icon: database;
