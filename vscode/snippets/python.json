@@ -45,6 +45,10 @@
       "    main()"
     ]
   },
+  "SQL Query": {
+    "prefix": "sql",
+    "body": ["\"\"\"--sql", "$0", "\"\"\""]
+  },
   // SECTION: Interactive Mode Snippets
   "Insert code cell": {
     "prefix": "cell code",
