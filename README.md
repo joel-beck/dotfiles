@@ -84,6 +84,28 @@ TODO: Add description of this directory and the purpose of dotfiles.
     zsh 07_perl.zsh
     ```
 
+    It might be necessary to manually specify the desired Perl version in the `latexindent.pl` script such that latexindent find all perl modules for the new version and does not use the system perl version:
+
+    i) Open the `latexindent.pl` script in VSCode:
+
+    ```bash
+    code /usr/local/texlive/2023/texmf-dist/scripts/latexindent/latexindent.pl
+    ```
+
+    ii) Assuming the Perl version `5.38.0`, replace the first line
+
+    ```perl
+    #!/usr/bin/env perl
+    ```
+
+    with
+
+    ```perl
+    #!/Users/joel/perl5/perlbrew/perls/perl-5.38.0/bin/perl
+    ```
+
+    Then save the file with sudo permissions.
+
 13. Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
 
 14. Copy important files from hard drive backup to the new machine.
