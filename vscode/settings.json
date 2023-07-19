@@ -897,9 +897,7 @@
     "*.synctex(busy)",
     "*.synctex.gz(busy)",
     "*.synctex.gz",
-    "*.nav",
-    ".xmpdata",
-    ".xmpi"
+    "*.nav"
   ],
   "latex-workshop.latex.clean.method": "glob",
   "latex-workshop.latex.clean.subfolder.enabled": true,
