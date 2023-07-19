@@ -113,13 +113,6 @@
   },
   {
     "enabled": true,
-    "name": "resume",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/resume",
-    "tags": ["r", "studium"]
-  },
-  {
-    "enabled": true,
     "name": "blog",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/blog",
@@ -152,6 +145,13 @@
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/readnext",
     "tags": ["python", "projects-public"]
+  },
+  {
+    "enabled": true,
+    "name": "resume",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/resume",
+    "tags": ["r", "studium"]
   },
   {
     "enabled": true,
