@@ -8,6 +8,9 @@
   "ShortcutMenuBar.openFilesList": false,
   "ShortcutMenuBar.toggleTerminal": false,
   "VSCodeCounter.languages": {},
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
   // SECTION: Language Specific Settings
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -811,7 +814,7 @@
   "git.allowNoVerifyCommit": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autoStash": true,
-  "git.autofetch": true,
+  "git.autofetch": "all",
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
@@ -821,14 +824,14 @@
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
   "github.copilot.enable": {
-    "quarto": false,
     "*": true,
     "javascript": true,
     "jsonc": true,
-    "latex": false,
+    "latex": true,
     "markdown": true,
     "plaintext": true,
     "python": true,
+    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
@@ -867,39 +870,39 @@
   "jupyter.jupyterInterruptTimeout": 100,
   "jupyter.pythonExportMethod": "commentMagics",
   "jupyter.runStartupCommands": ["%load_ext autoreload", "%autoreload 2"],
-  "jupyter.stopOnError": false,
   // SUBSECTION: LaTeX
   "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.bibtex-format.trailingComma": true,
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latex.clean.fileTypes": [
-    "*.acn",
-    "*.acr",
-    "*.alg",
     "*.aux",
     "*.bbl",
-    "*.bcf",
     "*.blg",
-    "*.fdb_latexmk",
-    "*.fls",
-    "*.glg",
-    "*.glo",
-    "*.gls",
     "*.idx",
     "*.ind",
     "*.lof",
-    "*.log",
     "*.lot",
-    "*.nav",
     "*.out",
-    "*.run.xml",
-    "*.snm",
-    "*.synctex.gz",
-    "*.synctex.gz(busy)",
-    "*.synctex(busy)",
     "*.toc",
-    "*.vrb"
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.synctex(busy)",
+    "*.synctex.gz(busy)",
+    "*.synctex.gz",
+    "*.nav",
+    ".xmpdata",
+    ".xmpi"
   ],
+  "latex-workshop.latex.clean.method": "glob",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
   "latex-workshop.view.pdf.invertMode.brightness": 0.5,
   "latex-workshop.view.pdf.viewer": "tab",
@@ -910,7 +913,6 @@
   "markdown-pdf.margin.right": "2cm",
   "markdown-pdf.omitBackground": true,
   "markdown-preview-github-styles.colorTheme": "system",
-  "markdown.experimental.editor.pasteLinks.enabled": true,
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.orderedList.marker": "one",
   "markdown.extension.print.theme": "dark",
@@ -1284,6 +1286,10 @@
       ]
     }
   ],
+  "mypy-type-checker.args": [
+    "--follow-imports=skip",
+    "--config-file=pyproject.toml"
+  ],
   // SUBSECTION: General Notebooks
   "notebook.cellFocusIndicator": "border",
   "notebook.cellToolbarLocation": {
@@ -1589,12 +1595,5 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always",
-  "mypy-type-checker.args": [
-    "--follow-imports=skip",
-    "--config-file=pyproject.toml"
-  ],
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  "workbench.tree.renderIndentGuides": "always"
 }
