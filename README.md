@@ -76,14 +76,22 @@ TODO: Add description of this directory and the purpose of dotfiles.
     zsh 06_install-oh-my-zsh-plugins.zsh
     ```
 
-12. Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
+12. Run `07_perl.zsh` to install `perlbrew` to manage Perl versions, the latest perl version and `cpanm` to install Perl modules.
+    Then install the required Perl modules for formatting LaTeX files with `latexindent` (used by the VSCode `LaTeX Workshop` extension):
 
-13. Copy important files from hard drive backup to the new machine.
+    ```bash
+    cd ~/dotfiles/install
+    zsh 07_perl.zsh
+    ```
+
+13. Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
+
+14. Copy important files from hard drive backup to the new machine.
     The files should be in the same location in the file system.
 
-14. Log into all apps to sync data. Trigger manual syncs for apps that do not sync automatically.
+15. Log into all apps to sync data. Trigger manual syncs for apps that do not sync automatically.
 
-15. Restart the MacBook.
+16. Restart the MacBook.
 
 Done 🎉
 

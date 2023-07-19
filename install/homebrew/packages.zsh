@@ -24,9 +24,6 @@ brew install curl
 # Utility that creates projects from templates
 brew install cookiecutter
 
-# Get, unpack, build, and install modules from CPAN
-brew install cpanminus
-
 # Pack, ship and run any application as a lightweight container
 brew install docker
 

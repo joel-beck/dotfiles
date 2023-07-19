@@ -811,7 +811,7 @@
   "git.allowNoVerifyCommit": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autoStash": true,
-  "git.autofetch": "all",
+  "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
@@ -821,14 +821,14 @@
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
   "github.copilot.enable": {
+    "quarto": false,
     "*": true,
     "javascript": true,
     "jsonc": true,
-    "latex": false,
+    "latex": true,
     "markdown": true,
     "plaintext": true,
     "python": true,
-    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
@@ -1589,5 +1589,12 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "mypy-type-checker.args": [
+    "--follow-imports=skip",
+    "--config-file=pyproject.toml"
+  ],
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
