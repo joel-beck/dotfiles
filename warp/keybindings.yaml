@@ -3,10 +3,10 @@
 "ai_assistant_panel:reset_context": none
 "editor_view:add_next_occurrence": ctrl-shift-right
 "editor_view:clear_and_copy_lines": cmd-d
+"editor_view:clear_buffer": none
 "editor_view:delete": none
 "editor_view:move_to_buffer_start": none
 "input:toggle_natural_language_command_search": none
-"input:toggle_workflows": cmd-p
 "pane_group:add_down": none
 "pane_group:add_right": none
 "pane_group:navigate_left": none
@@ -21,14 +21,12 @@
 "workspace:close_active_tab": cmd-w
 "workspace:create_notebook": none
 "workspace:increase_font_size": cmd-+
-"workspace:move_tab_left": none
 "workspace:move_tab_right": none
 "workspace:rename_active_tab": alt-shift-R
 "workspace:set_a11y_concise_verbosity_level": none
 "workspace:set_a11y_verbose_verbosity_level": none
 "workspace:show_keybinding_settings": none
 "workspace:show_settings_account_page": none
-"workspace:show_settings_features_page": "cmd-,"
 "workspace:show_settings_keyboard_shortcuts_page": "shift-cmd-:"
 "workspace:show_settings_modal": none
 "workspace:toggle_ai_assistant": ctrl-space
