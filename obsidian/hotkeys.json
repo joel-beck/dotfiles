@@ -160,11 +160,11 @@
   "heycalmdown-navigate-cursor-history:cursor-position-forward": [],
   "markdown:toggle-preview": [
     {
-      "key": " ",
       "modifiers": [
-        "Alt",
-        "Ctrl"
-      ]
+        "Ctrl",
+        "Shift"
+      ],
+      "key": " "
     }
   ],
   "note-refactor-obsidian:app:extract-selection-content-only": [],

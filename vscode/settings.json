@@ -814,7 +814,7 @@
   "git.allowNoVerifyCommit": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autoStash": true,
-  "git.autofetch": true,
+  "git.autofetch": "all",
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
@@ -1437,9 +1437,14 @@
     "IMPORTANT",
     "FIXME",
     "TODO",
-    "COMMENT"
+    "COMMENT",
+    "QUESTION"
   ],
   "todo-tree.highlights.customHighlight": {
+    // foreground: font color
+    // background: highlighting color
+    // icons: https://primer.style/octicons/
+    // options for type: ["tag", "tag-and-comment", "text", "line"]
     "BOOKMARK": {
       "background": "#fb94ff",
       "borderRadius": "4px",
@@ -1476,10 +1481,13 @@
       "iconColour": "#b7b6b9",
       "type": "line"
     },
-    // foreground: font color
-    // background: highlighting color
-    // icons: https://primer.style/octicons/
-    // options for type: ["tag", "tag-and-comment", "text", "line"]
+    "QUESTION": {
+      "background": "#f3b84b",
+      "foreground": "#000000",
+      "icon": "question",
+      "iconColour": "#b7b6b9",
+      "type": "line"
+    },
     "SECTION": {
       "background": "#ff9d00",
       "borderRadius": "4px",
@@ -1539,6 +1547,7 @@
   "window.newWindowDimensions": "inherit",
   "window.openFoldersInNewWindow": "on",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootPath}",
+  "window.zoomLevel": -1,
   // SUBSECTION: Editor Colors
   "workbench.colorCustomizations": {
     "editor.findMatchBackground": "#617541",

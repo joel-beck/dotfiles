@@ -30,5 +30,9 @@
   "Insert COMMENT Comment": {
     "prefix": "COMMENT",
     "body": ["${LINE_COMMENT} COMMENT: "]
+  },
+  "Insert QUESTION Comment": {
+    "prefix": "QUESTION",
+    "body": ["${LINE_COMMENT} QUESTION: "]
   }
 }
