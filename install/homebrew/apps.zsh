@@ -87,6 +87,9 @@ brew install --cask iina
 # ImageOptim
 brew install --cask imageoptim
 
+# Inkscape
+brew install --cask inkscape
+
 # IStat Menus
 brew install --cask istat-menus
 

@@ -83,18 +83,22 @@ nav-file-title, .tree-item-self, .nav-folder-title, .is-collapsed .search-result
 /* SECTION: Editor */
  /* SUBSECTION: Pane Width */
 /* control width of text column when setting 'readable line length' is off */
-.markdown-source-view, .markdown-preview-view {
+.markdown-source-view,
+.markdown-preview-view {
     max-width: var(--pane-width-normal);
     margin: auto;
 }
 
 /* NOTE: Set `cssclass: fullwidth` in YAML to stretch pane over full page */
-/* Note that adding the class `.fullwidth` to *both* `.markdown-source-view` and
-.markdown-preview-view is necessary */
-.markdown-source-view.fullwidth, .markdown-preview-view.fullwidth {
+/* Full-width tables in Obsidian's source view and preview view */
+.markdown-source-view.fullwidth,
+.markdown-preview-view.fullwidth,
+.markdown-preview-section.fullwidth,
+.markdown-preview-section .fullwidth {
     max-width: var(--pane-width-large);
     margin: auto;
 }
+
 
 /* size and color of rotated file name to the left of each pane */
 .view-header-title, .file-embed-title, .markdown-embed-title {
@@ -125,7 +129,7 @@ nav-file-title, .tree-item-self, .nav-folder-title, .is-collapsed .search-result
 /* NOTE: Set `cssclass: numbered-table` in YAML to Add Line Numbers to Tables */
 .numbered-table table {
     counter-reset: rowNumber;
-  }
+}
 
 .numbered-table table tr::before {
     display: table-cell;
@@ -135,6 +139,12 @@ nav-file-title, .tree-item-self, .nav-folder-title, .is-collapsed .search-result
     padding-top: 0.3em;
     text-align: right;
   }
+
+/* NOTE: Set `cssclass: fullscreen` in YAML to make Dataview Tables Full Screen */
+.fullscreen table {
+    width: 100%;
+}
+
 
 
 

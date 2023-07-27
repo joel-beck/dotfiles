@@ -127,8 +127,8 @@
     "body": ["\\label{fig:$1}"]
   },
   "Reference Section": {
-    "prefix": ["ref"],
-    "body": ["\\Cref{$0}"]
+    "prefix": ["refsec"],
+    "body": ["\\Cref{sec:$0}"]
   },
   "Reference Figure": {
     "prefix": ["reffig"],

@@ -1409,14 +1409,6 @@
   },
   "terminal.integrated.rightClickBehavior": "paste",
   "terminal.integrated.tabs.enabled": true,
-  // SUBSECTION: Test Explorer
-  "testExplorer.errorDecoration": true,
-  "testExplorer.errorDecorationHover": true,
-  "testExplorer.gutterDecoration": true,
-  "testExplorer.hideEmptyLog": true,
-  "testExplorer.showCollapseButton": true,
-  "testExplorer.showOnRun": false,
-  "testExplorer.useNativeTesting": false,
   // SUBSECTION: Todo Tree
   "todo-tree.filtering.includeHiddenFiles": true,
   "todo-tree.general.revealBehaviour": "end of todo",
@@ -1547,7 +1539,6 @@
   "window.newWindowDimensions": "inherit",
   "window.openFoldersInNewWindow": "on",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootPath}",
-  "window.zoomLevel": -1,
   // SUBSECTION: Editor Colors
   "workbench.colorCustomizations": {
     "editor.findMatchBackground": "#617541",
@@ -1557,6 +1548,7 @@
     "editor.selectionHighlightBackground": "#617541",
     "editorInlayHint.background": "#193549",
     "editorInlayHint.foreground": "#a09999",
+    "foreground": "#c5c4c4",
     "list.focusBackground": "#6b6868",
     "list.hoverBackground": "#6b6868",
     "notebook.focusedCellBorder": "#999896",

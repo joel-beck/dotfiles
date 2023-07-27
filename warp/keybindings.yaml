@@ -5,8 +5,10 @@
 "editor_view:clear_and_copy_lines": cmd-d
 "editor_view:clear_buffer": none
 "editor_view:delete": none
+"editor_view:insert_autosuggestion": tab
 "editor_view:move_to_buffer_start": none
-"input:toggle_natural_language_command_search": none
+"input:open_completion_suggestions": ctrl-space
+"input:toggle_natural_language_command_search": alt-a
 "pane_group:add_down": none
 "pane_group:add_right": none
 "pane_group:navigate_left": none
@@ -28,8 +30,8 @@
 "workspace:show_keybinding_settings": none
 "workspace:show_settings_account_page": none
 "workspace:show_settings_keyboard_shortcuts_page": "shift-cmd-:"
-"workspace:show_settings_modal": none
-"workspace:toggle_ai_assistant": ctrl-space
+"workspace:show_settings_modal": "cmd-,"
+"workspace:toggle_ai_assistant": cmd-o
 "workspace:toggle_command_palette": shift-space
 "workspace:toggle_keybindings_page": alt-cmd-.
 "workspace:toggle_navigation_palette": none
