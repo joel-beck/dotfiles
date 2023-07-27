@@ -1,8 +1,15 @@
 # Dotfiles
 
-TODO: Add description of this directory and the purpose of dotfiles.
+This repository contains my configuration files for many MacOS applications and MacOS preferences.
 
-## Setup a new MacBook
+By having a single repository for all configuration files, it is possible to:
+
+1. Easily revert accidental changes to configuration files with Git.
+1. Have an additional Backup of all configuration files on GitHub.
+1. Easily setup a new Mac with all configuration files and preferences by cloning this repository and following the steps below.
+
+
+## Setup a new Mac
 
 1.  Be **very** careful to set the User Name for the Device Account and the Home directory correctly!
     The default name is `firstnamelastname` (e.g. `joelbeck`) instead of only the firstname (e.g. `joel`) which is often preferred.
