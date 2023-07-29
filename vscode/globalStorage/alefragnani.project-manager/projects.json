@@ -127,6 +127,13 @@
   },
   {
     "enabled": true,
+    "name": "huk-challenge",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/huk-challenge",
+    "tags": ["python", "projects-public"]
+  },
+  {
+    "enabled": true,
     "name": "pystringr",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/pystringr",

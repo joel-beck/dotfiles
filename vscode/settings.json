@@ -220,6 +220,14 @@
     {
       "alignment": "left",
       "color": "#dddcd7ce",
+      "command": "pr.create",
+      "priority": 2,
+      "text": "Pull Request",
+      "tooltip": "Create new Pull Request"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
       "command": "cSpell.toggleEnableSpellChecker",
       "priority": 2,
       "text": "Spell Checker",
@@ -228,10 +236,10 @@
     {
       "alignment": "left",
       "color": "#dddcd7ce",
-      "command": "pr.create",
+      "command": "warmUp.start",
       "priority": 2,
-      "text": "Pull Request",
-      "tooltip": "Create new Pull Request"
+      "text": "Typing Practice",
+      "tooltip": "Typing Practice"
     },
     {
       "alignment": "left",
@@ -894,14 +902,12 @@
     "*.log",
     "*.fdb_latexmk",
     "*.snm",
-    "*.synctex(busy)",
-    "*.synctex.gz(busy)",
-    "*.synctex.gz",
     "*.nav"
   ],
   "latex-workshop.latex.clean.method": "glob",
   "latex-workshop.latex.clean.subfolder.enabled": true,
-  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.synctex.synctexjs.enabled": true,
   "latex-workshop.view.pdf.invertMode.brightness": 0.5,
   "latex-workshop.view.pdf.viewer": "tab",
   // SUBSECTION: Markdown Extensions
@@ -1534,7 +1540,8 @@
   "vsicons.dontShowNewVersionMessage": true,
   "vsintellicode.features.python.deepLearning": "enabled",
   "warmUp.changeCount": "30",
-  "warmUp.changeTypingMode": "words (against the clock)",
+  "warmUp.changeTypingMode": "words (fixed amount)",
+  "warmUp.switchNaturalLanguage": "german",
   "warmUp.switchProgrammingLanguage": "python",
   "window.newWindowDimensions": "inherit",
   "window.openFoldersInNewWindow": "on",

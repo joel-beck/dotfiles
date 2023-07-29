@@ -1092,6 +1092,13 @@
     "key": "cmd+k",
     "when": "editorTextFocus && markdownShortcuts:enabled && editorLangId == 'markdown' || editorTextFocus && markdownShortcuts:enabled && editorLangId == 'rmd'"
   },
+  // SUBSECTION: Latex Files
+  // Jump from Source to PDF Cursor Position
+  {
+    "key": "alt+l",
+    "command": "latex-workshop.synctex",
+    "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId == 'latex'"
+  },
   // SECTION: Extensions
   // Open Project in New Window
   {
@@ -1812,5 +1819,10 @@
   {
     "key": "ctrl+l p",
     "command": "-extension.openPrGitProvider"
+  },
+  {
+    "key": "alt+cmd+j",
+    "command": "-latex-workshop.synctex",
+    "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId == 'latex'"
   }
 ]
