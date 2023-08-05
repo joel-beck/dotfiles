@@ -12,7 +12,7 @@ alias .....="cd ../../../.."
 
 # list one line per entry, show hidden files, show sizes in human readable format and
 # show directories in different color
-# use snippet `! ls` for exa equivalent!
+# use snippet `!ls` for exa equivalent!
 alias ls="ls -lah --color=auto"
 
 # copy, move/rename and create directories in verbose mode
@@ -22,6 +22,7 @@ alias mkdir="mkdir -pv"
 
 # ask for permission when removing files or directories
 # alias rm="rm -vi"
+
 # move to trash instead of hard delete
 alias rm="echo rm is disabled. Use trash instead as a safer alternative."
 
@@ -43,3 +44,6 @@ alias diff="batdiff"
 
 # use broot for prettier tree printing + navigation
 # alias tree="br -s"
+
+# draw.io command line use
+alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'

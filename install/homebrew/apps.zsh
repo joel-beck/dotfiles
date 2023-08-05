@@ -60,6 +60,9 @@ brew install --cask discord
 # Docker Desktop
 brew install --cask docker
 
+# Drawio
+brew install --cask drawio
+
 # Dropbox
 brew install --cask dropbox
 

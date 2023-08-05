@@ -86,7 +86,7 @@
   },
   "Subsubsection": {
     "prefix": ["subsubsection"],
-    "body": ["\\subsubsection{$1}", "$0"]
+    "body": ["\\subsubsection*{$1}", "$0"]
   },
   "Paragraph": {
     "prefix": ["paragraph"],
@@ -160,7 +160,7 @@
       "\\begin{figure}[${1|ht,t,b|}]",
       "    ${2:\\centering}",
       "    \\includegraphics[width=\\textwidth]{${3:filename}}",
-      "    \\caption{$4}",
+      "    \\caption[]{$4}",
       "    \\label{fig:$5}",
       "\\end{figure}",
       "$0"

@@ -1,5 +1,8 @@
 # Install Homebrew Packages, keep the list in alphabetical order
 
+# Run your GitHub Actions locally
+brew install act
+
 # Clone of cat(1) with syntax highlighting and Git integration
 brew install bat
 

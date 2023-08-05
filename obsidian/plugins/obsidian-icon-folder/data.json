@@ -1,4 +1,33 @@
 {
+  "settings": {
+    "emojiStyle": "none",
+    "extraMargin": {
+      "bottom": 0,
+      "left": 0,
+      "right": 4,
+      "top": 0
+    },
+    "extraPadding": {
+      "bottom": 2,
+      "left": 2,
+      "right": 2,
+      "top": 2
+    },
+    "fontSize": 16,
+    "iconColor": null,
+    "iconInTabsEnabled": false,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "migrated": true,
+    "recentlyUsedIcons": [
+      "TiPrompt",
+      "FasMoneyBill1",
+      "FasMoneyBill",
+      "SiYoutubemusic",
+      "RiPlayLine"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": []
+  },
   "00 Templates": "FasGears",
   "01 Dataview": "FasDatabase",
   "02 Periodic Notes": "FasCloudSun",
@@ -35,34 +64,5 @@
   "75 Zotero Images": "FasImage",
   "80 Scripts": "FasCode",
   "90 Logs": "FasFileLines",
-  "99 Inbox": "FasInbox",
-  "settings": {
-    "emojiStyle": "none",
-    "extraMargin": {
-      "bottom": 0,
-      "left": 0,
-      "right": 4,
-      "top": 0
-    },
-    "extraPadding": {
-      "bottom": 2,
-      "left": 2,
-      "right": 2,
-      "top": 2
-    },
-    "fontSize": 16,
-    "iconColor": null,
-    "iconInTabsEnabled": false,
-    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
-    "migrated": true,
-    "recentlyUsedIcons": [
-      "TiPrompt",
-      "FasMoneyBill1",
-      "FasMoneyBill",
-      "SiYoutubemusic",
-      "RiPlayLine"
-    ],
-    "recentlyUsedIconsSize": 5,
-    "rules": []
-  }
+  "99 Inbox": "FasInbox"
 }
