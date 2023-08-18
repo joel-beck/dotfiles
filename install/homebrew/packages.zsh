@@ -27,6 +27,9 @@ brew install curl
 # Utility that creates projects from templates
 brew install cookiecutter
 
+# Debugger for the Go programming language
+brew install delve
+
 # Pack, ship and run any application as a lightweight container
 brew install docker
 
@@ -52,6 +55,15 @@ brew install ffmpeg
 
 # Command-line fuzzy finder written in Go
 brew install fzf
+
+# Go programming language
+brew install go &&
+    # Update, add and remove Go imports
+    go install golang.org/x/tools/cmd/goimports@latest &&
+    # State of the art linter for the Go programming language
+    go install honnef.co/go/tools/cmd/staticcheck@latest &&
+    # Go language server
+    go install golang.org/x/tools/gopls@latest
 
 # GitHub CLI
 brew install gh

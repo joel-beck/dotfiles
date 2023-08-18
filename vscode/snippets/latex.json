@@ -157,11 +157,11 @@
   "Figure": {
     "prefix": ["figure", "image"],
     "body": [
-      "\\begin{figure}[${1|ht,t,b|}]",
-      "    ${2:\\centering}",
-      "    \\includegraphics[width=\\textwidth]{${3:filename}}",
-      "    \\caption[]{$4}",
-      "    \\label{fig:$5}",
+      "\\begin{figure}[htb!]",
+      "    ${1:\\centering}",
+      "    \\includegraphics[width=\\textwidth]{${2:filename}}",
+      "    \\caption[]{$3}",
+      "    \\label{fig:$4}",
       "\\end{figure}",
       "$0"
     ]

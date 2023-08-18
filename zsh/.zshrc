@@ -25,6 +25,8 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
     source "$ZSHRC_DIRPATH/powerlevel10k.zsh"
 fi
 
+source "$ZSHRC_DIRPATH/go.zsh"
+
 source "$ZSHRC_DIRPATH/bun.zsh"
 
 source "$ZSHRC_DIRPATH/perl.zsh"

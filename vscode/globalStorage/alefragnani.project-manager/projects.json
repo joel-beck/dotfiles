@@ -162,6 +162,13 @@
   },
   {
     "enabled": true,
+    "name": "alfred",
+    "paths": [],
+    "rootPath": "/Users/joel/Library/Mobile Documents/com~apple~CloudDocs/Alfred/Alfred.alfredpreferences",
+    "tags": ["alfred", "icloud"]
+  },
+  {
+    "enabled": true,
     "name": "drafts-scripts",
     "paths": [],
     "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts",

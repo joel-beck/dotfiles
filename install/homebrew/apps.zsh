@@ -156,6 +156,9 @@ brew install --cask obsidian
 # OneDrive
 brew install --cask onedrive
 
+# Orion
+brew install --cask orion
+
 # OwnCloud
 brew install --cask owncloud
 
