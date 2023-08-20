@@ -7,7 +7,7 @@
 "editor_view:delete": none
 "editor_view:insert_autosuggestion": tab
 "editor_view:move_to_buffer_start": none
-"input:open_completion_suggestions": ctrl-space
+"input:open_completion_suggestions": tab
 "input:toggle_natural_language_command_search": alt-a
 "pane_group:add_down": none
 "pane_group:add_right": none

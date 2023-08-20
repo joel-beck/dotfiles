@@ -1,6 +1,13 @@
 [
   {
     "enabled": true,
+    "name": "alfred",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/AppBackups/Alfred/Alfred.alfredpreferences",
+    "tags": ["alfred"]
+  },
+  {
+    "enabled": true,
     "name": "obsidian-vault",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ObsidianVault",
@@ -159,13 +166,6 @@
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/resume",
     "tags": ["r", "studium"]
-  },
-  {
-    "enabled": true,
-    "name": "alfred",
-    "paths": [],
-    "rootPath": "/Users/joel/Library/Mobile Documents/com~apple~CloudDocs/Alfred/Alfred.alfredpreferences",
-    "tags": ["alfred", "icloud"]
   },
   {
     "enabled": true,
