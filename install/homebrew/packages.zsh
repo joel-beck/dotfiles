@@ -95,6 +95,9 @@ brew install pdm
 # Highly capable, feature-rich programming language
 brew install perl
 
+# Execute binaries from Python packages in isolated environments
+brew install pipx
+
 # General-purpose scripting language
 brew install php
 

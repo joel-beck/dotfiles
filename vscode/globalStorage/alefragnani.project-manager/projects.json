@@ -29,6 +29,13 @@
   },
   {
     "enabled": true,
+    "name": "go-practice",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/GoProjects/go-practice",
+    "tags": ["go"]
+  },
+  {
+    "enabled": true,
     "name": "keyboard-maestro-scripts",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",

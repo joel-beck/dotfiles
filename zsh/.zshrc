@@ -37,6 +37,8 @@ source "$ZSHRC_DIRPATH/pyenv.zsh"
 
 source "$ZSHRC_DIRPATH/ruff.zsh"
 
+source "$ZSHRC_DIRPATH/pipx.zsh"
+
 source "$ZSHRC_DIRPATH/tex.zsh"
 
 # Must be second to last to make initilization work correctly and display time on end of
