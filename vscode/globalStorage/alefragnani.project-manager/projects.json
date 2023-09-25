@@ -43,6 +43,13 @@
   },
   {
     "enabled": true,
+    "name": "mails",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/Mails",
+    "tags": ["projects-private"]
+  },
+  {
+    "enabled": true,
     "name": "python-projects",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects",

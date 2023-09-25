@@ -35,38 +35,38 @@
     ]
   },
   // SECTION: Preamble
-  "Document": {
-    "prefix": ["document"],
-    "body": ["\\documentclass[${1:12pt}]{${2:article}", "$0"]
-  },
-  "Package": {
-    "prefix": ["package"],
-    "body": ["\\usepackage{$0}"]
-  },
-  "Title": {
-    "prefix": ["title (preamble)"],
-    "body": ["\\title{$1}", "$0"]
-  },
-  "Author": {
-    "prefix": ["author"],
-    "body": ["\\author{$1}", "$0"]
-  },
-  "Date": {
-    "prefix": ["date"],
-    "body": ["\\date{$1}", "$0"]
-  },
-  "Begin Document": {
-    "prefix": ["document"],
-    "body": ["\\begin{document}", "$0", "\\end{document}"]
-  },
-  "Make Title": {
-    "prefix": ["title (body)"],
-    "body": ["\\maketitle", "$0"]
-  },
-  "Table of Contents": {
-    "prefix": ["toc"],
-    "body": ["\\tableofcontents", "$0"]
-  },
+  // "Document": {
+  //   "prefix": ["document"],
+  //   "body": ["\\documentclass[${1:12pt}]{${2:article}", "$0"]
+  // },
+  // "Package": {
+  //   "prefix": ["package"],
+  //   "body": ["\\usepackage{$0}"]
+  // },
+  // "Title": {
+  //   "prefix": ["title (preamble)"],
+  //   "body": ["\\title{$1}", "$0"]
+  // },
+  // "Author": {
+  //   "prefix": ["author"],
+  //   "body": ["\\author{$1}", "$0"]
+  // },
+  // "Date": {
+  //   "prefix": ["date"],
+  //   "body": ["\\date{$1}", "$0"]
+  // },
+  // "Begin Document": {
+  //   "prefix": ["document"],
+  //   "body": ["\\begin{document}", "$0", "\\end{document}"]
+  // },
+  // "Make Title": {
+  //   "prefix": ["title (body)"],
+  //   "body": ["\\maketitle", "$0"]
+  // },
+  // "Table of Contents": {
+  //   "prefix": ["toc"],
+  //   "body": ["\\tableofcontents", "$0"]
+  // },
   // SECTION: Structure
   "Import": {
     "prefix": ["import"],
@@ -138,21 +138,25 @@
     "prefix": ["reftab"],
     "body": ["\\Cref{tab:$0}"]
   },
+  "Reference Equation": {
+    "prefix": ["refeq"],
+    "body": ["\\Cref{eq:$0}"]
+  },
   // SUBSECTION: Beamer Presentations
-  "New Frame": {
-    "prefix": ["frame"],
-    "body": ["\\begin{frame}{${1:title}}", "  $0", "\\end{frame}"]
-  },
-  "New Frame with List": {
-    "prefix": ["frame itemize"],
-    "body": [
-      "\\begin{frame}{${1:title}}",
-      "  \\begin{itemize}",
-      "    \\item $0",
-      "  \\end{itemize}",
-      "\\end{frame}"
-    ]
-  },
+  // "New Frame": {
+  //   "prefix": ["frame"],
+  //   "body": ["\\begin{frame}{${1:title}}", "  $0", "\\end{frame}"]
+  // },
+  // "New Frame with List": {
+  //   "prefix": ["frame itemize"],
+  //   "body": [
+  //     "\\begin{frame}{${1:title}}",
+  //     "  \\begin{itemize}",
+  //     "    \\item $0",
+  //     "  \\end{itemize}",
+  //     "\\end{frame}"
+  //   ]
+  // },
   // SECTION: Figures, Tables and Links
   "Figure": {
     "prefix": ["figure", "image"],
@@ -171,887 +175,887 @@
     "body": ["\\href{${1:url}}{${2:text}}"]
   },
   // SECTION: Bibliography
-  "Bibtex": {
-    "prefix": ["bibtex"],
-    "body": [
-      "\\bibliography{${1:filename}}",
-      "\\bibliographystyle{${2:apalike}}"
-    ]
-  },
+  // "Bibtex": {
+  //   "prefix": ["bibtex"],
+  //   "body": [
+  //     "\\bibliography{${1:filename}}",
+  //     "\\bibliographystyle{${2:apalike}}"
+  //   ]
+  // },
   "Citation": {
     "prefix": ["cite"],
     "body": ["\\cite{$0}"]
   },
   // SECTION: General Math
-  "Centered/Split Equations": {
-    "prefix": ["centered", "split"],
-    "body": ["${1:left} \\qquad \\text{${2:and}} \\qquad ${3:right} $0"]
-  },
-  "Stacked Equations": {
-    "prefix": ["stackrel", "relstack"],
-    "body": ["\\stackrel{ ${1:!}}{ ${2:=}} $0"]
-  },
-  "Underbraced Equations": {
-    "prefix": ["underbrace"],
-    "body": ["\\underbrace{ ${1:above}}_{ ${2:below}} $0"]
-  },
-  "Align Symbol": {
-    "prefix": ["al"],
-    "body": ["&= $0"]
-  },
-  "New Line": {
-    "prefix": ["newline", "nl", "\\\\"],
-    "body": ["\\\\\\", "$0"]
-  },
-  "New Line + Align": {
-    "prefix": ["nal"],
-    "body": ["\\\\\\", "&= $0"]
-  },
-  "Cases (2)": {
-    "prefix": ["cases 2"],
-    "body": [
-      "\\begin{cases} ${1:value1} & \\textrm{${2:if}} \\quad ${3:condition1} \\\\\\ ${4:value2} &  \\textrm{${5:if}} \\quad ${6:condition2} \\end{cases} $0"
-    ]
-  },
-  "Cases (3)": {
-    "prefix": ["cases 3"],
-    "body": [
-      "\\begin{cases} ${1:value1} & \\textrm{${2:if}} \\quad ${3:condition1} \\\\\\ ${4:value2} &  \\textrm{${5:if}} \\quad ${6:condition2} \\\\\\ ${7:value3} &  \\textrm{${8:if}} \\quad ${9:condition3} \\end{cases} $0"
-    ]
-  },
-  "Fractions": {
-    "prefix": ["fraction"],
-    "body": ["\\frac{$1}{$2} $0"]
-  },
-  "Collection of Variables": {
-    "prefix": ["collection", "enumeration"],
-    "body": ["${1:x}_{1}, \\ldots, $1_{${2:n}} $0"]
-  },
-  "Bold Face": {
-    "prefix": ["mathbf", "bfmath", "bf"],
-    "body": ["\\mathbf{${1:A}} $0"]
-  },
-  "Bold Symbol": {
-    "prefix": ["boldsymbol"],
-    "body": ["\\boldsymbol{${1:\\varepsilon}} $0"]
-  },
-  "Text in Equation": {
-    "prefix": ["text"],
-    "body": ["\\text{${1:text}} $0"]
-  },
-  "Binomial Coefficient": {
-    "prefix": ["binom"],
-    "body": ["\\binom{${1:n}}{${2:k}} $0"]
-  },
-  "Subscript": {
-    "prefix": ["subscript"],
-    "body": ["${1:symbol}_{${2:bottom}} $0"]
-  },
-  "Superscript": {
-    "prefix": ["superscript"],
-    "body": ["${1:symbol}^{${2:top}}_{${3:bottom}} $0"]
-  },
-  "Underscore": {
-    "prefix": ["underscore", "_ "],
-    "body": ["_{${1:}} $0"]
-  },
-  "Parentheses Round": {
-    "prefix": ["parentheses"],
-    "body": ["\\left($1 \\right) $0"]
-  },
-  "Brackets square": {
-    "prefix": ["brackets"],
-    "body": ["\\left[$1 \\right] $0"]
-  },
-  "Set": {
-    "prefix": ["set"],
-    "body": ["\\left\\{$1 \\right\\\\} $0"]
-  },
+  // "Centered/Split Equations": {
+  //   "prefix": ["centered", "split"],
+  //   "body": ["${1:left} \\qquad \\text{${2:and}} \\qquad ${3:right} $0"]
+  // },
+  // "Stacked Equations": {
+  //   "prefix": ["stackrel", "relstack"],
+  //   "body": ["\\stackrel{ ${1:!}}{ ${2:=}} $0"]
+  // },
+  // "Underbraced Equations": {
+  //   "prefix": ["underbrace"],
+  //   "body": ["\\underbrace{ ${1:above}}_{ ${2:below}} $0"]
+  // },
+  // "Align Symbol": {
+  //   "prefix": ["al"],
+  //   "body": ["&= $0"]
+  // },
+  // "New Line": {
+  //   "prefix": ["newline", "nl", "\\\\"],
+  //   "body": ["\\\\\\", "$0"]
+  // },
+  // "New Line + Align": {
+  //   "prefix": ["nal"],
+  //   "body": ["\\\\\\", "&= $0"]
+  // },
+  // "Cases (2)": {
+  //   "prefix": ["cases 2"],
+  //   "body": [
+  //     "\\begin{cases} ${1:value1} & \\textrm{${2:if}} \\quad ${3:condition1} \\\\\\ ${4:value2} &  \\textrm{${5:if}} \\quad ${6:condition2} \\end{cases} $0"
+  //   ]
+  // },
+  // "Cases (3)": {
+  //   "prefix": ["cases 3"],
+  //   "body": [
+  //     "\\begin{cases} ${1:value1} & \\textrm{${2:if}} \\quad ${3:condition1} \\\\\\ ${4:value2} &  \\textrm{${5:if}} \\quad ${6:condition2} \\\\\\ ${7:value3} &  \\textrm{${8:if}} \\quad ${9:condition3} \\end{cases} $0"
+  //   ]
+  // },
+  // "Fractions": {
+  //   "prefix": ["fraction"],
+  //   "body": ["\\frac{$1}{$2} $0"]
+  // },
+  // "Collection of Variables": {
+  //   "prefix": ["collection", "enumeration"],
+  //   "body": ["${1:x}_{1}, \\ldots, $1_{${2:n}} $0"]
+  // },
+  // "Bold Face": {
+  //   "prefix": ["mathbf", "bfmath", "bf"],
+  //   "body": ["\\mathbf{${1:A}} $0"]
+  // },
+  // "Bold Symbol": {
+  //   "prefix": ["boldsymbol"],
+  //   "body": ["\\boldsymbol{${1:\\varepsilon}} $0"]
+  // },
+  // "Text in Equation": {
+  //   "prefix": ["text"],
+  //   "body": ["\\text{${1:text}} $0"]
+  // },
+  // "Binomial Coefficient": {
+  //   "prefix": ["binom"],
+  //   "body": ["\\binom{${1:n}}{${2:k}} $0"]
+  // },
+  // "Subscript": {
+  //   "prefix": ["subscript"],
+  //   "body": ["${1:symbol}_{${2:bottom}} $0"]
+  // },
+  // "Superscript": {
+  //   "prefix": ["superscript"],
+  //   "body": ["${1:symbol}^{${2:top}}_{${3:bottom}} $0"]
+  // },
+  // "Underscore": {
+  //   "prefix": ["underscore", "_ "],
+  //   "body": ["_{${1:}} $0"]
+  // },
+  // "Parentheses Round": {
+  //   "prefix": ["parentheses"],
+  //   "body": ["\\left($1 \\right) $0"]
+  // },
+  // "Brackets square": {
+  //   "prefix": ["brackets"],
+  //   "body": ["\\left[$1 \\right] $0"]
+  // },
+  // "Set": {
+  //   "prefix": ["set"],
+  //   "body": ["\\left\\{$1 \\right\\\\} $0"]
+  // },
   // SECTION: Operators and Functions
-  "Sum Index i": {
-    "prefix": ["sum", "sum i"],
-    "body": ["\\sum_{${1:i}=${2:1}}^{${3:n}} $0"]
-  },
-  "Sum Index t": {
-    "prefix": ["sum t"],
-    "body": ["\\sum_{t=${1:1}}^{${2:T}} $0"]
-  },
-  "Series from 0": {
-    "prefix": ["series", "series 0"],
-    "body": ["\\sum_{${1:i}=${2:0}}^{\\infty} $0"]
-  },
-  "Series from 1": {
-    "prefix": ["series 1"],
-    "body": ["\\sum_{${1:i}=1}^{\\infty} $0"]
-  },
-  "Product": {
-    "prefix": ["product"],
-    "body": ["\\prod_{${1:i=1}}^{${2:n}} $0"]
-  },
-  "Absolute Value": {
-    "prefix": ["absolute value"],
-    "body": ["\\left|$1 \\right| $0"]
-  },
-  "Square Root": {
-    "prefix": ["square root"],
-    "body": ["\\sqrt{$1} $0"]
-  },
-  "Exponential Function": {
-    "prefix": ["exponential function"],
-    "body": ["\\exp \\left($1 \\right) $0"]
-  },
-  "Logarithm": {
-    "prefix": ["logarithm"],
-    "body": ["\\log \\left($1 \\right) $0"]
-  },
-  "Natural Logarithm": {
-    "prefix": ["natural logarithm", "ln"],
-    "body": ["\\ln \\left($1 \\right) $0"]
-  },
-  "Real Numbers": {
-    "prefix": ["real numbers", "\\r"],
-    "body": ["\\mathbb{R} $0"]
-  },
-  "Natural Numbers": {
-    "prefix": ["natural numbers", "\\n"],
-    "body": ["\\mathbb{N} $0"]
-  },
-  "Integers": {
-    "prefix": ["whole numbers", "integers", "\\z"],
-    "body": ["\\mathbb{Z} $0"]
-  },
-  "Rational Numbers": {
-    "prefix": ["rational numbers", "\\q"],
-    "body": ["\\mathbb{Q} $0"]
-  },
-  "Complex Numbers": {
-    "prefix": ["complex numbers", "\\c"],
-    "body": ["\\mathbb{C} $0"]
-  },
-  "Intersection": {
-    "prefix": ["intersection", "cap"],
-    "body": ["\\cap $0"]
-  },
-  "Intersection Big": {
-    "prefix": ["intersection big", "bigcap"],
-    "body": ["\\bigcap_{${1:i = 1}}^{${2:n}} $0"]
-  },
-  "Union": {
-    "prefix": ["union", "cup"],
-    "body": ["\\cup $0"]
-  },
-  "Union Big": {
-    "prefix": ["union big", "bigcup"],
-    "body": ["\\bigcup_{${1:i = 1}}^{${2:n}} $0"]
-  },
-  "Maximum": {
-    "prefix": ["maximum"],
-    "body": ["\\operatorname*{max}_{ ${1:\\theta \\in \\Theta}} $0"]
-  },
-  "Minimum": {
-    "prefix": ["minimum"],
-    "body": ["\\operatorname*{min}_{ ${1:\\theta \\in \\Theta}} $0"]
-  },
-  "Arg Max": {
-    "prefix": ["argmax"],
-    "body": ["\\operatorname*{arg\\,max}_{ ${1:\\theta \\in \\Theta}} $0"]
-  },
-  "Arg Min": {
-    "prefix": ["argmin"],
-    "body": ["\\operatorname*{arg\\,min}_{ ${1:\\theta \\in \\Theta}} $0"]
-  },
-  "Determinant": {
-    "prefix": ["determinant"],
-    "body": ["\\det \\left( ${1:X} \\right) $0"]
-  },
-  "Trace": {
-    "prefix": ["trace"],
-    "body": ["\\mathrm{tr} \\left( ${1:X} \\right) $0"]
-  },
-  "Rank": {
-    "prefix": ["rank"],
-    "body": ["\\mathrm{rank} \\left( ${1:X} \\right) $0"]
-  },
-  "Kernel": {
-    "prefix": ["kernel", "nullspace"],
-    "body": ["\\mathrm{ker} \\left( ${1:X} \\right) $0"]
-  },
-  "Norm (Vector)": {
-    "prefix": ["norm", "vecnorm"],
-    "body": ["\\left \\Vert ${1:x} \\right \\Vert $0"]
-  },
-  "Span": {
-    "prefix": ["span", "column space"],
-    "body": ["\\mathrm{span} \\left( ${1:X} \\right) $0"]
-  },
-  "Diagonal": {
-    "prefix": ["diagonal"],
-    "body": ["\\mathrm{diag} \\left( ${1:X} \\right) $0"]
-  },
-  "Derivative": {
-    "prefix": ["first derivative"],
-    "body": ["\\frac{\\mathrm{d} ${1:f}}{\\mathrm{d}${2:x}} $0"]
-  },
-  "Second Derivative": {
-    "prefix": ["second derivative"],
-    "body": ["\\frac{\\mathrm{d}^2 ${1:f}}{\\mathrm{d}${2:x}^2} $0"]
-  },
-  "Partial": {
-    "prefix": ["derivative", "del"],
-    "body": ["\\partial $0"]
-  },
-  "Partial Derivative": {
-    "prefix": ["partial first"],
-    "body": ["\\frac{\\partial ${1:f}}{\\partial ${2:x}} $0"]
-  },
-  "Partial Second Derivative": {
-    "prefix": ["partial second"],
-    "body": ["\\frac{\\partial^2 ${1:f}}{\\partial ${2:x}^2} $0"]
-  },
-  "Gradient": {
-    "prefix": ["gradient"],
-    "body": [
-      "\\begin{pmatrix} \\frac{ \\partial ${1:f}}{ \\partial ${2:x}_${3:1}} \\\\\\ \\vdots \\\\\\ \\frac{ \\partial ${1}}{ \\partial ${2}_${4:n}} \\end{pmatrix} $0"
-    ]
-  },
-  "Integral": {
-    "prefix": ["integral general"],
-    "body": [
-      "\\int \\; ${1:f} \\left( ${2:\\theta} \\right) \\, d${3:\\theta} $0"
-    ]
-  },
-  "Integral a to b": {
-    "prefix": ["integral ab"],
-    "body": [
-      "\\int_{ ${1:a}}^{ ${2:b}} ${3:f}\\left( ${4:x} \\right) \\,d${4} $0"
-    ]
-  },
-  "Integral zero to infinity": {
-    "prefix": ["integral 0 Inf"],
-    "body": ["\\int_{0}^{\\infty} ${1:f}\\left( ${2:x} \\right) \\, d${2} $0"]
-  },
-  "Integral zero to one": {
-    "prefix": ["integral 01"],
-    "body": ["\\int_{0}^{1} ${1:f}\\left( ${2:x} \\right) \\, d${2} $0"]
-  },
-  "Integral over R": {
-    "prefix": ["integral R"],
-    "body": ["\\int_{\\mathbb{R}} ${1:f}\\left( ${2:x} \\right) \\, d${2} $0"]
-  },
-  "Limit": {
-    "prefix": ["lim"],
-    "body": ["\\lim_{${1:n} \\to ${2:\\infty}} $0"]
-  },
-  "Probability Limit": {
-    "prefix": ["plim", "limp"],
-    "body": ["\\mathrm{plim} \\left( ${1:X} \\right) $0"]
-  },
+  // "Sum Index i": {
+  //   "prefix": ["sum", "sum i"],
+  //   "body": ["\\sum_{${1:i}=${2:1}}^{${3:n}} $0"]
+  // },
+  // "Sum Index t": {
+  //   "prefix": ["sum t"],
+  //   "body": ["\\sum_{t=${1:1}}^{${2:T}} $0"]
+  // },
+  // "Series from 0": {
+  //   "prefix": ["series", "series 0"],
+  //   "body": ["\\sum_{${1:i}=${2:0}}^{\\infty} $0"]
+  // },
+  // "Series from 1": {
+  //   "prefix": ["series 1"],
+  //   "body": ["\\sum_{${1:i}=1}^{\\infty} $0"]
+  // },
+  // "Product": {
+  //   "prefix": ["product"],
+  //   "body": ["\\prod_{${1:i=1}}^{${2:n}} $0"]
+  // },
+  // "Absolute Value": {
+  //   "prefix": ["absolute value"],
+  //   "body": ["\\left|$1 \\right| $0"]
+  // },
+  // "Square Root": {
+  //   "prefix": ["square root"],
+  //   "body": ["\\sqrt{$1} $0"]
+  // },
+  // "Exponential Function": {
+  //   "prefix": ["exponential function"],
+  //   "body": ["\\exp \\left($1 \\right) $0"]
+  // },
+  // "Logarithm": {
+  //   "prefix": ["logarithm"],
+  //   "body": ["\\log \\left($1 \\right) $0"]
+  // },
+  // "Natural Logarithm": {
+  //   "prefix": ["natural logarithm", "ln"],
+  //   "body": ["\\ln \\left($1 \\right) $0"]
+  // },
+  // "Real Numbers": {
+  //   "prefix": ["real numbers", "\\r"],
+  //   "body": ["\\mathbb{R} $0"]
+  // },
+  // "Natural Numbers": {
+  //   "prefix": ["natural numbers", "\\n"],
+  //   "body": ["\\mathbb{N} $0"]
+  // },
+  // "Integers": {
+  //   "prefix": ["whole numbers", "integers", "\\z"],
+  //   "body": ["\\mathbb{Z} $0"]
+  // },
+  // "Rational Numbers": {
+  //   "prefix": ["rational numbers", "\\q"],
+  //   "body": ["\\mathbb{Q} $0"]
+  // },
+  // "Complex Numbers": {
+  //   "prefix": ["complex numbers", "\\c"],
+  //   "body": ["\\mathbb{C} $0"]
+  // },
+  // "Intersection": {
+  //   "prefix": ["intersection", "cap"],
+  //   "body": ["\\cap $0"]
+  // },
+  // "Intersection Big": {
+  //   "prefix": ["intersection big", "bigcap"],
+  //   "body": ["\\bigcap_{${1:i = 1}}^{${2:n}} $0"]
+  // },
+  // "Union": {
+  //   "prefix": ["union", "cup"],
+  //   "body": ["\\cup $0"]
+  // },
+  // "Union Big": {
+  //   "prefix": ["union big", "bigcup"],
+  //   "body": ["\\bigcup_{${1:i = 1}}^{${2:n}} $0"]
+  // },
+  // "Maximum": {
+  //   "prefix": ["maximum"],
+  //   "body": ["\\operatorname*{max}_{ ${1:\\theta \\in \\Theta}} $0"]
+  // },
+  // "Minimum": {
+  //   "prefix": ["minimum"],
+  //   "body": ["\\operatorname*{min}_{ ${1:\\theta \\in \\Theta}} $0"]
+  // },
+  // "Arg Max": {
+  //   "prefix": ["argmax"],
+  //   "body": ["\\operatorname*{arg\\,max}_{ ${1:\\theta \\in \\Theta}} $0"]
+  // },
+  // "Arg Min": {
+  //   "prefix": ["argmin"],
+  //   "body": ["\\operatorname*{arg\\,min}_{ ${1:\\theta \\in \\Theta}} $0"]
+  // },
+  // "Determinant": {
+  //   "prefix": ["determinant"],
+  //   "body": ["\\det \\left( ${1:X} \\right) $0"]
+  // },
+  // "Trace": {
+  //   "prefix": ["trace"],
+  //   "body": ["\\mathrm{tr} \\left( ${1:X} \\right) $0"]
+  // },
+  // "Rank": {
+  //   "prefix": ["rank"],
+  //   "body": ["\\mathrm{rank} \\left( ${1:X} \\right) $0"]
+  // },
+  // "Kernel": {
+  //   "prefix": ["kernel", "nullspace"],
+  //   "body": ["\\mathrm{ker} \\left( ${1:X} \\right) $0"]
+  // },
+  // "Norm (Vector)": {
+  //   "prefix": ["norm", "vecnorm"],
+  //   "body": ["\\left \\Vert ${1:x} \\right \\Vert $0"]
+  // },
+  // "Span": {
+  //   "prefix": ["span", "column space"],
+  //   "body": ["\\mathrm{span} \\left( ${1:X} \\right) $0"]
+  // },
+  // "Diagonal": {
+  //   "prefix": ["diagonal"],
+  //   "body": ["\\mathrm{diag} \\left( ${1:X} \\right) $0"]
+  // },
+  // "Derivative": {
+  //   "prefix": ["first derivative"],
+  //   "body": ["\\frac{\\mathrm{d} ${1:f}}{\\mathrm{d}${2:x}} $0"]
+  // },
+  // "Second Derivative": {
+  //   "prefix": ["second derivative"],
+  //   "body": ["\\frac{\\mathrm{d}^2 ${1:f}}{\\mathrm{d}${2:x}^2} $0"]
+  // },
+  // "Partial": {
+  //   "prefix": ["derivative", "del"],
+  //   "body": ["\\partial $0"]
+  // },
+  // "Partial Derivative": {
+  //   "prefix": ["partial first"],
+  //   "body": ["\\frac{\\partial ${1:f}}{\\partial ${2:x}} $0"]
+  // },
+  // "Partial Second Derivative": {
+  //   "prefix": ["partial second"],
+  //   "body": ["\\frac{\\partial^2 ${1:f}}{\\partial ${2:x}^2} $0"]
+  // },
+  // "Gradient": {
+  //   "prefix": ["gradient"],
+  //   "body": [
+  //     "\\begin{pmatrix} \\frac{ \\partial ${1:f}}{ \\partial ${2:x}_${3:1}} \\\\\\ \\vdots \\\\\\ \\frac{ \\partial ${1}}{ \\partial ${2}_${4:n}} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "Integral": {
+  //   "prefix": ["integral general"],
+  //   "body": [
+  //     "\\int \\; ${1:f} \\left( ${2:\\theta} \\right) \\, d${3:\\theta} $0"
+  //   ]
+  // },
+  // "Integral a to b": {
+  //   "prefix": ["integral ab"],
+  //   "body": [
+  //     "\\int_{ ${1:a}}^{ ${2:b}} ${3:f}\\left( ${4:x} \\right) \\,d${4} $0"
+  //   ]
+  // },
+  // "Integral zero to infinity": {
+  //   "prefix": ["integral 0 Inf"],
+  //   "body": ["\\int_{0}^{\\infty} ${1:f}\\left( ${2:x} \\right) \\, d${2} $0"]
+  // },
+  // "Integral zero to one": {
+  //   "prefix": ["integral 01"],
+  //   "body": ["\\int_{0}^{1} ${1:f}\\left( ${2:x} \\right) \\, d${2} $0"]
+  // },
+  // "Integral over R": {
+  //   "prefix": ["integral R"],
+  //   "body": ["\\int_{\\mathbb{R}} ${1:f}\\left( ${2:x} \\right) \\, d${2} $0"]
+  // },
+  // "Limit": {
+  //   "prefix": ["lim"],
+  //   "body": ["\\lim_{${1:n} \\to ${2:\\infty}} $0"]
+  // },
+  // "Probability Limit": {
+  //   "prefix": ["plim", "limp"],
+  //   "body": ["\\mathrm{plim} \\left( ${1:X} \\right) $0"]
+  // },
   // SECTION Math Symbols
-  "Equivalence Symbol": {
-    "prefix": ["equiv", "leftrightarrow"],
-    "body": ["\\Leftrightarrow $0"]
-  },
-  "Right Arrow Double": {
-    "prefix": ["Rightarrow"],
-    "body": ["\\Rightarrow $0"]
-  },
-  "Right Arrow Single": {
-    "prefix": ["rightarrow"],
-    "body": ["\\rightarrow $0"]
-  },
-  "Right Arrow Long": {
-    "prefix": ["longrightarrow"],
-    "body": ["\\longrightarrow $0"]
-  },
-  "Assignment Arrow": {
-    "prefix": ["assign", "mapsto"],
-    "body": ["\\mapsto $0"]
-  },
-  "Arrow Up": {
-    "prefix": ["arrow up"],
-    "body": ["\\uparrow $0"]
-  },
-  "Arrow Down": {
-    "prefix": ["arrow down"],
-    "body": ["\\downarrow $0"]
-  },
-  "Multiplication": {
-    "prefix": ["cdot", "mult"],
-    "body": ["\\cdot $0"]
-  },
-  "Dots Middle": {
-    "prefix": ["cdots"],
-    "body": ["\\cdots $0"]
-  },
-  "Dots Low": {
-    "prefix": ["ldots"],
-    "body": ["\\ldots, $0"]
-  },
-  "Given": {
-    "prefix": ["given", "mid"],
-    "body": ["\\mid $0"]
-  },
-  "Distributed": {
-    "prefix": ["sim", "distributed"],
-    "body": ["\\sim $0"]
-  },
-  "Cartesian Product": {
-    "prefix": ["times", "cartesian product"],
-    "body": ["\\, \\times \\, $0"]
-  },
-  "For All": {
-    "prefix": ["for all"],
-    "body": ["\\quad \\forall \\; $0"]
-  },
-  "Exists": {
-    "prefix": ["exists"],
-    "body": ["\\exists \\; $0"]
-  },
-  "Proportional to": {
-    "prefix": ["proportional"],
-    "body": ["\\propto $0"]
-  },
-  "Infinity": {
-    "prefix": ["infinity"],
-    "body": ["\\infty $0"]
-  },
-  "Single Tab": {
-    "prefix": ["quad"],
-    "body": ["\\quad $0"]
-  },
-  "Double Tab": {
-    "prefix": ["qquad"],
-    "body": ["\\qquad $0"]
-  },
+  // "Equivalence Symbol": {
+  //   "prefix": ["equiv", "leftrightarrow"],
+  //   "body": ["\\Leftrightarrow $0"]
+  // },
+  // "Right Arrow Double": {
+  //   "prefix": ["Rightarrow"],
+  //   "body": ["\\Rightarrow $0"]
+  // },
+  // "Right Arrow Single": {
+  //   "prefix": ["rightarrow"],
+  //   "body": ["\\rightarrow $0"]
+  // },
+  // "Right Arrow Long": {
+  //   "prefix": ["longrightarrow"],
+  //   "body": ["\\longrightarrow $0"]
+  // },
+  // "Assignment Arrow": {
+  //   "prefix": ["assign", "mapsto"],
+  //   "body": ["\\mapsto $0"]
+  // },
+  // "Arrow Up": {
+  //   "prefix": ["arrow up"],
+  //   "body": ["\\uparrow $0"]
+  // },
+  // "Arrow Down": {
+  //   "prefix": ["arrow down"],
+  //   "body": ["\\downarrow $0"]
+  // },
+  // "Multiplication": {
+  //   "prefix": ["cdot", "mult"],
+  //   "body": ["\\cdot $0"]
+  // },
+  // "Dots Middle": {
+  //   "prefix": ["cdots"],
+  //   "body": ["\\cdots $0"]
+  // },
+  // "Dots Low": {
+  //   "prefix": ["ldots"],
+  //   "body": ["\\ldots, $0"]
+  // },
+  // "Given": {
+  //   "prefix": ["given", "mid"],
+  //   "body": ["\\mid $0"]
+  // },
+  // "Distributed": {
+  //   "prefix": ["sim", "distributed"],
+  //   "body": ["\\sim $0"]
+  // },
+  // "Cartesian Product": {
+  //   "prefix": ["times", "cartesian product"],
+  //   "body": ["\\, \\times \\, $0"]
+  // },
+  // "For All": {
+  //   "prefix": ["for all"],
+  //   "body": ["\\quad \\forall \\; $0"]
+  // },
+  // "Exists": {
+  //   "prefix": ["exists"],
+  //   "body": ["\\exists \\; $0"]
+  // },
+  // "Proportional to": {
+  //   "prefix": ["proportional"],
+  //   "body": ["\\propto $0"]
+  // },
+  // "Infinity": {
+  //   "prefix": ["infinity"],
+  //   "body": ["\\infty $0"]
+  // },
+  // "Single Tab": {
+  //   "prefix": ["quad"],
+  //   "body": ["\\quad $0"]
+  // },
+  // "Double Tab": {
+  //   "prefix": ["qquad"],
+  //   "body": ["\\qquad $0"]
+  // },
   // SECTION: Statistics
-  "Mean": {
-    "prefix": ["mean"],
-    "body": ["\\frac{1}{${1:n}}\\sum_{${2:i} = 1}^{${1}} $0"]
-  },
-  "Probability": {
-    "prefix": ["probability"],
-    "body": ["P \\left($1 \\right) $0"]
-  },
-  "Expected Value": {
-    "prefix": ["expected value"],
-    "body": ["\\mathbb{E} \\left[$1 \\right] $0"]
-  },
-  "Variance": {
-    "prefix": ["variance"],
-    "body": ["\\mathrm{Var} \\left($1 \\right) $0"]
-  },
-  "Covariance": {
-    "prefix": ["covariance"],
-    "body": ["\\mathrm{Cov} \\left($1 \\right) $0"]
-  },
-  "Correlation": {
-    "prefix": ["correlation"],
-    "body": ["\\mathrm{Cor} \\left($1 \\right) $0"]
-  },
-  "Bias": {
-    "prefix": ["bias"],
-    "body": ["\\mathrm{Bias} \\left($1 \\right) $0"]
-  },
-  "Mean Squared Error": {
-    "prefix": ["mean squared error"],
-    "body": ["\\mathrm{MSE} \\left($1 \\right) $0"]
-  },
-  "Normal Distribution": {
-    "prefix": ["normal distribution"],
-    "body": ["\\mathcal{N}_{${1:n}} \\left($2, $3 \\right)$0"]
-  },
-  "Bar (Empirical Mean)": {
-    "prefix": ["bar"],
-    "body": ["\\bar{$1} $0"]
-  },
-  "Long Bar (Empirical Mean)": {
-    "prefix": ["bar long", "overline"],
-    "body": ["\\overline{$1} $0"]
-  },
-  "Tilde": {
-    "prefix": ["tilde"],
-    "body": ["\\tilde{$1} $0"]
-  },
-  "Tilde Wide": {
-    "prefix": ["tilde wide"],
-    "body": ["\\widetilde{$1} $0"]
-  },
-  "Hat (Estimator)": {
-    "prefix": ["hat"],
-    "body": ["\\hat{$1} $0"]
-  },
-  "Hat Wide (Estimator)": {
-    "prefix": ["hat wide"],
-    "body": ["\\widehat{$1} $0"]
-  },
-  "Hat + Bold Face": {
-    "prefix": ["hat boldface"],
-    "body": ["\\mathbf{\\hat{ ${1:b}}} $0"]
-  },
-  "Hat + Bold Symbol": {
-    "prefix": ["hat boldsymbol"],
-    "body": ["\\boldsymbol{\\hat{ ${1:\\beta}}} $0"]
-  },
-  "Maximum Likelihood Estimator": {
-    "prefix": ["maximum likelihood", "mle"],
-    "body": ["\\hat{ ${1:\\theta}}_{\\mathrm{ML}} $0"]
-  },
-  "Probability Density": {
-    "prefix": ["density probability"],
-    "body": ["f_{ ${1:\\theta}}\\left( ${2:x}\\right) $0"]
-  },
-  "Joint Probability Density": {
-    "prefix": ["joint density"],
-    "body": ["f_{${1:\\theta}}\\left( ${2:x_1}, \\ldots, ${3:x_n}\\right) $0"]
-  },
-  "Likelihood": {
-    "prefix": ["likelihood"],
-    "body": ["\\prod_{i=1}^{n} f_{${1:\\theta}}(${2:x_i}) $0"]
-  },
-  "OLS Estimator": {
-    "prefix": ["ols", "least squares"],
-    "body": [
-      "\\left( \\mathbf{X}^T \\mathbf{X} \\right)^{-1} \\mathbf{X}^T \\mathbf{y} $0"
-    ]
-  },
-  "OLS Tilde": {
-    "prefix": ["ols tilde"],
-    "body": [
-      "\\left( \\tilde{\\mathbf{X}}^T \\tilde{\\mathbf{X}} \\right)^{-1} \\tilde{\\mathbf{X}} \\tilde{\\mathbf{y}} $0"
-    ]
-  },
-  "GLS Estimator": {
-    "prefix": ["gls", "generalized least squares"],
-    "body": [
-      "\\left( \\mathbf{X}^T \\boldsymbol{\\Psi}^{-1} \\mathbf{X} \\right)^{-1} \\mathbf{X}^T \\boldsymbol{\\Psi}^{-1} \\mathbf{y} $0"
-    ]
-  },
-  "Hat Matrix": {
-    "prefix": ["hat matrix"],
-    "body": [
-      "\\mathbf{X} \\left( \\mathbf{X}^T \\mathbf{X} \\right)^{-1} \\mathbf{X}^T $0"
-    ]
-  },
+  // "Mean": {
+  //   "prefix": ["mean"],
+  //   "body": ["\\frac{1}{${1:n}}\\sum_{${2:i} = 1}^{${1}} $0"]
+  // },
+  // "Probability": {
+  //   "prefix": ["probability"],
+  //   "body": ["P \\left($1 \\right) $0"]
+  // },
+  // "Expected Value": {
+  //   "prefix": ["expected value"],
+  //   "body": ["\\mathbb{E} \\left[$1 \\right] $0"]
+  // },
+  // "Variance": {
+  //   "prefix": ["variance"],
+  //   "body": ["\\mathrm{Var} \\left($1 \\right) $0"]
+  // },
+  // "Covariance": {
+  //   "prefix": ["covariance"],
+  //   "body": ["\\mathrm{Cov} \\left($1 \\right) $0"]
+  // },
+  // "Correlation": {
+  //   "prefix": ["correlation"],
+  //   "body": ["\\mathrm{Cor} \\left($1 \\right) $0"]
+  // },
+  // "Bias": {
+  //   "prefix": ["bias"],
+  //   "body": ["\\mathrm{Bias} \\left($1 \\right) $0"]
+  // },
+  // "Mean Squared Error": {
+  //   "prefix": ["mean squared error"],
+  //   "body": ["\\mathrm{MSE} \\left($1 \\right) $0"]
+  // },
+  // "Normal Distribution": {
+  //   "prefix": ["normal distribution"],
+  //   "body": ["\\mathcal{N}_{${1:n}} \\left($2, $3 \\right)$0"]
+  // },
+  // "Bar (Empirical Mean)": {
+  //   "prefix": ["bar"],
+  //   "body": ["\\bar{$1} $0"]
+  // },
+  // "Long Bar (Empirical Mean)": {
+  //   "prefix": ["bar long", "overline"],
+  //   "body": ["\\overline{$1} $0"]
+  // },
+  // "Tilde": {
+  //   "prefix": ["tilde"],
+  //   "body": ["\\tilde{$1} $0"]
+  // },
+  // "Tilde Wide": {
+  //   "prefix": ["tilde wide"],
+  //   "body": ["\\widetilde{$1} $0"]
+  // },
+  // "Hat (Estimator)": {
+  //   "prefix": ["hat"],
+  //   "body": ["\\hat{$1} $0"]
+  // },
+  // "Hat Wide (Estimator)": {
+  //   "prefix": ["hat wide"],
+  //   "body": ["\\widehat{$1} $0"]
+  // },
+  // "Hat + Bold Face": {
+  //   "prefix": ["hat boldface"],
+  //   "body": ["\\mathbf{\\hat{ ${1:b}}} $0"]
+  // },
+  // "Hat + Bold Symbol": {
+  //   "prefix": ["hat boldsymbol"],
+  //   "body": ["\\boldsymbol{\\hat{ ${1:\\beta}}} $0"]
+  // },
+  // "Maximum Likelihood Estimator": {
+  //   "prefix": ["maximum likelihood", "mle"],
+  //   "body": ["\\hat{ ${1:\\theta}}_{\\mathrm{ML}} $0"]
+  // },
+  // "Probability Density": {
+  //   "prefix": ["density probability"],
+  //   "body": ["f_{ ${1:\\theta}}\\left( ${2:x}\\right) $0"]
+  // },
+  // "Joint Probability Density": {
+  //   "prefix": ["joint density"],
+  //   "body": ["f_{${1:\\theta}}\\left( ${2:x_1}, \\ldots, ${3:x_n}\\right) $0"]
+  // },
+  // "Likelihood": {
+  //   "prefix": ["likelihood"],
+  //   "body": ["\\prod_{i=1}^{n} f_{${1:\\theta}}(${2:x_i}) $0"]
+  // },
+  // "OLS Estimator": {
+  //   "prefix": ["ols", "least squares"],
+  //   "body": [
+  //     "\\left( \\mathbf{X}^T \\mathbf{X} \\right)^{-1} \\mathbf{X}^T \\mathbf{y} $0"
+  //   ]
+  // },
+  // "OLS Tilde": {
+  //   "prefix": ["ols tilde"],
+  //   "body": [
+  //     "\\left( \\tilde{\\mathbf{X}}^T \\tilde{\\mathbf{X}} \\right)^{-1} \\tilde{\\mathbf{X}} \\tilde{\\mathbf{y}} $0"
+  //   ]
+  // },
+  // "GLS Estimator": {
+  //   "prefix": ["gls", "generalized least squares"],
+  //   "body": [
+  //     "\\left( \\mathbf{X}^T \\boldsymbol{\\Psi}^{-1} \\mathbf{X} \\right)^{-1} \\mathbf{X}^T \\boldsymbol{\\Psi}^{-1} \\mathbf{y} $0"
+  //   ]
+  // },
+  // "Hat Matrix": {
+  //   "prefix": ["hat matrix"],
+  //   "body": [
+  //     "\\mathbf{X} \\left( \\mathbf{X}^T \\mathbf{X} \\right)^{-1} \\mathbf{X}^T $0"
+  //   ]
+  // },
   // SECTION: Normal Greek Letters
-  "alpha": {
-    "prefix": ["alpha"],
-    "body": ["\\alpha_{$1} $0"]
-  },
-  "beta": {
-    "prefix": ["beta"],
-    "body": ["\\beta_{$1} $0"]
-  },
-  "beta hat": {
-    "prefix": ["beta hat"],
-    "body": ["\\hat{\\beta}_{$1} $0"]
-  },
-  "lambda": {
-    "prefix": ["lambda"],
-    "body": ["\\lambda_{$1} $0"]
-  },
-  "gamma": {
-    "prefix": ["gamma"],
-    "body": ["\\gamma_{$1} $0"]
-  },
-  "delta": {
-    "prefix": ["delta"],
-    "body": ["\\delta_{$1} $0"]
-  },
-  "omega": {
-    "prefix": ["omega"],
-    "body": ["\\omega_{$1} $0"]
-  },
-  "xi": {
-    "prefix": ["xi"],
-    "body": ["\\xi_{$1} $0"]
-  },
-  "pi": {
-    "prefix": ["pi"],
-    "body": ["\\pi_{$1} $0"]
-  },
-  "tau": {
-    "prefix": ["tau"],
-    "body": ["\\tau_{$1} $0"]
-  },
-  "theta": {
-    "prefix": ["theta"],
-    "body": ["\\theta_{$1} $0"]
-  },
-  "sigma": {
-    "prefix": ["sigma"],
-    "body": ["\\sigma_{$1}$0"]
-  },
-  "sigma squared": {
-    "prefix": ["sigma2"],
-    "body": ["\\sigma^2_{$1}$0"]
-  },
-  "mu": {
-    "prefix": ["mu"],
-    "body": ["\\mu_{$1} $0"]
-  },
-  "epsilon": {
-    "prefix": ["epsilon"],
-    "body": ["\\varepsilon_{$1} $0"]
-  },
-  "psi": {
-    "prefix": ["psi"],
-    "body": ["\\psi_{$1} $0"]
-  },
-  "phi": {
-    "prefix": ["phi"],
-    "body": ["\\phi_{$1} $0"]
-  },
+  // "alpha": {
+  //   "prefix": ["alpha"],
+  //   "body": ["\\alpha_{$1} $0"]
+  // },
+  // "beta": {
+  //   "prefix": ["beta"],
+  //   "body": ["\\beta_{$1} $0"]
+  // },
+  // "beta hat": {
+  //   "prefix": ["beta hat"],
+  //   "body": ["\\hat{\\beta}_{$1} $0"]
+  // },
+  // "lambda": {
+  //   "prefix": ["lambda"],
+  //   "body": ["\\lambda_{$1} $0"]
+  // },
+  // "gamma": {
+  //   "prefix": ["gamma"],
+  //   "body": ["\\gamma_{$1} $0"]
+  // },
+  // "delta": {
+  //   "prefix": ["delta"],
+  //   "body": ["\\delta_{$1} $0"]
+  // },
+  // "omega": {
+  //   "prefix": ["omega"],
+  //   "body": ["\\omega_{$1} $0"]
+  // },
+  // "xi": {
+  //   "prefix": ["xi"],
+  //   "body": ["\\xi_{$1} $0"]
+  // },
+  // "pi": {
+  //   "prefix": ["pi"],
+  //   "body": ["\\pi_{$1} $0"]
+  // },
+  // "tau": {
+  //   "prefix": ["tau"],
+  //   "body": ["\\tau_{$1} $0"]
+  // },
+  // "theta": {
+  //   "prefix": ["theta"],
+  //   "body": ["\\theta_{$1} $0"]
+  // },
+  // "sigma": {
+  //   "prefix": ["sigma"],
+  //   "body": ["\\sigma_{$1}$0"]
+  // },
+  // "sigma squared": {
+  //   "prefix": ["sigma2"],
+  //   "body": ["\\sigma^2_{$1}$0"]
+  // },
+  // "mu": {
+  //   "prefix": ["mu"],
+  //   "body": ["\\mu_{$1} $0"]
+  // },
+  // "epsilon": {
+  //   "prefix": ["epsilon"],
+  //   "body": ["\\varepsilon_{$1} $0"]
+  // },
+  // "psi": {
+  //   "prefix": ["psi"],
+  //   "body": ["\\psi_{$1} $0"]
+  // },
+  // "phi": {
+  //   "prefix": ["phi"],
+  //   "body": ["\\phi_{$1} $0"]
+  // },
   // SECTION: Bold Letters Uppercase
-  "Zeros Vector": {
-    "prefix": ["zeros", "0"],
-    "body": ["\\mathbf{0}_{${1:n}} $0"]
-  },
-  "Ones Vector": {
-    "prefix": ["ones", "1"],
-    "body": ["\\mathbf{1}_{${1:n}} $0"]
-  },
-  "Identity Matrix": {
-    "prefix": ["idenitity", "I", "eye"],
-    "body": ["\\mathbf{I}_{${1:n}} $0"]
-  },
-  "A bold": {
-    "prefix": ["A bold", "bf A"],
-    "body": ["\\mathbf{A} $0"]
-  },
-  "A Transposed bold": {
-    "prefix": ["A transposed bold", "bf A transposed"],
-    "body": ["\\mathbf{A}^T $0"]
-  },
-  "X bold": {
-    "prefix": ["X bold", "bf X", "design matrix"],
-    "body": ["\\mathbf{X} $0"]
-  },
-  "X Transposed bold": {
-    "prefix": ["X tranposed bold", "bf X tranposed"],
-    "body": ["\\mathbf{X}^T $0"]
-  },
-  "X tilde bold": {
-    "prefix": ["X tilde bold", "bf X tilde"],
-    "body": ["\\tilde{\\mathbf{X}} $0"]
-  },
-  "X star bold": {
-    "prefix": ["X star bold", "bf X star"],
-    "body": ["\\mathbf{X}^* $0"]
-  },
-  "Y bold": {
-    "prefix": ["Y bold", "bf Y", "design matriY"],
-    "body": ["\\mathbf{Y} $0"]
-  },
-  "Y Transposed bold": {
-    "prefix": ["Y tranposed bold", "bf Y tranposed"],
-    "body": ["\\mathbf{Y}^T $0"]
-  },
-  "Y tilde bold": {
-    "prefix": ["Y tilde bold", "bf Y tilde"],
-    "body": ["\\tilde{\\mathbf{Y}} $0"]
-  },
-  "Y star bold": {
-    "prefix": ["Y star bold", "bf Y star"],
-    "body": ["\\mathbf{Y}^* $0"]
-  },
-  "H bold": {
-    "prefix": ["H bold", "bf H"],
-    "body": ["\\mathbf{H} $0"]
-  },
-  "I minus H bold": {
-    "prefix": ["I minus H bold", "bf I minus H"],
-    "body": ["\\mathbf{I}_n - \\mathbf{H} $0"]
-  },
-  "M bold": {
-    "prefix": ["M bold", "bf M"],
-    "body": ["\\mathbf{M} $0"]
-  },
-  "L bold": {
-    "prefix": ["L bold", "bf L"],
-    "body": ["\\mathbf{L} $0"]
-  },
-  "J bold": {
-    "prefix": ["J bold", "bf J", "ones matrix"],
-    "body": ["\\mathbf{J} $0"]
-  },
-  "P bold": {
-    "prefix": ["P bold", "bf P", "projection matrix"],
-    "body": ["\\mathbf{P} $0"]
-  },
-  "Z bold": {
-    "prefix": ["Z bold", "bf Z"],
-    "body": ["\\mathbf{Z} $0"]
-  },
-  "R bold": {
-    "prefix": ["R bold", "bf R"],
-    "body": ["\\mathbf{R} $0"]
-  },
-  "C bold": {
-    "prefix": ["C bold", "bf C"],
-    "body": ["\\mathbf{C} $0"]
-  },
-  "v bold": {
-    "prefix": ["v bold", "bf v"],
-    "body": ["\\mathbf{v} $0"]
-  },
-  "V bold": {
-    "prefix": ["V bold", "bf V"],
-    "body": ["\\mathbf{V} $0"]
-  },
-  "Lambda Matrix bold": {
-    "prefix": ["Lambda bf", "Lambda bold"],
-    "body": ["\\mathbf{\\Lambda} $0"]
-  },
-  "Sigma Matrix bold": {
-    "prefix": ["Sigma bf", "Sigma bold"],
-    "body": ["\\mathbf{\\Sigma} $0"]
-  },
-  "Sigma Inverse": {
-    "prefix": ["Sigma Inverse"],
-    "body": ["\\mathbf{\\Sigma}^{-1} $0"]
-  },
+  // "Zeros Vector": {
+  //   "prefix": ["zeros", "0"],
+  //   "body": ["\\mathbf{0}_{${1:n}} $0"]
+  // },
+  // "Ones Vector": {
+  //   "prefix": ["ones", "1"],
+  //   "body": ["\\mathbf{1}_{${1:n}} $0"]
+  // },
+  // "Identity Matrix": {
+  //   "prefix": ["idenitity", "I", "eye"],
+  //   "body": ["\\mathbf{I}_{${1:n}} $0"]
+  // },
+  // "A bold": {
+  //   "prefix": ["A bold", "bf A"],
+  //   "body": ["\\mathbf{A} $0"]
+  // },
+  // "A Transposed bold": {
+  //   "prefix": ["A transposed bold", "bf A transposed"],
+  //   "body": ["\\mathbf{A}^T $0"]
+  // },
+  // "X bold": {
+  //   "prefix": ["X bold", "bf X", "design matrix"],
+  //   "body": ["\\mathbf{X} $0"]
+  // },
+  // "X Transposed bold": {
+  //   "prefix": ["X tranposed bold", "bf X tranposed"],
+  //   "body": ["\\mathbf{X}^T $0"]
+  // },
+  // "X tilde bold": {
+  //   "prefix": ["X tilde bold", "bf X tilde"],
+  //   "body": ["\\tilde{\\mathbf{X}} $0"]
+  // },
+  // "X star bold": {
+  //   "prefix": ["X star bold", "bf X star"],
+  //   "body": ["\\mathbf{X}^* $0"]
+  // },
+  // "Y bold": {
+  //   "prefix": ["Y bold", "bf Y", "design matriY"],
+  //   "body": ["\\mathbf{Y} $0"]
+  // },
+  // "Y Transposed bold": {
+  //   "prefix": ["Y tranposed bold", "bf Y tranposed"],
+  //   "body": ["\\mathbf{Y}^T $0"]
+  // },
+  // "Y tilde bold": {
+  //   "prefix": ["Y tilde bold", "bf Y tilde"],
+  //   "body": ["\\tilde{\\mathbf{Y}} $0"]
+  // },
+  // "Y star bold": {
+  //   "prefix": ["Y star bold", "bf Y star"],
+  //   "body": ["\\mathbf{Y}^* $0"]
+  // },
+  // "H bold": {
+  //   "prefix": ["H bold", "bf H"],
+  //   "body": ["\\mathbf{H} $0"]
+  // },
+  // "I minus H bold": {
+  //   "prefix": ["I minus H bold", "bf I minus H"],
+  //   "body": ["\\mathbf{I}_n - \\mathbf{H} $0"]
+  // },
+  // "M bold": {
+  //   "prefix": ["M bold", "bf M"],
+  //   "body": ["\\mathbf{M} $0"]
+  // },
+  // "L bold": {
+  //   "prefix": ["L bold", "bf L"],
+  //   "body": ["\\mathbf{L} $0"]
+  // },
+  // "J bold": {
+  //   "prefix": ["J bold", "bf J", "ones matrix"],
+  //   "body": ["\\mathbf{J} $0"]
+  // },
+  // "P bold": {
+  //   "prefix": ["P bold", "bf P", "projection matrix"],
+  //   "body": ["\\mathbf{P} $0"]
+  // },
+  // "Z bold": {
+  //   "prefix": ["Z bold", "bf Z"],
+  //   "body": ["\\mathbf{Z} $0"]
+  // },
+  // "R bold": {
+  //   "prefix": ["R bold", "bf R"],
+  //   "body": ["\\mathbf{R} $0"]
+  // },
+  // "C bold": {
+  //   "prefix": ["C bold", "bf C"],
+  //   "body": ["\\mathbf{C} $0"]
+  // },
+  // "v bold": {
+  //   "prefix": ["v bold", "bf v"],
+  //   "body": ["\\mathbf{v} $0"]
+  // },
+  // "V bold": {
+  //   "prefix": ["V bold", "bf V"],
+  //   "body": ["\\mathbf{V} $0"]
+  // },
+  // "Lambda Matrix bold": {
+  //   "prefix": ["Lambda bf", "Lambda bold"],
+  //   "body": ["\\mathbf{\\Lambda} $0"]
+  // },
+  // "Sigma Matrix bold": {
+  //   "prefix": ["Sigma bf", "Sigma bold"],
+  //   "body": ["\\mathbf{\\Sigma} $0"]
+  // },
+  // "Sigma Inverse": {
+  //   "prefix": ["Sigma Inverse"],
+  //   "body": ["\\mathbf{\\Sigma}^{-1} $0"]
+  // },
   // SECTION: Bold Letters Lowercase
-  "x bold": {
-    "prefix": ["x bold", "bf x"],
-    "body": ["\\mathbf{x} $0"]
-  },
-  "x transposed bold": {
-    "prefix": ["x tranposed bold", "bf x tranposed"],
-    "body": ["\\mathbf{x}^T $0"]
-  },
-  "x transposed x": {
-    "prefix": ["x tranposed x", "xtx"],
-    "body": ["\\mathbf{X}^T \\mathbf{X} $0"]
-  },
-  "x transposed y": {
-    "prefix": ["x tranposed y", "xty"],
-    "body": ["\\mathbf{X}^T \\mathbf{y} $0"]
-  },
-  "x transposed e": {
-    "prefix": ["x tranposed e", "xte"],
-    "body": ["\\mathbf{X}^T \\mathbf{e} $0"]
-  },
-  "x transposed x inverse": {
-    "prefix": ["x tranposed x inverse", "xtxi"],
-    "body": ["\\left( \\mathbf{X}^T \\mathbf{X} \\right)^{-1} $0"]
-  },
-  "x hat bold": {
-    "prefix": ["x hat bold", "bf x hat"],
-    "body": ["\\hat{\\mathbf{x}} $0"]
-  },
-  "x star bold": {
-    "prefix": ["x star bold", "bf x star"],
-    "body": ["\\mathbf{x}^* $0"]
-  },
-  "x tilde bold": {
-    "prefix": ["x tilde bold", "bf x tilde "],
-    "body": ["\\tilde{\\mathbf{x}} $0"]
-  },
-  "y bold": {
-    "prefix": ["y bold", "bf y"],
-    "body": ["\\mathbf{y} $0"]
-  },
-  "y transposed bold": {
-    "prefix": ["y tranposed bold", "bf y tranposed"],
-    "body": ["\\mathbf{y}^T $0"]
-  },
-  "y hat bold": {
-    "prefix": ["y hat bold", "bf y hat"],
-    "body": ["\\hat{\\mathbf{y}} $0"]
-  },
-  "y star bold": {
-    "prefix": ["y star bold", "bf y star"],
-    "body": ["\\mathbf{y}^* $0"]
-  },
-  "y tilde bold": {
-    "prefix": ["y tilde bold", "bf y tilde "],
-    "body": ["\\tilde{\\mathbf{y}} $0"]
-  },
-  "e bold": {
-    "prefix": ["e bold", "bf e"],
-    "body": ["\\mathbf{e} $0"]
-  },
-  "e transposed bold": {
-    "prefix": ["e tranposed bold", "bf e tranposed"],
-    "body": ["\\mathbf{e}^T $0"]
-  },
-  "e hat bold": {
-    "prefix": ["e hat bold", "bf e hat"],
-    "body": ["\\hat{\\mathbf{e}} $0"]
-  },
-  "e star bold": {
-    "prefix": ["e star bold", "bf e star"],
-    "body": ["\\mathbf{e}^* $0"]
-  },
-  "e tilde bold": {
-    "prefix": ["e tilde bold", "bf e tilde "],
-    "body": ["\\tilde{\\mathbf{e}} $0"]
-  },
-  "beta bold": {
-    "prefix": ["beta bs", "beta bold"],
-    "body": ["\\boldsymbol{\\beta} $0"]
-  },
-  "gamma bold": {
-    "prefix": ["gamma bs", "gamma bold"],
-    "body": ["\\boldsymbol{\\gamma}$0"]
-  },
+  // "x bold": {
+  //   "prefix": ["x bold", "bf x"],
+  //   "body": ["\\mathbf{x} $0"]
+  // },
+  // "x transposed bold": {
+  //   "prefix": ["x tranposed bold", "bf x tranposed"],
+  //   "body": ["\\mathbf{x}^T $0"]
+  // },
+  // "x transposed x": {
+  //   "prefix": ["x tranposed x", "xtx"],
+  //   "body": ["\\mathbf{X}^T \\mathbf{X} $0"]
+  // },
+  // "x transposed y": {
+  //   "prefix": ["x tranposed y", "xty"],
+  //   "body": ["\\mathbf{X}^T \\mathbf{y} $0"]
+  // },
+  // "x transposed e": {
+  //   "prefix": ["x tranposed e", "xte"],
+  //   "body": ["\\mathbf{X}^T \\mathbf{e} $0"]
+  // },
+  // "x transposed x inverse": {
+  //   "prefix": ["x tranposed x inverse", "xtxi"],
+  //   "body": ["\\left( \\mathbf{X}^T \\mathbf{X} \\right)^{-1} $0"]
+  // },
+  // "x hat bold": {
+  //   "prefix": ["x hat bold", "bf x hat"],
+  //   "body": ["\\hat{\\mathbf{x}} $0"]
+  // },
+  // "x star bold": {
+  //   "prefix": ["x star bold", "bf x star"],
+  //   "body": ["\\mathbf{x}^* $0"]
+  // },
+  // "x tilde bold": {
+  //   "prefix": ["x tilde bold", "bf x tilde "],
+  //   "body": ["\\tilde{\\mathbf{x}} $0"]
+  // },
+  // "y bold": {
+  //   "prefix": ["y bold", "bf y"],
+  //   "body": ["\\mathbf{y} $0"]
+  // },
+  // "y transposed bold": {
+  //   "prefix": ["y tranposed bold", "bf y tranposed"],
+  //   "body": ["\\mathbf{y}^T $0"]
+  // },
+  // "y hat bold": {
+  //   "prefix": ["y hat bold", "bf y hat"],
+  //   "body": ["\\hat{\\mathbf{y}} $0"]
+  // },
+  // "y star bold": {
+  //   "prefix": ["y star bold", "bf y star"],
+  //   "body": ["\\mathbf{y}^* $0"]
+  // },
+  // "y tilde bold": {
+  //   "prefix": ["y tilde bold", "bf y tilde "],
+  //   "body": ["\\tilde{\\mathbf{y}} $0"]
+  // },
+  // "e bold": {
+  //   "prefix": ["e bold", "bf e"],
+  //   "body": ["\\mathbf{e} $0"]
+  // },
+  // "e transposed bold": {
+  //   "prefix": ["e tranposed bold", "bf e tranposed"],
+  //   "body": ["\\mathbf{e}^T $0"]
+  // },
+  // "e hat bold": {
+  //   "prefix": ["e hat bold", "bf e hat"],
+  //   "body": ["\\hat{\\mathbf{e}} $0"]
+  // },
+  // "e star bold": {
+  //   "prefix": ["e star bold", "bf e star"],
+  //   "body": ["\\mathbf{e}^* $0"]
+  // },
+  // "e tilde bold": {
+  //   "prefix": ["e tilde bold", "bf e tilde "],
+  //   "body": ["\\tilde{\\mathbf{e}} $0"]
+  // },
+  // "beta bold": {
+  //   "prefix": ["beta bs", "beta bold"],
+  //   "body": ["\\boldsymbol{\\beta} $0"]
+  // },
+  // "gamma bold": {
+  //   "prefix": ["gamma bs", "gamma bold"],
+  //   "body": ["\\boldsymbol{\\gamma}$0"]
+  // },
   // SECTION: Vectors and Matrices
-  "(2 x 1) Column Vector": {
-    "prefix": ["2x1 column vector", "coltwo", "twocol"],
-    "body": ["\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\end{pmatrix} $0"]
-  },
-  "(3 x 1) Column Vector": {
-    "prefix": ["3x1 column vector", "colthree", "threecol"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\\\\\ ${3:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(4 x 1) Column Vector": {
-    "prefix": ["4x1 column vector", "colfour", "fourcol"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\\\\\ ${3:1} \\\\\\ ${4:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(5 x 1) Column Vector": {
-    "prefix": ["5x1 column vector", "colfive", "fivecol"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\\\\\ ${3:1} \\\\\\ ${4:1} \\\\\\ ${5:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(n x 1) Column Vector": {
-    "prefix": ["nx1 column vector", "coln", "ncol"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} \\\\\\ \\vdots \\\\\\ ${2:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(1 x 2) Row Vector": {
-    "prefix": ["1x2 row vector", "rowtwo", "tworow"],
-    "body": ["\\begin{pmatrix} ${1:1} & ${2:1} \\end{pmatrix} $0"]
-  },
-  "(1 x 3) Row Vector": {
-    "prefix": ["1x3 row vector", "rowthree", "threerow"],
-    "body": ["\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} \\end{pmatrix} $0"]
-  },
-  "(1 x 4) Row Vector": {
-    "prefix": ["1x4 row vector", "rowfour", "fourrow"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(1 x 5) Row Vector": {
-    "prefix": ["1x5 row vector", "rowfive", "fiverow"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(1 x n) Row Vector": {
-    "prefix": ["1xn row vector", "rown", "nrow"],
-    "body": ["\\begin{pmatrix} ${1:1} & \\cdots & ${2:1} \\end{pmatrix} $0"]
-  },
-  "(2 x 2) Matrix": {
-    "prefix": ["2x2 matrix", "mattwo", "twomat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ ${3:1} & ${4:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(3 x 3) Matrix": {
-    "prefix": ["3x3 matrix", "matthree", "threemat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} \\\\\\ ${4:0} & ${5:1} & ${6:0} \\\\\\ ${7:0} & ${8:0} & ${9:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(4 x 4) Matrix": {
-    "prefix": ["4x4 matrix", "matfour", "fourmat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} & ${4:0} \\\\\\ ${5:0} & ${6:1} & ${7:0} & ${8:0} \\\\\\ ${9:0} & ${10:0} & ${11:1} & ${12:0} \\\\\\ ${13:0} & ${14:0} & ${15:0} & ${16:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(5 x 5) Matrix": {
-    "prefix": ["5x5 matrix", "matfive", "fivemat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} & ${4:0} & ${5:0} \\\\\\ ${6:0} & ${7:1} & ${8:0} & ${9:0} & ${10:0}\\\\\\ ${11:0} & ${12:0} & ${13:1} & ${14:0} & ${15:0} \\\\\\ ${16:0} & ${17:0} & ${18:0} & ${19:1} & ${20:0} \\\\\\ ${21:0} & ${22:0} & ${23:0} & ${24:0} & ${25:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(n x n) Matrix": {
-    "prefix": ["nxn matrix", "matn", "nmat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & \\cdots & ${2:0} \\\\\\ \\vdots & \\ddots & \\vdots \\\\\\ ${3:0} & \\cdots & ${4:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(n x 2) Matrix": {
-    "prefix": ["nx2 matrix", "matntwo", "ntwomat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ \\vdots & \\vdots \\\\\\ ${3:n} & ${4:n} \\end{pmatrix} $0"
-    ]
-  },
-  "(n x 3) Matrix": {
-    "prefix": ["nx3 matrix", "matnthree", "nthreemat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} \\\\\\ \\vdots & \\vdots & \\vdots \\\\\\ ${4:n} & ${5:n} & ${6:n} \\end{pmatrix} $0"
-    ]
-  },
-  "(n x 4) Matrix": {
-    "prefix": ["nx4 matrix", "matnfour", "nfourmat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\\\\\ \\vdots & \\vdots & \\vdots & \\vdots \\\\\\ ${5:n} & ${6:n} & ${7:n} & ${8:n} \\end{pmatrix} $0"
-    ]
-  },
-  "(n x 5) Matrix": {
-    "prefix": ["nx5 matrix", "matnfive", "nfivemat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\\\\\ \\vdots & \\vdots & \\vdots & \\vdots & \\vdots \\\\\\ ${6:n} & ${7:n} & ${8:n} & ${9:n} & ${10:n} \\end{pmatrix} $0"
-    ]
-  },
-  "Diagonal (2 x 2) Matrix": {
-    "prefix": ["diagonal 2x2 matrix", "diagtwo", "twodiag"],
-    "body": ["\\begin{pmatrix} ${1:1} & 0 \\\\\\ o & ${2:1} \\end{pmatrix} $0"]
-  },
-  "Diagonal (3 x 3) Matrix": {
-    "prefix": ["diagonal 3x3 matrix", "diagthree", "threediag"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & 0 & 0 \\\\\\ 0 & ${2:1} & 0 \\\\\\ 0 & 0 & ${3:1} \\end{pmatrix} $0"
-    ]
-  },
-  "Diagonal (4 x 4) Matrix": {
-    "prefix": ["diagonal 4x4 matrix", "diagfour", "fourdiag"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & 0 & 0 & 0 \\\\\\ 0 & ${2:1} & 0 & 0\\\\\\ 0 & 0 & ${3:1} & 0 \\\\\\ 0 & 0 & 0 & ${4:1} \\end{pmatrix} $0"
-    ]
-  },
-  "Diagonal (5 x 5) Matrix": {
-    "prefix": ["diagonal 5x5 matrix", "diagfive", "fivediag"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & 0 & 0 & 0 & 0 \\\\\\ 0 & ${2:1} & 0 & 0 & 0 \\\\\\ 0 & 0 & ${3:1} & 0 & 0 \\\\\\ 0 & 0 & 0 & ${4:1} & 0 \\\\\\ 0 & 0 & 0 & 0 & ${5:1}  \\end{pmatrix} $0"
-    ]
-  },
-  "Diagonal (n x n) Matrix": {
-    "prefix": ["diagonal nxn matrix", "diagn", "ndiag"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} &  & 0 \\\\\\  & \\ddots &  \\\\\\ 0 &  & ${2:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(4 x 2) Matrix": {
-    "prefix": ["4x2 matrix", "matfourtwo", "fourtwomat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ ${3:1} & ${4:1} \\\\\\ ${5:1} & ${6:1} \\\\\\ ${7:1} & ${8:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(5 x 2) Matrix": {
-    "prefix": ["5x2 matrix", "matfivetwo", "fivetwomat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ ${3:1} & ${4:1} \\\\\\ ${5:1} & ${6:1} \\\\\\ ${7:1} & ${8:1} \\\\\\ ${9:1} & ${10:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(2 x 4) Matrix": {
-    "prefix": ["2x4 matrix", "mattwofour", "twofourmat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\\\\\ ${5:1} & ${6:1} & ${7:1} & ${8:1} \\end{pmatrix} $0"
-    ]
-  },
-  "(2 x 5) Matrix": {
-    "prefix": ["2x5 matrix", "mattwofive", "twofivemat"],
-    "body": [
-      "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\\\\\ ${6:1} & ${7:1} & ${8:1} & ${9:1} & ${10:1} \\end{pmatrix} $0"
-    ]
-  }
+  // "(2 x 1) Column Vector": {
+  //   "prefix": ["2x1 column vector", "coltwo", "twocol"],
+  //   "body": ["\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\end{pmatrix} $0"]
+  // },
+  // "(3 x 1) Column Vector": {
+  //   "prefix": ["3x1 column vector", "colthree", "threecol"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\\\\\ ${3:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(4 x 1) Column Vector": {
+  //   "prefix": ["4x1 column vector", "colfour", "fourcol"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\\\\\ ${3:1} \\\\\\ ${4:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(5 x 1) Column Vector": {
+  //   "prefix": ["5x1 column vector", "colfive", "fivecol"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} \\\\\\ ${2:1} \\\\\\ ${3:1} \\\\\\ ${4:1} \\\\\\ ${5:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(n x 1) Column Vector": {
+  //   "prefix": ["nx1 column vector", "coln", "ncol"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} \\\\\\ \\vdots \\\\\\ ${2:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(1 x 2) Row Vector": {
+  //   "prefix": ["1x2 row vector", "rowtwo", "tworow"],
+  //   "body": ["\\begin{pmatrix} ${1:1} & ${2:1} \\end{pmatrix} $0"]
+  // },
+  // "(1 x 3) Row Vector": {
+  //   "prefix": ["1x3 row vector", "rowthree", "threerow"],
+  //   "body": ["\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} \\end{pmatrix} $0"]
+  // },
+  // "(1 x 4) Row Vector": {
+  //   "prefix": ["1x4 row vector", "rowfour", "fourrow"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(1 x 5) Row Vector": {
+  //   "prefix": ["1x5 row vector", "rowfive", "fiverow"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(1 x n) Row Vector": {
+  //   "prefix": ["1xn row vector", "rown", "nrow"],
+  //   "body": ["\\begin{pmatrix} ${1:1} & \\cdots & ${2:1} \\end{pmatrix} $0"]
+  // },
+  // "(2 x 2) Matrix": {
+  //   "prefix": ["2x2 matrix", "mattwo", "twomat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ ${3:1} & ${4:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(3 x 3) Matrix": {
+  //   "prefix": ["3x3 matrix", "matthree", "threemat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} \\\\\\ ${4:0} & ${5:1} & ${6:0} \\\\\\ ${7:0} & ${8:0} & ${9:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(4 x 4) Matrix": {
+  //   "prefix": ["4x4 matrix", "matfour", "fourmat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} & ${4:0} \\\\\\ ${5:0} & ${6:1} & ${7:0} & ${8:0} \\\\\\ ${9:0} & ${10:0} & ${11:1} & ${12:0} \\\\\\ ${13:0} & ${14:0} & ${15:0} & ${16:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(5 x 5) Matrix": {
+  //   "prefix": ["5x5 matrix", "matfive", "fivemat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:0} & ${3:0} & ${4:0} & ${5:0} \\\\\\ ${6:0} & ${7:1} & ${8:0} & ${9:0} & ${10:0}\\\\\\ ${11:0} & ${12:0} & ${13:1} & ${14:0} & ${15:0} \\\\\\ ${16:0} & ${17:0} & ${18:0} & ${19:1} & ${20:0} \\\\\\ ${21:0} & ${22:0} & ${23:0} & ${24:0} & ${25:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(n x n) Matrix": {
+  //   "prefix": ["nxn matrix", "matn", "nmat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & \\cdots & ${2:0} \\\\\\ \\vdots & \\ddots & \\vdots \\\\\\ ${3:0} & \\cdots & ${4:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(n x 2) Matrix": {
+  //   "prefix": ["nx2 matrix", "matntwo", "ntwomat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ \\vdots & \\vdots \\\\\\ ${3:n} & ${4:n} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(n x 3) Matrix": {
+  //   "prefix": ["nx3 matrix", "matnthree", "nthreemat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} \\\\\\ \\vdots & \\vdots & \\vdots \\\\\\ ${4:n} & ${5:n} & ${6:n} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(n x 4) Matrix": {
+  //   "prefix": ["nx4 matrix", "matnfour", "nfourmat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\\\\\ \\vdots & \\vdots & \\vdots & \\vdots \\\\\\ ${5:n} & ${6:n} & ${7:n} & ${8:n} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(n x 5) Matrix": {
+  //   "prefix": ["nx5 matrix", "matnfive", "nfivemat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\\\\\ \\vdots & \\vdots & \\vdots & \\vdots & \\vdots \\\\\\ ${6:n} & ${7:n} & ${8:n} & ${9:n} & ${10:n} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "Diagonal (2 x 2) Matrix": {
+  //   "prefix": ["diagonal 2x2 matrix", "diagtwo", "twodiag"],
+  //   "body": ["\\begin{pmatrix} ${1:1} & 0 \\\\\\ o & ${2:1} \\end{pmatrix} $0"]
+  // },
+  // "Diagonal (3 x 3) Matrix": {
+  //   "prefix": ["diagonal 3x3 matrix", "diagthree", "threediag"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & 0 & 0 \\\\\\ 0 & ${2:1} & 0 \\\\\\ 0 & 0 & ${3:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "Diagonal (4 x 4) Matrix": {
+  //   "prefix": ["diagonal 4x4 matrix", "diagfour", "fourdiag"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & 0 & 0 & 0 \\\\\\ 0 & ${2:1} & 0 & 0\\\\\\ 0 & 0 & ${3:1} & 0 \\\\\\ 0 & 0 & 0 & ${4:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "Diagonal (5 x 5) Matrix": {
+  //   "prefix": ["diagonal 5x5 matrix", "diagfive", "fivediag"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & 0 & 0 & 0 & 0 \\\\\\ 0 & ${2:1} & 0 & 0 & 0 \\\\\\ 0 & 0 & ${3:1} & 0 & 0 \\\\\\ 0 & 0 & 0 & ${4:1} & 0 \\\\\\ 0 & 0 & 0 & 0 & ${5:1}  \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "Diagonal (n x n) Matrix": {
+  //   "prefix": ["diagonal nxn matrix", "diagn", "ndiag"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} &  & 0 \\\\\\  & \\ddots &  \\\\\\ 0 &  & ${2:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(4 x 2) Matrix": {
+  //   "prefix": ["4x2 matrix", "matfourtwo", "fourtwomat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ ${3:1} & ${4:1} \\\\\\ ${5:1} & ${6:1} \\\\\\ ${7:1} & ${8:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(5 x 2) Matrix": {
+  //   "prefix": ["5x2 matrix", "matfivetwo", "fivetwomat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} \\\\\\ ${3:1} & ${4:1} \\\\\\ ${5:1} & ${6:1} \\\\\\ ${7:1} & ${8:1} \\\\\\ ${9:1} & ${10:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(2 x 4) Matrix": {
+  //   "prefix": ["2x4 matrix", "mattwofour", "twofourmat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} \\\\\\ ${5:1} & ${6:1} & ${7:1} & ${8:1} \\end{pmatrix} $0"
+  //   ]
+  // },
+  // "(2 x 5) Matrix": {
+  //   "prefix": ["2x5 matrix", "mattwofive", "twofivemat"],
+  //   "body": [
+  //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\\\\\ ${6:1} & ${7:1} & ${8:1} & ${9:1} & ${10:1} \\end{pmatrix} $0"
+  //   ]
+  // }
 }

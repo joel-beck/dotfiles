@@ -162,6 +162,12 @@
   "code-runner.showExecutionMessage": false,
   "code-runner.showRunIconInEditorTitleMenu": false,
   "code-runner.showStopIconInEditorTitleMenu": false,
+  "codesnap.backgroundColor": "#ffffff",
+  "codesnap.boxShadow": "#ffffff",
+  "codesnap.showLineNumbers": false,
+  "codesnap.showWindowControls": false,
+  "codesnap.target": "window",
+  "codesnap.transparentBackground": true,
   // SECTION: Status Bar Commands
   // global status bar items -> priority 2 (keep on the left side)
   // file specific status bar items -> priority 1
@@ -468,11 +474,9 @@
   "editor.semanticTokenColorCustomizations": {
     "[Cobalt2]": {
       "rules": {
-        // change color of module names
-        "module": "#FF9D00",
-        // change color of properties
-        // "property": "#2adfffef"
-        "property": "#59e03a"
+        "module": "#FF9D00", // color of module names
+        "property": "#59e03a", // color of properties
+        "type": "#00BD00" // color of type names
       }
     },
     "enabled": true
@@ -494,55 +498,26 @@
       "textMateRules": [
         {
           "scope": [
-            "meta.function-call" // Specifies the color of function calls
-          ],
-          "settings": {
-            "foreground": "#FFC600"
-          }
-        },
-        {
-          "scope": ["support.function.r", "variable.function.r"], // Specifies the color of R language function calls and variable functions
-          "settings": {
-            "foreground": "#FFC600"
-          }
-        },
-        {
-          "scope": ["entity.name.math.tex"], // Specifies the color of LaTeX math entities
-          "settings": {
-            "foreground": "#FFC600"
-          }
-        },
-        {
-          "scope": [
+            "constant.character.math.tex", // Constant characters in TeX math expressions
+            "constant.other.general.math.tex", // General constants in TeX math expressions
+            "entity.name.math.tex", // Latex math entities
             "markup.inline.raw.string.markdown", // Raw inline strings in Markdown
+            "markup.inline.raw.string.quarto", // Raw inline strings in Quarto
+            "meta.function-call", // Specifies the color of function calls
             "punctuation.definition.raw.markdown", // Punctuation for raw inline strings in Markdown
             "punctuation.definition.string.begin.markdown", // Start punctuation for strings in Markdown
             "punctuation.definition.string.end.markdown", // End punctuation for strings in Markdown
-            "string.other.link.title.markdown" // Title of links in Markdown
-          ],
-          "settings": {
-            "foreground": "#FFC600"
-          }
-        },
-        {
-          // Specifies the color of raw inline strings in Quarto
-          "scope": ["markup.inline.raw.string.quarto"],
-          "settings": {
-            "foreground": "#FFC600"
-          }
-        },
-        {
-          "scope": [
-            "constant.character.math.tex", // Constant characters in TeX math expressions
-            "constant.other.general.math.tex", // General constants in TeX math expressions
+            "string.other.link.title.markdown", // Title of links in Markdown
             "support.function.be.latex", // Basic functions in LaTeX
             "support.function.emph.latex", // Italic emphasis function in LaTeX
             "support.function.general.latex", // General support functions in LaTeX
             "support.function.general.tex", // General support functions in TeX
+            "support.function.r", // R functions
             "support.function.section.latex", // Sectioning commands in LaTeX
             "support.function.textbf.latex", // Bold text function in LaTeX
             "support.function.textit.latex", // Italic text function in LaTeX
-            "support.function.texttt.latex" // Monospace text function in LaTeX
+            "support.function.texttt.latex", // Monospace text function in LaTeX
+            "variable.function.r" // R variable functions
           ],
           "settings": {
             "foreground": "#FFC600"
@@ -556,10 +531,10 @@
         },
         {
           "scope": [
-            "entity.name.section.markdown", // Section headers in Markdown
-            "punctuation.definition.heading.markdown", // Punctuation for section headers in Markdown
             "entity.name.section.latex", // Section headers in LaTeX
+            "entity.name.section.markdown", // Section headers in Markdown
             "entity.name.section.quarto", // Section headers in Quarto
+            "punctuation.definition.heading.markdown", // Punctuation for section headers in Markdown
             "punctuation.definition.heading.quarto" // Punctuation for section headers in Quarto
           ],
           "settings": {
@@ -568,15 +543,17 @@
         },
         {
           "scope": [
-            "meta.attribute.python", // Attributes in Python
-            "punctuation.definition.decorator.python", // Decorators in Python
             "entity.namespace.r", // Namespaces in R
             "markup.bold.markdown", // Bold text in Markdown
-            "punctuation.definition.markdown", // General punctuation in Markdown
-            "string.unquoted.plain.out.yaml", // Unquoted plain strings in YAML
             "markup.bold.quarto", // Bold text in Quarto
             "markup.bold.textbf.latex", // Bold text in LaTeX
-            "support.class.latex" // Class support in LaTeX
+            "meta.attribute.python", // Attributes in Python
+            "punctuation.definition.decorator.python", // Decorators in Python
+            "punctuation.definition.markdown", // General punctuation in Markdown
+            "string.unquoted.plain.out.yaml", // Unquoted plain strings in YAML
+            "support.class.latex", // Class support in LaTeX
+            "support.type.go"
+            // "entity.name.type" // Type names (e.g. in Go)
           ],
           "settings": {
             "foreground": "#00BD00"
@@ -770,7 +747,8 @@
           "variable.other.readwrite",
           "variable.other",
           "variable.parameter",
-          "variable"
+          "variable",
+          "source.go entity.name.type"
         ],
         "settings": {
           "fontStyle": ""
@@ -851,6 +829,12 @@
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
   "githubPullRequests.pushBranch": "always",
+  // SUBSECTION: Go
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.parameterNames": true,
+  "gopls": {
+    "ui.semanticTokens": true
+  },
   // SUBSECTION: Grammarly
   "grammarly.config.documentDialect": "american",
   "grammarly.files.include": [
