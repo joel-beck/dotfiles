@@ -917,6 +917,17 @@
     "key": "shift+ctrl+[BracketLeft]",
     "when": "notebookEditorFocused"
   },
+  // SECTION: Go
+  // Insert := Operator
+  {
+    "args": {
+      "snippet": ":= "
+    },
+    "command": "editor.action.insertSnippet",
+    "key": "ctrl+0",
+    "when": "editorTextFocus && editorLangId == 'go'"
+  },
+
   // SECTION: R in VSCode
   // New R Terminal with Radian
   {
