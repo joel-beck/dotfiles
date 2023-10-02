@@ -63,7 +63,11 @@ brew install go &&
     # State of the art linter for the Go programming language
     go install honnef.co/go/tools/cmd/staticcheck@latest &&
     # Go language server
-    go install golang.org/x/tools/gopls@latest
+    go install golang.org/x/tools/gopls@latest &&
+    # Go linter
+    # binary will be $(go env GOPATH)/bin/golangci-lint
+    # update version at the end regularly!!
+    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.54.2
 
 # GitHub CLI
 brew install gh
