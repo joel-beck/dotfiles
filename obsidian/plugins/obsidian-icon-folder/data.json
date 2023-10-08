@@ -44,11 +44,9 @@
   "13 Products": "RiShoppingBagFill",
   "14 Weblinks": "FasLink",
   "15 Study Websites": "IbWebsiteWithText",
-  "16 Package Documentations": "FabCodepen",
   "17 Places": "FasLocationDot",
   "18 Recipes": "SiCodechef",
   "19 Messages": "FasMessage",
-  "20 Subscriptions": "FasDollarSign",
   "21 Jobs": "FasMoneyBill1",
   "22 Wohnungen": "FasHouseChimney",
   "23 Uni Courses": "FasUserGraduate",
@@ -65,5 +63,7 @@
   "75 Zotero Images": "FasImage",
   "80 Scripts": "FasCode",
   "90 Logs": "FasFileLines",
-  "99 Inbox": "FasInbox"
+  "99 Inbox": "FasInbox",
+  "20 Payments": "FasDollarSign",
+  "16 Packages": "FabCodepen"
 }

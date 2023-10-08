@@ -437,6 +437,7 @@
       "tooltip": "Start Quokka.js on File"
     }
   ],
+  "console-ninja.featureSet": "Community",
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.closeOnEnd": true,
@@ -811,20 +812,20 @@
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
   "github.copilot.enable": {
-    "quarto": false,
     "*": true,
+    "go": true,
     "javascript": true,
     "jsonc": true,
     "latex": true,
     "markdown": true,
     "plaintext": true,
     "python": true,
+    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
     "typescript": true,
-    "yaml": true,
-    "go": true
+    "yaml": true
   },
   "github.copilot.inlineSuggest.enable": true,
   "githubPullRequests.fileListLayout": "tree",
@@ -833,6 +834,9 @@
   // SUBSECTION: Go
   "go.inlayHints.compositeLiteralFields": true,
   "go.inlayHints.parameterNames": true,
+  "go.lintFlags": ["--fast"],
+  "go.lintTool": "golangci-lint",
+  "go.toolsManagement.autoUpdate": true,
   "gopls": {
     "ui.semanticTokens": true
   },
@@ -1588,7 +1592,5 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always",
-  "go.toolsManagement.autoUpdate": true,
-  "console-ninja.featureSet": "Community"
+  "workbench.tree.renderIndentGuides": "always"
 }
