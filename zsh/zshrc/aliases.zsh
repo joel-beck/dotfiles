@@ -47,3 +47,6 @@ alias diff="batdiff"
 
 # draw.io command line use
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
+
+# Keyboard Maestro command line use
+alias keyboardmaestro='/Applications/Keyboard\ Maestro.app/Contents/MacOS/keyboardmaestro'

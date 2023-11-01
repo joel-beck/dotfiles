@@ -1,9 +1,7 @@
 {
-  "cssTheme": "Minimal",
-  "theme": "obsidian",
-  "textFontFamily": "",
-  "monospaceFontFamily": "JetBrainsMono Nerd Font",
+  "accentColor": "#9880a8",
   "baseFontSize": 15,
+  "cssTheme": "Minimal",
   "enabledCssSnippets": [
     "callouts",
     "status_bar",
@@ -17,7 +15,10 @@
     "obsidian",
     "MCL Wide Views"
   ],
-  "accentColor": "#9880a8",
+  "interfaceFontFamily": "",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
+  "nativeMenus": true,
   "showViewHeader": true,
-  "nativeMenus": true
+  "textFontFamily": "Inter,FiraCode Nerd Font,JetBrainsMono Nerd Font,JetBrainsMono Nerd Font Mono,FiraCode Nerd Font Mono,CaskaydiaCove Nerd Font Mono",
+  "theme": "obsidian"
 }

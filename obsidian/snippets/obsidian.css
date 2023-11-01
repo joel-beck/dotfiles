@@ -169,6 +169,37 @@ img {
     --callout-icon: info;
 }
 
+.callout[data-callout="todo"] {
+    --callout-color: 251, 148, 255;
+    --callout-icon: clipboard-list;
+}
+
+.callout[data-callout="important"] {
+    --callout-color: 255, 157, 0;
+    --callout-icon: alert-circle;
+}
+
+.callout[data-callout="keep-in-mind"] {
+    --callout-color: 127, 80, 222;
+    --callout-icon: lightbulb;
+}
+
+.callout[data-callout="goals"] {
+    --callout-color: 255, 137, 13;
+    --callout-icon: trophy;
+}
+
+.callout[data-callout="roadmap"] {
+    --callout-color: 251, 148, 255;
+    --callout-icon: footprints;
+}
+
+/* `sticky-note` icon unfortunately does not work */
+.callout[data-callout="comment"] {
+    --callout-color: 89, 224, 58;
+    --callout-icon: message-circle;
+}
+
 .callout[data-callout="metadata"] {
     --callout-color: 89, 224, 85;
     --callout-icon: database;
@@ -179,21 +210,6 @@ img {
     --callout-icon: database;
 }
 
-.callout[data-callout="important"] {
-    --callout-color: 255, 157, 0;
-    --callout-icon: alert-circle;
-}
-
-.callout[data-callout="todo"] {
-    --callout-color: 251, 148, 255;
-    --callout-icon: clipboard-list;
-}
-
-.callout[data-callout="keep-in-mind"] {
-    --callout-color: 127, 80, 222;
-    --callout-icon: lightbulb;
-}
-
 .callout[data-callout="links"] {
     --callout-color: 173, 199, 58;
     --callout-icon: link;
@@ -202,12 +218,6 @@ img {
 .callout[data-callout="pdf"] {
     --callout-color: 199, 86, 58;
     --callout-icon: file-text;
-}
-
-/* `sticky-note` icon unfortunately does not work */
-.callout[data-callout="comment"] {
-    --callout-color: 89, 224, 58;
-    --callout-icon: message-circle;
 }
 
 .callout[data-callout="pros"] {

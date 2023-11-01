@@ -90,9 +90,6 @@ brew install --cask iina
 # ImageOptim
 brew install --cask imageoptim
 
-# Inkscape
-brew install --cask inkscape
-
 # IStat Menus
 brew install --cask istat-menus
 
@@ -108,9 +105,6 @@ brew install --cask keyboard-maestro
 # Latest
 brew install --cask latest
 
-# LaTeXiT
-brew install --cask latexit
-
 # Lunar
 brew install --cask lunar
 
@@ -119,12 +113,6 @@ brew install --cask mactex
 
 # Mactracker
 brew install --cask mactracker
-
-# Mail Assistant
-brew install --cask mail-assistant
-
-# Mathpix Snipping Tool
-brew install --cask mathpix-snipping-tool
 
 # Microsoft Excel
 brew install --cask microsoft-excel
@@ -165,9 +153,6 @@ brew install --cask owncloud
 # Postman
 brew install --cask postman
 
-# Prefs Editor
-brew install --cask prefs-editor
-
 # R
 brew install --cask r
 
@@ -203,9 +188,6 @@ brew install --cask topnotch
 
 # Visual Studio Code
 brew install --cask visual-studio-code
-
-# Vivid
-brew install --cask vivid
 
 # Warp
 brew install --cask warp

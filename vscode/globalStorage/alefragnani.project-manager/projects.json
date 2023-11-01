@@ -22,6 +22,13 @@
   },
   {
     "enabled": true,
+    "name": "chatgpt",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/ChatGPT",
+    "tags": ["projects-private", "coding-challenges"]
+  },
+  {
+    "enabled": true,
     "name": "cookiecutter-python-projects",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/Cookiecutter/cookiecutter-python-projects",
@@ -53,13 +60,6 @@
     "name": "python-projects",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects",
-    "tags": ["python", "projects-private"]
-  },
-  {
-    "enabled": true,
-    "name": "coding-challenges",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/CodingChallenges",
     "tags": ["python", "projects-private"]
   },
   {
@@ -180,6 +180,13 @@
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/resume",
     "tags": ["r", "studium"]
+  },
+  {
+    "enabled": true,
+    "name": "sparplanrechner",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/sparplanrechner",
+    "tags": ["go", "projects-public"]
   },
   {
     "enabled": true,
