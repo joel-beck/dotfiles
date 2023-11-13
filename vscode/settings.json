@@ -1391,7 +1391,6 @@
     }
   },
   "sortLines.sortEntireFile": true,
-  "sourcery.token": "user_dKXek2qszr41_hqMntSwm64juLF9btvkxoDXbihDcm9npywM3CMDCSxhtVU",
   "subtleBrackets.disableNative": false,
   // SUBSECTION: Terminal
   "terminal.explorerKind": "integrated",
