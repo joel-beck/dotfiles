@@ -102,6 +102,9 @@ brew install --cask keyboardcleantool
 # Keyboard Maestro
 brew install --cask keyboard-maestro
 
+# Keycastr
+brew install --cask keycastr
+
 # Latest
 brew install --cask latest
 
