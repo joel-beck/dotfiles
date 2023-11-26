@@ -457,6 +457,7 @@
   "editor.formatOnSaveMode": "file",
   "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.matchBrackets": "always",
   "editor.maxTokenizationLineLength": 2000,
   "editor.minimap.maxColumn": 100,
@@ -1284,6 +1285,8 @@
     "--follow-imports=skip",
     "--config-file=pyproject.toml"
   ],
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.preferDaemon": true,
   // SUBSECTION: General Notebooks
   "notebook.cellFocusIndicator": "border",
   "notebook.cellToolbarLocation": {
@@ -1332,8 +1335,9 @@
   "r.workspaceViewer.showObjectSize": true,
   "rainbow_csv.autodetect_separators": ["\t", ",", "|"],
   "rewrap.wrappingColumn": 88,
-  "ruff.args": ["--ignore ANN101, N803, N806"],
+  "ruff.lint.run": "onSave",
   "ruff.organizeImports": true,
+  "ruff.showNotifications": "onWarning",
   "search.mode": "reuseEditor",
   "security.workspace.trust.enabled": false,
   // SUBSECTION: Toggle Settings
@@ -1556,6 +1560,7 @@
   },
   "workbench.colorTheme": "Cobalt2", // Color theme
   "workbench.editor.closeOnFileDelete": true, // Close editor on file delete
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false, // Disable file preview
   "workbench.editor.titleScrollbarSizing": "large", // Hide untitled file hints
   "workbench.editor.wrapTabs": true, // Enable tab wrapping in the editor
@@ -1569,7 +1574,5 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always",
-  "editor.inlineSuggest.suppressSuggestions": true,
-  "workbench.editor.empty.hint": "hidden"
+  "workbench.tree.renderIndentGuides": "always"
 }
