@@ -1335,6 +1335,7 @@
   "r.workspaceViewer.showObjectSize": true,
   "rainbow_csv.autodetect_separators": ["\t", ",", "|"],
   "rewrap.wrappingColumn": 88,
+  "ruff.format.args": ["--config=pyproject.toml"],
   "ruff.lint.run": "onSave",
   "ruff.organizeImports": true,
   "ruff.showNotifications": "onWarning",

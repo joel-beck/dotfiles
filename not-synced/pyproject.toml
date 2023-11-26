@@ -18,7 +18,6 @@ dev = [
     "mkdocs-material>=9.1.9",
     "mkdocs>=1.4.3",
     "mypy>=1.2.0",
-    "notebook>=6.5.4",
     "pre-commit>=3.2.2",
     "pytest-clarity>=1.0.1",
     "pytest-cov>=4.0.0",
@@ -40,7 +39,7 @@ setup = "pdm install"
 update-pdm = "pdm self update"
 update-deps = "pdm update"
 update-all = { composite = ["update-pdm", "update-deps"] }
-format = "black ."
+format = "ruff format ."
 lint = "ruff --fix --exit-non-zero-on-fix --show-fixes ."
 check = "mypy ."
 check-no-tests = "mypy . --exclude tests" # do not run mypy on `tests` directory
@@ -55,11 +54,10 @@ serve = "mkdocs serve"
 deploy = { shell = "mkdocs build && mkdocs gh-deploy" }
 fastapi = "uvicorn app.main:app --reload"
 
-[tool.black]
-line-length = 100
-target-version = ['py311']
-include = '\.pyi?$'
-
+# [tool.black]
+# line-length = 100
+# target-version = ['py311']
+# include = '\.pyi?$'
 # see all options at
 # https://mypy.readthedocs.io/en/stable/config_file.html#the-mypy-configuration-file
 [tool.mypy]
@@ -164,6 +162,7 @@ ignore = [
     "ANN101", # missing type annotation for `self` in method
     "ANN102", # missing type annotation for `cls` in classmethod
     "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
+    "ISC001", # Conflict with Ruff formatter
     "N803", # argument name should be lowercase
     "N806", # variable in function should be lowercase
     "PD015", # use `.merge()` instead of `pd.merge()`, incorrect for Series
@@ -181,29 +180,37 @@ unfixable = [
 
 ]
 
-[tool.ruff.flake8-annotations]
-suppress-dummy-args = true # suppress violations "dummy" variables like `_`
-
-[tool.ruff.flake8-builtins]
-builtins-ignorelist = ["id"] # ignore violations for `id` builtin
-
-[tool.ruff.flake8-comprehensions]
-allow-dict-calls-with-keyword-arguments = true # Allow dict calls with keyword arguments (e.g. `dict(a=1, b=2)`)
-
-[tool.ruff.flake8-pytest-style]
-fixture-parentheses = false # `@pytest.fixture` instead of `@pytest.fixture()`
-mark-parentheses = false # `@pytest.mark.foo` instead of `@pytest.mark.foo()`
-
 [tool.ruff.format]
 indent-style = "space" # Use spaces instead of tabs for indentation
 preview = true # Enable preview style formatting.
 quote-style = "double" # Prefer double quotes over single quotes
 skip-magic-trailing-comma = false # Keep trailing commas
 
-[tool.ruff.isort]
-combine-as-imports = true # combines `as` imports on the same line
+[tool.ruff.lint.flake8-annotations]
+suppress-dummy-args = true # suppress violations "dummy" variables like `_`
 
-[tool.ruff.pep8-naming]
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["id"] # ignore violations for `id` builtin
+
+[tool.ruff.lint.flake8-comprehensions]
+allow-dict-calls-with-keyword-arguments = true # Allow dict calls with keyword arguments (e.g. `dict(a=1, b=2)`)
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false # `@pytest.fixture` instead of `@pytest.fixture()`
+mark-parentheses = false # `@pytest.mark.foo` instead of `@pytest.mark.foo()`
+
+[tool.ruff.lint.isort]
+combine-as-imports = true # combines `as` imports on the same line
+# Specify order of import sections, blank line between sections
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder"
+]
+
+[tool.ruff.lint.pep8-naming]
 # Allow Pydantic's `@validator` decorator to use `cls` instead of `self` as first
 # argument
 classmethod-decorators = [
@@ -211,9 +218,3 @@ classmethod-decorators = [
     "pydantic.validator",
     "pydantic.root_validator"
 ]
-
-[tool.ruff.pydocstyle]
-# causes toml parsing error: unknown field
-# ignore-decorators = [
-#     "typing.overload"
-# ] # ignore docstrings for functions with these decorators
