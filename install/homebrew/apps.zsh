@@ -33,6 +33,9 @@ brew install --cask bettertouchtool
 # Boop
 brew install --cask boop
 
+# Breitbandmessung
+brew install --cask breitbandmessung
+
 # Carbon Copy Cloner
 brew install --cask carbon-copy-cloner
 

@@ -113,7 +113,7 @@ By having a single repository for all configuration files, it is possible to:
 
     Then save the file with sudo permissions.
 
-13. Install the [remaining MacOS Apps](#apps-to-install-manually) that are not available via Homebrew manually.
+13. Install remaining MacOS Apps that are not available via Homebrew manually.
 
 14. Copy important files from hard drive backup to the new machine.
     The files should be in the same location in the file system.
@@ -150,36 +150,5 @@ Done 🎉
     ├── zshrc (symlinked from dotfiles)
     └── Zotero (generated automatically)
 ```
-
-
-
-### Apps to install manually
-
-- Actions
-- AdBlock Pro
-- Aiko
-- Amphetamine
-- Command X
-- Data Jar
-- Drafts
-- GIPHY CAPTURE
-- GoodNotes
-- Google Docs
-- Google Sheets
-- Google Slides
-- Hand Mirror
-- Kit
-- Noir
-- Peek
-- PDFgear
-- Readwise
-- xSearch
-- SmartConverter
-- Snippety
-- TempBox
-- Velja
-- Yoink
-
-
 
 

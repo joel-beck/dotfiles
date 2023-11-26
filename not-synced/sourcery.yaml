@@ -1,0 +1,8 @@
+# .sourcery.yaml
+
+# See the Documentation for [all available options](https://github.com/sourcery-ai/sourcery/wiki/Sourcery-configuration#the-sourcery-configuration-file) .
+# The names of refactoring rules are displayed when hovering over the sourcery suggestions.
+
+refactor:
+  skip:
+    - for-append-to-extend
