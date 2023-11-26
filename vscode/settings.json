@@ -55,7 +55,7 @@
       "source.fixAll.ruff": true,
       "source.organizeImports.ruff": true
     },
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.quickSuggestions": {
@@ -1312,28 +1312,7 @@
   "python.analysis.inlayHints.variableTypes": false,
   "python.analysis.typeCheckingMode": "basic",
   "python.defaultInterpreterPath": "/Users/joel/.pyenv/versions/3.11.2/bin/python",
-  "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
-  "python.linting.flake8Enabled": false,
-  "python.linting.ignorePatterns": [
-    "**/site-packages/**/*.py",
-    ".vscode/*.py",
-    "tests/**/*.py"
-  ],
-  "python.linting.mypyArgs": [
-    "--config-file=${workspaceFolder}/pyproject.toml"
-  ],
-  // "python.linting.flake8Args": [
-  //   "--disable=wildcard-import",
-  //   "--disable=missing-docstring"
-  // ],
-  "python.linting.mypyCategorySeverity.error": "Warning",
-  "python.linting.mypyEnabled": true,
-  "python.linting.pylintArgs": [
-    "--disable=wildcard-import",
-    "--disable=missing-docstring"
-  ],
-  "python.linting.pylintEnabled": false,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.terminal.activateEnvironment": true,
   "python.testing.promptToConfigure": false,
@@ -1578,8 +1557,7 @@
   "workbench.colorTheme": "Cobalt2", // Color theme
   "workbench.editor.closeOnFileDelete": true, // Close editor on file delete
   "workbench.editor.enablePreview": false, // Disable file preview
-  "workbench.editor.titleScrollbarSizing": "large", // Large title scrollbar
-  "workbench.editor.untitled.hint": "hidden", // Hide untitled file hints
+  "workbench.editor.titleScrollbarSizing": "large", // Hide untitled file hints
   "workbench.editor.wrapTabs": true, // Enable tab wrapping in the editor
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook", // Associate ipynb files with Jupyter Notebook
@@ -1591,5 +1569,7 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "workbench.editor.empty.hint": "hidden"
 }
