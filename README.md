@@ -143,7 +143,9 @@ Done 🎉
     │   ├── Masterstudium
     │   ├── Sonstiges
     │   └── StudiumSonstiges
+    │
     ├── iCloudBackup
+    ├── GoogleDriveBackup
     ├── ownCloudBackup
     │
     ├── Pictures (generated automatically)
