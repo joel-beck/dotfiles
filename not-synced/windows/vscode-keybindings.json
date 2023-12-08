@@ -1,0 +1,263 @@
+[
+  // Expand Selection to Previous Match (Multi-Selection) or Select Current Word
+  {
+    "command": "editor.action.addSelectionToPreviousFindMatch",
+    "key": "alt+shift+left",
+    "when": "editorFocus"
+  },
+  // Expand Selection to Next Match (Multi-Selection) or Select Current Word
+  {
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "key": "alt+shift+right",
+    "when": "editorFocus"
+  },
+  // Toggle Side Bar (left)
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "alt+oem_102"
+  },
+  // Toggle Bottom Panel
+  {
+    "command": "workbench.action.togglePanel",
+    "key": "ctrl+down"
+  },
+  // Open Command Palette
+  {
+    "command": "workbench.action.showCommands",
+    "key": "shift+space"
+  },
+  // Open Settings JSON
+  {
+    "command": "workbench.action.openSettingsJson",
+    "key": "ctrl+shift+oem_comma"
+  },
+  // Open Keyboard Shortcuts UI
+  {
+    "command": "workbench.action.openGlobalKeybindings",
+    "key": "ctrl+oem_period"
+  },
+  // Open Keyboard Shortcuts JSON
+  {
+    "command": "workbench.action.openGlobalKeybindingsFile",
+    "key": "ctrl+shift+oem_period"
+  },
+  // Open User Snippets
+  {
+    "command": "workbench.action.openSnippets",
+    "key": "ctrl+shift+-"
+  },
+  // Search Symbol (e.g. function, class, ...) in Workspace
+  {
+    "command": "workbench.action.showAllSymbols",
+    "key": "alt+s"
+  },
+  // Close all Editors across all Groups
+  // {
+  //   "key": "alt+a",
+  //   "command": "workbench.action.closeAllEditors"
+  // },
+  // Close all other Editors within the same Group
+  {
+    "command": "workbench.action.closeOtherEditors",
+    "key": "alt+c"
+  },
+  // Reload VSCode
+  {
+    "command": "workbench.action.reloadWindow",
+    "key": "ctrl+r"
+  },
+  // Save all Files
+  {
+    "command": "workbench.action.files.saveFiles",
+    "key": "ctrl+shift+s"
+  },
+  // Comment out Selected Lines
+  {
+    "command": "editor.action.commentLine",
+    "key": "shift+ctrl+c"
+  },
+  // Delete Current Line
+  {
+    "command": "editor.action.deleteLines",
+    "key": "ctrl+d"
+  },
+  // Rename Symbol at current Cursor Position
+  {
+    "command": "editor.action.rename",
+    "key": "alt+r",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  // Quick Fix when Cursor is on underlined word
+  {
+    "command": "editor.action.quickFix",
+    "key": "alt+q",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  // Run selected code in Interactive Window
+  {
+    "command": "jupyter.execSelectionInteractive",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current line in Interactive Window without Selection
+  {
+    "command": "jupyter.execSelectionInteractive",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current line in Interactive Window without Selection
+  {
+    "command": "jupyter.execSelectionInteractive",
+    "key": "alt+enter",
+    "when": "editorTextFocus && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current code cell in interactive Window and stay in current cell
+  {
+    "command": "jupyter.runcurrentcell",
+    "key": "shift+enter",
+    "when": "editorTextFocus && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run current code cell in interactive Window and move Cursor to next cell
+  {
+    "command": "jupyter.runcurrentcelladvance",
+    "key": "ctrl+shift+enter",
+    "when": "editorTextFocus && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run all cells in interactive Window
+  {
+    "command": "jupyter.runallcells",
+    "key": "shift+alt+enter",
+    "when": "editorTextFocus && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run all cells from Beginning to current cell (exclusive) in interactive Window
+  {
+    "command": "jupyter.runallcellsabove.palette",
+    "key": "shift+alt+a",
+    "when": "editorTextFocus && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Run all cells from current cell (inclusive) to end in interactive Window
+  {
+    "command": "jupyter.runcurrentcellandallbelow.palette",
+    "key": "shift+alt+b",
+    "when": "editorTextFocus && !editorHasSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Add Code Cell Above
+  {
+    "command": "jupyter.insertCellAbove",
+    "key": "ctrl+a",
+    "when": "editorTextFocus &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Add Code Cell Below
+  {
+    "command": "jupyter.insertCellBelow",
+    "key": "ctrl+b",
+    "when": "editorTextFocus &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Change Code Cell to Markdown Cell
+  {
+    "command": "jupyter.changeCellToMarkdown",
+    "key": "alt+m",
+    "when": "editorTextFocus && jupyter.ownsSelection &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Change Markdown Cell to Code Cell
+  {
+    "command": "jupyter.changeCellToCode",
+    "key": "alt+y",
+    "when": "editorTextFocus && jupyter.ownsSelection &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Delete current Cell
+  {
+    "command": "jupyter.deleteCells",
+    "key": "ctrl+shift+d",
+    "when": "editorTextFocus &&  !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  // Clear Output of Interactive Window (only in Python Files)
+  {
+    "command": "jupyter.interactive.clearAllCells",
+    "key": "ctrl+l",
+    "when": "!terminalFocus && resourceScheme != 'vscode-interactive' && editorLangId == 'python'"
+  },
+  // Restart Kernel of Interactive Window
+  {
+    "command": "jupyter.restartkernel",
+    "key": "shift+ctrl+[BracketLeft]"
+  },
+  // Execute Code from Interactive Console
+  {
+    "command": "interactive.execute",
+    "key": "ctrl+enter",
+    "when": "resourceScheme == 'vscode-interactive'"
+  },
+  // Execute Code from Interactive Console
+  {
+    "command": "interactive.execute",
+    "key": "shift+enter",
+    "when": "resourceScheme == 'vscode-interactive'"
+  },
+  // Execute Code from Interactive Console
+  {
+    "command": "interactive.execute",
+    "key": "ctrl+shift+enter",
+    "when": "resourceScheme == 'vscode-interactive'"
+  },
+  // Clear Outputs of Interactive Window from Interactive Console
+  {
+    "command": "interactive.input.clear",
+    "key": "ctrl+l",
+    "when": "!LinkedEditingInputVisible && !accessibilityHelpWidgetVisible && !breakpointWidgetVisible && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible && !exceptionWidgetVisible && !findWidgetVisible && !inSnippetMode && !isComposing && !markersNavigationVisible && !notificationToastsVisible && !parameterHintsVisible && !renameInputVisible && !selectionAnchorSet && !suggestWidgetVisible && resourceScheme == 'vscode-interactive'"
+  },
+  // Removed Keybindings
+  {
+    "command": "-workbench.action.showCommands",
+    "key": "ctrl+shift+p"
+  },
+  {
+    "command": "-workbench.action.openGlobalKeybindings",
+    "key": "ctrl+k ctrl+s"
+  },
+  {
+    "command": "-editor.action.insertLineAfter",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-jupyter.runByLineStop",
+    "key": "ctrl+enter",
+    "when": "notebookCellResource in 'jupyter.notebookeditor.runByLineCells'"
+  },
+  {
+    "command": "-jupyter.runcurrentcelladvance",
+    "key": "shift+enter",
+    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+  },
+  {
+    "command": "jupyter.runcurrentcell",
+    "key": "shift+enter",
+    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !jupyter.havenativecells && !notebookEditorFocused"
+  },
+  {
+    "command": "-jupyter.runcurrentcell",
+    "key": "ctrl+enter",
+    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !jupyter.havenativecells && !notebookEditorFocused"
+  },
+  {
+    "command": "-jupyter.execSelectionInteractive",
+    "key": "shift+enter",
+    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !jupyter.webExtension && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "command": "-jupyter.runByLine",
+    "key": "f10",
+    "when": "isWorkspaceTrusted && jupyter.ispythonnotebook && !notebookKernel && notebookCellType == 'code' || isWorkspaceTrusted && jupyter.ispythonnotebook && notebookCellType == 'code' && notebookKernel =~ /^ms-toolsai.jupyter\\// && resource not in 'jupyter.notebookeditor.debugDocuments'"
+  },
+  {
+    "command": "-editor.action.insertLineBefore",
+    "key": "ctrl+shift+enter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-notebook.cell.insertCodeCellAbove",
+    "key": "ctrl+shift+enter",
+    "when": "notebookCellListFocused && !inputFocus"
+  }
+]
