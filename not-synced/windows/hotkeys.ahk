@@ -4,29 +4,69 @@
 #SingleInstance Force
 
 InstallKeybdHook()
+SetTitleMatchMode "RegEx" ; match window titles based on regular expressions
 
-; Development Functions
+; Special Hotkeys: https://www.autohotkey.com/docs/v2/Hotkeys.htm#Symbols
+; # -> Windows Key
+; ! -> Alt Key
+; ^ -> Ctrl
+; + -> Shift
+; < -> Left Modifier
+; > -> Right Modifier
 
-; Abort this AutoHotkey script globally
-Escape:: ExitApp
+
+; SECTION: Development Functions
+ReloadScript(ThisHotkey) {
+    Reload()
+}
+
+AbortScript(ThisHotkey) {
+    ExitApp()
+}
 
 ; Show Name of Front Windows Process
 ShowFrontWindowProcessName(ThisHotkey) {
-    MsgBox "Front window's process name: " WinGetProcessName("A")
+    MsgBox("Front window's process name: " WinGetProcessName("A"))
 }
 
 ; Show Path of Front Windows Process
 ShowFrontWindowProcessPath(ThisHotkey) {
-    MsgBox "Front window's process path: " WinGetProcessPath("A")
+    MsgBox("Front window's process path: " WinGetProcessPath("A"))
 }
 
-; Uncomment for Debugging
-; Hotkey "n", ShowFrontWindowProcessName
-; Hotkey "p", ShowFrontWindowProcessPath
+; Show Title of Front Window
+ShowFrontWindowTitle(ThisHotkey) {
+    MsgBox("Front window's title: " WinGetTitle("A"))
+}
+
+Hotkey("RShift & a", AbortScript)
+Hotkey("RShift & r", ReloadScript)
+Hotkey("RShift & n", ShowFrontWindowProcessName)
+Hotkey("RShift & p", ShowFrontWindowProcessPath)
+Hotkey("RShift & t", ShowFrontWindowTitle)
+
+
+; SECTION: Global Hotkeys
+; Deactivate CapsLock
+SetCapsLockState("AlwaysOff")
+
+; CapsLock to Escape
+CapsLock::Escape
+
+ActivateNextTab(ThisHotkey) {
+    Send("{LCtrl down}{Tab down}{Tab up}{LCtrl up}")
+}
+
+ActivatePreviousTab(ThisHotkey) {
+    Send("{LCtrl down}{LShift down}{Tab down}{Tab up}{LShift up}{LCtrl up}")
+}
+
+; Switch Tabs with Fn + Ctrl + Left/Right
+Hotkey("LCtrl & End", ActivateNextTab)
+Hotkey("LCtrl & Home", ActivatePreviousTab)
 
 
 ; SECTION: App Identifiers
-
 ; Mapping of App Key to Process Names
 ; Values are case-sensitive!!
 Apps := Map()
@@ -43,36 +83,16 @@ Apps["Notion"] := "Notion.exe"
 Apps["Bitwarden"] := "Bitwarden.exe"
 
 
-; SECTION: Global Hotkeys
-
-ActivateNextTab(ThisHotkey) {
-    Send "{LCtrl down}{Tab down}{Tab up}{LCtrl up}"
-}
-
-ActivatePreviousTab(ThisHotkey) {
-    Send "{LCtrl down}{LShift down}{Tab down}{Tab up}{LShift up}{LCtrl up}"
-}
-
-; CapsLock to Escape
-SetCapsLockState("AlwaysOff")
-CapsLock::Escape
-
-; Switch Tabs with Fn + Ctrl + Left/Right
-Hotkey "LCtrl & End", ActivateNextTab
-Hotkey "LCtrl & Home", ActivatePreviousTab
-
-
 ; SECTION: Activate Apps
-
 ActivateApp(App) {
     ProcessName := Apps[App]
 
-    if WinExist("ahk_exe" . ProcessName) {
-        WinActivate
+    if WinExist("ahk_exe" ProcessName) {
+        WinActivate()
         return
     }
 
-    Run ProcessName
+    Run(ProcessName)
 }
 
 ActivateWord(ThisHotkey) {
@@ -108,7 +128,7 @@ ActivateBitwarden(ThisHotkey) {
 }
 
 ActivateSettings(ThisHotkey) {
-    Run "ms-settings:"
+    Run("ms-settings:")
 }
 
 ActivateExplorer(ThisHotkey) {
@@ -116,57 +136,96 @@ ActivateExplorer(ThisHotkey) {
     ; ActivateApp("FileExplorer")
 }
 
-Hotkey "Capslock & w", ActivateWord
-Hotkey "Capslock & e", ActivateExcel
-Hotkey "Capslock & s", ActivateEdge
-Hotkey "Capslock & t", ActivateTeams
-Hotkey "Capslock & p", ActivatePowerToys ; does not reliably work
-Hotkey "Capslock & v", ActivateVSCode
-Hotkey "Capslock & n", ActivateNotion
-Hotkey "Capslock & b", ActivateBitwarden
-Hotkey "Capslock & f", ActivateExplorer ; currently always opens new window
-Hotkey "LWin & ,", ActivateSettings
+Hotkey("CapsLock & b", ActivateBitwarden)
+Hotkey("CapsLock & e", ActivateExcel)
+Hotkey("CapsLock & f", ActivateExplorer) ; currently always opens new window
+Hotkey("CapsLock & n", ActivateNotion)
+Hotkey("CapsLock & p", ActivatePowerToys)
+Hotkey("CapsLock & s", ActivateEdge)
+Hotkey("CapsLock & t", ActivateTeams)
+Hotkey("CapsLock & v", ActivateVSCode)
+Hotkey("CapsLock & w", ActivateWord)
+Hotkey("LWin & ,", ActivateSettings)
+
+
+; SECTION: Activate URLs
+ActivateURL(title, domain) {
+    if WinExist(title) {
+        WinActivate()
+        return
+    }
+
+    url := "https://" domain
+    Run(url)
+}
+
+ActivateGoogle(ThisHotkey) {
+    ActivateURL("Google", "google.com")
+}
+
+ActivateTodoist(ThisHotkey) {
+    ActivateURL("Todoist", "app.todoist.com")
+}
+
+ActivateChatGPT(ThisHotkey) {
+    ActivateURL("ChatGPT", "chat.openai.com/?model=gpt-4")
+}
+
+ActivateAutoHotkeyDocs(ThisHotkey) {
+    ActivateURL("AutoHotkey v2", "autohotkey.com/docs/v2/")
+}
+
+Hotkey("RCtrl & a", ActivateAutoHotkeyDocs)
+Hotkey("RCtrl & g", ActivateGoogle)
+Hotkey("RCtrl & t", ActivateTodoist)
+Hotkey("RCtrl & c", ActivateChatGPT)
 
 
 ; SECTION: App-Specific Hotkeys
-
 ; SUBSECTION: Microsoft Edge
-
+#HotIf WinActive("ahk_exe" Apps["MicrosoftEdge"])
+; Open New Window with Ctrl + Shift + N
+^+n:: Send("{LCtrl down}n{LCtrl up}")
 ; Open New Browser Tab with Ctrl + N
-#HotIf WinActive("ahk_exe" . Apps["MicrosoftEdge"])
-^n:: Send "{LCtrl down}t{LCtrl up}"
+^n:: Send("{LCtrl down}t{LCtrl up}")
 #HotIf
 
+; SUBSECTION: Microsoft Teams
+#HotIf WinActive("ahk_exe" Apps["MicrosoftTeams"])
+; Insert ` with Ctrl + E
+; Backticks must be escaped with another backtick
+; Add space after backtick to insert single backtick immediately
+^e:: Send("`` ")
+#HotIf
 
 ; SUBSECTION: VSCode / Except VSCode
-
 SquareBrackets(ThisHotkey) {
-    MsgBox "Not VSCode"
-    Send "[]{Left}"
+    ; MsgBox("Not VSCode")
+    Send("[]{Left}")
 }
 
 CurlyBraces(ThisHotkey) {
-    Send "{{}{}}{Left}"
+    Send("{{}{}}{Left}")
 }
 
 SquareBracketsVSCode(ThisHotkey) {
-    MsgBox "VSCode"
-    Send "{LCtrl down}{LAlt down}8{LCtrl up}{LAlt up}"
+    ; MsgBox("VSCode")
+    Send("{LCtrl down}{LAlt down}8{LCtrl up}{LAlt up}")
 }
 
 CurlyBracesVSCode(ThisHotkey) {
-    Send "{LCtrl down}{LAlt down}7{LCtrl up}{LAlt up}"
+    Send("{LCtrl down}{LAlt down}7{LCtrl up}{LAlt up}")
 }
 
 VSCodeFrontWindow() {
-    return WinActive("ahk_exe" . Apps["VSCode"])
+    return WinActive("ahk_exe" Apps["VSCode"])
 }
 
 ; Currently does not work, always executes else clause even in VSCode
-if WinActive("ahk_exe" . Apps["VSCode"]) {
-    Hotkey "RCtrl", SquareBracketsVSCode
-    Hotkey "RShift", CurlyBracesVSCode
+if WinActive("ahk_exe" Apps["VSCode"]) {
+    Hotkey("RCtrl", SquareBracketsVSCode)
+    Hotkey("RShift", CurlyBracesVSCode)
 } else {
-    Hotkey "RCtrl", SquareBrackets
-    Hotkey "RShift", CurlyBraces
+    Hotkey("RCtrl", SquareBrackets)
+    Hotkey("RShift", CurlyBraces)
 }
