@@ -53,6 +53,21 @@ SetCapsLockState("AlwaysOff")
 ; CapsLock to Escape
 CapsLock::Escape
 
+DeleteWordCursorRight(ThisHotkey) {
+    Send("{LShift Down}{Ctrl Down}{Right}{LShift Up}{Ctrl Up}")
+    Send("{BackSpace}")
+}
+
+DeleteLineCursorRight(ThisHotkey) {
+    Send("{LShift Down}{End Down}{LShift Up}{End Up}")
+    Send("{BackSpace}")
+}
+
+DeleteLineCursorLeft(ThisHotkey) {
+    Send("{LShift Down}{Home Down}{LShift Up}{Home Up}")
+    Send("{BackSpace}")
+}
+
 ActivateNextTab(ThisHotkey) {
     Send("{LCtrl down}{Tab down}{Tab up}{LCtrl up}")
 }
@@ -61,7 +76,12 @@ ActivatePreviousTab(ThisHotkey) {
     Send("{LCtrl down}{LShift down}{Tab down}{Tab up}{LShift up}{LCtrl up}")
 }
 
-; Switch Tabs with Fn + Ctrl + Left/Right
+; Delete Remaining Word/Line left/right to the Cursor
+Hotkey("LCtrl", DeleteWordCursorRight)
+Hotkey("LAlt", DeleteLineCursorRight)
+Hotkey("LAlt & BackSpace", DeleteLineCursorLeft)
+
+; Switch Tabs with Fn + Ctrl +
 Hotkey("LCtrl & End", ActivateNextTab)
 Hotkey("LCtrl & Home", ActivatePreviousTab)
 
@@ -222,8 +242,6 @@ CurlyBraces() {
 
 ; NOTE: #HotIf only works for Hotkey syntax, not for Hotkey() function!!
 #HotIf WinActive("ahk_exe" Apps["VSCode"])
-MsgBox(WinActive("ahk_exe" Apps["VSCode"]))
-
 RCtrl:: SquareBracketsVSCode()
 RShift:: CurlyBracesVSCode()
 #HotIf
