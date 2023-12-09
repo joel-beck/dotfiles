@@ -15,7 +15,7 @@ SetTitleMatchMode "RegEx" ; match window titles based on regular expressions
 ; > -> Right Modifier
 
 
-; SECTION: Development Functions
+; SECTION: Development Functions -> Right Shift
 ReloadScript(ThisHotkey) {
     Reload()
 }
@@ -83,7 +83,7 @@ Apps["Notion"] := "Notion.exe"
 Apps["Bitwarden"] := "Bitwarden.exe"
 
 
-; SECTION: Activate Apps
+; SECTION: Activate Apps -> CapsLock
 ActivateApp(App) {
     ProcessName := Apps[App]
 
@@ -148,7 +148,7 @@ Hotkey("CapsLock & w", ActivateWord)
 Hotkey("LWin & ,", ActivateSettings)
 
 
-; SECTION: Activate URLs
+; SECTION: Activate URLs -> Right Ctrl
 ActivateURL(title, domain) {
     if WinExist(title) {
         WinActivate()
@@ -175,10 +175,15 @@ ActivateAutoHotkeyDocs(ThisHotkey) {
     ActivateURL("AutoHotkey v2", "autohotkey.com/docs/v2/")
 }
 
+ActivateTypingTest(ThisHotkey) {
+    ActivateURL("10FastFingers", "10fastfingers.com/typing-test/german")
+}
+
 Hotkey("RCtrl & a", ActivateAutoHotkeyDocs)
 Hotkey("RCtrl & g", ActivateGoogle)
 Hotkey("RCtrl & t", ActivateTodoist)
 Hotkey("RCtrl & c", ActivateChatGPT)
+Hotkey("RCtrl & 1", ActivateTypingTest)
 
 
 ; SECTION: App-Specific Hotkeys
@@ -199,33 +204,31 @@ Hotkey("RCtrl & c", ActivateChatGPT)
 #HotIf
 
 ; SUBSECTION: VSCode / Except VSCode
-SquareBrackets(ThisHotkey) {
-    ; MsgBox("Not VSCode")
-    Send("[]{Left}")
-}
-
-CurlyBraces(ThisHotkey) {
-    Send("{{}{}}{Left}")
-}
-
-SquareBracketsVSCode(ThisHotkey) {
-    ; MsgBox("VSCode")
+SquareBracketsVSCode() {
     Send("{LCtrl down}{LAlt down}8{LCtrl up}{LAlt up}")
 }
 
-CurlyBracesVSCode(ThisHotkey) {
+CurlyBracesVSCode() {
     Send("{LCtrl down}{LAlt down}7{LCtrl up}{LAlt up}")
 }
 
-VSCodeFrontWindow() {
-    return WinActive("ahk_exe" Apps["VSCode"])
+SquareBrackets() {
+    Send("[]{Left}")
 }
 
-; Currently does not work, always executes else clause even in VSCode
-if WinActive("ahk_exe" Apps["VSCode"]) {
-    Hotkey("RCtrl", SquareBracketsVSCode)
-    Hotkey("RShift", CurlyBracesVSCode)
-} else {
-    Hotkey("RCtrl", SquareBrackets)
-    Hotkey("RShift", CurlyBraces)
+CurlyBraces() {
+    Send("{{}{}}{Left}")
 }
+
+; NOTE: #HotIf only works for Hotkey syntax, not for Hotkey() function!!
+#HotIf WinActive("ahk_exe" Apps["VSCode"])
+MsgBox(WinActive("ahk_exe" Apps["VSCode"]))
+
+RCtrl:: SquareBracketsVSCode()
+RShift:: CurlyBracesVSCode()
+#HotIf
+
+#HotIf not WinActive("ahk_exe" Apps["VSCode"])
+RCtrl:: SquareBrackets()
+RShift:: CurlyBraces()
+#HotIf
