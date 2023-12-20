@@ -17,8 +17,8 @@
   },
   "[json]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -52,8 +52,8 @@
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.ruff": true,
-      "source.organizeImports.ruff": true
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
@@ -79,18 +79,17 @@
   },
   "[toml]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     },
     "editor.defaultFormatter": "bodil.prettier-toml",
     "editor.formatOnSave": true
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      // do not remove unused imports on save
-      "source.organizeImports": false,
-      "source.sortImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "never",
+      "source.sortImports": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
@@ -758,7 +757,7 @@
       }
     ]
   },
-  "editor.wordBasedSuggestions": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 88,
   "emojisense.languages": {
@@ -1507,8 +1506,6 @@
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vitest.enable": true,
-  "vitest.showFailMessages": true,
   "vsicons.dontShowNewVersionMessage": true,
   "vsintellicode.features.python.deepLearning": "enabled",
   "warmUp.changeCount": "30",

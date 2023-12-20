@@ -71,6 +71,8 @@ brew install go &&
 
 # GitHub CLI
 brew install gh
+# Install GitHub Copilot CLI
+gh extension install github/gh-copilot
 
 # Distributed revision control system
 brew install git
