@@ -119,6 +119,9 @@ brew install powerlevel10k
 # Framework for managing multi-language pre-commit hooks
 brew install pre-commit
 
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew install prettier
+
 # Code searching tool similar to ack, but faster
 brew install ripgrep
 

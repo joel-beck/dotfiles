@@ -57,16 +57,16 @@
   },
   {
     "enabled": true,
-    "name": "python-projects",
+    "name": "sql-practice",
     "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/sql-practice",
     "tags": ["python", "projects-private"]
   },
   {
     "enabled": true,
-    "name": "sql-practice",
+    "name": "sqlalchemy-practice",
     "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/sql-practice",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/sqlalchemy-practice",
     "tags": ["python", "projects-private"]
   },
   {

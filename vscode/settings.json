@@ -1,4 +1,6 @@
 {
+  "Prettier-SQL.ignoreTabSettings": true,
+  "Prettier-SQL.keywordCase": "upper",
   // SUBSECTION: Menu Bar
   "ShortcutMenuBar.beautify": false,
   "ShortcutMenuBar.findReplace": false,
@@ -52,8 +54,8 @@
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.ruff": "explicit",
-      "source.organizeImports.ruff": "explicit"
+      "source.fixAll.ruff": "always",
+      "source.organizeImports.ruff": "always"
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
@@ -77,6 +79,14 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
+  "[sql]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    "editor.formatOnSave": true
+  },
   "[toml]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
@@ -98,6 +108,14 @@
       "other": "on",
       "strings": "on"
     }
+  },
+  "[yaml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "autoDocstring.docstringFormat": "numpy-notypes",
   "autoDocstring.startOnNewLine": true,
@@ -811,6 +829,8 @@
   "git.timeline.showUncommitted": true,
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.editor.enableCodeActions": true,
   "github.copilot.enable": {
     "*": true,
     "go": true,
@@ -827,7 +847,6 @@
     "typescript": true,
     "yaml": true
   },
-  "github.copilot.inlineSuggest.enable": true,
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
   "githubPullRequests.pushBranch": "always",
@@ -840,15 +859,6 @@
   "gopls": {
     "ui.semanticTokens": true
   },
-  // SUBSECTION: Grammarly
-  "grammarly.config.documentDialect": "american",
-  "grammarly.files.include": [
-    "**/readme.md",
-    "**/README.md",
-    "**/*.txt",
-    "**/*.md",
-    "**/*.tex"
-  ],
   "hediet.vscode-drawio.resizeImages": null,
   "hediet.vscode-drawio.theme": "atlas",
   "html.format.wrapLineLength": 88,

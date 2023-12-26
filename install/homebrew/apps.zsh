@@ -159,6 +159,9 @@ brew install --cask owncloud
 # Postman
 brew install --cask postman
 
+# PyCharm
+brew install --cask pycharm
+
 # R
 brew install --cask r
 
