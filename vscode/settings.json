@@ -1,6 +1,9 @@
 {
-  "Prettier-SQL.ignoreTabSettings": true,
-  "Prettier-SQL.keywordCase": "upper",
+  // SUBSECTION: SQL Formatter
+  "SQL-Formatter-VSCode.dialect": "sqlite",
+  "SQL-Formatter-VSCode.expressionWidth": 80,
+  "SQL-Formatter-VSCode.ignoreTabSettings": true,
+  "SQL-Formatter-VSCode.keywordCase": "upper",
   // SUBSECTION: Menu Bar
   "ShortcutMenuBar.beautify": false,
   "ShortcutMenuBar.findReplace": false,
@@ -10,10 +13,10 @@
   "ShortcutMenuBar.openFilesList": false,
   "ShortcutMenuBar.toggleTerminal": false,
   "VSCodeCounter.languages": {},
+  // SECTION: Language Specific Settings
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  // SECTION: Language Specific Settings
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -84,7 +87,7 @@
       "source.fixAll": "always",
       "source.organizeImports": "always"
     },
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
     "editor.formatOnSave": true
   },
   "[toml]": {
@@ -117,21 +120,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "autoDocstring.docstringFormat": "numpy-notypes",
-  "autoDocstring.startOnNewLine": true,
   "breadcrumbs.enabled": false,
-  // SUBSECTION: Spell Checker
-  "cSpell.customDictionaries": {
-    "custom-dictionary-user": {
-      "addWords": true,
-      "name": "custom-dictionary-user",
-      // "path": "~/.cspell/machine_learning_spelling.txt",
-      "scope": "user"
-    }
-  },
-  "cSpell.enabled": false,
-  "cSpell.language": "en,de-de",
-  "cSpell.showStatus": false,
   // SUBSECTION: Code Runner
   "code-runner.clearPreviousOutput": true,
   // code runner works with numpy in liesel virtual environment, where numpy is installed with pip,
@@ -179,6 +168,7 @@
   "code-runner.showExecutionMessage": false,
   "code-runner.showRunIconInEditorTitleMenu": false,
   "code-runner.showStopIconInEditorTitleMenu": false,
+  // SUBSECTION: Code Screenshots
   "codesnap.backgroundColor": "#ffffff",
   "codesnap.boxShadow": "#ffffff",
   "codesnap.showLineNumbers": false,
@@ -454,7 +444,7 @@
       "tooltip": "Start Quokka.js on File"
     }
   ],
-  "console-ninja.featureSet": "Community",
+  // SUBSECTION: Debugging
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.closeOnEnd": true,
@@ -462,7 +452,7 @@
   "debug.internalConsoleOptions": "openOnSessionStart",
   "debug.terminal.clearBeforeReusing": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "docsView.documentationView.updateMode": "sticky",
+  // SUBSECTION: Editor Settings
   "editor.accessibilitySupport": "off",
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.bracketPairColorization.enabled": true,
@@ -778,15 +768,6 @@
   "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 88,
-  "emojisense.languages": {
-    "git-commit": true,
-    "markdown": true,
-    "plaintext": {
-      "emojiDecoratorsEnabled": false,
-      "markupCompletionsEnabled": false
-    },
-    "scminput": true
-  },
   "errorLens.excludeBySource": ["sourcery(refactoring:for-append-to-extend)"],
   // makes code folding for notebook cells in python files possible
   // found in github comment: https://github.com/microsoft/vscode-jupyter/issues/1527#issuecomment-1016056069
@@ -817,6 +798,7 @@
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.trimTrailingWhitespace": true,
+  // SUBSECTION: Git
   "git.allowNoVerifyCommit": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autoStash": true,
@@ -829,6 +811,7 @@
   "git.timeline.showUncommitted": true,
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
+  // SUBSECTION: GitHub Copilot
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": true,
   "github.copilot.enable": {
@@ -847,6 +830,7 @@
     "typescript": true,
     "yaml": true
   },
+  // SUBSECTION: GitHub Pull Requests
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
   "githubPullRequests.pushBranch": "always",
@@ -863,6 +847,7 @@
   "hediet.vscode-drawio.theme": "atlas",
   "html.format.wrapLineLength": 88,
   "interactiveWindow.alwaysScrollOnNewCell": true,
+  // SUBSECTION: JavaScript
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "javascript.suggest.completeFunctionCalls": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -1330,8 +1315,6 @@
   "python.testing.promptToConfigure": false,
   "python.testing.pytestEnabled": true,
   "quarto.cells.background.dark": "#80808015",
-  "quokka.automaticRestart": true,
-  "quokka.showValueOnMultilineSelection": true,
   // SUBSECTION: R
   "r.alwaysUseActiveTerminal": true,
   "r.bracketedPaste": true,
@@ -1344,6 +1327,7 @@
   "r.workspaceViewer.showObjectSize": true,
   "rainbow_csv.autodetect_separators": ["\t", ",", "|"],
   "rewrap.wrappingColumn": 88,
+  // SUBSECTION: Ruff
   "ruff.lint.run": "onSave",
   "ruff.organizeImports": true,
   "ruff.showNotifications": "onWarning",
@@ -1509,15 +1493,14 @@
   "todo-tree.tree.scanMode": "workspace",
   "todo-tree.tree.showCountsInTree": false,
   "todo-tree.tree.trackFile": false,
-  "totalTypeScript.hiddenTips": ["function-return-type"],
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": false,
   "typeChallenges.workspaceFolder": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-challenges",
+  // SUBSECTION: TypeScript
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "vsintellicode.features.python.deepLearning": "enabled",
+  // SUBSECTION: Speed Typing
   "warmUp.changeCount": "30",
   "warmUp.changeTypingMode": "words (fixed amount)",
   "warmUp.switchNaturalLanguage": "german",
