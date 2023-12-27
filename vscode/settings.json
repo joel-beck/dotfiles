@@ -538,7 +538,10 @@
     "strings": "on"
   },
   "editor.quickSuggestionsDelay": 0,
-  "editor.rulers": [90, 100],
+  "editor.rulers": [
+    90,
+    100
+  ],
   "editor.scrollbar.vertical": "visible",
   "editor.scrollbar.verticalScrollbarSize": 10,
   "editor.semanticTokenColorCustomizations": {
@@ -594,7 +597,9 @@
           }
         },
         {
-          "scope": ["support.type.property-name"], // JSON property names
+          "scope": [
+            "support.type.property-name"
+          ], // JSON property names
           "settings": {
             "foreground": "#EECD3A"
           }
@@ -679,13 +684,18 @@
           }
         },
         {
-          "scope": ["markup.raw.texttt.latex", "meta.text.normal.tex"], // Raw monospace text and normal text in LaTeX
+          "scope": [
+            "markup.raw.texttt.latex",
+            "meta.text.normal.tex"
+          ], // Raw monospace text and normal text in LaTeX
           "settings": {
             "foreground": "#00ffff"
           }
         },
         {
-          "scope": ["markup.inline.raw"], // Raw inline strings in any markup language
+          "scope": [
+            "markup.inline.raw"
+          ], // Raw inline strings in any markup language
           "settings": {
             "foreground": "#9effff"
           }
@@ -829,7 +839,9 @@
   "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 88,
-  "errorLens.excludeBySource": ["sourcery(refactoring:for-append-to-extend)"],
+  "errorLens.excludeBySource": [
+    "sourcery(refactoring:for-append-to-extend)"
+  ],
   // makes code folding for notebook cells in python files possible
   // found in github comment: https://github.com/microsoft/vscode-jupyter/issues/1527#issuecomment-1016056069
   "explicitFolding.rules": {
@@ -898,7 +910,9 @@
   // SUBSECTION: Go
   "go.inlayHints.compositeLiteralFields": true,
   "go.inlayHints.parameterNames": true,
-  "go.lintFlags": ["--fast"],
+  "go.lintFlags": [
+    "--fast"
+  ],
   "go.lintTool": "golangci-lint",
   "go.toolsManagement.autoUpdate": true,
   "gopls": {
@@ -923,7 +937,10 @@
   "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
   "jupyter.jupyterInterruptTimeout": 100,
   "jupyter.pythonExportMethod": "commentMagics",
-  "jupyter.runStartupCommands": ["%load_ext autoreload", "%autoreload 2"],
+  "jupyter.runStartupCommands": [
+    "%load_ext autoreload",
+    "%autoreload 2"
+  ],
   // SUBSECTION: LaTeX
   "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.bibtex-format.trailingComma": true,
@@ -983,12 +1000,16 @@
     {
       "command": "multiCommand.RenameFile",
       "label": "⇧F2 Rename Current File",
-      "sequence": ["renameFile"]
+      "sequence": [
+        "renameFile"
+      ]
     },
     {
       "command": "multiCommand.DeleteFile",
       "label": "Delete Current File",
-      "sequence": ["deleteFile"]
+      "sequence": [
+        "deleteFile"
+      ]
     },
     {
       "command": "multiCommand.RevertMarkdownBold",
@@ -1128,17 +1149,24 @@
     {
       "command": "multiCommand.FormatCell",
       "label": "Format Cell of Notebook",
-      "sequence": ["notebook.formatCell"]
+      "sequence": [
+        "notebook.formatCell"
+      ]
     },
     {
       "command": "multiCommand.FormatNotebook",
       "label": "Format Notebook",
-      "sequence": ["notebook.format"]
+      "sequence": [
+        "notebook.format"
+      ]
     },
     {
       "command": "multiCommand.RunCursorDown",
       "label": "⌘↵ / ⌃↵ Run current line in Interactive Window and move Cursor to next line",
-      "sequence": ["jupyter.execSelectionInteractive", "cursorDown"]
+      "sequence": [
+        "jupyter.execSelectionInteractive",
+        "cursorDown"
+      ]
     },
     {
       "command": "multiCommand.RunUntilEmpty",
@@ -1198,7 +1226,10 @@
     {
       "command": "multiCommand.NotebookRunFocusNext",
       "label": "⌃⇧↵ Split Code Cells in Interactive Mode on empty Line and move Cursor to End of Cell",
-      "sequence": ["notebook.cell.executeAndSelectBelow", "notebook.cell.edit"]
+      "sequence": [
+        "notebook.cell.executeAndSelectBelow",
+        "notebook.cell.edit"
+      ]
     },
     {
       "command": "multiCommand.CopyLineNoSelection",
@@ -1296,32 +1327,46 @@
     {
       "command": "multiCommand.QuoteList",
       "label": "Quote each Line in Selected List separately",
-      "sequence": ["extension.quoteList"]
+      "sequence": [
+        "extension.quoteList"
+      ]
     },
     {
       "command": "multiCommand.SortLines",
       "label": "Sort Selected Lines in Ascending Order",
-      "sequence": ["editor.action.sortLinesAscending"]
+      "sequence": [
+        "editor.action.sortLinesAscending"
+      ]
     },
     {
       "command": "multiCommand.SpellCheckerToggle",
       "label": "Toggle Spell Checker",
-      "sequence": ["cSpell.toggleEnableSpellChecker"]
+      "sequence": [
+        "cSpell.toggleEnableSpellChecker"
+      ]
     },
     {
       "command": "multiCommand.SpellCheckerAdd",
       "label": "⌥A Add Word to Spell Checker",
-      "sequence": ["cSpell.addWordToUserDictionary"]
+      "sequence": [
+        "cSpell.addWordToUserDictionary"
+      ]
     },
     {
       "command": "multiCommand.RunRmdChunkAdvance",
       "label": "⌃↵ Run Current R Markdown Chunk and Move Cursor to Next Chunk",
-      "sequence": ["r.runCurrentChunk", "r.goToNextChunk"]
+      "sequence": [
+        "r.runCurrentChunk",
+        "r.goToNextChunk"
+      ]
     },
     {
       "command": "multiCommand.RunQuartoChunkAdvance",
       "label": "⌃↵ Run Current Quarto Code Cell and Move Cursor to Next Code Cell",
-      "sequence": ["quarto.runCurrentCell", "quarto.goToNextCell"]
+      "sequence": [
+        "quarto.runCurrentCell",
+        "quarto.goToNextCell"
+      ]
     },
     {
       "command": "multiCommand.OpenRTerminalRight",
@@ -1362,6 +1407,8 @@
   "postcssSorting.config": {
     "properties-order": "alphabetical"
   },
+  "prettier.requireConfig": true,
+  "prettier.trailingComma": "all",
   "projectManager.sortList": "Name",
   // SUBSECTION: Python
   "python.analysis.completeFunctionParens": true,
@@ -1386,7 +1433,11 @@
   "r.rterm.mac": "/usr/local/bin/R",
   "r.session.levelOfObjectDetail": "Normal",
   "r.workspaceViewer.showObjectSize": true,
-  "rainbow_csv.autodetect_separators": ["\t", ",", "|"],
+  "rainbow_csv.autodetect_separators": [
+    "\t",
+    ",",
+    "|"
+  ],
   "rewrap.wrappingColumn": 88,
   // SUBSECTION: Ruff
   "ruff.lint.run": "onSave",
