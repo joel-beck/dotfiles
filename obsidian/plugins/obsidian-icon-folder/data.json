@@ -34,7 +34,6 @@
   "03 People": "FasPerson",
   "04 Creators": "FasUserTag",
   "05 Zotero": "FasBook",
-  "06 Readwise": "FasRss",
   "07 Docs": "IbDocumentCode",
   "08 Playlists": "SiYoutubemusic",
   "09 Videos": "FasVideo",
@@ -66,5 +65,6 @@
   "75 Zotero Images": "FasImage",
   "80 Scripts": "FasCode",
   "90 Logs": "FasFileLines",
-  "99 Inbox": "FasInbox"
+  "99 Inbox": "FasInbox",
+  "06 Reader": "FasRss"
 }

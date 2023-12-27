@@ -15,24 +15,54 @@
   "VSCodeCounter.languages": {},
   // SECTION: Language Specific Settings
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "[json]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "[latex]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.quickSuggestions": {
       "comments": true,
       "other": true,
@@ -44,7 +74,14 @@
     "editor.quickSuggestionsDelay": 1000
   },
   "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.quickSuggestions": {
       "comments": true,
       "other": true,
@@ -61,6 +98,7 @@
       "source.organizeImports.ruff": "always"
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.quickSuggestions": {
@@ -70,6 +108,10 @@
     }
   },
   "[r]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
     "editor.defaultFormatter": "REditorSupport.r",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -77,35 +119,53 @@
     "editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
   },
   "[rmd]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
     "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "[shellscript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "mkhl.shfmt",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
   "[sql]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
+      "source.fixAll": "always"
     },
     "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
-    "editor.formatOnSave": true
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "[toml]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.fixAll": "always"
     },
     "editor.defaultFormatter": "bodil.prettier-toml",
-    "editor.formatOnSave": true
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
+      "source.fixAll": "always",
       "source.organizeImports": "never",
-      "source.sortImports": "explicit"
+      "source.sortImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "on",
@@ -114,11 +174,12 @@
   },
   "[yaml]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
+      "source.fixAll": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "breadcrumbs.enabled": false,
   // SUBSECTION: Code Runner

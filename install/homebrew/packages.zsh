@@ -70,9 +70,9 @@ brew install go &&
     curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.54.2
 
 # GitHub CLI
-brew install gh
-# Install GitHub Copilot CLI
-gh extension install github/gh-copilot
+brew install gh &&
+    # Install GitHub Copilot CLI
+    gh extension install github/gh-copilot
 
 # Distributed revision control system
 brew install git
@@ -95,32 +95,32 @@ brew install pandoc
 # Shell command parallelization utility
 brew install parallel
 
-# Modern Python package and dependency manager supporting the latest PEP standards
-brew install pdm
-
 # Highly capable, feature-rich programming language
 brew install perl
 
 # Execute binaries from Python packages in isolated environments
-brew install pipx
+brew install pipx &&
+    pipx install hatch &&
+    pipx install mypy &&
+    pipx install pdm &&
+    pipx install poetry &&
+    pipx install pre-commit &&
+    pipx install ruff
 
 # General-purpose scripting language
 brew install php
 
-# Execute binaries from Python packages in isolated environments
-brew install pipx
-
-# Fast, disk space efficient package manager
-brew install pnpm
-
-# Zsh Theme
-brew install powerlevel10k
-
-# Framework for managing multi-language pre-commit hooks
-brew install pre-commit
-
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew install prettier
+
+# Seamless operability between C++11 and Python
+brew install pybind11
+
+# Python version management & Install latest Python version
+brew install pyenv &&
+    LATEST_PYTHON_VERSION="$(pyenv install --list | grep -v - | grep -v b | tail -1)" &&
+    pyenv install "$LATEST_PYTHON_VERSION" &&
+    pyenv global "$LATEST_PYTHON_VERSION"
 
 # Code searching tool similar to ack, but faster
 brew install ripgrep
@@ -134,6 +134,9 @@ brew install shellcheck
 # Command-line interface for speedtest.net bandwidth tests
 brew install speedtest-cli
 
+# In-memory database that persists on disk
+brew install sqlite
+
 # Cross-shell prompt for astronauts
 brew install starship
 
@@ -143,41 +146,26 @@ brew install stow
 # Seamlessly correct mistyped console commands
 brew install thefuck
 
+# Simplified and community-driven man pages
+brew install tldr
+
 # CLI tool that moves files or folder to the trash
 brew install trash
 
 # Display directories as trees (with optional color/HTML output)
 brew install tree
 
-# Line-oriented search tool
-brew install the_silver_searcher
-
-# Simplified and community-driven man pages
-brew install tldr
-
 # Language for application scale JavaScript development
 brew install typescript
 
-# Modern build tool for JavaScript and CSS
-brew install vite
-
 # Extraction utility for .zip compressed archives
 brew install unzip
+
+# Modern build tool for JavaScript and CSS
+brew install vite
 
 # A youtube-dl fork with additional features and fixes
 brew install yt-dlp
 
 # Command language interpreter
 brew install zsh
-
-# Python version management & Install latest Python version
-brew install pyenv
-LATEST_PYTHON_VERSION="$(pyenv install --list | grep -v - | grep -v b | tail -1)"
-pyenv install "$LATEST_PYTHON_VERSION"
-pyenv global "$LATEST_PYTHON_VERSION"
-
-# Seamless operability between C++11 and Python
-brew install pybind11
-
-# In-memory database that persists on disk
-brew install sqlite
