@@ -1,5 +1,5 @@
 # Go installation location with homebrew
-export GOROOT="/opt/homebrew/Cellar/go/1.21.4/libexec"
+export GOROOT="/opt/homebrew/Cellar/go/1.21.5/libexec"
 # path to go executable
 export GOBIN="$HOME/go/bin"
 # add go executable to path

@@ -66,8 +66,8 @@ brew install go &&
     go install golang.org/x/tools/gopls@latest &&
     # Go linter
     # binary will be $(go env GOPATH)/bin/golangci-lint
-    # update version at the end regularly!!
-    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.54.2
+    # NOTE: Update version of `golangci` at the end of the command regularly!!
+    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.55.2
 
 # GitHub CLI
 brew install gh &&
