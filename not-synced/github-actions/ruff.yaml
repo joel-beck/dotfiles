@@ -1,6 +1,6 @@
-# .github/wokflows/pre-commit.yaml
+# .github/workflows/linting.yaml
 
-name: pre-commit
+name: ruff
 
 on:
   pull_request:
@@ -29,5 +29,5 @@ jobs:
       - name: Install dependencies
         run: pdm install
 
-      - name: Run pre-commit
-        run: pdm pre
+      - name: Run ruff linter
+        run: pdm lint

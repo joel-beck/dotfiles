@@ -13,7 +13,6 @@ build-backend = "pdm.backend"
 
 [tool.pdm.dev-dependencies]
 dev = [
-    "black>=23.3.0",
     "ipykernel>=6.22.0",
     "mkdocs-material>=9.1.9",
     "mkdocs>=1.4.3",

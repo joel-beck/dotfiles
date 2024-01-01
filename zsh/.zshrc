@@ -31,13 +31,13 @@ source "$ZSHRC_DIRPATH/bun.zsh"
 
 source "$ZSHRC_DIRPATH/perl.zsh"
 
-source "$ZSHRC_DIRPATH/pnpm.zsh"
-
 source "$ZSHRC_DIRPATH/pyenv.zsh"
 
 source "$ZSHRC_DIRPATH/ruff.zsh"
 
 source "$ZSHRC_DIRPATH/pipx.zsh"
+
+source "$ZSHRC_DIRPATH/hatch.zsh"
 
 source "$ZSHRC_DIRPATH/tex.zsh"
 

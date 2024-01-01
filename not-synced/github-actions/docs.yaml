@@ -1,4 +1,4 @@
-# .github/woflows/docs.yaml
+# .github/workflows/docs.yaml
 
 name: Publish Docs with MkDocs via GitHub Pages
 

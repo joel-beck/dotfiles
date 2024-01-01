@@ -1,137 +1,48 @@
 {
-  // SECTION: Python Snippets
-  "Add f-String": {
-    "prefix": ["f-String", "printf"],
-    "body": ["print(f\"$0\")"]
-  },
   "Add Simple Docstring": {
+    "body": ["\"\"\"", "$0", "\"\"\""],
     // a triple quote as trigger does not work since it triggers the snippet pop-up
     // window already after the first quote which gets in the way
-    "prefix": "doc",
-    "body": ["\"\"\"", "$0", "\"\"\""]
+    "prefix": "doc"
   },
-  "Insert for-loop": {
-    "prefix": "for",
-    "body": ["for ${1:i} in ${2:range($3)}:", "    $0"]
-  },
-  "Insert Try-Except Block": {
-    "prefix": "try except",
-    "body": ["try:", "    $1", "except $2:", "    $0"]
-  },
-  "Initialize Function": {
-    "prefix": "def",
-    "body": ["def ${1:function}(${2:args}) -> $3:", "    $0", "    pass"]
-  },
-  "Initialize Class": {
-    "prefix": "class",
-    "body": [
-      "class ${1:ClassName}(${2:ParentClass}):",
-      "    def __init__(self):",
-      "        ${3:super().__init__()}",
-      "        $0"
-    ]
-  },
-  "Initialize Dataclass": {
-    "prefix": ["@"],
-    "body": ["@dataclass", "class ${1:ClassName}:", "    $0"]
-  },
-  "Main Function": {
-    "prefix": "main",
-    "body": [
-      "def main() -> None:",
-      "    $0",
-      "",
-      "if __name__ == '__main__':",
-      "    main()"
-    ]
-  },
-  "SQL Query": {
-    "prefix": "sql",
-    "body": ["\"\"\"--sql", "$0", "\"\"\""]
-  },
-  // SECTION: Interactive Mode Snippets
-  "Insert code cell": {
-    "prefix": "cell code",
-    "body": ["", "#%%", "$0"]
-  },
-  "Insert code cell without newline": {
-    "prefix": "cell code same line",
-    "body": ["", "#%%"]
-  },
-  "Insert markdown cell": {
-    "prefix": "cell markdown",
-    "body": ["", "#%% [markdown]", "# $0"]
-  },
-  // SECTION: Import Snippets
-  "Import Typing": {
-    "prefix": "typing",
-    "body": ["from typing import $0"]
+  // SECTION: Python Snippets
+  "Add f-String": {
+    "body": ["print(f\"$0\")"],
+    "prefix": ["f-String", "printf"]
   },
   "Import Dataclasses": {
-    "prefix": "dataclasses",
-    "body": ["from dataclasses import dataclass", "$0"]
-  },
-  "Import Pathlib": {
-    "prefix": "pathlib",
-    "body": ["from pathlib import Path", "$0"]
-  },
-  "Import datetime": {
-    "prefix": "datetime",
-    "body": ["from datetime import datetime", "$0"]
-  },
-  "Import Pytest": {
-    "prefix": "pytest",
-    "body": ["import pytest", "$0"]
-  },
-  "Import Pytest LazyFixtures": {
-    "prefix": "lazy",
-    "body": ["from pytest_lazyfixture import lazy_fixture", "$0"]
-  },
-  "Import Pandas": {
-    "prefix": "pandas",
-    "body": ["import pandas as pd", "$0"]
-  },
-  "Import Polars": {
-    "prefix": "polars",
-    "body": ["import polars as pl", "$0"]
-  },
-  "Import NumPy": {
-    "prefix": "numpy",
-    "body": ["import numpy as np", "$0"]
-  },
-  "Import Seaborn": {
-    "prefix": "seaborn",
-    "body": ["import seaborn as sns", "$0"]
+    "body": ["from dataclasses import dataclass", "$0"],
+    "prefix": "dataclasses"
   },
   "Import Matplotlib": {
-    "prefix": "matplotlib",
-    "body": ["import matplotlib.pyplot as plt", "$0"]
+    "body": ["import matplotlib.pyplot as plt", "$0"],
+    "prefix": "matplotlib"
+  },
+  "Import NumPy": {
+    "body": ["import numpy as np", "$0"],
+    "prefix": "numpy"
+  },
+  "Import Pandas": {
+    "body": ["import pandas as pd", "$0"],
+    "prefix": "pandas"
+  },
+  "Import Pathlib": {
+    "body": ["from pathlib import Path", "$0"],
+    "prefix": "pathlib"
+  },
+  "Import Polars": {
+    "body": ["import polars as pl", "$0"],
+    "prefix": "polars"
   },
   "Import PyTorch": {
-    "prefix": "torch",
-    "body": ["import torch", "$0"]
-  },
-  // SECTION: Snippets by Package
-  // SUBSECTION: Pandas Snippets
-  "Pandas Show all Columns": {
-    "prefix": "pandas all columns",
-    "body": ["pd.set_option(\"display.max_columns\", None)", "$0"]
-  },
-  // SUBSECTION: Seaborn Snippets
-  "Set Seaborn Theme": {
-    "prefix": "theme seaborn",
-    "body": ["sns.set_theme(style=\"${1|whitegrid,darkgrid|}\")", "$0"]
-  },
-  // SUBSECTION: Scikit-Learn Snippets
-  "Train Test Split": {
-    "prefix": "train test split",
-    "body": ["X_train, X_test, y_train, y_test = train_test_split(X, y)", "$0"]
+    "body": ["import torch", "$0"],
+    "prefix": "torch"
   },
   // SUBSECTION: PyTorch Snippets
   "Import PyTorch Random Split": {
-    "prefix": "random split import",
-    "body": ["from torch.utils.data import random_split", "$0"]
-  }
+    "body": ["from torch.utils.data import random_split", "$0"],
+    "prefix": "random split import"
+  },
   // SUBSECTION: PyTorch Snippets
   // "PyTorch Imports Collection": {
   //   "prefix": "pytorch imports",
@@ -219,4 +130,93 @@
   //     "print_data_shapes($3, input_shape=(1, ${4:in_channels}, ${5:img_size}, $5))"
   //   ]
   // }
+  "Import Pytest": {
+    "body": ["import pytest", "$0"],
+    "prefix": "pytest"
+  },
+  "Import Pytest LazyFixtures": {
+    "body": ["from pytest_lazyfixture import lazy_fixture", "$0"],
+    "prefix": "lazy"
+  },
+  "Import Seaborn": {
+    "body": ["import seaborn as sns", "$0"],
+    "prefix": "seaborn"
+  },
+  // SECTION: Import Snippets
+  "Import Typing": {
+    "body": ["from typing import $0"],
+    "prefix": "typing"
+  },
+  "Import datetime": {
+    "body": ["from datetime import datetime", "$0"],
+    "prefix": "datetime"
+  },
+  "Initialize Class": {
+    "body": [
+      "class ${1:ClassName}(${2:ParentClass}):",
+      "    def __init__(self):",
+      "        ${3:super().__init__()}",
+      "        $0"
+    ],
+    "prefix": "class"
+  },
+  "Initialize Dataclass": {
+    "body": ["@dataclass", "class ${1:ClassName}:", "    $0"],
+    "prefix": ["@"]
+  },
+  "Initialize Function": {
+    "body": ["def ${1:function}(${2:args}) -> $3:", "    $0", "    pass"],
+    "prefix": "def"
+  },
+  "Insert Try-Except Block": {
+    "body": ["try:", "    $1", "except $2:", "    $0"],
+    "prefix": "try except"
+  },
+  // SECTION: Interactive Mode Snippets
+  "Insert code cell": {
+    "body": ["", "#%%", "$0"],
+    "prefix": "cell code"
+  },
+  "Insert code cell without newline": {
+    "body": ["", "#%%"],
+    "prefix": "cell code same line"
+  },
+  "Insert for-loop": {
+    "body": ["for ${1:i} in ${2:range($3)}:", "    $0"],
+    "prefix": "for"
+  },
+  "Insert markdown cell": {
+    "body": ["", "#%% [markdown]", "# $0"],
+    "prefix": "cell markdown"
+  },
+  "Main Function": {
+    "body": [
+      "def main() -> None:",
+      "    $0",
+      "",
+      "if __name__ == '__main__':",
+      "    main()"
+    ],
+    "prefix": "main"
+  },
+  // SECTION: Snippets by Package
+  // SUBSECTION: Pandas Snippets
+  "Pandas Show all Columns": {
+    "body": ["pd.set_option(\"display.max_columns\", None)", "$0"],
+    "prefix": "pandas all columns"
+  },
+  "SQL Query": {
+    "body": ["\"\"\"--sql", "$0", "\"\"\""],
+    "prefix": "sql"
+  },
+  // SUBSECTION: Seaborn Snippets
+  "Set Seaborn Theme": {
+    "body": ["sns.set_theme(style=\"${1|whitegrid,darkgrid|}\")", "$0"],
+    "prefix": "theme seaborn"
+  },
+  // SUBSECTION: Scikit-Learn Snippets
+  "Train Test Split": {
+    "body": ["X_train, X_test, y_train, y_test = train_test_split(X, y)", "$0"],
+    "prefix": "train test split"
+  }
 }

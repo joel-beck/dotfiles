@@ -1,178 +1,22 @@
 {
   // SECTION: Text Highlighting
   "Bold Text": {
-    "prefix": ["bold"],
-    "body": ["\\textbf{$0}"]
-  },
-  "Italic Text": {
-    "prefix": ["italic"],
-    "body": ["\\textit{$0}"]
-  },
-  "Emphasized Text": {
-    "prefix": ["emph"],
-    "body": ["\\emph{$0}"]
-  },
-  "Underlined Text": {
-    "prefix": ["underline"],
-    "body": ["\\underline{$0}"]
-  },
-  "Monospace": {
-    "prefix": ["mono"],
-    "body": ["\\texttt{$0}"]
-  },
-  "Math inline": {
-    "prefix": ["math inline"],
-    "body": ["$$0$"]
-  },
-  "Verbatim inline": {
-    "prefix": ["verb"],
-    "body": ["\\verb|$0|"]
-  },
-  "Separator in Editor": {
-    "prefix": ["separator"],
     "body": [
-      "% --------------------------------------------------------------------- %"
+      "\\textbf{$0}"
+    ],
+    "prefix": [
+      "bold"
     ]
-  },
-  // SECTION: Preamble
-  // "Document": {
-  //   "prefix": ["document"],
-  //   "body": ["\\documentclass[${1:12pt}]{${2:article}", "$0"]
-  // },
-  // "Package": {
-  //   "prefix": ["package"],
-  //   "body": ["\\usepackage{$0}"]
-  // },
-  // "Title": {
-  //   "prefix": ["title (preamble)"],
-  //   "body": ["\\title{$1}", "$0"]
-  // },
-  // "Author": {
-  //   "prefix": ["author"],
-  //   "body": ["\\author{$1}", "$0"]
-  // },
-  // "Date": {
-  //   "prefix": ["date"],
-  //   "body": ["\\date{$1}", "$0"]
-  // },
-  // "Begin Document": {
-  //   "prefix": ["document"],
-  //   "body": ["\\begin{document}", "$0", "\\end{document}"]
-  // },
-  // "Make Title": {
-  //   "prefix": ["title (body)"],
-  //   "body": ["\\maketitle", "$0"]
-  // },
-  // "Table of Contents": {
-  //   "prefix": ["toc"],
-  //   "body": ["\\tableofcontents", "$0"]
-  // },
-  // SECTION: Structure
-  "Import": {
-    "prefix": ["import"],
-    "body": ["\\import{${1:chapters/}}{${2:file.tex}}", "$0"]
   },
   "Chapter": {
-    "prefix": ["chapter", "#"],
-    "body": ["\\chapter{$1}", "$0"]
-  },
-  "Section": {
-    "prefix": ["section"],
-    "body": ["\\section{$1}", "$0"]
-  },
-  "Subsection": {
-    "prefix": ["subsection"],
-    "body": ["\\subsection{$1}", "$0"]
-  },
-  "Subsubsection": {
-    "prefix": ["subsubsection"],
-    "body": ["\\subsubsection*{$1}", "$0"]
-  },
-  "Paragraph": {
-    "prefix": ["paragraph"],
-    "body": ["\\paragraph{$1}", "$0"]
-  },
-  // SECTION: Environments
-  "Equation Numbered": {
-    "prefix": ["align", "equation"],
-    "body": ["\\begin{align}", "    $0", "\\end{align}"]
-  },
-  "Equation Unnumbered": {
-    "prefix": ["align*", "equation*"],
-    "body": ["\\begin{align*}", "    $0", "\\end{align*}"]
-  },
-  "Verbatim": {
-    "prefix": ["verbatim"],
-    "body": ["\\begin{verbatim}", "    $0", "\\end{verbatim}"]
-  },
-  "Unordered List": {
-    "prefix": ["itemize"],
-    "body": ["\\begin{itemize}", "    \\item $0", "\\end{itemize}"]
-  },
-  "Item": {
-    "prefix": ["item", "-"],
-    "body": ["\\item $0"]
-  },
-  "Ordered List": {
-    "prefix": ["enumerate", "1."],
-    "body": ["\\begin{enumerate}", "    \\item $0", "\\end{enumerate}"]
-  },
-  // SUBSECTION: Referencing
-  "Label": {
-    "prefix": ["label"],
-    "body": ["\\label{$1}"]
-  },
-  "Label Figure": {
-    "prefix": ["labelfig"],
-    "body": ["\\label{fig:$1}"]
-  },
-  "Reference Section": {
-    "prefix": ["refsec"],
-    "body": ["\\Cref{sec:$0}"]
-  },
-  "Reference Figure": {
-    "prefix": ["reffig"],
-    "body": ["\\Cref{fig:$0}"]
-  },
-  "Reference Table": {
-    "prefix": ["reftab"],
-    "body": ["\\Cref{tab:$0}"]
-  },
-  "Reference Equation": {
-    "prefix": ["refeq"],
-    "body": ["\\Cref{eq:$0}"]
-  },
-  // SUBSECTION: Beamer Presentations
-  // "New Frame": {
-  //   "prefix": ["frame"],
-  //   "body": ["\\begin{frame}{${1:title}}", "  $0", "\\end{frame}"]
-  // },
-  // "New Frame with List": {
-  //   "prefix": ["frame itemize"],
-  //   "body": [
-  //     "\\begin{frame}{${1:title}}",
-  //     "  \\begin{itemize}",
-  //     "    \\item $0",
-  //     "  \\end{itemize}",
-  //     "\\end{frame}"
-  //   ]
-  // },
-  // SECTION: Figures, Tables and Links
-  "Figure": {
-    "prefix": ["figure", "image"],
     "body": [
-      "\\begin{figure}[htb!]",
-      "    ${1:\\centering}",
-      "    \\includegraphics[width=\\textwidth]{${2:filename}}",
-      "    \\caption[]{$3}",
-      "    \\label{fig:$4}",
-      "\\end{figure}",
+      "\\chapter{$1}",
       "$0"
+    ],
+    "prefix": [
+      "chapter",
+      "#"
     ]
-  },
-  "Link": {
-    "prefix": ["link"],
-    "body": ["\\href{${1:url}}{${2:text}}"]
   },
   // SECTION: Bibliography
   // "Bibtex": {
@@ -183,8 +27,12 @@
   //   ]
   // },
   "Citation": {
-    "prefix": ["cite"],
-    "body": ["\\cite{$0}"]
+    "body": [
+      "\\cite{$0}"
+    ],
+    "prefix": [
+      "cite"
+    ]
   },
   // SECTION: General Math
   // "Centered/Split Equations": {
@@ -1058,4 +906,290 @@
   //     "\\begin{pmatrix} ${1:1} & ${2:1} & ${3:1} & ${4:1} & ${5:1} \\\\\\ ${6:1} & ${7:1} & ${8:1} & ${9:1} & ${10:1} \\end{pmatrix} $0"
   //   ]
   // }
+  "Emphasized Text": {
+    "body": [
+      "\\emph{$0}"
+    ],
+    "prefix": [
+      "emph"
+    ]
+  },
+  // SECTION: Environments
+  "Equation Numbered": {
+    "body": [
+      "\\begin{align}",
+      "    $0",
+      "\\end{align}"
+    ],
+    "prefix": [
+      "align",
+      "equation"
+    ]
+  },
+  "Equation Unnumbered": {
+    "body": [
+      "\\begin{align*}",
+      "    $0",
+      "\\end{align*}"
+    ],
+    "prefix": [
+      "align*",
+      "equation*"
+    ]
+  },
+  // SUBSECTION: Beamer Presentations
+  // "New Frame": {
+  //   "prefix": ["frame"],
+  //   "body": ["\\begin{frame}{${1:title}}", "  $0", "\\end{frame}"]
+  // },
+  // "New Frame with List": {
+  //   "prefix": ["frame itemize"],
+  //   "body": [
+  //     "\\begin{frame}{${1:title}}",
+  //     "  \\begin{itemize}",
+  //     "    \\item $0",
+  //     "  \\end{itemize}",
+  //     "\\end{frame}"
+  //   ]
+  // },
+  // SECTION: Figures, Tables and Links
+  "Figure": {
+    "body": [
+      "\\begin{figure}[htb!]",
+      "    ${1:\\centering}",
+      "    \\includegraphics[width=\\textwidth]{${2:filename}}",
+      "    \\caption[]{$3}",
+      "    \\label{fig:$4}",
+      "\\end{figure}",
+      "$0"
+    ],
+    "prefix": [
+      "figure",
+      "image"
+    ]
+  },
+  // SECTION: Preamble
+  // "Document": {
+  //   "prefix": ["document"],
+  //   "body": ["\\documentclass[${1:12pt}]{${2:article}", "$0"]
+  // },
+  // "Package": {
+  //   "prefix": ["package"],
+  //   "body": ["\\usepackage{$0}"]
+  // },
+  // "Title": {
+  //   "prefix": ["title (preamble)"],
+  //   "body": ["\\title{$1}", "$0"]
+  // },
+  // "Author": {
+  //   "prefix": ["author"],
+  //   "body": ["\\author{$1}", "$0"]
+  // },
+  // "Date": {
+  //   "prefix": ["date"],
+  //   "body": ["\\date{$1}", "$0"]
+  // },
+  // "Begin Document": {
+  //   "prefix": ["document"],
+  //   "body": ["\\begin{document}", "$0", "\\end{document}"]
+  // },
+  // "Make Title": {
+  //   "prefix": ["title (body)"],
+  //   "body": ["\\maketitle", "$0"]
+  // },
+  // "Table of Contents": {
+  //   "prefix": ["toc"],
+  //   "body": ["\\tableofcontents", "$0"]
+  // },
+  // SECTION: Structure
+  "Import": {
+    "body": [
+      "\\import{${1:chapters/}}{${2:file.tex}}",
+      "$0"
+    ],
+    "prefix": [
+      "import"
+    ]
+  },
+  "Italic Text": {
+    "body": [
+      "\\textit{$0}"
+    ],
+    "prefix": [
+      "italic"
+    ]
+  },
+  "Item": {
+    "body": [
+      "\\item $0"
+    ],
+    "prefix": [
+      "item",
+      "-"
+    ]
+  },
+  // SUBSECTION: Referencing
+  "Label": {
+    "body": [
+      "\\label{$1}"
+    ],
+    "prefix": [
+      "label"
+    ]
+  },
+  "Label Figure": {
+    "body": [
+      "\\label{fig:$1}"
+    ],
+    "prefix": [
+      "labelfig"
+    ]
+  },
+  "Link": {
+    "body": [
+      "\\href{${1:url}}{${2:text}}"
+    ],
+    "prefix": [
+      "link"
+    ]
+  },
+  "Math inline": {
+    "body": [
+      "$$0$"
+    ],
+    "prefix": [
+      "math inline"
+    ]
+  },
+  "Monospace": {
+    "body": [
+      "\\texttt{$0}"
+    ],
+    "prefix": [
+      "mono"
+    ]
+  },
+  "Ordered List": {
+    "body": [
+      "\\begin{enumerate}",
+      "    \\item $0",
+      "\\end{enumerate}"
+    ],
+    "prefix": [
+      "enumerate",
+      "1."
+    ]
+  },
+  "Paragraph": {
+    "body": [
+      "\\paragraph{$1}",
+      "$0"
+    ],
+    "prefix": [
+      "paragraph"
+    ]
+  },
+  "Reference Equation": {
+    "body": [
+      "\\Cref{eq:$0}"
+    ],
+    "prefix": [
+      "refeq"
+    ]
+  },
+  "Reference Figure": {
+    "body": [
+      "\\Cref{fig:$0}"
+    ],
+    "prefix": [
+      "reffig"
+    ]
+  },
+  "Reference Section": {
+    "body": [
+      "\\Cref{sec:$0}"
+    ],
+    "prefix": [
+      "refsec"
+    ]
+  },
+  "Reference Table": {
+    "body": [
+      "\\Cref{tab:$0}"
+    ],
+    "prefix": [
+      "reftab"
+    ]
+  },
+  "Section": {
+    "body": [
+      "\\section{$1}",
+      "$0"
+    ],
+    "prefix": [
+      "section"
+    ]
+  },
+  "Separator in Editor": {
+    "body": [
+      "% --------------------------------------------------------------------- %"
+    ],
+    "prefix": [
+      "separator"
+    ]
+  },
+  "Subsection": {
+    "body": [
+      "\\subsection{$1}",
+      "$0"
+    ],
+    "prefix": [
+      "subsection"
+    ]
+  },
+  "Subsubsection": {
+    "body": [
+      "\\subsubsection*{$1}",
+      "$0"
+    ],
+    "prefix": [
+      "subsubsection"
+    ]
+  },
+  "Underlined Text": {
+    "body": [
+      "\\underline{$0}"
+    ],
+    "prefix": [
+      "underline"
+    ]
+  },
+  "Unordered List": {
+    "body": [
+      "\\begin{itemize}",
+      "    \\item $0",
+      "\\end{itemize}"
+    ],
+    "prefix": [
+      "itemize"
+    ]
+  },
+  "Verbatim": {
+    "body": [
+      "\\begin{verbatim}",
+      "    $0",
+      "\\end{verbatim}"
+    ],
+    "prefix": [
+      "verbatim"
+    ]
+  },
+  "Verbatim inline": {
+    "body": [
+      "\\verb|$0|"
+    ],
+    "prefix": [
+      "verb"
+    ]
+  }
 }

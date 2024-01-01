@@ -44,6 +44,9 @@ brew install dust
 # Select default apps for documents and URL schemes on macOS
 brew install duti
 
+# AST-based pattern checker for JavaScript
+brew install eslint
+
 # Modern replacement for 'ls'
 brew install exa
 
@@ -60,14 +63,11 @@ brew install fzf
 brew install go &&
     # Update, add and remove Go imports
     go install golang.org/x/tools/cmd/goimports@latest &&
-    # State of the art linter for the Go programming language
-    go install honnef.co/go/tools/cmd/staticcheck@latest &&
     # Go language server
-    go install golang.org/x/tools/gopls@latest &&
-    # Go linter
-    # binary will be $(go env GOPATH)/bin/golangci-lint
-    # NOTE: Update version of `golangci` at the end of the command regularly!!
-    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.55.2
+    go install golang.org/x/tools/gopls@latest
+
+# Fast linters runner for Go
+brew install golangci-lint
 
 # GitHub CLI
 brew install gh &&

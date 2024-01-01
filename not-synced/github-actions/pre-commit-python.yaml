@@ -1,13 +1,13 @@
-# .github/wokflows/tests.yaml
+# .github/workflows/pre-commit.yaml
 
-name: pytest
+name: pre-commit
 
 on:
   pull_request:
     branches: [main]
 
 jobs:
-  test:
+  pre-commit:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
 
@@ -29,8 +29,5 @@ jobs:
       - name: Install dependencies
         run: pdm install
 
-      - name: Run tests with pytest
-        run: pdm test
-
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+      - name: Run pre-commit
+        run: pdm pre

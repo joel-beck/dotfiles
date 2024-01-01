@@ -1,3 +1,5 @@
+# .pre-commit-config.yaml
+
 # run `pre-commit autoupdate` to update tags (`rev`) to the latest versions
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -61,6 +63,35 @@ repos:
     rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
+        # running prettier with npx makes it available in CI
+        entry: bun run prettier
         additional_dependencies: [prettier-plugin-tailwindcss@^0.5.7]
+        args: ["--write"]
+        # run prettier only on these file types, specifying the file types in `args`
+        # does not work
+        files: "\\.([jt]sx?|html|css|ya?ml|json|md)$"
         stages: [commit]
-        args: ["--write", "--config .prettierrc.yaml"]
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint
+        entry: bun run eslint
+        args: ["--fix"]
+        language: node
+        files: \.(ts|tsx)$
+        stages: [commit]
+  - repo: local
+    hooks:
+      - id: go-fmt
+        name: go-fmt
+        entry: gofmt
+        args: ["-w", "-l", "."]
+        language: system
+        files: \.go$
+        stages: [commit]
+  - repo: https://github.com/golangci/golangci-lint
+    rev: v1.55.2
+    hooks:
+      - id: golangci-lint
+        files: \.go$
+        stages: [commit]

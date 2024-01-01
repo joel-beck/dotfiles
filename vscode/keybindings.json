@@ -153,7 +153,7 @@
   // Focus Copilot Chat in Side Bar
   {
     "key": "ctrl+c",
-    "command": "workbench.panel.chatSidebar.copilot"
+    "command": "workbench.panel.chat.view.copilot.focus"
   },
   // Focus Outline in Side Bar
   {
