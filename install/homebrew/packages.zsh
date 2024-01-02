@@ -83,6 +83,9 @@ brew install imagemagick
 # Lightweight and flexible command-line JSON processor
 brew install jq
 
+# Open-source distributed event streaming platform
+brew install kafka
+
 # Fly through your shell history
 brew install mcfly
 
@@ -142,6 +145,12 @@ brew install starship
 
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew install stow
+
+# Tool to build, change, and version infrastructure
+brew install terraform
+
+# Thin wrapper for Terraform e.g. for locking state
+brew install terragrunt
 
 # Seamlessly correct mistyped console commands
 brew install thefuck

@@ -131,6 +131,7 @@ Done 🎉
 /Users/joel/
     │
     ├── dotfiles
+    │
     ├── Documents
     │   ├── AppBackups
     │   ├── LargeFiles
@@ -138,11 +139,11 @@ Done 🎉
     │   ├── Playlists
     │   ├── ProjectsPrivate
     │   └── ProjectsPublic
+    │
     ├── iCloud
     │   ├── Bachelorstudium
     │   ├── Masterstudium
-    │   ├── Sonstiges
-    │   └── StudiumSonstiges
+    │   └── Sonstiges
     │
     ├── iCloudBackup
     ├── GoogleDriveBackup

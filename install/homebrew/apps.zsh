@@ -36,6 +36,9 @@ brew install --cask boop
 # Breitbandmessung
 brew install --cask breitbandmessung
 
+# Bruno (API Client)
+brew install --cask bruno
+
 # Carbon Copy Cloner
 brew install --cask carbon-copy-cloner
 
@@ -53,6 +56,9 @@ brew install --cask daisydisk
 
 # Dash
 brew install --cask dash
+
+# Deeper
+brew install --cask deeper
 
 # Deepl
 brew install --cask deepl

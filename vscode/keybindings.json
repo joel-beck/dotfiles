@@ -309,7 +309,7 @@
   },
   // Close all other Editors within the same Group
   {
-    "key": "alt+c",
+    "key": "alt+o",
     "command": "workbench.action.closeOtherEditors"
   },
   // Reload VSCode

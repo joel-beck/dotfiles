@@ -17,7 +17,7 @@
     "iconColor": null,
     "iconInTabsEnabled": false,
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
-    "migrated": true,
+    "migrated": 3,
     "recentlyUsedIcons": [
       "FasPizzaSlice",
       "FasHouseChimney",
@@ -26,7 +26,11 @@
       "FasMoneyBill"
     ],
     "recentlyUsedIconsSize": 5,
-    "rules": []
+    "rules": [],
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true
   },
   "00 Templates": "FasGears",
   "01 Dataview": "FasDatabase",

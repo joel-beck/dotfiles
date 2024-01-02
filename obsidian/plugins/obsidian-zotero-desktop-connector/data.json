@@ -28,5 +28,6 @@
   "shouldShowCiteSuggest": true,
   "shouldConcat": true,
   "pdfExportImageOCR": false,
-  "pdfExportImageTesseractPath": "/opt/homebrew/bin/tesseract"
+  "pdfExportImageTesseractPath": "/opt/homebrew/bin/tesseract",
+  "_exeInternalVersion": 1
 }

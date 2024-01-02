@@ -95,7 +95,14 @@
       ]
     }
   ],
-  "editor:save-file": [],
+  "editor:save-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
   "editor:swap-line-down": [
     {
       "key": "ArrowDown",
@@ -334,14 +341,6 @@
       ]
     }
   ],
-  "outline:open": [
-    {
-      "key": "O",
-      "modifiers": [
-        "Alt"
-      ]
-    }
-  ],
   "pane-relief:go-1st": [],
   "pane-relief:go-2nd": [],
   "pane-relief:go-3rd": [],
@@ -439,14 +438,6 @@
       ]
     }
   ],
-  "workspace:close-others": [
-    {
-      "key": "C",
-      "modifiers": [
-        "Ctrl"
-      ]
-    }
-  ],
   "workspace:next-tab": [
     {
       "key": "ArrowRight",
@@ -492,12 +483,28 @@
       ]
     }
   ],
-  "darlal-switcher-plus:switcher-plus:open-headings": [
+  "workspace:close-others": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "O"
+    }
+  ],
+  "outline:open": [
     {
       "modifiers": [
         "Mod"
       ],
       "key": "O"
+    }
+  ],
+  "workspace:close-tab-group": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
     }
   ]
 }

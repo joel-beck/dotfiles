@@ -1,7 +1,10 @@
 {
   "userIllegalSymbols": [],
   "ignoredFiles": {},
-  "ignoreRegex": "(00 Templates)|(06 Readwise)",
+  "ignoreRegex": "(00 Templates)|(06 Reader)",
   "useFileOpenHook": false,
-  "useFileSaveHook": true
+  "useFileSaveHook": true,
+  "newHeadingStyle": "Prefix",
+  "replaceStyle": false,
+  "underlineString": "==="
 }
