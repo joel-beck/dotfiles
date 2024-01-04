@@ -12,7 +12,6 @@ alias .....="cd ../../../.."
 
 # list one line per entry, show hidden files, show sizes in human readable format and
 # show directories in different color
-# use snippet `!ls` for exa equivalent!
 alias ls="ls -lah --color=auto"
 
 # copy, move/rename and create directories in verbose mode

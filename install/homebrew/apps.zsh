@@ -210,9 +210,6 @@ brew install --cask warp
 # WhatsApp
 brew install --cask whatsapp
 
-# wkhtmltopdf
-brew install --cask wkhtmltopdf
-
 # Zappy
 brew install --cask zappy
 

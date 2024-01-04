@@ -47,8 +47,8 @@ brew install duti
 # AST-based pattern checker for JavaScript
 brew install eslint
 
-# Modern replacement for 'ls'
-brew install exa
+# Modern, maintained replacement for ls
+brew install eza
 
 # Simple, fast and user-friendly alternative to 'find'
 brew install fd
