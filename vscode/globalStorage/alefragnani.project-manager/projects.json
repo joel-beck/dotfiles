@@ -113,13 +113,6 @@
   },
   {
     "enabled": true,
-    "name": "msc-thesis",
-    "paths": [],
-    "rootPath": "/Users/joel/Documents/ProjectsPublic/msc-thesis",
-    "tags": ["latex", "thesis"]
-  },
-  {
-    "enabled": true,
     "name": "pdm-config",
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/pdm-config",
@@ -152,6 +145,13 @@
     "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/huk-challenge",
     "tags": ["python", "projects-public"]
+  },
+  {
+    "enabled": true,
+    "name": "msc-thesis",
+    "paths": [],
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/msc-thesis",
+    "tags": ["latex", "thesis"]
   },
   {
     "enabled": true,
@@ -201,6 +201,13 @@
     "paths": [],
     "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes",
     "tags": ["drafts", "icloud"]
+  },
+  {
+    "enabled": true,
+    "name": "obsidian-vault-icloud",
+    "paths": [],
+    "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~md~obsidian/Documents/Personal",
+    "tags": ["obsidian"]
   },
   {
     "enabled": true,
