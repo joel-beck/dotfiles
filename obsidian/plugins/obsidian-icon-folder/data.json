@@ -1,6 +1,6 @@
 {
   "settings": {
-    "emojiStyle": "none",
+    "emojiStyle": "native",
     "extraMargin": {
       "bottom": 0,
       "left": 0,
@@ -15,8 +15,8 @@
     },
     "fontSize": 16,
     "iconColor": null,
-    "iconInTabsEnabled": false,
-    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "iconInTabsEnabled": true,
+    "iconPacksPath": ".obsidian/icons",
     "migrated": 3,
     "recentlyUsedIcons": [
       "FasPizzaSlice",
@@ -25,11 +25,11 @@
       "FasMoneyBill1",
       "FasMoneyBill"
     ],
-    "recentlyUsedIconsSize": 5,
+    "recentlyUsedIconsSize": 6,
     "rules": [],
     "iconInTitleEnabled": false,
     "iconInFrontmatterEnabled": false,
-    "iconsBackgroundCheckEnabled": false,
+    "iconsBackgroundCheckEnabled": true,
     "iconsInNotesEnabled": true
   },
   "00 Templates": "FasGears",
