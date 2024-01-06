@@ -83,6 +83,9 @@ brew install imagemagick
 # Lightweight and flexible command-line JSON processor
 brew install jq
 
+# Handy way to save and run project-specific commands
+brew install just
+
 # Open-source distributed event streaming platform
 brew install kafka
 
