@@ -1,0 +1,50 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": true,
+  "debug": true,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [
+    {
+      "id": "graph:open",
+      "icon": "graph-glyph",
+      "name": "Graph View",
+      "mode": "any"
+    }
+  ],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [
+      "obsidian-git",
+      "pane-relief",
+      "obsidian-textgenerator-plugin",
+      "obsidian-textgenerator-plugin",
+      "obsidian-textgenerator-plugin",
+      "obsidian-textgenerator-plugin"
+    ],
+    "leftRibbon": [
+      "Templater",
+      "Open quick switcher",
+      "Open command palette",
+      "Open today",
+      "Advanced Tables Toolbar",
+      "Tweet to Markdown"
+    ]
+  },
+  "spacing": "14",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 2,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "menuCommands": [],
+  "hideTitles": [
+    "Set as attachment folder",
+    "Git: Stage",
+    "Git: Unstage",
+    "Create new note from template",
+    "Collapse this level",
+    "Expand this level"
+  ]
+}

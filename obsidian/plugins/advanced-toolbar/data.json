@@ -1,0 +1,61 @@
+{
+  "rowHeight": 48,
+  "rowCount": 3,
+  "spacing": 0,
+  "buttonWidth": 48,
+  "columnLayout": true,
+  "alwaysShowToolbar": true,
+  "mappedIcons": [
+    {
+      "commandID": "editor:toggle-source",
+      "iconID": "presentation"
+    },
+    {
+      "commandID": "obsidian-better-command-palette:open-better-commmand-palette",
+      "iconID": "feather-command"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:deleteLine",
+      "iconID": "trash"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:goToLineStart",
+      "iconID": "left-arrow-with-tail"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:deleteToStartOfLine",
+      "iconID": "trash"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:deleteToEndOfLine",
+      "iconID": "trash"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:goToLineEnd",
+      "iconID": "feather-arrow-right"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:selectLine",
+      "iconID": "expand-vertically"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:copyLineUp",
+      "iconID": "feather-copy"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:copyLineDown",
+      "iconID": "feather-copy"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:goToNextHeading",
+      "iconID": "feather-arrow-down-circle"
+    },
+    {
+      "commandID": "obsidian-editor-shortcuts:goToPrevHeading",
+      "iconID": "feather-arrow-up-circle"
+    }
+  ],
+  "debugging": false,
+  "allowStylingOfAllActions": true,
+  "tooltips": false
+}
