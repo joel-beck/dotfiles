@@ -77,6 +77,17 @@ brew install gh &&
 # Distributed revision control system
 brew install git
 
+# Spell checker and morphological analyzer
+# usage with multiple dictionaries: `hunspell -d en_US,de_DE "text with spelling errors"`
+brew install hunspell &&
+    mkdir -p ~/Library/Spelling &&
+    # Download English (US) dictionary
+    curl -o ~/Library/Spelling/en_US.aff https://raw.githubusercontent.com/wooorm/dictionaries/main/dictionaries/de/index.dic &&
+    curl -o ~/Library/Spelling/en_US.dic https://raw.githubusercontent.com/wooorm/dictionaries/main/dictionaries/en/index.dic &&
+    # Download German dictionary
+    curl -o ~/Library/Spelling/de_DE.aff https://raw.githubusercontent.com/wooorm/dictionaries/main/dictionaries/de/index.aff &&
+    curl -o ~/Library/Spelling/de_DE.dic https://raw.githubusercontent.com/wooorm/dictionaries/main/dictionaries/de/index.dic
+
 # Tools and libraries to manipulate images in many formats
 brew install imagemagick
 
