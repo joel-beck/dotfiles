@@ -204,13 +204,6 @@
   },
   {
     "enabled": true,
-    "name": "obsidian-vault-icloud",
-    "paths": [],
-    "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~md~obsidian/Documents/Personal",
-    "tags": ["obsidian"]
-  },
-  {
-    "enabled": true,
     "name": "dotfiles",
     "paths": [],
     "rootPath": "/Users/joel/dotfiles",
