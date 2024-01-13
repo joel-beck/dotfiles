@@ -1,34 +1,92 @@
+# See documentation at https://github.com/anishathalye/dotbot
+
 - defaults:
+    # applies to all links
     link:
+      # overwrites existing symbolic links in the target location, does NOT overwrite
+      # existing data, i.e. non-symlinked files
       relink: true
 
+# Remove broken or dead symlinks
 - clean: ["~"]
 
+# Create symbolic links from this directory (the source) to the target location
+# format is <target>: <source>
 - link:
+    # SUBSECTION: Git
     ~/.gitconfig: git/.gitconfig
 
+    # SUBSECTION: Karabiner
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
 
+    # SUBSECTION: Obsidian Plugins
+    ~/Documents/ObsidianVault/.obsidian/plugins/advanced-toolbar/data.json: obsidian/plugins/advanced-toolbar/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/cmdr/data.json: obsidian/plugins/cmdr/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/customizable-menu/data.json: obsidian/plugins/customizable-menu/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/darlal-switcher-plus/data.json: obsidian/plugins/darlal-switcher-plus/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/dataview/data.json: obsidian/plugins/dataview/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/embed-code-file/data.json: obsidian/plugins/embed-code-file/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/find-unlinked-files/data.json: obsidian/plugins/find-unlinked-files/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/nldates-obsidian/data.json: obsidian/plugins/nldates-obsidian/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/number-headings-obsidian/data.json: obsidian/plugins/number-headings-obsidian/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-advanced-uri/data.json: obsidian/plugins/obsidian-advanced-uri/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-better-command-palette/data.json: obsidian/plugins/obsidian-better-command-palette/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-bulk-rename-plugin/data.json: obsidian/plugins/obsidian-bulk-rename-plugin/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-filename-heading-sync/data.json: obsidian/plugins/obsidian-filename-heading-sync/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-hider/data.json: obsidian/plugins/obsidian-hider/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-icon-folder/data.json: obsidian/plugins/obsidian-icon-folder/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-linter/data.json: obsidian/plugins/obsidian-linter/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-minimal-settings/data.json: obsidian/plugins/obsidian-minimal-settings/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-style-settings/data.json: obsidian/plugins/obsidian-style-settings/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-table-to-csv-exporter/data.json: obsidian/plugins/obsidian-table-to-csv-exporter/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-vault-statistics-plugin/data.json: obsidian/plugins/obsidian-vault-statistics-plugin/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/obsidian-zotero-desktop-connector/data.json: obsidian/plugins/obsidian-zotero-desktop-connector/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/periodic-notes/data.json: obsidian/plugins/periodic-notes/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/simple-embeds/data.json: obsidian/plugins/simple-embeds/data.json
+    ~/Documents/ObsidianVault/.obsidian/plugins/templater-obsidian/data.json: obsidian/plugins/templater-obsidian/data.json
+
+    # SUBSECTION: Obsidian Snippets
+    ~/Documents/ObsidianVault/.obsidian/snippets/obsidian.css: obsidian/snippets/obsidian.css
+
+    # SUBSECTION: Obsidian Settings
+    ~/Documents/ObsidianVault/.obsidian/snippets/obsidian.css: obsidian/snippets/obsidian.css
+    ~/Documents/ObsidianVault/.obsidian/app.json: obsidian/app.json
+    ~/Documents/ObsidianVault/.obsidian/appearance.json: obsidian/appearance.json
+    ~/Documents/ObsidianVault/.obsidian/backlink.json: obsidian/backlink.json
+    ~/Documents/ObsidianVault/.obsidian/community-plugins.json: obsidian/community-plugins.json
+    ~/Documents/ObsidianVault/.obsidian/core-plugins-migration.json: obsidian/core-plugins-migration.json
+    ~/Documents/ObsidianVault/.obsidian/core-plugins.json: obsidian/core-plugins.json
+    ~/Documents/ObsidianVault/.obsidian/global-search.json: obsidian/global-search.json
+    ~/Documents/ObsidianVault/.obsidian/hotkeys.json: obsidian/hotkeys.json
+    ~/Documents/ObsidianVault/.obsidian/switcher.json: obsidian/switcher.json
+
+    # SUBSECTION: R
     ~/.Rprofile: r/.Rprofile
 
+    # SUBSECTION: RStudio
     ~/.config/rstudio/CustomThemes: rstudio/CustomThemes
     ~/.config/rstudio/desktop.ini: rstudio/desktop.ini
     ~/.config/rstudio/keybindings: rstudio/keybindings
     ~/.config/rstudio/rstudio-prefs.json: rstudio/rstudio-prefs.json
     ~/.config/rstudio/snippets: rstudio/snippets
 
+    # SUBSECTION: Starship
     ~/.config/starship.toml: starship/starship.toml
 
+    # SUBSECTION: VSCode
     ~/Library/Application Support/Code/User/globalStorage/alefragnani.project-manager/projects.json: vscode/projects.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
 
+    # SUBSECTION: Warp
     # check box in Warp settings to `honor user's custom prompt` to enable starship
     # support
     ~/.warp: warp
 
+    # SUBSECTION: ZSH
     ~/.zshrc: zsh/.zshrc
 
+# Run shell commands after creating symlinks
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
