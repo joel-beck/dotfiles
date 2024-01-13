@@ -5,9 +5,7 @@
 #    in the PATH variable
 
 export DOTFILES_DIRPATH="$HOME/dotfiles"
-# do not overwrite ZSH environment variable, used for oh my zsh!
-export ZSH_DIRPATH="$DOTFILES_DIRPATH/zsh"
-export ZSHRC_DIRPATH="$ZSH_DIRPATH/zshrc"
+export ZSHRC_DIRPATH="$DOTFILES_DIRPATH/zsh/zshrc"
 
 # Adds file system locations with highest priority to PATH
 source "$ZSHRC_DIRPATH/config.zsh"

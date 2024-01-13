@@ -24,6 +24,7 @@ cpan App::cpanminus
 
 # Install Perl modules with cpanminus
 cpanm Mac::SystemDirectory
+
 # For `latexindent` (format LaTeX files with LaTeXWorkshop VSCode extension)
 cpanm cpanm YAML::Tiny
 cpanm File::HomeDir
