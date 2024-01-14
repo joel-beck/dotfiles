@@ -16,13 +16,11 @@ By having a single repository for all configuration files, it is possible to:
 
     If the name is set incorrectly, it can be changed by [creating a new administrator account](https://support.apple.com/en-us/HT201548) on this device, renaming the main account from the new admin account and finally deleting the new admin account again.
 
-2. Check that iCloud synchronization has started on the new machine.
+2. Open Safari, navigate to [GitHub](https://github.com) and login to the GitHub account via Apple Keychain.
 
-3.  Open Safari, navigate to [GitHub](https://github.com) and login to the GitHub account via Apple Keychain.
+3. [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
 
-4. [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
-
-5.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
+4.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
 
     ```bash
     git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
@@ -31,7 +29,7 @@ By having a single repository for all configuration files, it is possible to:
     - When requested, accept to install the Xcode Developer Tools first.
     - Enter the GitHub username and the new Personal Access Token from the previous step.
 
-6.  Run `01_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
+5.  Run `01_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
 
     ```bash
     cd ~/dotfiles/scripts
@@ -40,7 +38,7 @@ By having a single repository for all configuration files, it is possible to:
 
     Enter the password for the user account when requested.
 
-7.  Run `02_symlinks.zsh` to create symbolic links from iCloud to a new `~/iCloud` folder and to run the `dotbot` installation script for the dotfiles:
+6.  Run `02_symlinks.zsh` to create symbolic links from iCloud to a new `~/iCloud` folder and to run the `dotbot` installation script for the dotfiles:
 
     ```bash
     cd ~/dotfiles/scripts
@@ -49,14 +47,14 @@ By having a single repository for all configuration files, it is possible to:
 
     Now that the development environment is set, continue with the remaining process using Warp and VSCode for convenience.
 
-8.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:
+7.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:
 
     ```bash
     cd ~/dotfiles/scripts
     zsh 03_oh-my-zsh.zsh
     ```
 
-9.  **Restart the shell** (such that OH MY ZSH can set required environment variables).
+8.  **Restart the shell** (such that OH MY ZSH can set required environment variables).
     Then run `04_oh-my-zsh-plugins.zsh` to install OH MY ZSH plugins:
 
     ```bash
@@ -64,7 +62,7 @@ By having a single repository for all configuration files, it is possible to:
     zsh 04_oh-my-zsh-plugins.zsh
     ```
 
-10.  Run `05_perl.zsh` to install `perlbrew` to manage Perl versions, the latest perl version and `cpanm` to install Perl modules.
+9.  Run `05_perl.zsh` to install `perlbrew` to manage Perl versions, the latest perl version and `cpanm` to install Perl modules.
     Then install the required Perl modules for formatting LaTeX files with `latexindent` (used by the VSCode `LaTeX Workshop` extension):
 
     ```bash
@@ -94,9 +92,10 @@ By having a single repository for all configuration files, it is possible to:
 
     Then save the file with sudo permissions.
 
-11. While Apps are installing:
+10. While Apps are installing:
     - Check frequently for prompts in the terminal to enter the password for the user account if requested.
     - Setup the [desired file system directory structure](#file-system-structure) and copy the following folders from an SSD backup disk to the new machine:
+        - `~/iCloud`
         - `~/Documents/AppBackups`
         - `~/Documents/LargeFiles`
     - Clone the Obsidian Vault from its GitHub directory to `~/Documents/ObsidianVault`.
@@ -108,7 +107,7 @@ By having a single repository for all configuration files, it is possible to:
 Wait until the installation of all Apps is finished.
 Breathe 🧘‍♂️ Time for a cup of tea!
 
-12. Run `06_macos.zsh` to set MacOS System Preferences:
+11. Run `06_macos.zsh` to set MacOS System Preferences:
 
     ```bash
     cd ~/dotfiles/scripts
@@ -119,9 +118,9 @@ Breathe 🧘‍♂️ Time for a cup of tea!
     Then, restart the Mac.
     After rebooting, check that the custom MacOS System Preferences were set correctly.
 
-13. Install the remaining MacOS Apps that are not available via Homebrew. Lookup the list of missing Apps in Obsidian.
+12. Install the remaining MacOS Apps that are not available via Homebrew. Lookup the list of missing Apps in Obsidian.
 
-14. Restart the MacBook again and check that all steps were completed successfully.
+13. Restart the MacBook again and check that all steps were completed successfully.
 
 Done 🎉 Enjoy your new Mac!
 
