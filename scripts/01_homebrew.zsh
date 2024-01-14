@@ -1,8 +1,9 @@
 #!/usr/bin/env zsh
 
+set -euxo pipefail
+
 export DOTFILES_DIRPATH="$HOME/dotfiles"
-export INSTALL_DIRPATH="$DOTFILES_DIRPATH/install"
-export HOMEBREW_DIRPATH="$INSTALL_DIRPATH/homebrew"
+export HOMEBREW_DIRPATH="$DOTFILES_DIRPATH/scripts/homebrew"
 
 # Install Homebrew: https://brew.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

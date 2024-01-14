@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+set -euxo pipefail
+
 # Install Oh My Zsh Plugins - Plugins are listed in dotfiles/zsh/zshrc/plugins.zsh
 
 # The following plugins do not require installation:

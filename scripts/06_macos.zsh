@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+set -euxo pipefail
+
 # - inspired by https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 # - a selected list of common (but often outdated) settings with explanations is
 #   available at https://macos-defaults.com
@@ -13,8 +15,7 @@
 # - sort settings alphabetically by their key
 
 export DOTFILES_DIRPATH="$HOME/dotfiles"
-export INSTALL_DIRPATH="$DOTFILES_DIRPATH/install"
-export MACOS_DIRPATH="$INSTALL_DIRPATH/macos"
+export MACOS_DIRPATH="$DOTFILES_DIRPATH/scripts/macos"
 export DOMAINS_DIRPATH="$MACOS_DIRPATH/domains"
 
 # must come first

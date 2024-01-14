@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+set -euxo pipefail
+
 # Install Perlbrew to manage Perl versions
 \curl -L https://install.perlbrew.pl | bash
 
