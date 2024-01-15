@@ -35,6 +35,6 @@ formatter = logging.Formatter(
 )
 handler.setFormatter(formatter)
 
-logger = logging.getLogger("rich")
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 logger.addHandler(handler)

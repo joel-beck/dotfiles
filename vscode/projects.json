@@ -1,219 +1,226 @@
 [
   {
-    "enabled": true,
     "name": "obsidian-vault",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ObsidianVault",
-    "tags": ["obsidian"]
+    "paths": [],
+    "tags": ["obsidian"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "alfred",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/Alfred/Alfred.alfredpreferences",
-    "tags": ["alfred"]
+    "paths": [],
+    "tags": ["alfred"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "alfred-scripts",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/AlfredScripts",
-    "tags": ["alfred", "projects-private"]
+    "paths": [],
+    "tags": ["alfred", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "chatgpt",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/ChatGPT",
-    "tags": ["projects-private", "coding-challenges"]
+    "paths": [],
+    "tags": ["projects-private", "coding-challenges"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "cookiecutter-python-projects",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/Cookiecutter/cookiecutter-python-projects",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "go-practice",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/GoProjects/go-practice",
-    "tags": ["go"]
+    "paths": [],
+    "tags": ["go"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "keyboard-maestro-scripts",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",
-    "tags": ["keyboard-maestro", "projects-private"]
+    "paths": [],
+    "tags": ["keyboard-maestro", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "mails",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/Mails",
-    "tags": ["projects-private"]
+    "paths": [],
+    "tags": ["projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "sql-practice",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/sql-practice",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "sqlalchemy-practice",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/sqlalchemy-practice",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "sqlite-practice",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/sqlite-practice",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "quick-notes",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/QuickNotes",
-    "tags": ["projects-private"]
+    "paths": [],
+    "tags": ["projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "typescript-exploration",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-exploration",
-    "tags": ["typescript", "projects-private"]
+    "paths": [],
+    "tags": ["typescript", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "vite-quickstart",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/vite-quickstart",
-    "tags": ["typescript", "projects-private"]
+    "paths": [],
+    "tags": ["typescript", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "config-comparison",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/config-comparison",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "model-config",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/model-config",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "pdm-config",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/pdm-config",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "python-packages-api",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/python-packages-api",
-    "tags": ["python", "projects-private"]
+    "paths": [],
+    "tags": ["python", "projects-private"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "blog",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/blog",
-    "tags": ["r", "projects-public"]
+    "paths": [],
+    "tags": ["r", "projects-public"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "eval-sklearn",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/eval-sklearn",
-    "tags": ["python", "projects-public"]
+    "paths": [],
+    "tags": ["python", "projects-public"],
+    "enabled": true
   },
   {
-    "enabled": true,
+    "name": "gh-backup",
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/gh-backup",
+    "paths": [],
+    "tags": ["projects-public", "python"],
+    "enabled": true
+  },
+  {
     "name": "huk-challenge",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/huk-challenge",
-    "tags": ["python", "projects-public"]
+    "paths": [],
+    "tags": ["python", "projects-public"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "msc-thesis",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/msc-thesis",
-    "tags": ["latex", "thesis"]
+    "paths": [],
+    "tags": ["latex", "thesis"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "pystringr",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/pystringr",
-    "tags": ["python", "projects-public"]
+    "paths": [],
+    "tags": ["python", "projects-public"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "r-vs-python",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/r-vs-python",
-    "tags": ["r", "projects-public"]
+    "paths": [],
+    "tags": ["r", "projects-public"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "readnext",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/readnext",
-    "tags": ["python", "projects-public"]
+    "paths": [],
+    "tags": ["python", "projects-public"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "resume",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/resume",
-    "tags": ["r", "studium"]
+    "paths": [],
+    "tags": ["r", "studium"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "sparplanrechner",
-    "paths": [],
     "rootPath": "/Users/joel/Documents/ProjectsPublic/sparplanrechner",
-    "tags": ["go", "projects-public"]
+    "paths": [],
+    "tags": ["go", "projects-public"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "drafts-scripts",
-    "paths": [],
     "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Scripts/custom-scripts",
-    "tags": ["drafts", "icloud"]
+    "paths": [],
+    "tags": ["drafts", "icloud"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "drafts-themes",
-    "paths": [],
     "rootPath": "/Users/joel/Library/Mobile Documents/iCloud~com~agiletortoise~Drafts5/Documents/Library/Themes",
-    "tags": ["drafts", "icloud"]
+    "paths": [],
+    "tags": ["drafts", "icloud"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "dotfiles",
-    "paths": [],
     "rootPath": "/Users/joel/dotfiles",
-    "tags": ["config", "root"]
+    "paths": [],
+    "tags": ["config", "root"],
+    "enabled": true
   },
   {
-    "enabled": true,
     "name": "keyboard-maestro-plists",
-    "paths": [],
     "rootPath": "/Users/joel/iCloud/AppBackups/KeyboardMaestro/LibraryFolder",
-    "tags": ["keyboard-maestro", "backups"]
+    "paths": [],
+    "tags": ["keyboard-maestro", "backups"],
+    "enabled": true
   }
 ]
