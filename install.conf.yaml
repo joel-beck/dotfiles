@@ -85,6 +85,7 @@
     ~/.warp: warp
 
     # SUBSECTION: ZSH
+    ~/.zshenv: zsh/.zshenv
     ~/.zshrc: zsh/.zshrc
 
 # Run shell commands after creating symlinks
