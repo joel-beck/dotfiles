@@ -29,32 +29,41 @@ By having a single repository for all configuration files, it is possible to:
     - When requested, accept to install the Xcode Developer Tools first.
     - Enter the GitHub username and the new Personal Access Token from the previous step.
 
-5.  Run `01_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
+5.  Run `01_symlinks.zsh` to create symbolic links from iCloud to a new `~/iCloud` folder and to run the `dotbot` installation script for the dotfiles:
 
     ```bash
     cd ~/dotfiles/scripts
-    zsh 01_homebrew.zsh
+    zsh 01_symlinks.zsh
+    ```
+
+    This step must be run first to set environment variables which specify the location of configuration files for some of the apps installed in the next step (XDG Base Directory Specification).
+
+6.  Run `02_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
+
+    ```bash
+    cd ~/dotfiles/scripts
+    zsh 02_homebrew.zsh
     ```
 
     Enter the password for the user account when requested.
 
-6.  Run `02_symlinks.zsh` to create symbolic links from iCloud to a new `~/iCloud` folder and to run the `dotbot` installation script for the dotfiles:
+7.  Run `01_symlinks.zsh` again to set the desired configuration for the installed command line tools and MacOS Apps:
 
     ```bash
     cd ~/dotfiles/scripts
-    zsh 02_symlinks.zsh
+    zsh 01_symlinks.zsh
     ```
 
     Now that the development environment is set, continue with the remaining process using Warp and VSCode for convenience.
 
-7.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:
+8.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:
 
     ```bash
     cd ~/dotfiles/scripts
     zsh 03_oh-my-zsh.zsh
     ```
 
-8.  **Restart the shell** (such that OH MY ZSH can set required environment variables).
+9.  **Restart the shell** (such that OH MY ZSH can set required environment variables).
     Then run `04_oh-my-zsh-plugins.zsh` to install OH MY ZSH plugins:
 
     ```bash
@@ -62,7 +71,7 @@ By having a single repository for all configuration files, it is possible to:
     zsh 04_oh-my-zsh-plugins.zsh
     ```
 
-9.  Run `05_perl.zsh` to install `perlbrew` to manage Perl versions, the latest perl version and `cpanm` to install Perl modules.
+10. Run `05_perl.zsh` to install `perlbrew` to manage Perl versions, the latest perl version and `cpanm` to install Perl modules.
     Then install the required Perl modules for formatting LaTeX files with `latexindent` (used by the VSCode `LaTeX Workshop` extension):
 
     ```bash
@@ -92,7 +101,7 @@ By having a single repository for all configuration files, it is possible to:
 
     Then save the file with sudo permissions.
 
-10. While Apps are installing:
+11. While Apps are installing:
     - Check frequently for prompts in the terminal to enter the password for the user account if requested.
     - Setup the [desired file system directory structure](#file-system-structure) and copy the following folders from an SSD backup disk to the new machine:
         - `~/iCloud`
@@ -107,7 +116,7 @@ By having a single repository for all configuration files, it is possible to:
 Wait until the installation of all Apps is finished.
 Breathe 🧘‍♂️ Time for a cup of tea!
 
-11. Run `06_macos.zsh` to set MacOS System Preferences:
+12. Run `06_macos.zsh` to set MacOS System Preferences:
 
     ```bash
     cd ~/dotfiles/scripts
@@ -118,9 +127,9 @@ Breathe 🧘‍♂️ Time for a cup of tea!
     Then, restart the Mac.
     After rebooting, check that the custom MacOS System Preferences were set correctly.
 
-12. Install the remaining MacOS Apps that are not available via Homebrew. Lookup the list of missing Apps in Obsidian.
+13. Install the remaining MacOS Apps that are not available via Homebrew. Lookup the list of missing Apps in Obsidian.
 
-13. Restart the MacBook again and check that all steps were completed successfully.
+14. Restart the MacBook again and check that all steps were completed successfully.
 
 Done 🎉 Enjoy your new Mac!
 

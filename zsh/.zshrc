@@ -7,8 +7,8 @@
 export DOTFILES_DIRPATH="$HOME/dotfiles"
 export ZSHRC_DIRPATH="$DOTFILES_DIRPATH/zsh/zshrc"
 
-# Adds file system locations with highest priority to PATH
-source "$ZSHRC_DIRPATH/config.zsh"
+# Sets environment variables and modifies PATH, must be sourced first
+source "$ZSHRC_DIRPATH/env.zsh"
 
 # Must be sourced before plugins
 source "$ZSHRC_DIRPATH/ohmyzsh.zsh"
@@ -23,17 +23,17 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
     source "$ZSHRC_DIRPATH/powerlevel10k.zsh"
 fi
 
-source "$ZSHRC_DIRPATH/go.zsh"
-
-source "$ZSHRC_DIRPATH/bun.zsh"
-
-source "$ZSHRC_DIRPATH/perl.zsh"
-
-source "$ZSHRC_DIRPATH/pyenv.zsh"
-
 source "$ZSHRC_DIRPATH/ruff.zsh"
 
 source "$ZSHRC_DIRPATH/pipx.zsh"
+
+source "$ZSHRC_DIRPATH/pyenv.zsh"
+
+source "$ZSHRC_DIRPATH/bun.zsh"
+
+source "$ZSHRC_DIRPATH/go.zsh"
+
+source "$ZSHRC_DIRPATH/perl.zsh"
 
 source "$ZSHRC_DIRPATH/tex.zsh"
 
