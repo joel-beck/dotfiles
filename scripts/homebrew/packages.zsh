@@ -30,6 +30,9 @@ brew install cookiecutter
 # Debugger for the Go programming language
 brew install delve
 
+# Good-lookin' diffs with diff-highlight and more
+brew install diff-so-fancy
+
 # Pack, ship and run any application as a lightweight container
 brew install docker
 
@@ -37,6 +40,9 @@ brew install docker
 brew install docker-compose &&
     mkdir -p ~/.docker/cli-plugins &&                                                                # Create directory for docker plugins
     ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose # Symlink docker-compose to the plugins directory
+
+# Disk Usage/Free Utility - a better 'df' alternative
+brew install duf
 
 # More intuitive version of 'du' in rust
 brew install dust
@@ -55,6 +61,9 @@ brew install fd
 
 # Play, record, convert, and stream audio and video
 brew install ffmpeg
+
+# Banner-like program prints strings as ASCII art
+brew install figlet
 
 # Command-line fuzzy finder written in Go
 brew install fzf
@@ -88,8 +97,14 @@ brew install hunspell &&
     curl -o ~/Library/Spelling/de_DE.aff https://raw.githubusercontent.com/wooorm/dictionaries/main/dictionaries/de/index.aff &&
     curl -o ~/Library/Spelling/de_DE.dic https://raw.githubusercontent.com/wooorm/dictionaries/main/dictionaries/de/index.dic
 
+# Command-line benchmarking tool
+brew install hyperfine
+
 # Tools and libraries to manipulate images in many formats
 brew install imagemagick
+
+# Duplicate file finder and an enhanced fork of 'fdupes'
+brew install jdupes
 
 # Lightweight and flexible command-line JSON processor
 brew install jq
@@ -102,6 +117,9 @@ brew install kafka
 
 # Fly through your shell history
 brew install mcfly
+
+# Powerful paging program
+brew install most
 
 # Platform built on V8 to build network applications
 brew install node
@@ -130,6 +148,9 @@ brew install php
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew install prettier
 
+# Modern replacement for ps written by Rust
+brew install procs
+
 # Seamless operability between C++11 and Python
 brew install pybind11
 
@@ -144,6 +165,9 @@ brew install ripgrep
 
 # Powerful, clean, object-oriented scripting language
 brew install ruby
+
+# Intuitive find & replace CLI
+brew install sd
 
 # Static analysis and lint tool, for (ba)sh scripts
 brew install shellcheck
@@ -167,10 +191,14 @@ brew install terraform
 brew install terragrunt
 
 # Seamlessly correct mistyped console commands
-brew install thefuck
+brew install thefuck &&
+    eval $(thefuck --alias fuck)
 
 # Simplified and community-driven man pages
 brew install tldr
+
+# Program that allows you to count code, quickly
+brew install tokei
 
 # CLI tool that moves files or folder to the trash
 brew install trash
@@ -186,6 +214,9 @@ brew install unzip
 
 # Modern build tool for JavaScript and CSS
 brew install vite
+
+# Executes a program periodically, showing output fullscreen
+brew install watch
 
 # A youtube-dl fork with additional features and fixes
 brew install yt-dlp

@@ -1,46 +1,11 @@
 # SECTION: General Command Line Plugins
-# broot - Prettier Trees
-# TODO: Fix Path
-# source ~/Library/Application\ Support/org.dystroy.broot/launcher/bash/br
-
-# fzf - Fuzzy Finder
-# TODO: Fix Path
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# corrects typos
-eval $(thefuck --alias fuck)
-
 # auto-closing quotes and parentheses
 source /opt/homebrew/share/zsh-autopair/autopair.zsh
 autopair-init
 
-# export EXA_COLORS="\
-# da=38;5;245:\
-# di=38;5;14:\
-# sn=38;5;28:\
-# sb=38;5;28:\
-# uu=38;5;40:\
-# un=38;5;160:\
-# gu=38;5;40:\
-# gn=38:5:160:\
-# bl=38;5;220:\
-# ur=37:\
-# uw=37:\
-# ux=37:\
-# ue=37:\
-# gr=37:\
-# gw=37:\
-# gx=37:\
-# tr=37:\
-# tw=37:\
-# tx=37:\
-# su=37:\
-# sf=37:\
-# xa=37"
-
 # SECTION: Oh My Zsh Plugins
 plugins=(
-    fzf-zsh-plugin macos pdm thefuck z zsh-autosuggestions zsh-syntax-highlighting
+    macos pdm z zsh-autosuggestions zsh-syntax-highlighting
 )
 
 # NOTE for zsh-autosuggestions
