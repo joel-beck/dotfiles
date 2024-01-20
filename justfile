@@ -5,3 +5,6 @@ default:
 
 install:
   ./install
+
+brewfile:
+  brew bundle dump --file="homebrew/Brewfile" --force

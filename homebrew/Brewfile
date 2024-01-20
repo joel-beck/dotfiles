@@ -55,6 +55,7 @@ brew "jdupes"
 brew "jq"
 brew "just"
 brew "krb5"
+brew "mas"
 brew "mcfly"
 brew "most"
 brew "pandoc"
@@ -160,6 +161,37 @@ cask "pycharm"
 cask "r"
 cask "rstudio"
 cask "visual-studio-code"
+mas "1Password for Safari", id: 1569813296
+mas "Actions", id: 1586435171
+mas "AdBlock Pro", id: 1018301773
+mas "AdGuard for Safari", id: 1440147259
+mas "Aiko", id: 1672085276
+mas "Amphetamine", id: 937984704
+mas "Boop", id: 1518425043
+mas "ChronoSync Express", id: 904801687
+mas "Color Picker", id: 1545870783
+mas "Consent-O-Matic", id: 1606897889
+mas "Data Jar", id: 1453273600
+mas "Drafts", id: 1435957248
+mas "Fantastical", id: 975937182
+mas "Goodnotes", id: 1444383602
+mas "Grammarly for Safari", id: 1462114288
+mas "Hand Mirror", id: 1502839586
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Mactracker", id: 430255202
+mas "Microsoft Outlook", id: 985367838
+mas "Noir", id: 1592917505
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "PDFgear", id: 1615523079
+mas "Peek", id: 1554235898
+mas "Save to Raindrop.io", id: 1549370672
+mas "Save to Reader", id: 1640236961
+mas "Smart Converter", id: 447513724
+mas "TextSniper", id: 1528890965
+mas "Velja", id: 1607635845
+mas "Yoink", id: 457622435
 vscode "aaron-bond.better-comments"
 vscode "adpyke.codesnap"
 vscode "albymor.increment-selection"

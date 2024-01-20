@@ -15,28 +15,20 @@ set -euxo pipefail
 # - sort settings alphabetically by their key
 
 export DOTFILES_DIRPATH="$HOME/dotfiles"
-export MACOS_DIRPATH="$DOTFILES_DIRPATH/scripts/macos"
+export MACOS_DIRPATH="$DOTFILES_DIRPATH/macos"
 export DOMAINS_DIRPATH="$MACOS_DIRPATH/domains"
 
 # must come first
 source "$MACOS_DIRPATH/setup.zsh"
 
 source "$DOMAINS_DIRPATH/desktop.zsh"
-
 source "$DOMAINS_DIRPATH/disk-images.zsh"
-
 source "$DOMAINS_DIRPATH/dock.zsh"
-
 source "$DOMAINS_DIRPATH/finder.zsh"
-
 source "$DOMAINS_DIRPATH/global.zsh"
-
 source "$DOMAINS_DIRPATH/launch.zsh"
-
 source "$DOMAINS_DIRPATH/sound.zsh"
-
 source "$DOMAINS_DIRPATH/time-machine.zsh"
-
 source "$DOMAINS_DIRPATH/trackpad.zsh"
 
 # must come last

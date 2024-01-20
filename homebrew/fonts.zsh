@@ -1,4 +1,4 @@
-# Install Nerd Fonts with Homebrew, keep the list in alphabetical order
+# Install Fonts with Homebrew, keep the list in alphabetical order
 
 fonts_list=(
     font-3270-nerd-font
