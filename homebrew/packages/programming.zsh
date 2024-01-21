@@ -6,6 +6,9 @@ brew install act
 # Bourne-Again SHell, a UNIX command interpreter
 brew install bash
 
+# Bun
+curl -fsSL https://bun.sh/install | bash
+
 # Cross-platform make
 brew install cmake
 
@@ -94,6 +97,9 @@ brew install ruby
 
 # Static analysis and lint tool, for (ba)sh scripts
 brew install shellcheck
+
+# Autoformat shell script source code
+brew install shfmt
 
 # In-memory database that persists on disk
 brew install sqlite

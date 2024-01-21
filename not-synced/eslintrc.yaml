@@ -1,4 +1,4 @@
-# .eslint.yaml
+# .eslintrc.yaml
 
 extends:
   - eslint:recommended # Uses the recommended rules from @eslint-plugin-react

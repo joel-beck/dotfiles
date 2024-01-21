@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -euxo pipefail
+set -uxo pipefail
 
 # Install Oh My Zsh: https://ohmyz.sh/#install
 

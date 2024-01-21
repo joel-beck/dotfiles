@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -euxo pipefail
+set -uxo pipefail
 
 # Install Oh My Zsh Plugins - Plugins are listed in dotfiles/zsh/zshrc/plugins.zsh
 

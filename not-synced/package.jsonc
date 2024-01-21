@@ -7,7 +7,10 @@
     "lint": "eslint . --ext .ts,.tsx --fix",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,css,html,yml,yaml,json,md}'",
     "css": "bun tailwindcss -i ./web/src/styles.css -o ./web/dist/styles.css --watch",
-    "ts": "bun build web/src/main.ts --outdir web/dist --watch"
+    "ts": "bun build web/src/main.ts --outdir web/dist --watch",
+    "dev": "bunx --bun vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -22,6 +25,7 @@
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
   }
 }

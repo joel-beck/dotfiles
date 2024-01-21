@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -euxo pipefail
+set -uxo pipefail
 
 # - inspired by https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 # - a selected list of common (but often outdated) settings with explanations is

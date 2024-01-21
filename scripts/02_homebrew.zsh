@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -euxo pipefail
+set -uxo pipefail
 
 export DOTFILES_DIRPATH="$HOME/dotfiles"
 export HOMEBREW_DIRPATH="$DOTFILES_DIRPATH/homebrew"

@@ -116,20 +116,27 @@ By having a single repository for all configuration files, it is possible to:
 Wait until the installation of all Apps is finished.
 Breathe 🧘‍♂️ Time for a cup of tea!
 
-12. Run `06_macos.zsh` to set MacOS System Preferences:
+12. Run `06_vscode-extensions.zsh` to install VSCode extensions:
 
     ```bash
     cd ~/dotfiles/scripts
-    zsh 06_macos.zsh
+    zsh 06_vscode-extensions.zsh
+    ```
+
+13. Run `07_macos.zsh` to set MacOS System Preferences:
+
+    ```bash
+    cd ~/dotfiles/scripts
+    zsh 07_macos.zsh
     ```
 
     When requested, enter the password for the user account.
     Then, restart the Mac.
     After rebooting, check that the custom MacOS System Preferences were set correctly.
 
-13. Install the remaining MacOS Apps that are not available via Homebrew. Lookup the list of missing Apps in Obsidian.
+14. Install the remaining MacOS Apps that are not available via Homebrew. Lookup the list of missing Apps in Obsidian.
 
-14. Restart the MacBook again and check that all steps were completed successfully.
+15. Restart the MacBook again and check that all steps were completed successfully.
 
 Done 🎉 Enjoy your new Mac!
 
