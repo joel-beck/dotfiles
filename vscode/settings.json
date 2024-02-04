@@ -257,14 +257,6 @@
     {
       "alignment": "left",
       "color": "#dddcd7ce",
-      "command": "editor.action.insertSnippet",
-      "priority": 2,
-      "text": "Snippets",
-      "tooltip": "Insert Snippet from Command Palette"
-    },
-    {
-      "alignment": "left",
-      "color": "#dddcd7ce",
       "command": "editor.action.inspectTMScopes",
       "priority": 2,
       "text": "Dev Mode",
@@ -278,14 +270,14 @@
       "text": "Startup",
       "tooltip": "Show Startup Time of Enabled Extensions"
     },
-    // {
-    //   "alignment": "left",
-    //   "color": "#dddcd7ce",
-    //   "command": "deleteFile",
-    //   "priority": 2,
-    //   "text": "Delete",
-    //   "tooltip": "Delete File"
-    // },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "editor.action.insertSnippet",
+      "priority": 2,
+      "text": "Snippets",
+      "tooltip": "Insert Snippet from Command Palette"
+    },
     {
       "alignment": "left",
       "color": "#dddcd7ce",
@@ -294,14 +286,21 @@
       "text": "Finder",
       "tooltip": "Open Current File in Finder"
     },
-    // Keep Toggle Settings on the right side, i.e. as last item -> set priority low
     {
       "alignment": "left",
       "color": "#dddcd7ce",
-      "command": "settingsOnFire.toggleSettings",
-      "priority": 0,
-      "text": "Toggle Settings",
-      "tooltip": "Toggle Settings with 'Settings on Fire' Extension"
+      "command": "git.merge",
+      "priority": 2,
+      "text": "Merge Branch",
+      "tooltip": "Merge Git Branch into Current Branch"
+    },
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "git.deleteBranch",
+      "priority": 2,
+      "text": "Delete Branch",
+      "tooltip": "Delete Local Git Branch"
     },
     {
       "alignment": "left",
@@ -314,26 +313,19 @@
     {
       "alignment": "left",
       "color": "#dddcd7ce",
-      "command": "cSpell.toggleEnableSpellChecker",
-      "priority": 2,
-      "text": "Spell Checker",
-      "tooltip": "Toggle Spell Checker"
-    },
-    {
-      "alignment": "left",
-      "color": "#dddcd7ce",
-      "command": "warmUp.start",
-      "priority": 2,
-      "text": "Typing Practice",
-      "tooltip": "Typing Practice"
-    },
-    {
-      "alignment": "left",
-      "color": "#dddcd7ce",
       "command": "editor.action.revealDefinitionAside",
       "priority": 2,
       "text": "Definition ->",
       "tooltip": "Open Definition to the Side"
+    },
+    // Keep Toggle Settings on the right side, i.e. as last item -> set priority low
+    {
+      "alignment": "left",
+      "color": "#dddcd7ce",
+      "command": "settingsOnFire.toggleSettings",
+      "priority": 0,
+      "text": "Toggle Settings",
+      "tooltip": "Toggle Settings with 'Settings on Fire' Extension"
     },
     // SUBSECTION: File Specific Status Bar Items
     {

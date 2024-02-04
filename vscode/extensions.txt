@@ -5,6 +5,7 @@ alefragnani.project-manager
 alexcvzz.vscode-sqlite
 antfu.vite
 artydeveloperduck.save-as-snippet
+astro-build.astro-vscode
 betafcc.ts-reveal-types
 bierner.color-info
 bierner.github-markdown-preview
@@ -40,6 +41,7 @@ DotJoshJohnson.xml
 ecmel.vscode-html-css
 edb.settings-on-fire
 EditorConfig.EditorConfig
+eliostruyf.vscode-front-matter
 emeraldwalk.RunOnSave
 emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
