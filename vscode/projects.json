@@ -98,10 +98,24 @@
     "enabled": true
   },
   {
+    "name": "astro-htmx",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/WebProjects/astro-htmx",
+    "paths": [],
+    "tags": ["projects-private", "web"],
+    "enabled": true
+  },
+  {
     "name": "config-comparison",
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/config-comparison",
     "paths": [],
     "tags": ["python", "projects-private"],
+    "enabled": true
+  },
+  {
+    "name": "gh-backup",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/gh-backup",
+    "paths": [],
+    "tags": ["projects-private", "python"],
     "enabled": true
   },
   {
@@ -137,13 +151,6 @@
     "rootPath": "/Users/joel/Documents/ProjectsPublic/eval-sklearn",
     "paths": [],
     "tags": ["python", "projects-public"],
-    "enabled": true
-  },
-  {
-    "name": "gh-backup",
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/gh-backup",
-    "paths": [],
-    "tags": ["projects-private", "python"],
     "enabled": true
   },
   {

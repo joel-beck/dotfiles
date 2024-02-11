@@ -14,31 +14,25 @@
   "ShortcutMenuBar.toggleTerminal": false,
   "VSCodeCounter.languages": {},
   // SECTION: Language Specific Settings
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
   "[css]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
   "[dockerfile]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "ms-azuretools.vscode-docker",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
   "[html]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -46,10 +40,10 @@
   },
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
@@ -67,10 +61,6 @@
     "editor.formatOnType": true
   },
   "[latex]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "James-Yu.latex-workshop",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -79,17 +69,10 @@
       "comments": true,
       "other": true,
       "strings": true
-      // "comments": false,
-      // "other": false,
-      // "strings": false
     },
     "editor.quickSuggestionsDelay": 1000
   },
   "[markdown]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -98,9 +81,6 @@
       "comments": true,
       "other": true,
       "strings": true
-      // "comments": false,
-      // "other": false,
-      // "strings": false
     },
     "editor.quickSuggestionsDelay": 1000
   },
@@ -120,10 +100,6 @@
     }
   },
   "[r]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "REditorSupport.r",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -131,38 +107,24 @@
     "editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
   },
   "[rmd]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "REditorSupport.r",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
   "[shellscript]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    },
     "editor.defaultFormatter": "mkhl.shfmt",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
   "[sql]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always"
-    },
     "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
   "[toml]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always"
-    },
     "editor.defaultFormatter": "bodil.prettier-toml",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -170,11 +132,10 @@
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "never",
-      "source.sortImports": "always"
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -185,9 +146,6 @@
     }
   },
   "[yaml]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always"
-    },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -509,6 +467,7 @@
       "tooltip": "Start Quokka.js on File"
     }
   ],
+  "console-ninja.featureSet": "Community",
   // SUBSECTION: Debugging
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.acceptSuggestionOnEnter": "on",
@@ -915,6 +874,7 @@
   "interactiveWindow.alwaysScrollOnNewCell": true,
   // SUBSECTION: JavaScript
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.preferGoToSourceDefinition": true,
   "javascript.suggest.completeFunctionCalls": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.maxItemsComputed": 20000,
@@ -1367,6 +1327,7 @@
   "postcssSorting.config": {
     "properties-order": "alphabetical"
   },
+  "prettier.documentSelectors": ["**/*.astro"],
   "prettier.trailingComma": "all",
   "projectManager.sortList": "Name",
   // SUBSECTION: Python
@@ -1564,6 +1525,7 @@
   "typeChallenges.workspaceFolder": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-challenges",
   // SUBSECTION: TypeScript
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.preferGoToSourceDefinition": true,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
@@ -1632,6 +1594,5 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always",
-  "console-ninja.featureSet": "Community"
+  "workbench.tree.renderIndentGuides": "always"
 }

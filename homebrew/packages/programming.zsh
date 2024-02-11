@@ -6,6 +6,9 @@ brew install act
 # Bourne-Again SHell, a UNIX command interpreter
 brew install bash
 
+# Toolchain of the web
+brew install biome
+
 # Bun
 curl -fsSL https://bun.sh/install | bash
 
@@ -79,6 +82,9 @@ brew install pipx &&
 
 # General-purpose scripting language
 brew install php
+
+# Theme for zsh
+brew install powerlevel10k
 
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew install prettier
