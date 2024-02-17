@@ -126,5 +126,8 @@ brew install typescript
 # Modern build tool for JavaScript and CSS
 brew install vite
 
+# Shell extension to navigate your filesystem faster
+brew install zoxide
+
 # Command language interpreter
 brew install zsh

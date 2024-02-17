@@ -3,9 +3,12 @@
 source /opt/homebrew/share/zsh-autopair/autopair.zsh
 autopair-init
 
+# NOTE: Must be called after `compinit` for completions to work
+eval "$(zoxide init zsh)"
+
 # SECTION: Oh My Zsh Plugins
 plugins=(
-    macos pdm z zsh-autosuggestions zsh-syntax-highlighting
+    pdm zsh-autosuggestions zsh-syntax-highlighting
 )
 
 # NOTE for zsh-autosuggestions
