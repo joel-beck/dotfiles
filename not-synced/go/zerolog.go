@@ -6,13 +6,14 @@ import (
 	"os"
 
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )
 
 func SetupLogger(level zerolog.Level) {
 	log.Logger = log.Output(zerolog.ConsoleWriter{
-		Out:        os.Stderr,
+		Out:        os.Stdout,
 		TimeFormat: "15:04:05",
 		NoColor:    false,
 		FormatFieldName: func(i interface{}) string {
@@ -35,14 +36,29 @@ func SetupLogger(level zerolog.Level) {
 func LogParsedTemplates(parsedTemplates *template.Template) {
 	// log the parsed template file names
 	for _, t := range parsedTemplates.Templates() {
-		log.Debug().Str("template", t.Name()).Msg("Parsed template")
+		log.Info().Str("template", t.Name()).Msg("Parsed template")
 	}
 }
 
 func LogUserInputs(c echo.Context, inputs UserInputs) {
-	log.Debug().Interface("inputs", inputs).Msg("User Inputs")
+	log.Info().Interface("inputs", inputs).Msg("User Inputs")
 }
 
 func LogResponseData(c echo.Context, responseData ResponseData) {
-	log.Debug().Interface("response", responseData).Msg("Response Data")
+	log.Info().Interface("response", responseData).Msg("Response Data")
+}
+
+func MiddlewareRequestLogger() echo.MiddlewareFunc {
+	return middleware.RequestLoggerWithConfig(middleware.RequestLoggerConfig{
+		LogURI:    true,
+		LogStatus: true,
+		LogValuesFunc: func(c echo.Context, v middleware.RequestLoggerValues) error {
+			log.Info().
+				Str("URI", v.URI).
+				Int("Status", v.Status).
+				Msg("Request")
+
+			return nil
+		},
+	})
 }

@@ -105,6 +105,13 @@
     "enabled": true
   },
   {
+    "name": "htmx-alpine-practice",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/WebProjects/htmx-practice",
+    "paths": [],
+    "tags": [],
+    "enabled": true
+  },
+  {
     "name": "config-comparison",
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/config-comparison",
     "paths": [],
