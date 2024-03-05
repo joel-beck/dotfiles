@@ -1,5 +1,7 @@
+a-h.templ
 aaron-bond.better-comments
 adpyke.codesnap
+adrianwilczynski.alpine-js-intellisense
 albymor.increment-selection
 alefragnani.project-manager
 alexcvzz.vscode-sqlite
@@ -152,6 +154,7 @@ sidthesloth.html5-boilerplate
 sleistner.vscode-fileutils
 sourcegraph.cody-ai
 sourcery.sourcery
+sperovita.alpinejs-syntax-highlight
 stackbreak.comment-divider
 stkb.rewrap
 streetsidesoftware.code-spell-checker

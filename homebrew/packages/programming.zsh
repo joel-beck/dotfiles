@@ -53,6 +53,9 @@ brew install gh &&
 # Distributed revision control system
 brew install git
 
+# Command-line tools for fly.io services
+brew install flyctl
+
 # Handy way to save and run project-specific commands
 brew install just
 

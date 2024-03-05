@@ -124,6 +124,12 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
+  "[templ]": {
+    "editor.defaultFormatter": "a-h.templ",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
   "[toml]": {
     "editor.defaultFormatter": "bodil.prettier-toml",
     "editor.formatOnPaste": true,
@@ -792,6 +798,9 @@
   "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 88,
+  "emmet.includeLanguages": {
+    "templ": "html"
+  },
   "errorLens.excludeBySource": ["sourcery(refactoring:for-append-to-extend)"],
   // makes code folding for notebook cells in python files possible
   // found in github comment: https://github.com/microsoft/vscode-jupyter/issues/1527#issuecomment-1016056069
@@ -1397,13 +1406,15 @@
   },
   "sortLines.sortEntireFile": true,
   "subtleBrackets.disableNative": false,
+  "tailwindCSS.includeLanguages": {
+    "templ": "html"
+  },
   // SUBSECTION: Terminal
   "terminal.explorerKind": "integrated",
   "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },

@@ -106,9 +106,9 @@
   },
   {
     "name": "htmx-alpine-practice",
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/WebProjects/htmx-practice",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/WebProjects/htmx-alpine-practice",
     "paths": [],
-    "tags": [],
+    "tags": ["htmx", "alpine", "projects-private"],
     "enabled": true
   },
   {
@@ -158,6 +158,13 @@
     "rootPath": "/Users/joel/Documents/ProjectsPublic/eval-sklearn",
     "paths": [],
     "tags": ["python", "projects-public"],
+    "enabled": true
+  },
+  {
+    "name": "github-profile",
+    "rootPath": "/Users/joel/Documents/ProjectsPublic/github-profile",
+    "paths": [],
+    "tags": ["projects-private", "github"],
     "enabled": true
   },
   {
