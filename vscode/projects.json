@@ -49,6 +49,19 @@
     "enabled": true
   },
   {
+    "name": "leetcode",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/Leetcode",
+    "paths": [],
+    "tags": [
+      "coding-challenges",
+      "projects-private",
+      "python",
+      "typescript",
+      "go"
+    ],
+    "enabled": true
+  },
+  {
     "name": "mails",
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/Mails",
     "paths": [],

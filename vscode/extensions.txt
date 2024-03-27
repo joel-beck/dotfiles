@@ -73,6 +73,7 @@ james-yu.latex-workshop
 jannisx11.batch-rename-extension
 jeff-hykin.polacode-2019
 jerrygoyal.shortcut-menu-bar
+jetmartin.bats
 jeusto.warm-up-typing-test
 jmviz.quote-list
 kevinkyang.auto-comment-blocks
@@ -133,6 +134,7 @@ oven.bun-vscode
 patbenatar.advanced-new-file
 pflannery.vscode-versionlens
 phplasma.csv-to-table
+pkief.material-icon-theme
 pmneo.tsimporter
 quarto.quarto
 qufiwefefwoyn.inline-sql-syntax

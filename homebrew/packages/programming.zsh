@@ -6,6 +6,9 @@ brew install act
 # Bourne-Again SHell, a UNIX command interpreter
 brew install bash
 
+# Bash Automated Testing System
+brew install bats-core
+
 # Toolchain of the web
 brew install biome
 
@@ -14,6 +17,9 @@ curl -fsSL https://bun.sh/install | bash
 
 # Cross-platform make
 brew install cmake
+
+# Diff your Docker containers
+brew install container-diff
 
 # Transfer data with URL syntax support via command line
 brew install curl
@@ -62,6 +68,12 @@ brew install just
 # Open-source distributed event streaming platform
 brew install kafka
 
+# Kubernetes command-line interface
+brew install kubernetes-cli
+
+# Run a Kubernetes cluster locally
+brew install minikube
+
 # Platform built on V8 to build network applications
 brew install node
 
@@ -76,12 +88,11 @@ brew install perl
 
 # Execute binaries from Python packages in isolated environments
 brew install pipx &&
-    pipx install hatch &&
+    pipx install ruff &&
     pipx install mypy &&
-    pipx install pdm &&
-    pipx install poetry &&
     pipx install pre-commit &&
-    pipx install ruff
+    pipx install uv &&
+    pipx install pdm
 
 # General-purpose scripting language
 brew install php

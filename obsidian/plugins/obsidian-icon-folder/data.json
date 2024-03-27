@@ -17,7 +17,7 @@
     "iconColor": null,
     "iconInTabsEnabled": true,
     "iconPacksPath": ".obsidian/icons",
-    "migrated": 3,
+    "migrated": 4,
     "recentlyUsedIcons": [
       "FasPizzaSlice",
       "FasHouseChimney",
@@ -30,13 +30,15 @@
     "iconInTitleEnabled": false,
     "iconInFrontmatterEnabled": false,
     "iconsBackgroundCheckEnabled": true,
-    "iconsInNotesEnabled": true
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":"
   },
   "00 Templates": "FasGears",
   "01 Dataview": "FasDatabase",
   "02 Periodic Notes": "FasCloudSun",
   "03 People": "FasPerson",
   "05 Zotero": "FasBook",
+  "06 Reader": "FasRss",
   "07 Docs": "IbDocumentCode",
   "08 Playlists": "SiYoutubemusic",
   "09 Videos": "FasVideo",
@@ -58,6 +60,7 @@
   "25 Shopping": "RiShoppingCart2Fill",
   "26 TV Series": "FasTv",
   "27 Movies": "FasTv",
+  "28 ETFs": "FasMoneyBill1",
   "30 Prompts": "TiPrompt",
   "35 Travel": "FasRoad",
   "40 File Templates": "FasFileMedical",
@@ -67,6 +70,5 @@
   "75 Zotero Images": "FasImage",
   "80 Scripts": "FasCode",
   "90 Logs": "FasFileLines",
-  "99 Inbox": "FasInbox",
-  "06 Reader": "FasRss"
+  "99 Inbox": "FasInbox"
 }

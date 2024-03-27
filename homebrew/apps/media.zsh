@@ -3,9 +3,6 @@
 # AirBuddy
 brew install --cask airbuddy
 
-# IINA
-brew install --cask iina
-
 # ImageOptim
 brew install --cask imageoptim
 

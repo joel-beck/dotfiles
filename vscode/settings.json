@@ -493,6 +493,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.guides.bracketPairs": true,
+  "editor.indentSize": "tabSize",
   "editor.inlineSuggest.enabled": true,
   "editor.inlineSuggest.suppressSuggestions": true,
   "editor.matchBrackets": "always",
