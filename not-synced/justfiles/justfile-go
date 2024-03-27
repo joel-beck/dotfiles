@@ -1,0 +1,25 @@
+set dotenv-load
+
+default:
+  just --list
+
+templ:
+	templ generate --watch
+
+start:
+    wgo run cmd/main.go
+
+format:
+	gofmt -w -l .
+
+lint:
+	golangci-lint run
+
+pre:
+	pre-commit run --all-files
+
+test:
+	gotestsum --format testname
+
+build:
+	go build -o $BINARY_PATH ./cmd && chmod +x $BINARY_PATH

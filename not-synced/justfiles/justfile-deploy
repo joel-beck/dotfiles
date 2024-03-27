@@ -1,0 +1,16 @@
+set dotenv-load
+
+default:
+  just --list
+
+docker-build:
+	docker-compose build
+
+docker-run:
+	docker-compose up
+
+docker-push:
+	docker-compose push
+
+deploy:
+	flyctl deploy

@@ -1,0 +1,19 @@
+set dotenv-load
+
+default:
+  just --list
+
+css:
+	bun tailwindcss -i ./web/src/style.css -o ./web/dist/style.css --watch
+
+ts:
+	bun build web/src/main.ts --outdir web/dist --watch
+
+format:
+	prettier --write '**/*.{js,jsx,ts,tsx,css,html,yml,yaml,json,md}'
+
+lint:
+	eslint . --ext .ts,.tsx --fix
+
+pre:
+	pre-commit run --all-files
