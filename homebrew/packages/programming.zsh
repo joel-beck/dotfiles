@@ -125,6 +125,9 @@ brew install shfmt
 # In-memory database that persists on disk
 brew install sqlite
 
+# CLI utility for manipulating SQLite databases
+brew install sqlite-utils
+
 # Cross-shell prompt for astronauts
 brew install starship
 

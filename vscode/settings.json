@@ -474,6 +474,7 @@
     }
   ],
   "console-ninja.featureSet": "Community",
+  "database-client.capitalizeKeywordsWhenFormatting": true,
   // SUBSECTION: Debugging
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.acceptSuggestionOnEnter": "on",
@@ -876,6 +877,7 @@
   "go.lintTool": "golangci-lint",
   "go.toolsManagement.autoUpdate": true,
   "gopls": {
+    "ui.navigation.symbolScope": "workspace",
     "ui.semanticTokens": true
   },
   "hediet.vscode-drawio.resizeImages": null,

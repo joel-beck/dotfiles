@@ -42,6 +42,20 @@
     "enabled": true
   },
   {
+    "name": "http-practice",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/GoProjects/http-practice",
+    "paths": [],
+    "tags": ["go", "projects-private"],
+    "enabled": true
+  },
+  {
+    "name": "sqlx-practice",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/GoProjects/sqlx-practice",
+    "paths": [],
+    "tags": ["go", "projects-private"],
+    "enabled": true
+  },
+  {
     "name": "keyboard-maestro-scripts",
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/KeyboardMaestroScripts",
     "paths": [],

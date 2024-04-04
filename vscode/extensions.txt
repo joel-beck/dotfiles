@@ -44,7 +44,6 @@ dotjoshjohnson.xml
 ecmel.vscode-html-css
 edb.settings-on-fire
 editorconfig.editorconfig
-eliostruyf.vscode-front-matter
 emeraldwalk.runonsave
 emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
@@ -131,6 +130,7 @@ notzaki.pandocciter
 orta.vscode-twoslash-queries
 otovo-oss.htmx-tags
 oven.bun-vscode
+passioinc.go-inline-pgformatter
 patbenatar.advanced-new-file
 pflannery.vscode-versionlens
 phplasma.csv-to-table
@@ -183,7 +183,6 @@ visualstudioexptteam.vscodeintellicode-insiders
 vscode-icons-team.vscode-icons
 vulkd.inline-sql-formatter
 w0o0o.bun-scripts
-wallabyjs.console-ninja
 wallabyjs.quokka-vscode
 wallabyjs.wallaby-vscode
 wesbos.theme-cobalt2
