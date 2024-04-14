@@ -43,7 +43,7 @@
       "quickfix.biome": "explicit",
       "source.organizeImports.biome": "explicit"
     },
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true
@@ -141,7 +141,7 @@
       "quickfix.biome": "explicit",
       "source.organizeImports.biome": "explicit"
     },
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -870,6 +870,7 @@
   "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
   "githubPullRequests.pushBranch": "always",
   "go.formatTool": "gofmt",
+  "go.goroot": "/opt/homebrew/Cellar/go/1.22.2/libexec", // Necessary such that the Go executable is found by the Go extension
   // SUBSECTION: Go
   "go.inlayHints.compositeLiteralFields": true,
   "go.inlayHints.parameterNames": true,
@@ -1326,7 +1327,6 @@
     "jupyter-notebook": "left"
   },
   "notebook.consolidatedRunButton": true,
-  "notebook.editorOptionsCustomizations": null,
   "notebook.outline.showCodeCells": false,
   "notebook.output.textLineLimit": 1000,
   "notebook.showFoldingControls": "always",
@@ -1543,7 +1543,6 @@
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
-  "vsintellicode.features.python.deepLearning": "enabled",
   // SUBSECTION: Speed Typing
   "warmUp.changeCount": "30",
   "warmUp.changeTypingMode": "words (fixed amount)",

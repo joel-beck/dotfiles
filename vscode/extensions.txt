@@ -33,6 +33,8 @@ cmoog.sqlnotebook
 codeque.codeque
 codezombiech.gitignore
 codium.codium
+cweijan.dbclient-jdbc
+cweijan.vscode-database-client2
 darkriszty.markdown-table-prettify
 dbaeumer.vscode-eslint
 deerawan.vscode-dash
@@ -138,7 +140,6 @@ pkief.material-icon-theme
 pmneo.tsimporter
 quarto.quarto
 qufiwefefwoyn.inline-sql-syntax
-qwtel.sqlite-viewer
 rafamel.subtle-brackets
 rangav.vscode-thunder-client
 rdebugger.r-debugger
