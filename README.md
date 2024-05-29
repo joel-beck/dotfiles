@@ -157,10 +157,9 @@ Done 🎉 Enjoy your new Mac!
     │   └── ProjectsPublic
     │
     ├── iCloud
-    │   ├── Bachelorstudium
-    │   ├── Masterstudium
-    │   ├── Sonstiges
-    │   └── KeyboardMaestro (containing the sync file)
+    │   ├── Personal
+    │   ├── KeyboardMaestro (containing the sync file)
+    │   └── Default iCloud folders (generated automatically by applications)
     │
     ├── iCloudBackup
     ├── GoogleDriveBackup
