@@ -48,6 +48,12 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
+  "[jinja-sql]": {
+    "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
@@ -475,6 +481,7 @@
   ],
   "console-ninja.featureSet": "Community",
   "database-client.capitalizeKeywordsWhenFormatting": true,
+  "dbt.sqlFmtPath": "/opt/homebrew/bin/sqlfmt",
   // SUBSECTION: Debugging
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.acceptSuggestionOnEnter": "on",
@@ -827,7 +834,10 @@
     "*.draftsTheme": "jsonc",
     "*.qmd": "quarto",
     "*.rmd": "rmd",
+    // for working with dbt
+    "*.sql": "jinja-sql",
     "*.txt": "plaintext",
+    "*.yml": "jinja-yaml",
     ".coveragerc": "ini",
     ".env_template": "dotenv"
   },
@@ -1407,7 +1417,17 @@
       }
     }
   },
+  "shfmt.executablePath": "/opt/homebrew/bin/shfmt",
   "sortLines.sortEntireFile": true,
+  // SUBSECTION: SQLFluff
+  "sqlfluff.dialect": "duckdb",
+  "sqlfluff.env.useDotEnvFile": true,
+  "sqlfluff.format.arguments": ["--FIX-EVEN-UNPARSABLE"],
+  "sqlfluff.format.enabled": true,
+  "sqlfluff.ignoreLocalConfig": false,
+  "sqlfluff.ignoreParsing": true,
+  "sqlfluff.linter.run": "off",
+  "sqlfluff.workingDirectory": "",
   "subtleBrackets.disableNative": false,
   "tailwindCSS.includeLanguages": {
     "templ": "html"
@@ -1607,5 +1627,6 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "sqlfluff.suppressNotifications": true
 }

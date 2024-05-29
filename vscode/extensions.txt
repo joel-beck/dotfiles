@@ -24,6 +24,7 @@ bmalehorn.shell-syntax
 bmuskalla.vscode-tldr
 bodil.prettier-toml
 bradlc.vscode-tailwindcss
+bruno-api-client.bruno
 cardinal90.multi-cursor-case-preserve
 charliermarsh.ruff
 chrischinchilla.vscode-pandoc
@@ -34,7 +35,9 @@ codeque.codeque
 codezombiech.gitignore
 codium.codium
 cweijan.dbclient-jdbc
+cweijan.duckdb-packs
 cweijan.vscode-database-client2
+cweijan.vscode-mysql-client2
 darkriszty.markdown-table-prettify
 dbaeumer.vscode-eslint
 deerawan.vscode-dash
@@ -46,6 +49,7 @@ dotjoshjohnson.xml
 ecmel.vscode-html-css
 edb.settings-on-fire
 editorconfig.editorconfig
+eliostruyf.vscode-front-matter
 emeraldwalk.runonsave
 emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
@@ -65,6 +69,7 @@ goessner.mdmath
 golang.go
 gregorbiswanger.json2ts
 gruntfuggly.todo-tree
+hashicorp.terraform
 hediet.vscode-drawio
 hoovercj.vscode-settings-cycler
 ibm.output-colorizer
@@ -125,6 +130,7 @@ ms-vscode.test-adapter-converter
 ms-vscode.vscode-github-issue-notebooks
 ms-vscode.vscode-typescript-next
 ms-vscode.wordcount
+mtxr.sqltools
 nicoespeon.slides
 njpwerner.autodocstring
 njqdev.vscode-python-typehint
@@ -140,7 +146,9 @@ pkief.material-icon-theme
 pmneo.tsimporter
 quarto.quarto
 qufiwefefwoyn.inline-sql-syntax
+qwtel.sqlite-viewer
 rafamel.subtle-brackets
+randomfractalsinc.duckdb-sql-tools
 rangav.vscode-thunder-client
 rdebugger.r-debugger
 rebornix.toggle
@@ -184,6 +192,7 @@ visualstudioexptteam.vscodeintellicode-insiders
 vscode-icons-team.vscode-icons
 vulkd.inline-sql-formatter
 w0o0o.bun-scripts
+wallabyjs.console-ninja
 wallabyjs.quokka-vscode
 wallabyjs.wallaby-vscode
 wesbos.theme-cobalt2

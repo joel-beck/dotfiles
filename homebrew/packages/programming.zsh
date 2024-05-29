@@ -38,6 +38,9 @@ brew install docker-compose &&
     mkdir -p ~/.docker/cli-plugins &&                                                                # Create directory for docker plugins
     ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose # Symlink docker-compose to the plugins directory
 
+# Embeddable SQL OLAP Database Management System
+brew install duckdb
+
 # AST-based pattern checker for JavaScript
 brew install eslint
 
@@ -58,6 +61,9 @@ brew install gh &&
 
 # Distributed revision control system
 brew install git
+
+# Gorgeous metric visualizations and dashboards for timeseries databases
+brew install grafana
 
 # Command-line tools for fly.io services
 brew install flyctl
@@ -91,8 +97,7 @@ brew install pipx &&
     pipx install ruff &&
     pipx install mypy &&
     pipx install pre-commit &&
-    pipx install uv &&
-    pipx install pdm
+    pipx install uv
 
 # General-purpose scripting language
 brew install php
@@ -102,6 +107,9 @@ brew install powerlevel10k
 
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew install prettier
+
+# Service monitoring system and time series database
+brew install prometheus
 
 # Seamless operability between C++11 and Python
 brew install pybind11
@@ -121,6 +129,12 @@ brew install shellcheck
 
 # Autoformat shell script source code
 brew install shfmt
+
+# SQL linter and auto-formatter for Humans
+brew install sqlfluff
+
+# SQL formatter with width-aware output
+brew install sqlfmt
 
 # In-memory database that persists on disk
 brew install sqlite
