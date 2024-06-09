@@ -3,13 +3,6 @@
 # Boop
 brew install --cask boop
 
-# Bruno (API Client)
-brew install --cask bruno
-
-# ChatGPT
-brew tap lencx/chatgpt https://github.com/lencx/ChatGPT.git
-brew install --cask chatgpt --no-quarantine
-
 # Dash
 brew install --cask dash
 

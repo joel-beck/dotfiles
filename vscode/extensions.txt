@@ -45,6 +45,7 @@ diogonolasco.pyinit
 dnicolson.binary-plist
 donjayamanne.githistory
 donjayamanne.vscode-jupytext
+dorzey.vscode-sqlfluff
 dotjoshjohnson.xml
 ecmel.vscode-html-css
 edb.settings-on-fire
@@ -74,6 +75,7 @@ hediet.vscode-drawio
 hoovercj.vscode-settings-cycler
 ibm.output-colorizer
 idleberg.applescript
+innoverio.vscode-dbt-power-user
 jakearl.search-editor-apply-changes
 james-yu.latex-workshop
 jannisx11.batch-rename-extension
@@ -161,6 +163,7 @@ ritwickdey.liveserver
 rogalmic.bash-debug
 ryu1kn.edit-with-shell
 ryuta46.multi-command
+samuelcolvin.jinjahtml
 sidthesloth.html5-boilerplate
 sleistner.vscode-fileutils
 sourcegraph.cody-ai

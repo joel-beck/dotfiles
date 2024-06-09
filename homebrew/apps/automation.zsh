@@ -11,6 +11,3 @@ brew install --cask karabiner-elements
 
 # Keyboard Maestro
 brew install --cask keyboard-maestro
-
-# Shortcat
-brew install --cask shortcat

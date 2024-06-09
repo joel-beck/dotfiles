@@ -1,8 +1,5 @@
 # Homebrew Productivity Apps, keep the list in alphabetical order
 
-# Bartender
-brew install --cask bartender
-
 # Cardhop
 brew install --cask cardhop
 

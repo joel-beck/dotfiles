@@ -85,6 +85,116 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "Left Option -> Forward Delete Word",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "left_option"
+                },
+                "to": [
+                  {
+                    "key_code": "left_option"
+                  }
+                ],
+                "to_if_alone": [
+                  {
+                    "key_code": "delete_forward",
+                    "modifiers": ["left_option"]
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "delete_forward",
+                    "modifiers": ["left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Left Command -> Forward Delete Line",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "left_command"
+                },
+                "to": [
+                  {
+                    "key_code": "left_command"
+                  }
+                ],
+                "to_if_alone": [
+                  {
+                    "key_code": "k",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Left Shift + Right Command -> Surround Selection with Parentheses (Triggers Keyboard Maestro)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "right_command",
+                  "modifiers": {
+                    "mandatory": ["left_shift"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"E7218E4D-3E9C-487B-8369-78A59F219217\"'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Left Shift + Right Option -> Surround Selection with Square Brackets (Triggers Keyboard Maestro)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "right_option",
+                  "modifiers": {
+                    "mandatory": ["left_shift"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"6AF872F4-D527-428E-ADA8-D94E213CDF03\"'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Left Shift + Right Shift -> Surround Selection with Curly Braces (Triggers Keyboard Maestro)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "mandatory": ["left_shift"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"E6523580-936A-4E4A-88B6-4D360664769A\"'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },

@@ -9,5 +9,5 @@ brew install --cask 1password-cli
 # KeyboardCleanTool
 brew install --cask keyboardcleantool
 
-# Latest
+# Latest (Update app store apps)
 brew install --cask latest

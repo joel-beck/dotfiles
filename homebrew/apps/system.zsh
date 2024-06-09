@@ -12,8 +12,8 @@ brew install --cask breitbandmessung
 # DaisyDisk
 brew install --cask daisydisk
 
-# Deeper
-brew install --cask deeper
+# Ice (Hide Menubar Icons)
+brew install jordanbaird-ice
 
 # Keycastr
 brew install --cask keycastr
