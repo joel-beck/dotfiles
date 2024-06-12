@@ -6,6 +6,9 @@ brew install --cask boop
 # Dash
 brew install --cask dash
 
+# DevToys
+brew install --cask devtoys
+
 # Docker Desktop
 brew install --cask docker
 

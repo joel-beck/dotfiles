@@ -17,7 +17,7 @@
     "iconColor": null,
     "iconInTabsEnabled": true,
     "iconPacksPath": ".obsidian/icons",
-    "migrated": 4,
+    "migrated": 5,
     "recentlyUsedIcons": [
       "FiTool",
       "FasPizzaSlice",
@@ -32,7 +32,12 @@
     "iconInFrontmatterEnabled": false,
     "iconsBackgroundCheckEnabled": true,
     "iconsInNotesEnabled": true,
-    "iconIdentifier": ":"
+    "iconIdentifier": ":",
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsInLinksEnabled": true,
+    "debugMode": false
   },
   "00 Templates": "FasGears",
   "01 Dataview": "FasDatabase",

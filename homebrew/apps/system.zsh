@@ -6,14 +6,14 @@ brew install --cask aldente
 # AppCleaner
 brew install --cask appcleaner
 
+# Bartender
+brew install --cask bartender
+
 # Breitbandmessung
 brew install --cask breitbandmessung
 
 # DaisyDisk
 brew install --cask daisydisk
-
-# Ice (Hide Menubar Icons)
-brew install jordanbaird-ice
 
 # Keycastr
 brew install --cask keycastr
