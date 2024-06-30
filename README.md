@@ -8,7 +8,6 @@ By having a single repository for all configuration files, it is possible to:
 1. Have an additional Backup of all configuration files on GitHub.
 1. Quickly set up a new Mac with all configuration files and preferences by cloning this repository and following the steps below.
 
-
 ## Setting up a new Mac
 
 1.  Be **very** careful to set the User Name for the Device Account and the Home directory correctly!
@@ -16,9 +15,9 @@ By having a single repository for all configuration files, it is possible to:
 
     If the name is set incorrectly, it can be changed by [creating a new administrator account](https://support.apple.com/en-us/HT201548) on this device, renaming the main account from the new admin account and finally deleting the new admin account again.
 
-2. Open Safari, navigate to [GitHub](https://github.com) and login to the GitHub account via Apple Keychain.
+2.  Open Safari, navigate to [GitHub](https://github.com) and login to the GitHub account via Apple Keychain.
 
-3. [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
+3.  [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
 
 4.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
 
@@ -104,13 +103,13 @@ By having a single repository for all configuration files, it is possible to:
 11. While Apps are installing:
     - Check frequently for prompts in the terminal to enter the password for the user account if requested.
     - Setup the [desired file system directory structure](#file-system-structure) and copy the following folders from an SSD backup disk to the new machine:
-        - `~/iCloud`
-        - `~/Documents/AppBackups`
-        - `~/Documents/LargeFiles`
+      - `~/iCloud`
+      - `~/Documents/AppBackups`
+      - `~/Documents/LargeFiles`
     - Clone the Obsidian Vault from its GitHub directory to `~/Documents/ObsidianVault`.
     - Clone all other repositories needed for the new machine from GitHub to
-        - `~/Documents/ProjectsPrivate`
-        - `~/Documents/ProjectsPublic`
+      - `~/Documents/ProjectsPrivate`
+      - `~/Documents/ProjectsPublic`
     - Log into accounts of already installed apps and start the sync process or the manual configuration.
 
 Wait until the installation of all Apps is finished.
@@ -123,7 +122,7 @@ Breathe 🧘‍♂️ Time for a cup of tea!
     zsh 06_vscode-extensions.zsh
     ```
 
-13. Run `07_macos.zsh` to set MacOS System Preferences:
+13. Run `07_macos.zsh` to set MacOS System Preferences and default applications to open specific file types:
 
     ```bash
     cd ~/dotfiles/scripts
@@ -139,7 +138,6 @@ Breathe 🧘‍♂️ Time for a cup of tea!
 15. Restart the MacBook again and check that all steps were completed successfully.
 
 Done 🎉 Enjoy your new Mac!
-
 
 ### File System Structure
 

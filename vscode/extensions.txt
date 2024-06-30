@@ -55,6 +55,7 @@ emeraldwalk.runonsave
 emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
 eseom.nunjucks-template
+evidence.evidence-vscode
 fabiospampinato.vscode-commands
 formulahendry.auto-close-tag
 formulahendry.code-runner
@@ -83,6 +84,7 @@ jeff-hykin.polacode-2019
 jerrygoyal.shortcut-menu-bar
 jetmartin.bats
 jeusto.warm-up-typing-test
+jjjermiah.pixi-vscode
 jmviz.quote-list
 kevinkyang.auto-comment-blocks
 kevinrose.vsc-python-indent
@@ -107,6 +109,7 @@ mkhl.shfmt
 mrmlnc.vscode-postcss-sorting
 ms-azuretools.vscode-docker
 ms-dotnettools.vscode-dotnet-runtime
+ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.debugpy
 ms-python.gather
 ms-python.mypy-type-checker
@@ -154,6 +157,7 @@ randomfractalsinc.duckdb-sql-tools
 rangav.vscode-thunder-client
 rdebugger.r-debugger
 rebornix.toggle
+redhat.vscode-yaml
 reditorsupport.r
 renesaarsoo.sql-formatter-vsc
 richie5um2.vscode-sort-json
@@ -174,6 +178,7 @@ stkb.rewrap
 streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-german
 stringham.move-ts
+svelte.svelte-vscode
 svipas.control-snippets
 takumii.markdowntable
 tamasfe.even-better-toml

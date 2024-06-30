@@ -33,3 +33,6 @@ source "$DOMAINS_DIRPATH/trackpad.zsh"
 
 # must come last
 source "$MACOS_DIRPATH/cleanup.zsh"
+
+# specify default application to open files by file extension
+duti "$MACOS_DIRPATH/duti.config"

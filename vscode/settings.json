@@ -1613,8 +1613,7 @@
   },
   "workbench.colorTheme": "Cobalt2", // Color theme
   "workbench.editor.closeOnFileDelete": true, // Close editor on file delete
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.enablePreview": false, // Disable file preview
+  "workbench.editor.empty.hint": "hidden", // Disable file preview
   "workbench.editor.titleScrollbarSizing": "large", // Hide untitled file hints
   "workbench.editor.wrapTabs": true, // Enable tab wrapping in the editor
   "workbench.editorAssociations": {

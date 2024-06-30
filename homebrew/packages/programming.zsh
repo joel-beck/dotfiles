@@ -92,8 +92,13 @@ brew install parallel
 # Highly capable, feature-rich programming language
 brew install perl
 
+# Package management made easy
+brew install pixi
+
 # Execute binaries from Python packages in isolated environments
 brew install pipx &&
+    # Activate shell completions for pipx
+    pipx install argcomplete &&
     pipx install ruff &&
     pipx install mypy &&
     pipx install pre-commit &&
