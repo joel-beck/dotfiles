@@ -205,7 +205,9 @@
       "enabled": true
     },
     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
-      "enabled": true
+      "enabled": true,
+      "english-symbols-punctuation-before": "-+;:'\"°%$)]",
+      "english-symbols-punctuation-after": "-+'\"([¥$"
     },
     "trailing-spaces": {
       "enabled": true,
@@ -241,6 +243,21 @@
     "default-language-for-code-fences": {
       "enabled": false,
       "default-language": ""
+    },
+    "dedupe-yaml-array-values": {
+      "enabled": false,
+      "dedupe-alias-key": true,
+      "dedupe-tag-key": true,
+      "dedupe-array-keys": true,
+      "ignore-keys": ""
+    },
+    "sort-yaml-array-values": {
+      "enabled": false,
+      "sort-alias-key": true,
+      "sort-tag-key": true,
+      "sort-array-keys": true,
+      "ignore-keys": "",
+      "sort-order": "Ascending Alphabetical"
     }
   },
   "lintOnSave": true,
@@ -251,13 +268,11 @@
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
     "00 Templates",
-    "05 Zotero",
     "06 Reader",
-    "60 Data",
-    "70 Attachments",
-    "75 Zotero Images",
-    "80 Scripts",
-    "90 Logs"
+    "Data",
+    "Attachments",
+    "Scripts",
+    "Logs"
   ],
   "linterLocale": "system-default",
   "logLevel": "INFO",

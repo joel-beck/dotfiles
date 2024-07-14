@@ -11,3 +11,6 @@ brewfile:
 
 brewfile-install:
   brew bundle --file="homebrew/Brewfile"
+
+default-apps:
+  duti macos/duti.config

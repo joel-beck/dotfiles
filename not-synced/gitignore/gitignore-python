@@ -109,6 +109,10 @@ ENV/
 # ruff
 .ruff_cache/
 
+# pixi
+.pixi
+*.egg-info
+
 # sourcery
 .sourcery.yaml
 
