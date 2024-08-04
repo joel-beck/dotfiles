@@ -1,6 +1,4 @@
 {
-  // SUBSECTION: SQL Formatter
-  "SQL-Formatter-VSCode.dialect": "sqlite",
   "SQL-Formatter-VSCode.expressionWidth": 80,
   "SQL-Formatter-VSCode.ignoreTabSettings": true,
   "SQL-Formatter-VSCode.keywordCase": "upper",
@@ -860,6 +858,7 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": true,
   "github.copilot.enable": {
+    "quarto": false,
     "*": true,
     "go": true,
     "javascript": true,
@@ -868,7 +867,6 @@
     "markdown": true,
     "plaintext": true,
     "python": true,
-    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
@@ -1426,7 +1424,7 @@
   "sqlfluff.format.enabled": true,
   "sqlfluff.ignoreLocalConfig": false,
   "sqlfluff.ignoreParsing": true,
-  "sqlfluff.linter.run": "off",
+  "sqlfluff.linter.run": "onSave",
   "sqlfluff.workingDirectory": "",
   "subtleBrackets.disableNative": false,
   "tailwindCSS.includeLanguages": {
@@ -1627,5 +1625,12 @@
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
   "workbench.tree.renderIndentGuides": "always",
-  "sqlfluff.suppressNotifications": true
+  "sqlfluff.suppressNotifications": true,
+  "sqlfluff.format.languages": [
+    "sql",
+    "sql-bigquery",
+    "jinja-sql",
+    "postgres",
+    "snowflake-sql"
+  ]
 }

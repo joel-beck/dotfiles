@@ -38,6 +38,7 @@ cweijan.dbclient-jdbc
 cweijan.duckdb-packs
 cweijan.vscode-database-client2
 cweijan.vscode-mysql-client2
+cweijan.vscode-redis-client
 darkriszty.markdown-table-prettify
 dbaeumer.vscode-eslint
 deerawan.vscode-dash

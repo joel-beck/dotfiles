@@ -9,6 +9,12 @@ brew install bash
 # Bash Automated Testing System
 brew install bats-core
 
+# Bats helper libraries
+brew tap kaos/shell
+brew install bats-assert # load with `load "/opt/homebrew/lib/bats-assert/load.bash"` in test file
+brew install bats-file
+brew install bats-support
+
 # Toolchain of the web
 brew install biome
 

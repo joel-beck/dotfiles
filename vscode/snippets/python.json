@@ -1,46 +1,86 @@
 {
   "Add Simple Docstring": {
-    "body": ["\"\"\"", "$0", "\"\"\""],
+    "body": [
+      "\"\"\"",
+      "$0",
+      "\"\"\""
+    ],
     // a triple quote as trigger does not work since it triggers the snippet pop-up
     // window already after the first quote which gets in the way
     "prefix": "doc"
   },
   // SECTION: Python Snippets
   "Add f-String": {
-    "body": ["print(f\"$0\")"],
-    "prefix": ["f-String", "printf"]
+    "body": [
+      "print(f\"$0\")"
+    ],
+    "prefix": [
+      "f-String",
+      "printf"
+    ]
   },
   "Import Dataclasses": {
-    "body": ["from dataclasses import dataclass", "$0"],
+    "body": [
+      "from dataclasses import dataclass",
+      "$0"
+    ],
     "prefix": "dataclasses"
   },
   "Import Matplotlib": {
-    "body": ["import matplotlib.pyplot as plt", "$0"],
+    "body": [
+      "import matplotlib.pyplot as plt",
+      "$0"
+    ],
     "prefix": "matplotlib"
   },
   "Import NumPy": {
-    "body": ["import numpy as np", "$0"],
+    "body": [
+      "import numpy as np",
+      "$0"
+    ],
     "prefix": "numpy"
   },
   "Import Pandas": {
-    "body": ["import pandas as pd", "$0"],
+    "body": [
+      "import pandas as pd",
+      "$0"
+    ],
     "prefix": "pandas"
   },
   "Import Pathlib": {
-    "body": ["from pathlib import Path", "$0"],
+    "body": [
+      "from pathlib import Path",
+      "$0"
+    ],
     "prefix": "pathlib"
   },
   "Import Polars": {
-    "body": ["import polars as pl", "$0"],
+    "body": [
+      "import polars as pl",
+      "$0"
+    ],
     "prefix": "polars"
   },
+  "Import DuckDB": {
+    "body": [
+      "import duckdb",
+      "$0"
+    ],
+    "prefix": "duckdb"
+  },
   "Import PyTorch": {
-    "body": ["import torch", "$0"],
+    "body": [
+      "import torch",
+      "$0"
+    ],
     "prefix": "torch"
   },
   // SUBSECTION: PyTorch Snippets
   "Import PyTorch Random Split": {
-    "body": ["from torch.utils.data import random_split", "$0"],
+    "body": [
+      "from torch.utils.data import random_split",
+      "$0"
+    ],
     "prefix": "random split import"
   },
   // SUBSECTION: PyTorch Snippets
@@ -131,24 +171,38 @@
   //   ]
   // }
   "Import Pytest": {
-    "body": ["import pytest", "$0"],
+    "body": [
+      "import pytest",
+      "$0"
+    ],
     "prefix": "pytest"
   },
   "Import Pytest LazyFixtures": {
-    "body": ["from pytest_lazyfixture import lazy_fixture", "$0"],
+    "body": [
+      "from pytest_lazyfixture import lazy_fixture",
+      "$0"
+    ],
     "prefix": "lazy"
   },
   "Import Seaborn": {
-    "body": ["import seaborn as sns", "$0"],
+    "body": [
+      "import seaborn as sns",
+      "$0"
+    ],
     "prefix": "seaborn"
   },
   // SECTION: Import Snippets
   "Import Typing": {
-    "body": ["from typing import $0"],
+    "body": [
+      "from typing import $0"
+    ],
     "prefix": "typing"
   },
   "Import datetime": {
-    "body": ["from datetime import datetime", "$0"],
+    "body": [
+      "from datetime import datetime",
+      "$0"
+    ],
     "prefix": "datetime"
   },
   "Initialize Class": {
@@ -161,32 +215,61 @@
     "prefix": "class"
   },
   "Initialize Dataclass": {
-    "body": ["@dataclass", "class ${1:ClassName}:", "    $0"],
-    "prefix": ["@"]
+    "body": [
+      "@dataclass",
+      "class ${1:ClassName}:",
+      "    $0"
+    ],
+    "prefix": [
+      "@"
+    ]
   },
   "Initialize Function": {
-    "body": ["def ${1:function}(${2:args}) -> $3:", "    $0", "    pass"],
+    "body": [
+      "def ${1:function}(${2:args}) -> $3:",
+      "    $0",
+      "    pass"
+    ],
     "prefix": "def"
   },
   "Insert Try-Except Block": {
-    "body": ["try:", "    $1", "except $2:", "    $0"],
+    "body": [
+      "try:",
+      "    $1",
+      "except $2:",
+      "    $0"
+    ],
     "prefix": "try except"
   },
   // SECTION: Interactive Mode Snippets
   "Insert code cell": {
-    "body": ["", "#%%", "$0"],
+    "body": [
+      "",
+      "#%%",
+      "$0"
+    ],
     "prefix": "cell code"
   },
   "Insert code cell without newline": {
-    "body": ["", "#%%"],
+    "body": [
+      "",
+      "#%%"
+    ],
     "prefix": "cell code same line"
   },
   "Insert for-loop": {
-    "body": ["for ${1:i} in ${2:range($3)}:", "    $0"],
+    "body": [
+      "for ${1:i} in ${2:range($3)}:",
+      "    $0"
+    ],
     "prefix": "for"
   },
   "Insert markdown cell": {
-    "body": ["", "#%% [markdown]", "# $0"],
+    "body": [
+      "",
+      "#%% [markdown]",
+      "# $0"
+    ],
     "prefix": "cell markdown"
   },
   "Main Function": {
@@ -202,21 +285,34 @@
   // SECTION: Snippets by Package
   // SUBSECTION: Pandas Snippets
   "Pandas Show all Columns": {
-    "body": ["pd.set_option(\"display.max_columns\", None)", "$0"],
+    "body": [
+      "pd.set_option(\"display.max_columns\", None)",
+      "$0"
+    ],
     "prefix": "pandas all columns"
   },
   "SQL Query": {
-    "body": ["\"\"\"--sql", "$0", "\"\"\""],
+    "body": [
+      "\"\"\"--sql",
+      "$0",
+      "\"\"\""
+    ],
     "prefix": "sql"
   },
   // SUBSECTION: Seaborn Snippets
   "Set Seaborn Theme": {
-    "body": ["sns.set_theme(style=\"${1|whitegrid,darkgrid|}\")", "$0"],
+    "body": [
+      "sns.set_theme(style=\"${1|whitegrid,darkgrid|}\")",
+      "$0"
+    ],
     "prefix": "theme seaborn"
   },
   // SUBSECTION: Scikit-Learn Snippets
   "Train Test Split": {
-    "body": ["X_train, X_test, y_train, y_test = train_test_split(X, y)", "$0"],
+    "body": [
+      "X_train, X_test, y_train, y_test = train_test_split(X, y)",
+      "$0"
+    ],
     "prefix": "train test split"
   }
 }
