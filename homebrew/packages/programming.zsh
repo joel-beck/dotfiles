@@ -30,11 +30,11 @@ brew install container-diff
 # Transfer data with URL syntax support via command line
 brew install curl
 
-# Utility that creates projects from templates
-brew install cookiecutter
-
 # Debugger for the Go programming language
 brew install delve
+
+# Load/unload environment variables based on $PWD
+brew install direnv
 
 # Pack, ship and run any application as a lightweight container
 brew install docker
@@ -103,12 +103,11 @@ brew install pixi
 
 # Execute binaries from Python packages in isolated environments
 brew install pipx &&
-    # Activate shell completions for pipx
-    pipx install argcomplete &&
+    pipx install argcomplete && # Activate shell completions for pipx
+    pipx install uv &&
     pipx install ruff &&
     pipx install mypy &&
-    pipx install pre-commit &&
-    pipx install uv
+    pipx install pre-commit
 
 # General-purpose scripting language
 brew install php
@@ -124,13 +123,6 @@ brew install prometheus
 
 # Seamless operability between C++11 and Python
 brew install pybind11
-
-# Python version management & Install latest Python version
-brew install pyenv &&
-    # regex: python major version 3 with two digit minor version and one or two digit patch version
-    LATEST_PYTHON_VERSION="$(pyenv install --list | rg "^\s*3\.\d{2}\.\d{1,2}$" | tail -1 | tr -d '[:space:]')" &&
-    pyenv install "$LATEST_PYTHON_VERSION" &&
-    pyenv global "$LATEST_PYTHON_VERSION"
 
 # Powerful, clean, object-oriented scripting language
 brew install ruby

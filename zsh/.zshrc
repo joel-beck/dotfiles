@@ -29,7 +29,7 @@ source "$ZSHRC_DIRPATH/pipx.zsh"
 
 source "$ZSHRC_DIRPATH/pixi.zsh"
 
-source "$ZSHRC_DIRPATH/pyenv.zsh"
+source "$ZSHRC_DIRPATH/direnv.zsh"
 
 source "$ZSHRC_DIRPATH/just.zsh" # currently not working
 

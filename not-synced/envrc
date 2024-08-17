@@ -1,0 +1,4 @@
+# .envrc
+
+layout python
+export VIRTUAL_ENV=.venv
