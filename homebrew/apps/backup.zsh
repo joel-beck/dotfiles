@@ -18,8 +18,5 @@ brew install --cask google-drive
 # OneDrive
 brew install --cask onedrive
 
-# OwnCloud
-brew install --cask owncloud
-
 # Resilio Sync
 brew install --cask resilio-sync

@@ -18,9 +18,6 @@ brew install --cask mactex
 # Microsoft Excel
 brew install --cask microsoft-excel
 
-# Microsoft OneNote
-brew install --cask microsoft-onenote
-
 # Microsoft PowerPoint
 brew install --cask microsoft-powerpoint
 
