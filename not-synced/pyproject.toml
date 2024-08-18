@@ -18,37 +18,65 @@ show-fixes = true # enumerate fixed violations
 output-format = "grouped" # Group violations by containing file
 
 [tool.ruff.lint]
-ignore-init-module-imports = true # Avoid automatically removing unused imports in __init__.py files
 # see explanation of letter codes at https://beta.ruff.rs/docs/rules/
 select = [
     "A", # flake8-builtins
+    "AIR", # Airflow
     "ANN", # flake8-annotations
     "ARG", # flake8-unused-arguments
+    "ASYNC", # flake8-async
     "B", # flake8-bugbear
-    "BLE", # flake8-blind-except
+    # "BLE", # flake8-blind-except
     "C4", # flake8-comprehensions
     "C90", # mccabe
     "COM", # flake8-commas
+    # "CPY", # flake8-copyright
+    # "D", # pydocstyle
+    # "DOC", # pydoclint
+    "DJ", # flake8-django
+    "DTZ", # flake8-datetimez
     "E", # pycodestyle Error
+    # "EM", # flake8-errmsg
+    # "ERA", # eradicate
+    "EXE", # flake8-executable
     "F", # Pyflakes
+    "FA", # flake8-future-annotations
+    "FAST", # FastAPI
     "FBT", # flake8-boolean-trap
+    "FIX", # flake8-fixme
+    "FURB", # refurb
+    # "FLY", # flynt
+    "G", # flake8-logging-format
     "I", # isort
     "ICN", # flake8-import-conventions
     "INP", # flake8-no-pep420
+    "INT", # flake8-gettext
     "ISC", # flake8-implicit-str-concat
+    "LOG", # flake8-logging
     "N", # pep8-naming
-    # "NPY", # NumPy-specific rules # causes toml parsing error: unknown field
+    "NPY", # NumPy-specific rules # causes toml parsing error: unknown field
     "PD", # pandas-vet
+    "PERF", # Perflint
+    "PGH", # pygrep-hooks
     "PIE", # flake8-pie
+    "PL", # flake8-pylint
     "PT", # flake8-pytest-style
     "PTH", # flake8-use-pathlib
+    "PYI", # flake8-pyi
     "Q", # flake8-quotes
     "RET", # flake8-return
     "RSE", # flake8-raise
-    "RUF", # ruff-specific rules
+    "RUF", # Ruff-specific rules
     "S", # flake8-bandit
     "SIM", # flake8-simplify
+    "SLF", # flake8-self
+    "SLOT", # flake8-slots
+    "T10", # flake8-debugger
+    # "T20", # flake8-print
+    "TCH", # flake8-type-checking
+    "TD", # flake8-todos
     "TID", # flake8-tidy-imports
+    "TRY", # tryceratops
     "UP", # pyupgrade
     "W", # pycodestyle Warning
     "YTT", # flake8-2020
@@ -58,15 +86,21 @@ ignore = [
     "ANN101", # missing type annotation for `self` in method
     "ANN102", # missing type annotation for `cls` in classmethod
     "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
-    "ISC001", # Conflict with Ruff formatter
+    "EXE002", # The file is executable but no shebang is present
+    "G004", # Logging statement uses f-string
     "N803", # argument name should be lowercase
     "N806", # variable in function should be lowercase
     "PD015", # use `.merge()` instead of `pd.merge()`, incorrect for Series
     "PD901", # don't use `df` as a variable name
+    "PLR0913", # Too many arguments in function definition
+    "PLW2901", # `for` loop variable `tag` overwritten by assignment target
     "PT004", # Fixture does not return anything, add leading underscore
     "PT011", # `pytest_raises(ValueError)` is too broad
     "RUF007", # prefer `itertools.pairwise()` over `zip()` when iterating over successive pairs
-    "RUF100", # unused `noqa`
+    "S311", # Standard pseudo-random generators are not suitable for security/cryptographic purposes
+    "S603", # `subprocess` call: check for execution of untrusted input
+    "S607", # Starting a process with a partial executable path
+    "TRY003", # Avoid specifying long messages outside the exception class
 
 ]
 # Never try to fix automatically
