@@ -101,14 +101,6 @@ brew install perl
 # Package management made easy
 brew install pixi
 
-# Execute binaries from Python packages in isolated environments
-brew install pipx &&
-    pipx install argcomplete && # Activate shell completions for pipx
-    pipx install uv &&
-    pipx install ruff &&
-    pipx install mypy &&
-    pipx install pre-commit
-
 # General-purpose scripting language
 brew install php
 
@@ -156,6 +148,11 @@ brew install terragrunt
 
 # Language for application scale JavaScript development
 brew install typescript
+
+# Extremely fast Python package installer and resolver, written in Rust
+# replaces `pipx` functionality by running `uxv <tool>`, e.g. `uvx ruff -h` where <tool>
+# is installed into a cached virtual environment: https://docs.astral.sh/uv/concepts/tools/
+brew install uv
 
 # Modern build tool for JavaScript and CSS
 brew install vite
