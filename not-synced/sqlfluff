@@ -18,16 +18,26 @@ indent_unit = space
 tab_space_size = 4
 indented_joins = False
 indented_ctes = False
-indented_using_on = True
+indented_using_on = False
 indented_on_contents = True
 indented_then = True
 indented_then_contents = True
-allow_implicit_indents = False
+allow_implicit_indents = True
 template_blocks_indent = True
+
+# see https://docs.sqlfluff.com/en/stable/configuration/layout.html#aligned-elements
+[sqlfluff:layout:type:alias_expression]
+spacing_before = align
+align_within = select_clause
+align_scope = bracketed
 
 [sqlfluff:layout:type:comma]
 spacing_before = touch
 line_position = trailing
+
+[sqlfluff:layout:type:common_table_expression]
+spacing_within = single
+line_position = leading
 
 # Rules Reference: https://docs.sqlfluff.com/en/stable/reference/rules.html
 [sqlfluff:rules:aliasing.table]
