@@ -1835,5 +1835,9 @@
     "key": "alt+cmd+j",
     "command": "-latex-workshop.synctex",
     "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId == 'latex'"
+  },
+  {
+    "key": "alt+d",
+    "command": "editor.debug.action.selectionToRepl"
   }
 ]

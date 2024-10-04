@@ -507,12 +507,5 @@
       "key": "A"
     }
   ],
-  "obsidian-linter:lint-file": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "L"
-    }
-  ]
+  "obsidian-linter:lint-file": []
 }

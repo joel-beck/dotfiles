@@ -10,7 +10,6 @@
   "ShortcutMenuBar.navigateForward": false,
   "ShortcutMenuBar.openFilesList": false,
   "ShortcutMenuBar.toggleTerminal": false,
-  "VSCodeCounter.languages": {},
   // SECTION: Language Specific Settings
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -858,7 +857,6 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": true,
   "github.copilot.enable": {
-    "quarto": false,
     "*": true,
     "go": true,
     "javascript": true,
@@ -867,6 +865,7 @@
     "markdown": true,
     "plaintext": true,
     "python": true,
+    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
@@ -1381,7 +1380,6 @@
   "ruff.showNotifications": "onWarning",
   "search.mode": "reuseEditor",
   "security.promptForLocalFileProtocolHandling": false,
-  "security.workspace.trust.enabled": false,
   // SUBSECTION: Toggle Settings
   "settingsOnFire.toggle": {
     "GitHub Copilot": {
@@ -1422,10 +1420,19 @@
   "sqlfluff.env.useDotEnvFile": true,
   "sqlfluff.format.arguments": ["--FIX-EVEN-UNPARSABLE"],
   "sqlfluff.format.enabled": true,
+  "sqlfluff.format.languages": [
+    "sql",
+    "sql-bigquery",
+    "jinja-sql",
+    "postgres",
+    "snowflake-sql"
+  ],
   "sqlfluff.ignoreLocalConfig": false,
   "sqlfluff.ignoreParsing": true,
   "sqlfluff.linter.run": "onSave",
+  "sqlfluff.suppressNotifications": true,
   "sqlfluff.workingDirectory": "",
+  "sqltools.useNodeRuntime": true,
   "subtleBrackets.disableNative": false,
   "tailwindCSS.includeLanguages": {
     "templ": "html"
@@ -1624,13 +1631,5 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always",
-  "sqlfluff.suppressNotifications": true,
-  "sqlfluff.format.languages": [
-    "sql",
-    "sql-bigquery",
-    "jinja-sql",
-    "postgres",
-    "snowflake-sql"
-  ]
+  "workbench.tree.renderIndentGuides": "always"
 }

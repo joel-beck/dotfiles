@@ -19,12 +19,12 @@
     "iconPacksPath": ".obsidian/icons",
     "migrated": 5,
     "recentlyUsedIcons": [
+      "TiBrandLeetcode",
+      "RiRunFill",
       "FiTool",
       "FasPizzaSlice",
       "FasHouseChimney",
-      "TiPrompt",
-      "FasMoneyBill1",
-      "FasMoneyBill"
+      "TiPrompt"
     ],
     "recentlyUsedIconsSize": 6,
     "rules": [],
@@ -70,5 +70,7 @@
   "TV Series": "FasTv",
   "Uni Courses": "FasUserGraduate",
   "Weblinks": "FasLink",
-  "Wohnungen": "FasHouseChimney"
+  "Wohnungen": "FasHouseChimney",
+  "Running Workouts": "RiRunFill",
+  "Leetcode": "TiBrandLeetcode"
 }

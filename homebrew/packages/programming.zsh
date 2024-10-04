@@ -68,6 +68,9 @@ brew install gh &&
 # Distributed revision control system
 brew install git
 
+# Git extension for versioning large files
+brew install git-lfs
+
 # Gorgeous metric visualizations and dashboards for timeseries databases
 brew install grafana
 
@@ -136,6 +139,9 @@ brew install sqlite
 
 # CLI utility for manipulating SQLite databases
 brew install sqlite-utils
+
+# SQL linter and formatter written in Rust
+brew install quarylabs/quary/sqruff
 
 # Cross-shell prompt for astronauts
 brew install starship

@@ -54,6 +54,7 @@ editorconfig.editorconfig
 eliostruyf.vscode-front-matter
 emeraldwalk.runonsave
 emmanuelbeziat.vscode-great-icons
+eriklynd.json-tools
 esbenp.prettier-vscode
 eseom.nunjucks-template
 evidence.evidence-vscode
@@ -151,6 +152,7 @@ phplasma.csv-to-table
 pkief.material-icon-theme
 pmneo.tsimporter
 quarto.quarto
+quary.sqruff
 qufiwefefwoyn.inline-sql-syntax
 qwtel.sqlite-viewer
 rafamel.subtle-brackets
@@ -159,6 +161,7 @@ rangav.vscode-thunder-client
 rdebugger.r-debugger
 rebornix.toggle
 redhat.vscode-yaml
+redis.redis-for-vscode
 reditorsupport.r
 renesaarsoo.sql-formatter-vsc
 richie5um2.vscode-sort-json
