@@ -422,6 +422,12 @@
     "key": "alt+q",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
+  // SUBSECTION: Utils - Debugger
+  // Run Selected Code in Debug Console
+  {
+    "command": "editor.debug.action.selectionToRepl",
+    "key": "alt+d"
+  },
   // SECTION: Text Highlighting in Markdown, Latex and Python Documentation
   // Markdown Bold Text when Editor has Selection
   {
@@ -1835,9 +1841,5 @@
     "key": "alt+cmd+j",
     "command": "-latex-workshop.synctex",
     "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId == 'latex'"
-  },
-  {
-    "key": "alt+d",
-    "command": "editor.debug.action.selectionToRepl"
   }
 ]

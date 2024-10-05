@@ -122,7 +122,7 @@
     "editor.formatOnType": true
   },
   "[sql]": {
-    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
+    "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true

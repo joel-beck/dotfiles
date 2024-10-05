@@ -58,6 +58,7 @@ eriklynd.json-tools
 esbenp.prettier-vscode
 eseom.nunjucks-template
 evidence.evidence-vscode
+evidence.sqltools-duckdb-driver
 fabiospampinato.vscode-commands
 formulahendry.auto-close-tag
 formulahendry.code-runner
@@ -202,7 +203,6 @@ visualstudioexptteam.vscodeintellicode
 visualstudioexptteam.vscodeintellicode-completions
 visualstudioexptteam.vscodeintellicode-insiders
 vscode-icons-team.vscode-icons
-vulkd.inline-sql-formatter
 w0o0o.bun-scripts
 wallabyjs.console-ninja
 wallabyjs.quokka-vscode
