@@ -16,6 +16,7 @@ line-length = 100
 fix = true # autofix behavior
 show-fixes = true # enumerate fixed violations
 output-format = "grouped" # Group violations by containing file
+preview = true # Enable preview mode
 
 [tool.ruff.lint]
 # see explanation of letter codes at https://beta.ruff.rs/docs/rules/
@@ -121,6 +122,12 @@ ignore = [
 unfixable = [
     "F401", # unused imports
     "F841", # unused variables
+
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**/*.py" = [
+    "S101", # Allow `assert` statements in tests
 
 ]
 

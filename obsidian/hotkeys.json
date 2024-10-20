@@ -235,23 +235,6 @@
       ]
     }
   ],
-  "obsidian-editor-shortcuts:goToPrevHeading": [
-    {
-      "key": "ArrowUp",
-      "modifiers": [
-        "Alt",
-        "Ctrl"
-      ]
-    }
-  ],
-  "obsidian-editor-shortcuts:indent-using-tabs": [
-    {
-      "key": "Tab",
-      "modifiers": [
-        "Shift"
-      ]
-    }
-  ],
   "obsidian-editor-shortcuts:insertCursorAbove": [
     {
       "key": "ArrowUp",
@@ -507,5 +490,29 @@
       "key": "A"
     }
   ],
-  "obsidian-linter:lint-file": []
+  "obsidian-linter:lint-file": [],
+  "table-editor-obsidian:move-row-down": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "table-editor-obsidian:move-row-up": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "table-editor-obsidian:previous-cell": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Tab"
+    }
+  ]
 }

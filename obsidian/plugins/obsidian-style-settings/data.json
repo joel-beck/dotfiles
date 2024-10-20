@@ -23,7 +23,6 @@
   "minimal-style@@title-color@@dark": "#FF9D00",
   "minimal-style@@title-color-inactive@@dark": "#B8B4B4",
   "minimal-style@@icon-color@@dark": "#FFFFFF",
-  "minimal-style@@link-weight": 500,
   "minimal-style@@hl1@@dark": "#617541",
   "minimal-style@@tx1@@dark": "#FFFFFF",
   "minimal-style@@tx2@@dark": "#CDBEBE",
@@ -38,7 +37,6 @@
   "minimal-style@@table-nowrap": false,
   "minimal-style@@row-hover": true,
   "minimal-style@@icon-muted": 1,
-  "minimal-style@@sidebar-lines-off": false,
   "minimal-style@@list-spacing": 0.25,
   "minimal-style@@list-indent": 2,
   "supercharged-links@@40aa-00ec-color": "#FFFFFF",
@@ -58,5 +56,8 @@
   "minimal-style@@bold-color@@dark": "#00BD00",
   "minimal-style@@hl2@@dark": "#617541",
   "minimal-style@@hl1@@light": "#617541",
-  "minimal-style@@hl2@@light": "#617541"
+  "minimal-style@@hl2@@light": "#617541",
+  "minimal-style@@file-header-visibility": "minimal-tab-title-visible",
+  "minimal-style@@window-title-off": false,
+  "minimal-style@@trim-cols": true
 }

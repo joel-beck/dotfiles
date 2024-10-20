@@ -17,14 +17,14 @@
     "iconColor": null,
     "iconInTabsEnabled": true,
     "iconPacksPath": ".obsidian/icons",
-    "migrated": 5,
+    "migrated": 6,
     "recentlyUsedIcons": [
+      "LiImage",
       "TiBrandLeetcode",
       "RiRunFill",
       "FiTool",
       "FasPizzaSlice",
-      "FasHouseChimney",
-      "TiPrompt"
+      "FasHouseChimney"
     ],
     "recentlyUsedIconsSize": 6,
     "rules": [],
@@ -32,12 +32,13 @@
     "iconInFrontmatterEnabled": false,
     "iconsBackgroundCheckEnabled": true,
     "iconsInNotesEnabled": true,
-    "iconIdentifier": ":",
+    "iconIdentifier": "::",
     "iconInTitlePosition": "above",
     "iconInFrontmatterFieldName": "icon",
     "iconColorInFrontmatterFieldName": "iconColor",
     "iconsInLinksEnabled": true,
-    "debugMode": false
+    "debugMode": false,
+    "lucideIconPackType": "native"
   },
   "00 Templates": "FasGears",
   "01 Dataview": "FasDatabase",
@@ -72,5 +73,6 @@
   "Weblinks": "FasLink",
   "Wohnungen": "FasHouseChimney",
   "Running Workouts": "RiRunFill",
-  "Leetcode": "TiBrandLeetcode"
+  "Leetcode": "TiBrandLeetcode",
+  "Excalidraw": "LiImage"
 }

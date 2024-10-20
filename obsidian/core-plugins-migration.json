@@ -1,7 +1,7 @@
 {
   "audio-recorder": false,
   "backlink": true,
-  "bookmarks": true,
+  "bookmarks": false,
   "canvas": false,
   "command-palette": true,
   "daily-notes": false,
