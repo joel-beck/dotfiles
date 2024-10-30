@@ -147,7 +147,6 @@ Done 🎉 Enjoy your new Mac!
     ├── dotfiles
     │
     ├── Documents
-    │   ├── AppBackups
     │   ├── LargeFiles
     │   ├── ObsidianVault
     │   ├── Playlists
@@ -155,6 +154,7 @@ Done 🎉 Enjoy your new Mac!
     │   └── ProjectsPublic
     │
     ├── iCloud
+    │   ├── AppBackups
     │   ├── Personal
     │   ├── KeyboardMaestro (containing the sync file)
     │   └── Default iCloud folders (generated automatically by applications)

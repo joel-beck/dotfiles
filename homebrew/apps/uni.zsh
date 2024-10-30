@@ -6,12 +6,6 @@ brew install --cask deepl
 # Drawio
 brew install --cask drawio
 
-# Grammarly
-brew install --cask grammarly
-
-# Grammarly Desktop
-brew install --cask grammarly-desktop
-
 # MacTeX
 brew install --cask mactex
 
