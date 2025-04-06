@@ -405,14 +405,7 @@
       ]
     }
   ],
-  "templater-obsidian:jump-to-next-cursor-location": [
-    {
-      "key": "Tab",
-      "modifiers": [
-        "Shift"
-      ]
-    }
-  ],
+  "templater-obsidian:jump-to-next-cursor-location": [],
   "url-into-selection:paste-url-into-selection": [
     {
       "key": "V",

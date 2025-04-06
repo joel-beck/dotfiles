@@ -6,9 +6,6 @@ brew install --cask airbuddy
 # ImageOptim
 brew install --cask imageoptim
 
-# OBS
-brew install --cask obs
-
 # Spotify
 brew install --cask spotify
 

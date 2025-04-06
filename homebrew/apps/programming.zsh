@@ -1,8 +1,5 @@
 # Homebrew Programming Apps, keep the list in alphabetical order
 
-# Dash
-brew install --cask dash
-
 # Docker Desktop
 brew install --cask docker
 

@@ -62,26 +62,7 @@
     "tags": ["keyboard-maestro", "projects-private"],
     "enabled": true
   },
-  {
-    "name": "leetcode",
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/Leetcode",
-    "paths": [],
-    "tags": [
-      "coding-challenges",
-      "projects-private",
-      "python",
-      "typescript",
-      "go"
-    ],
-    "enabled": true
-  },
-  {
-    "name": "mails",
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/Mails",
-    "paths": [],
-    "tags": ["projects-private"],
-    "enabled": true
-  },
+
   {
     "name": "sql-practice",
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/PythonProjects/sql-practice",
@@ -160,24 +141,10 @@
     "enabled": true
   },
   {
-    "name": "pdm-config",
-    "rootPath": "/Users/joel/Documents/ProjectsPrivate/pdm-config",
-    "paths": [],
-    "tags": ["python", "projects-private"],
-    "enabled": true
-  },
-  {
     "name": "python-packages-api",
     "rootPath": "/Users/joel/Documents/ProjectsPrivate/python-packages-api",
     "paths": [],
     "tags": ["python", "projects-private"],
-    "enabled": true
-  },
-  {
-    "name": "blog",
-    "rootPath": "/Users/joel/Documents/ProjectsPublic/blog",
-    "paths": [],
-    "tags": ["r", "projects-public"],
     "enabled": true
   },
   {
@@ -269,6 +236,20 @@
     "rootPath": "/Users/joel/iCloud/AppBackups/KeyboardMaestro/LibraryFolder",
     "paths": [],
     "tags": ["keyboard-maestro", "backups"],
+    "enabled": true
+  },
+  {
+    "name": "running-tracker",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/running-tracker",
+    "paths": [],
+    "tags": ["projects-private"],
+    "enabled": true
+  },
+  {
+    "name": "interview-prep",
+    "rootPath": "/Users/joel/Documents/ProjectsPrivate/interview-prep",
+    "paths": [],
+    "tags": ["career"],
     "enabled": true
   }
 ]

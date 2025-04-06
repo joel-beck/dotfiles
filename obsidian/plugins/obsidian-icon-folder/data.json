@@ -19,12 +19,12 @@
     "iconPacksPath": ".obsidian/icons",
     "migrated": 6,
     "recentlyUsedIcons": [
+      "RiRobot2Fill",
+      "CoChat",
       "LiImage",
       "TiBrandLeetcode",
       "RiRunFill",
-      "FiTool",
-      "FasPizzaSlice",
-      "FasHouseChimney"
+      "FiTool"
     ],
     "recentlyUsedIconsSize": 6,
     "rules": [],
@@ -38,7 +38,8 @@
     "iconColorInFrontmatterFieldName": "iconColor",
     "iconsInLinksEnabled": true,
     "debugMode": false,
-    "lucideIconPackType": "native"
+    "lucideIconPackType": "native",
+    "useInternalPlugins": false
   },
   "00 Templates": "FasGears",
   "01 Dataview": "FasDatabase",
@@ -74,5 +75,6 @@
   "Wohnungen": "FasHouseChimney",
   "Running Workouts": "RiRunFill",
   "Leetcode": "TiBrandLeetcode",
-  "Excalidraw": "LiImage"
+  "Excalidraw": "LiImage",
+  "ChatGPT": "RiRobot2Fill"
 }

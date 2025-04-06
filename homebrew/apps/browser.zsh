@@ -5,6 +5,3 @@ brew install --cask firefox
 
 # Google Chrome
 brew install --cask google-chrome
-
-# Orion
-brew install --cask orion

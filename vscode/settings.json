@@ -831,12 +831,12 @@
     "*.draftsTheme": "jsonc",
     "*.qmd": "quarto",
     "*.rmd": "rmd",
-    // for working with dbt
     "*.sql": "jinja-sql",
     "*.txt": "plaintext",
     "*.yml": "jinja-yaml",
     ".coveragerc": "ini",
-    ".env_template": "dotenv"
+    ".env_template": "dotenv",
+    "*.md": "markdown"
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.trimTrailingWhitespace": true,
@@ -857,6 +857,7 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": true,
   "github.copilot.enable": {
+    "quarto": false,
     "*": true,
     "go": true,
     "javascript": true,
@@ -865,7 +866,6 @@
     "markdown": true,
     "plaintext": true,
     "python": true,
-    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
@@ -1432,7 +1432,6 @@
   "sqlfluff.linter.run": "onSave",
   "sqlfluff.suppressNotifications": true,
   "sqlfluff.workingDirectory": "",
-  "sqltools.useNodeRuntime": true,
   "subtleBrackets.disableNative": false,
   "tailwindCSS.includeLanguages": {
     "templ": "html"
@@ -1631,5 +1630,9 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "sqltools.disableNodeDetectNotifications": true,
+  "explorer.confirmPasteNative": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "latex-workshop.formatting.latex": "latexindent"
 }

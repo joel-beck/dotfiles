@@ -23,6 +23,3 @@ brew install --cask obsidian
 
 # TextSniper
 brew install --cask textsniper
-
-# Todoist
-brew install --cask todoist

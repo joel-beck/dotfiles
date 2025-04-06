@@ -21,9 +21,6 @@ brew install --cask keycastr
 # IStat Menus
 brew install --cask istat-menus
 
-# Lunar
-brew install --cask lunar
-
 # MonitorControl
 brew install --cask monitorcontrol
 

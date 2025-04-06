@@ -152,6 +152,7 @@ pflannery.vscode-versionlens
 phplasma.csv-to-table
 pkief.material-icon-theme
 pmneo.tsimporter
+pomdtr.excalidraw-editor
 quarto.quarto
 quary.sqruff
 qufiwefefwoyn.inline-sql-syntax
