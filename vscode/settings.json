@@ -1,3 +1,5 @@
+// Sort file by running the command `sortJSON.sortJSON` ("Sort JSON File by Keys (Nested
+// Keys)" in the status bar)
 {
   "SQL-Formatter-VSCode.expressionWidth": 80,
   "SQL-Formatter-VSCode.ignoreTabSettings": true,
@@ -477,7 +479,6 @@
     }
   ],
   "console-ninja.featureSet": "Community",
-  "database-client.capitalizeKeywordsWhenFormatting": true,
   "dbt.sqlFmtPath": "/opt/homebrew/bin/sqlfmt",
   // SUBSECTION: Debugging
   "debug.allowBreakpointsEverywhere": true,
@@ -825,18 +826,19 @@
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
   "files.associations": {
     "*.Rmd": "rmd",
     "*.cfg": "cfg",
     "*.draftsTheme": "jsonc",
+    "*.md": "markdown",
     "*.qmd": "quarto",
     "*.rmd": "rmd",
     "*.sql": "jinja-sql",
     "*.txt": "plaintext",
     "*.yml": "jinja-yaml",
     ".coveragerc": "ini",
-    ".env_template": "dotenv",
-    "*.md": "markdown"
+    ".env_template": "dotenv"
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.trimTrailingWhitespace": true,
@@ -854,10 +856,8 @@
   "git.useCommitInputAsStashMessage": true,
   "gitHistory.includeRemoteBranches": true,
   // SUBSECTION: GitHub Copilot
-  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": true,
   "github.copilot.enable": {
-    "quarto": false,
     "*": true,
     "go": true,
     "javascript": true,
@@ -866,12 +866,14 @@
     "markdown": true,
     "plaintext": true,
     "python": true,
+    "quarto": false,
     "r": false,
     "rmd": true,
     "shellscript": true,
     "typescript": true,
     "yaml": true
   },
+  "github.copilot.nextEditSuggestions.enabled": true,
   // SUBSECTION: GitHub Pull Requests
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
@@ -889,7 +891,6 @@
     "ui.semanticTokens": true
   },
   "hediet.vscode-drawio.resizeImages": null,
-  "hediet.vscode-drawio.theme": "atlas",
   "html.format.wrapLineLength": 88,
   "interactiveWindow.alwaysScrollOnNewCell": true,
   // SUBSECTION: JavaScript
@@ -912,6 +913,7 @@
   // SUBSECTION: LaTeX
   "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.formatting.latex": "latexindent",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latex.clean.fileTypes": [
     "*.aux",
@@ -938,7 +940,6 @@
   "latex-workshop.latex.clean.method": "glob",
   "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.synctex.afterBuild.enabled": true,
-  "latex-workshop.synctex.synctexjs.enabled": true,
   "latex-workshop.view.pdf.invertMode.brightness": 0.5,
   "latex-workshop.view.pdf.viewer": "tab",
   // SUBSECTION: Markdown Extensions
@@ -1361,25 +1362,11 @@
   "python.terminal.activateEnvironment": true,
   "python.testing.promptToConfigure": false,
   "python.testing.pytestEnabled": true,
-  "quarto.cells.background.dark": "#80808015",
-  // SUBSECTION: R
-  "r.alwaysUseActiveTerminal": true,
-  "r.bracketedPaste": true,
-  "r.lsp.diagnostics": false,
-  "r.plot.useHttpgd": true,
-  "r.rmarkdown.knit.focusOutputChannel": false,
-  "r.rpath.mac": "/usr/local/bin/R",
-  "r.rterm.mac": "/usr/local/bin/R",
-  "r.session.levelOfObjectDetail": "Normal",
-  "r.workspaceViewer.showObjectSize": true,
-  "rainbow_csv.autodetect_separators": ["\t", ",", "|"],
-  "rewrap.wrappingColumn": 88,
   // SUBSECTION: Ruff
-  "ruff.lint.run": "onSave",
   "ruff.organizeImports": true,
-  "ruff.showNotifications": "onWarning",
   "search.mode": "reuseEditor",
   "security.promptForLocalFileProtocolHandling": false,
+  "security.workspace.trust.untrustedFiles": "open",
   // SUBSECTION: Toggle Settings
   "settingsOnFire.toggle": {
     "GitHub Copilot": {
@@ -1432,6 +1419,7 @@
   "sqlfluff.linter.run": "onSave",
   "sqlfluff.suppressNotifications": true,
   "sqlfluff.workingDirectory": "",
+  "sqltools.disableNodeDetectNotifications": true,
   "subtleBrackets.disableNative": false,
   "tailwindCSS.includeLanguages": {
     "templ": "html"
@@ -1560,6 +1548,8 @@
   "todo-tree.tree.scanMode": "workspace",
   "todo-tree.tree.showCountsInTree": false,
   "todo-tree.tree.trackFile": false,
+  // SUBSECTION: Ty
+  "ty.experimental.completions.enable": true,
   "typeChallenges.workspaceFolder": "/Users/joel/Documents/ProjectsPrivate/TypescriptNotes/typescript-challenges",
   // SUBSECTION: TypeScript
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -1630,9 +1620,5 @@
   "workbench.list.smoothScrolling": true, // Enable smooth scrolling in lists
   "workbench.settings.openDefaultSettings": false, // Don't open default settings
   "workbench.tree.indent": 20, // Set tree item indent size
-  "workbench.tree.renderIndentGuides": "always",
-  "sqltools.disableNodeDetectNotifications": true,
-  "explorer.confirmPasteNative": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "latex-workshop.formatting.latex": "latexindent"
+  "workbench.tree.renderIndentGuides": "always"
 }

@@ -5,6 +5,7 @@ adrianwilczynski.alpine-js-intellisense
 albymor.increment-selection
 alefragnani.project-manager
 alexcvzz.vscode-sqlite
+altimateai.vscode-altimate-mcp-server
 antfu.vite
 artydeveloperduck.save-as-snippet
 astro-build.astro-vscode
@@ -44,6 +45,7 @@ dbaeumer.vscode-eslint
 deerawan.vscode-dash
 diogonolasco.pyinit
 dnicolson.binary-plist
+docker.docker
 donjayamanne.githistory
 donjayamanne.vscode-jupytext
 dorzey.vscode-sqlfluff
