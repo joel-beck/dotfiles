@@ -873,7 +873,7 @@
     "typescript": true,
     "yaml": true
   },
-  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
   // SUBSECTION: GitHub Pull Requests
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never", // Never pull branch for GitHub PRs
@@ -942,6 +942,28 @@
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.view.pdf.invertMode.brightness": 0.5,
   "latex-workshop.view.pdf.viewer": "tab",
+  // Explicit LaTeX tools/paths to work even when GUI PATH is minimal
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "/Library/TeX/texbin/latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+  "latex-workshop.kpsewhich.path": "/Library/TeX/texbin/kpsewhich",
   // SUBSECTION: Markdown Extensions
   "markdown-pdf.headerTemplate": "<span class='title' style='display: none;'></span>",
   "markdown-pdf.highlightStyle": "shades-of-purple.css",

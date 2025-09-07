@@ -8,7 +8,7 @@ eval "$(zoxide init zsh)"
 
 # SECTION: Oh My Zsh Plugins
 plugins=(
-    pdm zsh-autosuggestions zsh-syntax-highlighting
+    zsh-autosuggestions zsh-syntax-highlighting
 )
 
 # NOTE for zsh-autosuggestions
@@ -19,7 +19,3 @@ bindkey '^E' forward-word
 
 # NOTE: Has to be placed AFTER sourcing plugins
 source "$ZSH/oh-my-zsh.sh"
-
-# NOTE: Has to be placed AFTER sourcing oh-my-zsh.sh
-# NOTE: Does not work in RStudio
-eval "$(mcfly init zsh)"
