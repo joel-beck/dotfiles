@@ -1449,6 +1449,7 @@
   // SUBSECTION: Terminal
   "terminal.explorerKind": "integrated",
   "terminal.external.osxExec": "Terminal.app",
+  "terminal.integrated.fontFamily": "'CaskaydiaCove NF'",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "PowerShell",

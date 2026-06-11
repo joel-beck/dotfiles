@@ -1,11 +1,24 @@
-# NOTE: Configuration docs: https://starship.rs/config/#prompt
-# IMPORTANT: Single and Double Quotes are NOT identical in TOML: see https://starship.rs/config/#strings.
-# Use double quotes for multiline format string and single quotes for everything else for less escaping!
-
-# NOTE: Icons can be copied here: https://www.nerdfonts.com/cheat-sheet
-# SECTION: Global Settings
-# `fill` separates left and right aligned sections
+# Starship prompt configuration
+# Docs:  https://starship.rs/config/
+# Icons: https://www.nerdfonts.com/cheat-sheet
+#
+# TOML quoting rules (important for format strings):
+#   Single quotes '' → literal strings, no escaping needed (use for most values)
+#   Double quotes "" → interpreted strings, required for multi-line format blocks
+#
+# Format string syntax:  [text](style)   → styled text
+#                        (...)           → optional group (hidden when empty)
+#                        \[ \] \( \)     → escaped literal brackets/parens
+#                        $module         → inserts a module
+#                        \               → line continuation (no newline inserted)
+# ─── Prompt Layout ────────────────────────────────────────────────────────────
+# Line 1 (left):  OS · directory · git branch/state/status/metrics
+# Line 1 (right): language versions · command duration · time
+#          fill:  dotted separator between left and right
+# Line 2:  prompt arrow (always at column 1, regardless of line 1 length)
+# https://starship.rs/config/#prompt
 format = """
+$os\
 $username\
 $hostname\
 $directory\
@@ -14,159 +27,134 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill\
-$python\
-$nodejs\
-$cmd_duration $time\
-"""
-# Don't print a new line at the start of the prompt
-add_newline = false
-# Timeout for commands executed by starship (in milliseconds) - default is 500
-# prevents warning on shell initialization
+$rlang$golang$python$nodejs$docker_context$cmd_duration $time
+
+$character"""
+# Insert a blank line before each prompt for visual breathing room
+add_newline = true
+# Raised from default 500 ms to prevent spurious timeout warnings on startup
 command_timeout = 1000
-# A continuation prompt that displays two filled in arrows
 continuation_prompt = '▶▶ '
 
-# Replace the '❯' symbol in the prompt with '➜'
+# ─── Prompt Character ─────────────────────────────────────────────────────────
+# https://starship.rs/config/#character
+# Arrow turns red on non-zero exit codes
 [character]
 success_symbol = '[➜](bold green)'
 error_symbol = '[➜](bold red)'
 
+# ─── OS ───────────────────────────────────────────────────────────────────────
+# Shows the OS icon ( on macOS). Symbols for all OSes are in [os.symbols] below.
+[os]
+disabled = false
+style = 'bold white'
+
+# ─── Directory ────────────────────────────────────────────────────────────────
+# https://starship.rs/config/#directory
+# home_symbol:       replaces ~ with an icon +  ~
+# truncation_length: show at most 3 path components before truncating
+# truncate_to_repo:  false → always truncate to 3 levels, even inside a git repo
 [directory]
 format = '[$path]($style)[$read_only]($read_only_style) '
-style = 'blue'
+style = 'bold #4ECDC4'
 home_symbol = ' ~'
 read_only = ' '
 read_only_style = 'red'
 truncate_to_repo = false
-# number of directories shown on path before truncating
 truncation_length = 3
 truncation_symbol = '…/'
 
-# SECTION: Git
-# see docs: https://starship.rs/config/#git-branch
+# ─── Git ──────────────────────────────────────────────────────────────────────
+# https://starship.rs/config/#git-branch
 [git_branch]
 format = 'on [$symbol$branch]($style) '
 symbol = ' '
-style = 'bold green'
+style = 'bold #98C379'
 
-# see docs: https://starship.rs/config/#git-commit
-[git_commit]
-commit_hash_length = 4
-tag_symbol = '🔖 '
-
+# Shows +N / -N line counts for the current diff
+# https://starship.rs/config/#git-metrics
 [git_metrics]
 format = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
 added_style = 'bold green'
 deleted_style = 'bold red'
 disabled = false
 
+# Shown during rebase, merge, bisect, etc. — e.g. "REBASE 3/5"
+# https://starship.rs/config/#git-state
 [git_state]
 format = '[$state( $progress_current/$progress_total)]($style) '
 style = 'bold yellow'
 disabled = false
 
-# see docs: https://starship.rs/config/#git-status
-# to modify color put main command in square brackets and color in parentheses
-# if color is not modified, do NOT use square brackets, documented here: https://starship.rs/config/#text-group
+# Symbol key:
+#   ⇡N ahead   ⇣N behind   ⇕ diverged
+#   **N modified   ++N staged   --N deleted
+#   ??N untracked   $N stashed   !! conflicted   ✓ up to date
+# https://starship.rs/config/#git-status
 [git_status]
 format = '[$all_status$ahead_behind]($style) '
 style = 'bold yellow'
 ahead = '⇡${count}'
 behind = '⇣${count}'
-# conflicted = '[!!\($count\)](red)'
-conflicted = '!!\($count\)'
-# deleted = '[--\($count\)](red)'
-deleted = '--\($count\)'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-# modified = '[**\($count\)](yellow)'
-modified = '**\($count\)'
-# staged = '[++\($count\)](green)'
-staged = '++\($count\)'
-# stashed = '[\$\(count\)](green)'
-stashed = '\$\(count\)'
-# untracked = '[??\($count\)](red)'
-untracked = '??\($count\)'
-# up_to_date = '[✓](bold green)'
-up_to_date = '✓'
+conflicted = '[!!\($count\)](red) '
+deleted = '[--\($count\)](red) '
+modified = '[**\($count\)](yellow) '
+staged = '[++\($count\)](green) '
+stashed = '[\$\($count\)](green) '
+untracked = '[??\($count\)](red) '
+up_to_date = '[✓](bold green)'
 
-# SECTION: Modules - format | symbol | style | disabled
-[aws]
-symbol = '  '
+# ─── Fill ─────────────────────────────────────────────────────────────────────
+# Dotted separator between the left (git) and right (languages/time) sections
+# https://starship.rs/config/#fill
+[fill]
+symbol = '·'
 
-[buf]
-symbol = ' '
-
-[c]
-symbol = ' '
-
+# ─── Command Duration ─────────────────────────────────────────────────────────
+# Shows elapsed time for commands that take longer than min_time
+# https://starship.rs/config/#command-duration
 [cmd_duration]
 format = '[$duration]($style)'
 style = 'bold yellow'
-# Shortest duration to show time for (in milliseconds)
 min_time = 1_000
-disabled = false
 
-[conda]
-symbol = ' '
-
-[dart]
-symbol = ' '
-
-[docker_context]
-symbol = ' '
-
-[elixir]
-symbol = ' '
-
-[elm]
-symbol = ' '
-
-[fill]
-symbol = ' '
-
-[fossil_branch]
-symbol = ' '
-
-[golang]
-symbol = ' '
-
-[guix_shell]
-symbol = ' '
-
-[haskell]
-symbol = ' '
-
-[haxe]
-symbol = '⌘ '
-
-[hg_branch]
-symbol = ' '
-
-[java]
-symbol = ' '
-
-[julia]
-symbol = ' '
-
-[lua]
-symbol = ' '
-
-[memory_usage]
-symbol = ' '
-
-[meson]
-symbol = '喝 '
-
-[nim]
-symbol = ' '
-
-[nix_shell]
-symbol = ' '
+# ─── Languages ────────────────────────────────────────────────────────────────
+# Only shown when a relevant project file is detected in the current directory.
+# To customise appearance, add format/style/version_format here (see python below).
+[python]
+# format breakdown: symbol · version (major.minor only) · [virtualenv name]
+# https://starship.rs/config/#python
+format = '[${symbol}(${version} )(\[${virtualenv}\] )]($style)'
+symbol = ' '
+style = 'bold yellow'
+version_format = 'v${major}.${minor}'
+pyenv_version_name = false
+pyenv_prefix = 'pyenv '
 
 [nodejs]
 format = '[$symbol($version )]($style)'
 symbol = ' '
 
+[golang]
+symbol = ' '
+
+[rlang]
+symbol = 'ﳒ '
+
+[docker_context]
+symbol = ' '
+
+# ─── Time ─────────────────────────────────────────────────────────────────────
+# Trailing space ensures the time is not flush against the terminal edge
+[time]
+format = '[$time ]($style)'
+style = 'bold white'
+disabled = false
+
+# ─── OS Symbols ───────────────────────────────────────────────────────────────
+# Only 'Macos' is active on this machine; the rest are here for completeness
+# if the dotfiles are ever used on another OS.
 [os.symbols]
 Alpine = ' '
 Amazon = ' '
@@ -205,22 +193,71 @@ Ubuntu = ' '
 Unknown = ' '
 Windows = ' '
 
+# ─── Inactive Modules (symbol only) ──────────────────────────────────────────
+# These modules are not in the format string but their symbols are set here
+# in case they are added later. They will never appear in the current prompt.
+[aws]
+symbol = '  '
+
+[buf]
+symbol = ' '
+
+[c]
+symbol = ' '
+
+[conda]
+symbol = ' '
+
+[dart]
+symbol = ' '
+
+[elixir]
+symbol = ' '
+
+[elm]
+symbol = ' '
+
+[fossil_branch]
+symbol = ' '
+
+[guix_shell]
+symbol = ' '
+
+[haskell]
+symbol = ' '
+
+[haxe]
+symbol = '⌘ '
+
+[hg_branch]
+symbol = ' '
+
+[java]
+symbol = ' '
+
+[julia]
+symbol = ' '
+
+[lua]
+symbol = ' '
+
+[memory_usage]
+symbol = ' '
+
+[meson]
+symbol = '喝 '
+
+[nim]
+symbol = ' '
+
+[nix_shell]
+symbol = ' '
+
 [package]
 symbol = ' '
 
 [pijul_channel]
 symbol = '🪺 '
-
-[python]
-format = '[${symbol}(${version} )(\[${virtualenv}\] )]($style)'
-symbol = ' '
-style = 'bold yellow'
-version_format = 'v${major}.${minor}'
-pyenv_version_name = false
-pyenv_prefix = 'pyenv '
-
-[rlang]
-symbol = 'ﳒ '
 
 [ruby]
 symbol = ' '
@@ -233,8 +270,3 @@ symbol = ' '
 
 [spack]
 symbol = '🅢 '
-
-[time]
-format = '[$time]($style)'
-style = 'bold white'
-disabled = false
