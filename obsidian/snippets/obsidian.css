@@ -100,11 +100,51 @@ nav-file-title,
 /* NOTE: Set `cssclass: fullwidth` in YAML to stretch pane over full page */
 /* Full-width tables in Obsidian's source view and preview view */
 .markdown-source-view.fullwidth,
+.markdown-preview-view.fullwidth {
+  --file-margins: var(--size-4-2) var(--size-4-4);
+  --line-width: 100%;
+  --max-width: 100%;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.markdown-source-view.fullwidth,
 .markdown-preview-view.fullwidth,
 .markdown-preview-section.fullwidth,
 .markdown-preview-section .fullwidth {
-  max-width: var(--pane-width-large);
-  margin: auto;
+  max-width: none !important;
+}
+
+.markdown-preview-view.fullwidth .markdown-preview-sizer,
+.markdown-preview-view.fullwidth .markdown-preview-section,
+.markdown-source-view.mod-cm6.fullwidth .cm-sizer,
+.markdown-source-view.mod-cm6.fullwidth .cm-contentContainer,
+.markdown-source-view.mod-cm6.fullwidth .cm-content,
+.markdown-source-view.mod-cm6.fullwidth .cm-line {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-inline: 0 !important;
+}
+
+.markdown-preview-view.is-readable-line-width.fullwidth .markdown-preview-sizer,
+.markdown-source-view.mod-cm6.is-readable-line-width.fullwidth .cm-sizer,
+.markdown-source-view.mod-cm6.is-readable-line-width.fullwidth .cm-contentContainer,
+.markdown-source-view.mod-cm6.is-readable-line-width.fullwidth .cm-content,
+.markdown-source-view.mod-cm6.is-readable-line-width.fullwidth .cm-line {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-inline: 0 !important;
+}
+
+.markdown-preview-view.fullwidth .block-language-dataview,
+.markdown-preview-view.fullwidth .block-language-dataviewjs,
+.markdown-preview-view.fullwidth table.dataview.table-view-table,
+.markdown-source-view.mod-cm6.fullwidth .block-language-dataview,
+.markdown-source-view.mod-cm6.fullwidth .block-language-dataviewjs,
+.markdown-source-view.mod-cm6.fullwidth table.dataview.table-view-table {
+  width: 100% !important;
+  min-width: 100% !important;
 }
 
 /* size and color of rotated file name to the left of each pane */
