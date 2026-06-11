@@ -5,7 +5,7 @@
 #    in the PATH variable
 
 export DOTFILES_DIRPATH="$HOME/dotfiles"
-export ZSHRC_DIRPATH="$DOTFILES_DIRPATH/zsh/zshrc"
+export ZSHRC_DIRPATH="$DOTFILES_DIRPATH/zsh/config"
 
 # Sets environment variables and modifies PATH, must be sourced first
 source "$ZSHRC_DIRPATH/env.zsh"

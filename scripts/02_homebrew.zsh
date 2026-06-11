@@ -39,7 +39,7 @@ source "$HOMEBREW_DIRPATH/apps/uni.zsh"
 source "$HOMEBREW_DIRPATH/apps/utils.zsh"
 
 # Install Homebrew Fonts
-source "$HOMEBREW_DIRPATH/fonts.zsh"
+source "$HOMEBREW_DIRPATH/packages/fonts.zsh"
 
 # Remove outdated versions of installed formulae
 brew cleanup
