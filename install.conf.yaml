@@ -1,17 +1,17 @@
 # See documentation at https://github.com/anishathalye/dotbot
 
 - defaults:
-    # applies to all links
     link:
-      # overwrites existing symbolic links in the target location, does NOT overwrite
-      # existing data, i.e. non-symlinked files
+      # Replaces existing symlinks that point somewhere else.
+      # Does NOT overwrite regular files — if a regular file already exists where a
+      # symlink should go, delete it first, then re-run: rm <path> && just install
       relink: true
 
-# Remove broken or dead symlinks
+# Removes symlinks from ~ whose target no longer exists (i.e. dead symlinks)
 - clean: ["~"]
 
-# Create symbolic links from this directory (the source) to the target location
-# format is <target>: <source>
+# Creates symlinks in the filesystem pointing back to files in this repo.
+# Format: <destination path in ~>: <source path inside this dotfiles repo>
 - link:
     # SUBSECTION: Git
     ~/.gitconfig: git/.gitconfig
@@ -77,11 +77,6 @@
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
-
-    # SUBSECTION: Warp
-    # check box in Warp settings to `honor user's custom prompt` to enable starship
-    # support
-    ~/.warp: warp
 
     # SUBSECTION: ZSH
     ~/.zshenv: zsh/.zshenv

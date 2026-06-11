@@ -1,8 +1,7 @@
 # NOTE: Configuration docs: https://starship.rs/config/#prompt
 # IMPORTANT: Single and Double Quotes are NOT identical in TOML: see https://starship.rs/config/#strings.
 # Use double quotes for multiline format string and single quotes for everything else for less escaping!
-# NOTE: In Warp the prompt character and the actual text input cannot be on the same line!
-# This has nothing to do with starship. Thus, remove character from format string for now!
+
 # NOTE: Icons can be copied here: https://www.nerdfonts.com/cheat-sheet
 # SECTION: Global Settings
 # `fill` separates left and right aligned sections

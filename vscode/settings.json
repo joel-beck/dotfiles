@@ -1448,7 +1448,7 @@
   },
   // SUBSECTION: Terminal
   "terminal.explorerKind": "integrated",
-  "terminal.external.osxExec": "Warp.app",
+  "terminal.external.osxExec": "Terminal.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "PowerShell",

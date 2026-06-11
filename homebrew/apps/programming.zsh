@@ -18,5 +18,3 @@ brew install --cask rstudio
 # Visual Studio Code
 brew install --cask visual-studio-code
 
-# Warp
-brew install --cask warp

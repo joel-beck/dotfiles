@@ -16,9 +16,7 @@ source "$ZSHRC_DIRPATH/ohmyzsh.zsh"
 # Must be sourced after oh my zsh
 source "$ZSHRC_DIRPATH/plugins.zsh"
 
-# iTerm2 Configuration breaks Warp's custom prompt
-# Powerlevel 10k is NOT supported for Warp, only for iTerm2!
-if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+if [[ $TERM_PROGRAM == "iTerm.app" ]]; then
     source "$ZSHRC_DIRPATH/iterm.zsh"
     source "$ZSHRC_DIRPATH/powerlevel10k.zsh"
 fi
