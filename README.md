@@ -1,147 +1,157 @@
 # Dotfiles
 
-This repository contains my configuration files for many MacOS applications and MacOS preferences.
+Configuration files for macOS applications and system preferences, managed as symlinks via [dotbot](https://github.com/anishathalye/dotbot).
 
-By having a single repository for all configuration files, it is possible to:
-
-1. Easily revert accidental changes to configuration files with Git.
-1. Have an additional Backup of all configuration files on GitHub.
-1. Quickly set up a new Mac with all configuration files and preferences by cloning this repository and following the steps below.
+Benefits of this setup:
+- Revert accidental changes with Git
+- Additional backup on GitHub
+- Quickly restore a full environment on a new Mac by following the steps below
 
 ## Setting up a new Mac
 
-1.  Be **very** careful to set the User Name for the Device Account and the Home directory correctly!
-    The default name is `firstnamelastname` (e.g. `joelbeck`) instead of only the firstname (e.g. `joel`) which is often preferred.
+> All script commands below are run from `~/dotfiles/scripts`. You can `cd` there once and leave the terminal open for the entire setup.
 
-    If the name is set incorrectly, it can be changed by [creating a new administrator account](https://support.apple.com/en-us/HT201548) on this device, renaming the main account from the new admin account and finally deleting the new admin account again.
+### 1. Set the correct username
 
-2.  Open Safari, navigate to [GitHub](https://github.com) and login to the GitHub account via Apple Keychain.
+Be **very** careful to set the User Name for the Device Account and the Home directory correctly during initial macOS setup. The default name is `firstnamelastname` (e.g. `joelbeck`) instead of the preferred first name only (e.g. `joel`).
 
-3.  [Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
+If the name is set incorrectly afterward, fix it by [creating a new administrator account](https://support.apple.com/en-us/HT201548), renaming the main account from that new admin account, then deleting the admin account.
 
-4.  Open the built-in Terminal App and clone the dotfiles repository from GitHub to the home directory:
+### 2. Log in to GitHub
 
-    ```bash
-    git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
-    ```
+Open Safari, navigate to [GitHub](https://github.com) and log in via Apple Keychain.
 
-    - When requested, accept to install the Xcode Developer Tools first.
-    - Enter the GitHub username and the new Personal Access Token from the previous step.
+### 3. Create a Personal Access Token
 
-5.  Run `01_symlinks.zsh` to create symbolic links from iCloud to a new `~/iCloud` folder and to run the `dotbot` installation script for the dotfiles:
+[Create a new GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for the new device.
 
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 01_symlinks.zsh
-    ```
+### 4. Clone this repository
 
-    This step must be run first to set environment variables which specify the location of configuration files for some of the apps installed in the next step (XDG Base Directory Specification).
-
-6.  Run `02_homebrew.zsh` to install Homebrew Packages, MacOS Apps and Nerd Fonts:
-
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 02_homebrew.zsh
-    ```
-
-    Enter the password for the user account when requested.
-
-7.  Run `01_symlinks.zsh` again to set the desired configuration for the installed command line tools and MacOS Apps:
-
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 01_symlinks.zsh
-    ```
-
-    Now that the development environment is set, continue with the remaining process using Warp and VSCode for convenience.
-
-8.  Run `03_oh-my-zsh.zsh` to install OH MY ZSH:
-
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 03_oh-my-zsh.zsh
-    ```
-
-9.  **Restart the shell** (such that OH MY ZSH can set required environment variables).
-    Then run `04_oh-my-zsh-plugins.zsh` to install OH MY ZSH plugins:
-
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 04_oh-my-zsh-plugins.zsh
-    ```
-
-10. Run `05_perl.zsh` to install `perlbrew` to manage Perl versions, the latest perl version and `cpanm` to install Perl modules.
-    Then install the required Perl modules for formatting LaTeX files with `latexindent` (used by the VSCode `LaTeX Workshop` extension):
-
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 05_perl.zsh
-    ```
-
-    It might be necessary to manually specify the desired Perl version in the `latexindent.pl` script such that latexindent find all perl modules for the new version and does not use the system perl version:
-
-    i) Open the `latexindent.pl` script in VSCode:
-
-    ```bash
-    code /usr/local/texlive/2023/texmf-dist/scripts/latexindent/latexindent.pl
-    ```
-
-    ii) Assuming the Perl version `11.11.0`, replace the first line
-
-    ```perl
-    #!/usr/bin/env perl
-    ```
-
-    with
-
-    ```perl
-    #!/Users/joel/perl5/perlbrew/perls/perl-12.12.0/bin/perl
-    ```
-
-    Then save the file with sudo permissions.
-
-11. While Apps are installing:
-    - Check frequently for prompts in the terminal to enter the password for the user account if requested.
-    - Setup the [desired file system directory structure](#file-system-structure) and copy the following folders from an SSD backup disk to the new machine:
-      - `~/iCloud`
-      - `~/Documents/AppBackups`
-      - `~/Documents/LargeFiles`
-    - Clone the Obsidian Vault from its GitHub directory to `~/Documents/ObsidianVault`.
-    - Clone all other repositories needed for the new machine from GitHub to
-      - `~/Documents/ProjectsPrivate`
-      - `~/Documents/ProjectsPublic`
-    - Log into accounts of already installed apps and start the sync process or the manual configuration.
-
-Wait until the installation of all Apps is finished.
-Breathe 🧘‍♂️ Time for a cup of tea!
-
-12. Run `06_vscode-extensions.zsh` to install VSCode extensions:
-
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 06_vscode-extensions.zsh
-    ```
-
-13. Run `07_macos.zsh` to set MacOS System Preferences and default applications to open specific file types:
-
-    ```bash
-    cd ~/dotfiles/scripts
-    zsh 07_macos.zsh
-    ```
-
-    When requested, enter the password for the user account.
-    Then, restart the Mac.
-    After rebooting, check that the custom MacOS System Preferences were set correctly.
-
-14. Install the remaining MacOS Apps that are not available via Homebrew. Lookup the list of missing Apps in Obsidian.
-
-15. Restart the MacBook again and check that all steps were completed successfully.
-
-Done 🎉 Enjoy your new Mac!
-
-### File System Structure
+Open the built-in Terminal and clone the dotfiles repository to the home directory:
 
 ```bash
+git clone https://github.com/joel-beck/dotfiles.git ~/dotfiles
+```
+
+When prompted, accept the Xcode Developer Tools installation, then enter your GitHub username and the Personal Access Token from the previous step.
+
+### 5. Create symlinks (first pass)
+
+Run `01_symlinks.zsh` to create a `~/iCloud` symlink to iCloud Drive and to run dotbot (which symlinks all config files into their correct locations):
+
+```bash
+cd ~/dotfiles/scripts && zsh 01_symlinks.zsh
+```
+
+This step must run before installing apps because some apps read their config location from environment variables set by the symlinks (XDG Base Directory Specification).
+
+### 6. Install Homebrew packages and apps
+
+```bash
+zsh 02_homebrew.zsh
+```
+
+Enter the user account password when requested. This installs Homebrew itself, all CLI packages, macOS apps, and Nerd Fonts. It takes a while — use this time for step 7 below.
+
+### 7. While Homebrew is installing (parallel tasks)
+
+- Watch the terminal and enter the password again if prompted.
+- Set up the [file system structure](#file-system-structure) and copy these folders from an SSD backup:
+  - `~/iCloud`
+  - `~/Documents/AppBackups`
+  - `~/Documents/LargeFiles`
+- Clone the Obsidian Vault: `git clone <repo> ~/Documents/ObsidianVault`
+- Clone other repositories to `~/Documents/ProjectsPrivate` and `~/Documents/ProjectsPublic`
+- Log in to already-installed apps and start their sync processes
+
+### 8. Create symlinks (second pass)
+
+Re-run `01_symlinks.zsh` once Homebrew has finished, so dotbot can also configure the newly installed apps:
+
+```bash
+zsh 01_symlinks.zsh
+```
+
+From this point on, Warp and VS Code are available — switch to them for convenience.
+
+### 9. Install Oh My Zsh
+
+```bash
+zsh 03_oh-my-zsh.zsh
+```
+
+### 10. Install Oh My Zsh plugins
+
+**Restart the shell first** so Oh My Zsh can set its required environment variables. Then:
+
+```bash
+zsh 04_oh-my-zsh-plugins.zsh
+```
+
+### 11. Install Perl (for LaTeX formatting)
+
+```bash
+zsh 05_perl.zsh
+```
+
+This installs `perlbrew`, the latest Perl version, `cpanm`, and the Perl modules required by `latexindent` (used by the VS Code LaTeX Workshop extension).
+
+Afterward, you may need to point the `latexindent.pl` script at the perlbrew-managed Perl rather than the system Perl. To do so:
+
+1. Find the installed TeX Live year and open the script:
+
+    ```bash
+    TEXLIVE_YEAR=$(ls /usr/local/texlive/ | grep -E '^[0-9]{4}$' | tail -1)
+    code /usr/local/texlive/$TEXLIVE_YEAR/texmf-dist/scripts/latexindent/latexindent.pl
+    ```
+
+2. Find the installed Perl version:
+
+    ```bash
+    perlbrew list
+    ```
+
+3. Replace the first line of `latexindent.pl` — for example, if the installed version is `perl-5.38.2`:
+
+    ```perl
+    # Before
+    #!/usr/bin/env perl
+
+    # After
+    #!/Users/joel/perl5/perlbrew/perls/perl-5.38.2/bin/perl
+    ```
+
+    Save with sudo permissions.
+
+### 12. Install VS Code extensions
+
+```bash
+zsh 06_vscode-extensions.zsh
+```
+
+### 13. Apply macOS system preferences
+
+```bash
+zsh 07_macos.zsh
+```
+
+Enter the user account password when requested, then **restart the Mac**. After rebooting, verify that the custom macOS preferences were applied correctly.
+
+### 14. Install remaining apps
+
+Install any macOS apps not available via Homebrew. The list is maintained in the Obsidian vault under `AppBackups`.
+
+### 15. Final restart
+
+Restart the Mac one more time and verify that everything works as expected.
+
+Done — enjoy the new Mac!
+
+---
+
+## File System Structure
+
+```
 /Users/joel/
     │
     ├── dotfiles
@@ -153,17 +163,30 @@ Done 🎉 Enjoy your new Mac!
     │   ├── ProjectsPrivate
     │   └── ProjectsPublic
     │
-    ├── iCloud
+    ├── iCloud                      → ~/Library/Mobile Documents/com~apple~CloudDocs
     │   ├── AppBackups
     │   ├── Personal
-    │   ├── KeyboardMaestro (containing the sync file)
-    │   └── Default iCloud folders (generated automatically by applications)
+    │   ├── KeyboardMaestro         (sync file)
+    │   └── Default iCloud folders  (generated by apps)
     │
     ├── iCloudBackup
     ├── GoogleDriveBackup
     ├── ownCloudBackup
     │
-    ├── Pictures (generated automatically)
-    ├── Zotero (generated automatically)
-    └── Default MacOS folders (generated automatically)
+    ├── Pictures                    (generated by macOS)
+    ├── Zotero                      (generated by macOS)
+    └── Default macOS folders       (generated by macOS)
 ```
+
+## Day-to-day usage
+
+After initial setup, use the `justfile` at the repo root for common tasks:
+
+```bash
+just install          # Re-run dotbot to apply symlink changes
+just brewfile         # Export current Homebrew state to homebrew/Brewfile
+just brewfile-install # Install everything in homebrew/Brewfile
+just default-apps     # Re-apply default app associations (duti)
+```
+
+Editing a config file (e.g. `vscode/settings.json`) takes effect immediately — the symlink means the live file and the repo file are the same. Only changes to `install.conf.yaml` (adding/removing symlinks) require running `just install` afterward.
