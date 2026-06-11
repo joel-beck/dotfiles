@@ -12,7 +12,7 @@
           "basic.simultaneous_threshold_milliseconds": 50,
           "basic.to_delayed_action_delay_milliseconds": 500,
           "basic.to_if_alone_timeout_milliseconds": 1000,
-          "basic.to_if_held_down_threshold_milliseconds": 1000,
+          "basic.to_if_held_down_threshold_milliseconds": 300,
           "mouse_motion_to_scroll.speed": 100
         },
         "rules": [
@@ -52,32 +52,6 @@
                   }
                 },
                 "to": [
-                  {
-                    "key_code": "delete_forward"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Left Control -> Forward Delete Character",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "left_control"
-                },
-                "to": [
-                  {
-                    "key_code": "left_control"
-                  }
-                ],
-                "to_if_alone": [
-                  {
-                    "key_code": "delete_forward"
-                  }
-                ],
-                "to_if_held_down": [
                   {
                     "key_code": "delete_forward"
                   }
@@ -200,6 +174,7 @@
       },
       "devices": [
         {
+          "_comment": "Apple Internal Keyboard / Trackpad — vendor 1452 (Apple), product 834 (0x0342). Built-in MacBook keyboard. Confirmed via: ioreg -p IOService -l -r -c IOHIDDevice | grep -E 'Product|ProductID|VendorID'",
           "disable_built_in_keyboard_if_exists": false,
           "fn_function_keys": [],
           "identifiers": {
@@ -214,6 +189,7 @@
           "treat_as_built_in_keyboard": false
         },
         {
+          "_comment": "Apple Internal Trackpad — same vendor/product as the keyboard above (834/1452), but enumerated separately as a pointing device. Ignored so Karabiner only processes the keyboard component.",
           "disable_built_in_keyboard_if_exists": false,
           "fn_function_keys": [],
           "identifiers": {
@@ -228,6 +204,7 @@
           "treat_as_built_in_keyboard": false
         },
         {
+          "_comment": "Apple Magic Keyboard (Bluetooth) — vendor 1452 (Apple), product 34304 (0x8600). Only visible in Karabiner when connected. To verify the product ID on a new machine: open Karabiner-Elements → Devices tab and read the values shown there.",
           "disable_built_in_keyboard_if_exists": false,
           "fn_function_keys": [],
           "identifiers": {
