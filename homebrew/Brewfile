@@ -12,109 +12,207 @@ tap "quarylabs/quary"
 tap "romkatv/powerlevel10k"
 tap "teamookla/speedtest"
 tap "yt-dlp/taps"
+# Run your GitHub Actions locally
 brew "act"
+# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Bash scripts that integrate bat with various command-line tools
 brew "bat-extras"
+# Bash Automated Testing System
 brew "bats-core"
+# Toolchain of the web
 brew "biome"
+# New way to see and navigate directory trees
 brew "broot"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# Cross-platform make
 brew "cmake"
+# Diff your Docker containers
 brew "container-diff"
+# Command-line interface for SQLite
 brew "sqlite"
+# Utility that creates projects from templates
 brew "cookiecutter"
+# Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Debugger for the Go programming language
 brew "delve"
+# Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Load/unload environment variables based on $PWD
 brew "direnv"
+# Isolated development environments using Docker
 brew "docker-compose"
+# Embeddable SQL OLAP Database Management System
 brew "duckdb"
+# Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
+# More intuitive version of du in rust
 brew "dust"
+# Select default apps for documents and URL schemes on macOS
 brew "duti"
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# AST-based pattern checker for JavaScript
 brew "eslint"
+# Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Banner-like program prints strings as ASCII art
 brew "figlet"
+# Command-line tools for fly.io services
 brew "flyctl"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# Distributed revision control system
 brew "git"
+# Git extension for versioning large files
 brew "git-lfs"
+# Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Fast linters runner for Go
 brew "golangci-lint"
+# Gorgeous metric visualizations and dashboards for timeseries databases
 brew "grafana"
+# Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Spell checker and morphological analyzer
 brew "hunspell"
+# Command-line benchmarking tool
 brew "hyperfine"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Duplicate file finder and an enhanced fork of 'fdupes'
 brew "jdupes"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Handy way to save and run project-specific commands
 brew "just"
+# Open-source distributed event streaming platform
 brew "kafka"
+# Kubernetes command-line interface
 brew "kubernetes-cli"
+# C library of Git core methods that is re-entrant and linkable
 brew "libgit2@1.7"
+# Mac App Store command-line interface
 brew "mas"
+# Fly through your shell history
 brew "mcfly"
+# Run a Kubernetes cluster locally
 brew "minikube"
+# Powerful paging program
 brew "most"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Shell command parallelization utility
 brew "parallel"
+# Highly capable, feature-rich programming language
 brew "perl"
+# General-purpose scripting language
 brew "php"
+# Package management made easy
 brew "pixi"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Theme for zsh
 brew "powerlevel10k"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# Modern replacement for ps written in Rust
 brew "procs"
+# Service monitoring system and time series database
 brew "prometheus"
+# Seamless operability between C++11 and Python
 brew "pybind11"
+# Python version management
 brew "pyenv"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Powerful, clean, object-oriented scripting language
 brew "ruby"
+# Intuitive find & replace CLI
 brew "sd"
+# Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Autoformat shell script source code
 brew "shfmt"
+# Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli", link: false
+# SQL linter and auto-formatter for Humans
 brew "sqlfluff"
+# SQL formatter with width-aware output
 brew "sqlfmt"
+# CLI utility for manipulating SQLite databases
 brew "sqlite-utils"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Tool to build, change, and version infrastructure
 brew "terraform"
+# Thin wrapper for Terraform e.g. for locking state
 brew "terragrunt"
+# Programmatically correct mistyped console commands
 brew "thefuck"
+# Simplified and community-driven man pages
 brew "tldr"
+# Program that allows you to count code, quickly
 brew "tokei"
+# CLI tool that moves files or folder to the trash
 brew "trash", link: true
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Language for application scale JavaScript development
 brew "typescript"
+# Extraction utility for .zip compressed archives
 brew "unzip"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Next generation frontend tooling. It's fast!
 brew "vite"
+# Executes a program periodically, showing output fullscreen
 brew "watch"
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# UNIX shell (command interpreter)
 brew "zsh"
+# Auto-close and delete matching delimiters in zsh
 brew "zsh-autopair"
-brew "kaos/shell/bats-support"
-brew "kaos/shell/bats-assert"
-brew "kaos/shell/bats-file"
-brew "quarylabs/quary/sqruff"
-brew "teamookla/speedtest/speedtest"
+# Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Command-line interface for 1Password
 cask "1password-cli"
+# Application launcher and productivity software
 cask "alfred"
+# Data management tool that enables working with SQL Server
 cask "azure-data-studio"
+# Data backup and storage service
 cask "backblaze"
+# Download Backblaze restored files more reliably
 cask "backblaze-downloader"
+# Menu bar icon organiser
 cask "bartender"
+# Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
+# OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# OpenAI's Codex desktop app for managing coding agents
+cask "codex-app"
+# App to build and share containerised applications and microservices
 cask "docker-desktop"
+# Online diagram software
 cask "drawio"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
 cask "font-3270-nerd-font"
 cask "font-agave-nerd-font"
@@ -166,29 +264,51 @@ cask "font-tinos-nerd-font"
 cask "font-ubuntu-mono-nerd-font"
 cask "font-ubuntu-nerd-font"
 cask "font-victor-mono-nerd-font"
+# Client for the Google Drive storage service
 cask "google-drive"
+# Utility to fix grammar errors and style issues in text
 cask "grammarly"
+# Menu bar manager
 cask "jordanbaird-ice"
+# Keyboard customiser
 cask "karabiner-elements"
+# Open-source keystroke visualiser
 cask "keycastr"
+# Adaptive brightness for external displays
 cask "lunar"
+# Full TeX Live distribution with GUI applications
 cask "mactex"
+# Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Spreadsheet software
 cask "microsoft-excel"
+# Digital note taking app
 cask "microsoft-onenote"
+# Email client
 cask "microsoft-outlook"
+# Presentation software
 cask "microsoft-powerpoint"
+# Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Word processor
 cask "microsoft-word"
+# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Cloud storage client
 cask "onedrive"
+# Desktop syncing client for ownCloud
 cask "owncloud"
+# IDE for professional Python development
 cask "pycharm"
+# Environment for statistical computing and graphics
 cask "r-app"
+# Data science software focusing on R and Python
 cask "rstudio"
+# Open-source code editor
 cask "visual-studio-code"
-
+# HTML to PDF renderer
 cask "wkhtmltopdf"
+# Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
@@ -285,7 +405,6 @@ vscode "formulahendry.auto-close-tag"
 vscode "formulahendry.code-runner"
 vscode "gerane.theme-jellybeams"
 vscode "github.codespaces"
-vscode "github.copilot-chat"
 vscode "github.github-vscode-theme"
 vscode "github.remotehub"
 vscode "github.vscode-github-actions"
@@ -452,3 +571,5 @@ go "github.com/mitranim/gow"
 go "honnef.co/go/tools/cmd/staticcheck"
 go "github.com/a-h/templ/cmd/templ"
 go "github.com/bokwoon95/wgo"
+npm "tsx"
+npm "typescript"
